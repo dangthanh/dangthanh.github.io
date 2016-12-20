@@ -1,0 +1,24 @@
+.hobbies {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hobby {
+	text-align: center;
+	flex: 0 0 auto;
+	flex-basis: 25%;
+}
+
+@media only screen and (max-width: 48rem) {
+	.hobby {
+		flex-basis: 50%;
+	}
+}
+
+.hobby-icon,
+.hobby-icon svg {
+	display: inline-block;
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+}

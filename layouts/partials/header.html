@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{ .Title }}</title>
+	<meta name="description" content="Blog về HTML/HTML5, CSS/CSS3, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/app.css">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+</head>
+<body>
+	<div id="app" class="bg-near-white">
+		<header role="banner" class="bb b--black-10 black-70 bg-green">
+			<div class="db dt-l w-100 mw7 pt3 pb3 center">
+				<div class="db dtc-l v-mid w-100 w-25-l tc tl-l mb2 mb0-l">
+					<a href="/" class="link dim white f4">DT</a>
+				</div>
+				{{ partial "nav.html" . }}
+			</div>
+		</header>

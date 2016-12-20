@@ -1,0 +1,105 @@
+body {
+	font-size: 16px;
+	font-family: 'Muli', sans-serif;
+	line-height: 1.5;
+}
+
+#app {
+	min-height: 100vh;
+}
+
+.accessibility {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.article table {
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: .5rem 1rem;
+}
+
+.article table thead tr {
+	background-color: #ddd;
+}
+
+.article table thead tr th:first-child {
+	min-width: 8rem;
+}
+
+.article table tr {
+  background-color: #eee;
+}
+
+.article table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.article table th {
+	text-align: left;
+  text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.article table th,
+.article table td {
+	padding: .5rem 1rem;
+}
+
+.article a {
+	color: #19a974;
+	text-decoration: none;
+	transition: opacity .15s ease-in;
+	opacity: 1;
+	text-decoration: none;
+}
+
+.article a:not(.dib):hover,
+.article a:not(.dib):focus {
+  background-image: linear-gradient(to top, transparent, transparent 2px, currentColor 2px, currentColor 3px, transparent 3px);
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.article a.dib:hover,
+.article a.dib:focus {
+  background: #19a974;
+	color: #fff;
+	opacity: .75;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h5 {
+	font-weight: 300;
+}
+
+.article time {
+	position: relative;
+}
+
+.article time:before {
+	content: "";
+	display: block;
+	background: #999;
+	height: 1px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.article time > span {
+	background: #fff;
+	padding: 0 1rem;
+	position: relative;
+}

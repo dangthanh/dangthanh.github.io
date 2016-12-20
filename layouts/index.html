@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+<main role="main" class="bg-white center mw7 mt4 pa3">
+	<h1 class="accessibility">Viết về những gì tôi học, tôi làm và tôi trải nghiệm...</h1>
+	{{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
+	{{ range $paginator.Pages  }}
+		<article class="bb b--black-10" itemscope itemtype="//schema.org/Blog">
+			<h2 class="db f3 mt3 mb3" itemprop="headline">
+				<time class="gray db f5 fw1 mb2" datetime="{{ .Date.Format "02-01-2006" }}" itemprop="datePublished">Đăng ngày {{ .Date.Format "02-01-2006" }}</time>
+				<a href="{{ .RelPermalink }}" class="link dim green f3 lh-copy fw3" itemprop="name">{{ .Title }}</a>
+			</h2>
+		</article>
+	{{ end }}
+	{{ partial "pagination" . }}
+</main>
+{{ partial "footer.html" . }}

@@ -1,0 +1,14 @@
+baseurl = "http://dangthanh.org/"
+languageCode = "vn-vi"
+title = "Blog về HTML/HTML5, CSS/CSS3, JavaScript"
+
+[permalinks]
+	post = "/:year/:month/:day/:slug/"
+
+[params]
+	disqus = "dangvanthanh"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"

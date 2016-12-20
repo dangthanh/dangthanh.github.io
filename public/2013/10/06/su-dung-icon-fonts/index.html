@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Sử dụng Icon Fonts</title>
+	<meta name="description" content="Blog về HTML/HTML5, CSS/CSS3, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/app.css">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link href="" rel="alternate" type="application/rss+xml" title="Blog về HTML/HTML5, CSS/CSS3, JavaScript" />
+</head>
+<body>
+	<div id="app" class="bg-near-white">
+		<header role="banner" class="bb b--black-10 black-70 bg-green">
+			<div class="db dt-l w-100 mw7 pt3 pb3 center">
+				<div class="db dtc-l v-mid w-100 w-25-l tc tl-l mb2 mb0-l">
+					<a href="/" class="link dim white f4">DT</a>
+				</div>
+				<nav role="navigation" class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+  <a href="/projects" class="link dim white f5 f5-l dib mr3 mr4-l">Dự án</a>
+  <a href="/about" class="link dim white f5 f5-l dib">Giới thiệu</a>
+</nav>
+
+			</div>
+		</header>
+
+<main role="main" class="bg-white center mw7 mt4 pa3">
+	<article class="article" itemscope itemtype="//schema.org/Article">
+		<header class="mb4" itemprop="headline">
+			<h1 class="f2-ns mb2 fw3 tc" itemprop="name">Sử dụng Icon Fonts</h1>
+			<time class="f5 gray db mt0 mb0 fw1 tc" datetime="06-10-2013"><span itemprop="datePublished">Đăng ngày 06-10-2013</span></time>
+		</header>
+		<div class="f4 lh-copy fw1" itemprop="articleBody">
+
+<p>Icon font ngày được sử dụng rộng rãi trong các website hiện nay. Icon font mang nhiều ưu điểm:</p>
+
+<ul>
+<li>Giảm số lượng HTTP Request, giúp website của bạn load nhanh hơn.</li>
+<li>Dễ dàng thay đổi màu sắc, kích thước của biểu tượng.</li>
+<li>Cung cấp nhiều biểu tượng phù hợp giúp bạn tiết kiệm thời gian thiết kế.</li>
+<li>Có thể sử dụng CSS3 như transition, transform, text-shadow giúp các icon được linh hoạt hơn.</li>
+</ul>
+
+<p>Ta có thể nhúng icons vào trong CSS đơn giản như sau:</p>
+
+<pre><code class="language-css">@font-face {
+  font-family: 'your-fonts';
+  src: url('fonts/your-fonts.eot');
+  src: url('fonts/your-fonts.eot?#iefix') format('embedded-opentype'),
+       url('fonts/your-fonts.woff') format('woff'),
+       url('fonts/your-fonts.ttf') format('truetype'),
+       url('fonts/your-fonts.svg#[set]Foundicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*=&quot;icon-&quot;] {
+	font-family: 'your-fonts';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: inherit;
+	-webkit-font-smoothing: antialiased;
+}
+
+[class*=&quot;icon-&quot;]:before {
+  content: &quot;your-fonts-character&quot;;
+}
+</code></pre>
+
+<p>Trong bài viết này mình sẽ giới thiệu các bạn về IcoMoon và We Love Icon Fonts.</p>
+
+<h3 id="icomoon">IcoMoon</h3>
+
+<p><img src="/assets/images/icomoon.jpg" alt="IcoMoon" /></p>
+
+<p><a href="http://icomoon.io/">IcoMoon</a> cung cấp cho bạn hơn 450 icons miễn phí. Bên cạnh đó ngoài những icons của IcoMoon, IcoMoon cho phép bạn lựa chọn và tải các icons bạn muốn với những bộ icons khác như Broccolidry, Entypo, Font Awesome&hellip;với số lượng lên đến gần 3800 icons. Ngoài ra IcoMoon còn cho phép bạn tải các thiết kế của bạn lên (tập tin SVG) để customize thành fonts bạn yêu thích.</p>
+
+<h3 id="we-love-icon-fonts">We Love Icon Fonts</h3>
+
+<p><img src="/assets/images/weloveiconfonts.jpg" alt="We Love Icon Fonts" /></p>
+
+<p><a href="http://weloveiconfonts.com/">We Love Icon Fonts</a> là một mã nguồn mở và dịch vụ lưu trữ miễn phí các icon fonts. Cũng như IcoMoon, We Love Icon Fonts cũng cung cấp cho bạn rất nhiều bộ icons miễn phí khác như Fontelico, Maki, Typicons, Zocial.</p>
+
+<h3 id="một-số-icons-fonts-miễn-phí-khác">Một số icons fonts miễn phí khác</h3>
+
+<ul>
+<li><a href="http://www.entypo.com/">Entypo</a></li>
+<li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+<li><a href="http://zurb.com/playground/foundation-icons">Foundation Icon</a></li>
+<li><a href="http://www.alessioatzeni.com/meteocons/">Meteocons</a></li>
+<li><a href="http://typicons.com/">Typicons</a></li>
+<li><a href="http://icons.marekventur.de/">Raphaël Icon</a></li>
+</ul>
+
+
+
+
+
+<div class="tc mt4 mb4">
+	<a href="/playground/icon-fonts/" class="f5 link br2 ba ph4 pv2 dib">Xem Demo</a>
+	<a href="#" class="f5 link br2 ba ph4 pv2 dib">Tải Về</a>
+</div>
+
+</div>
+	</article>
+	<section class="center mw7 pt3 pb3">
+	<div class="cf bg-light-green pa3">
+		<img src="https://avatars2.githubusercontent.com/u/2674850?v=3&s=100" class="fl br-100 h3 w3 dib mr3" alt="avatar">
+		<div class="fl">
+			<h4 class="f4 mt0 mb0 fw7">Đặng Văn Thanh</h4>
+			<span>Có đam mê về lập trình web và các vấn đề về phát triển web.</span>
+		</div>
+	</div>
+</section>
+
+	<section class="center mw7 pt3 pb3">
+	<div id="disqus_thread"></div>
+	<script>
+		var disqus_shortname = 'dangvanthanh';
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+</main>
+		<footer role="infocontent" class="pv2">
+			<div class="center mw7 pt3 pb3">
+				<p>
+					&copy;2013 - <script>document.write(new Date().getFullYear())</script>. Được xây dựng bằng
+					<a href="https://gohugo.io/" class="dib link dim green">Hugo</a>,
+					<a href="https://vuejs.org/" class="dib link dim green">Vue.js</a> và
+					<a href="http://tachyons.io/" class="dib link dim green">Tachyons</a>.
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js" defer></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js" defer></script>
+	<script src="/assets/js/app.js" defer></script>
+	<script type="text/javascript" defer>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-41117458-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</body>
+</html>

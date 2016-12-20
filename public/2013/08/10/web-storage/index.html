@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Web Storage</title>
+	<meta name="description" content="Blog về HTML/HTML5, CSS/CSS3, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/app.css">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link href="" rel="alternate" type="application/rss+xml" title="Blog về HTML/HTML5, CSS/CSS3, JavaScript" />
+</head>
+<body>
+	<div id="app" class="bg-near-white">
+		<header role="banner" class="bb b--black-10 black-70 bg-green">
+			<div class="db dt-l w-100 mw7 pt3 pb3 center">
+				<div class="db dtc-l v-mid w-100 w-25-l tc tl-l mb2 mb0-l">
+					<a href="/" class="link dim white f4">DT</a>
+				</div>
+				<nav role="navigation" class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+  <a href="/projects" class="link dim white f5 f5-l dib mr3 mr4-l">Dự án</a>
+  <a href="/about" class="link dim white f5 f5-l dib">Giới thiệu</a>
+</nav>
+
+			</div>
+		</header>
+
+<main role="main" class="bg-white center mw7 mt4 pa3">
+	<article class="article" itemscope itemtype="//schema.org/Article">
+		<header class="mb4" itemprop="headline">
+			<h1 class="f2-ns mb2 fw3 tc" itemprop="name">Web Storage</h1>
+			<time class="f5 gray db mt0 mb0 fw1 tc" datetime="10-08-2013"><span itemprop="datePublished">Đăng ngày 10-08-2013</span></time>
+		</header>
+		<div class="f4 lh-copy fw1" itemprop="articleBody">
+
+<p>Để lưu trữ thông tin ở phía trình duyệt, trước đây ta vẫn thường dùng cookies. Nhưng cookies vẫn còn một số hạn chế:</p>
+
+<ul>
+<li>Khi truyền tải, cookies mang theo HTTP request, đều này sẽ làm chậm đi ứng dụng web của bạn.</li>
+<li>Giới hạn dung lượng thấp chỉ 4 KB.</li>
+<li>Thật khó để duy dõi nhiều cookies trên một trang web.</li>
+</ul>
+
+<p>HTML5 cung cấp một API mới để có thể lưu trữ dữ liệu ở phía client với nhiều cải thiện cho cookies là web storage. Một số ưu điểm web storage so với cookies:</p>
+
+<ul>
+<li>Dung lượng lên đến 5 MB (trình duyệt Google Chrome, Mozilla Firefox, Opera), 10 MB (Internet Explorer)</li>
+<li>Dữ liệu web storage sẽ không được truyền đến máy chủ</li>
+<li>Cung cấp hai cách lưu trữ khác nhau: local storage và session storage</li>
+</ul>
+
+<h3 id="web-storage">Web Storage</h3>
+
+<p>Web Storage hiện tại đã hỗ trợ rất nhiều trình duyệt.</p>
+
+
+
+
+<caniuse features="namevalue-storage"></caniuse>
+
+
+<p>Web Storage cung cấp các phương thức sau. Ở đây mình sử dụng localStorage, bạn có thể sử dụng sessionStorage nếu muốn.</p>
+
+<pre><code class="language-javascript">localStorage.setItem('key', 'value') // Lưu trữ dữ liệu
+localStorage.getItem('key')          // Lấy dữ liệu
+localStorage.removeItem('key')       // Xóa dữ liệu lưu trên key
+localStorage.clear()                 // Xóa tất cả dữ liệu lưu bởi web storage
+</code></pre>
+
+<h3 id="sử-dụng-local-storage">Sử dụng Local Storage</h3>
+
+<p>Dữ liệu trên local storage sẽ được tự động chuyển sang kiểu &lsquo;string&rsquo; trên trình duyệt. Tuy nhiên local storage lại hoạt động rất tốt với đối tượng trong JavaScript.</p>
+
+<pre><code class="language-javascript">// Lưu trữ một đối tượng
+localStorage.setItem('key', {name: 'value'});
+console.log(typeof localStorage.getItem('key')); // string
+
+// Lữu trữ một kiểu số
+localStorage.setItem('key', 1);
+console.log(typeof localStorage.getItem('key')); // string
+
+// Lưu trữ một đối tượng
+localStorage.setItem('key', JSON.stringify({name: 'Dang Thanh', age: 24}));
+var obj = JSON.parse(localStorage.getItem('key'));
+console.log(obj.name); // value
+console.log(obj.age);  // value
+</code></pre>
+
+<h3 id="ví-dụ-local-storage">Ví dụ Local Storage</h3>
+
+
+
+
+
+
+
+<script
+	data-slug-hash="jCcxI"
+	data-user="dangvanthanh"
+	data-height="266"
+	data-default-tab="result"
+	data-theme-id="652"
+	class="codepen"
+	async
+	src="//codepen.io/assets/embed/ei.js"
+></script>
+
+</div>
+	</article>
+	<section class="center mw7 pt3 pb3">
+	<div class="cf bg-light-green pa3">
+		<img src="https://avatars2.githubusercontent.com/u/2674850?v=3&s=100" class="fl br-100 h3 w3 dib mr3" alt="avatar">
+		<div class="fl">
+			<h4 class="f4 mt0 mb0 fw7">Đặng Văn Thanh</h4>
+			<span>Có đam mê về lập trình web và các vấn đề về phát triển web.</span>
+		</div>
+	</div>
+</section>
+
+	<section class="center mw7 pt3 pb3">
+	<div id="disqus_thread"></div>
+	<script>
+		var disqus_shortname = 'dangvanthanh';
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+</main>
+		<footer role="infocontent" class="pv2">
+			<div class="center mw7 pt3 pb3">
+				<p>
+					&copy;2013 - <script>document.write(new Date().getFullYear())</script>. Được xây dựng bằng
+					<a href="https://gohugo.io/" class="dib link dim green">Hugo</a>,
+					<a href="https://vuejs.org/" class="dib link dim green">Vue.js</a> và
+					<a href="http://tachyons.io/" class="dib link dim green">Tachyons</a>.
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js" defer></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js" defer></script>
+	<script src="/assets/js/app.js" defer></script>
+	<script type="text/javascript" defer>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-41117458-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</body>
+</html>
