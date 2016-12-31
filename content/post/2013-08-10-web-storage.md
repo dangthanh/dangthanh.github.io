@@ -54,4 +54,4 @@ console.log(obj.age);  // value
 
 ### Ví dụ Local Storage
 
-{{% codepen id="jCcxI" height="266" %}}
+{{% codepen id="jCcxI" %}}
