@@ -464,16 +464,19 @@ function launchFullScreen(element) {
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;wLKan&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;266&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/wLKan&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Trên đây mình &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/2013/07/24/su-dung-sass/&#34;&gt;sử dụng Sass&lt;/a&gt;&lt;/strong&gt; để tạo đổ bóng dài, bạn cũng có thể tùy biến thêm như thêm chức năng bóng mờ cho bóng&amp;hellip;Nếu bạn không muốn làm việc với Sass nhưng vẫn muốn dùng tạo text đổ bóng dài bạn có thể sử dụng &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/labs/longshadow-jquery-plugin/&#34;&gt;Long Shadow jQuery Plugin&lt;/a&gt;&lt;/strong&gt; mình đang viết và phát triển. Mình cũng rất mong nhận được góp ý của các bạn để hoàn thiện hơn mixin cũng như jQuery plugin này.&lt;/p&gt;
@@ -535,16 +538,19 @@ function launchFullScreen(element) {
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;325&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;woaLp&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;325&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/woaLp&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;h4 id=&#34;2-scale&#34;&gt;2. Scale&lt;/h4&gt;
@@ -564,16 +570,19 @@ function launchFullScreen(element) {
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;290&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;DLKHt&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;290&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/DLKHt&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;h4 id=&#34;3-rotate&#34;&gt;3. Rotate&lt;/h4&gt;
@@ -593,16 +602,19 @@ function launchFullScreen(element) {
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;290&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;Birzn&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;290&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/Birzn&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;h4 id=&#34;4-skew&#34;&gt;4. Skew&lt;/h4&gt;
@@ -622,16 +634,19 @@ function launchFullScreen(element) {
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;290&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;EbKlw&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;290&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/EbKlw&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;h4 id=&#34;5-sử-dụng-kết-hợp-nhiều-phương-thức&#34;&gt;5. Sử dụng kết hợp nhiều phương thức&lt;/h4&gt;
@@ -684,16 +699,19 @@ perspective(value)
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;265&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;Birzn&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;265&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/Birzn&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;h3 id=&#34;trình-duyệt-hỗ-trợ&#34;&gt;Trình duyệt hỗ trợ&lt;/h3&gt;
@@ -835,16 +853,19 @@ perspective(value)
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;lraJA&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;266&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/lraJA&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Bạn cũng có thể tải Checkboxes jQuery Plugin tại &lt;a href=&#34;https://github.com/dangvanthanh/jquery.checkboxes&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
@@ -1137,16 +1158,19 @@ p
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;qKmfh&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;266&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/qKmfh&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;h4 id=&#34;sử-dụng-với-css3-pseudo-before-hoặc-after-để-tạo-tooltips&#34;&gt;Sử dụng với CSS3 Pseudo :before hoặc :after để tạo tooltips&lt;/h4&gt;
@@ -1171,16 +1195,19 @@ p
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;jxchk&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;266&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/jxchk&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Với mixin này, mình hi vọng các bạn có thể cải tiến thêm các tooltips của website mình và khám phá thêm nhiều kĩ thuật mới qua việc sử dụng các điều khiển các Sass.&lt;/p&gt;
@@ -1381,16 +1408,19 @@ console.log(obj.age);  // value
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;290&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;jCcxI&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;266&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/jCcxI&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 </description>
     </item>

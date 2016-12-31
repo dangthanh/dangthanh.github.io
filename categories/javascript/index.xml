@@ -381,16 +381,19 @@ function launchFullScreen(element) {
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;wLKan&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;266&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/wLKan&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Trên đây mình &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/2013/07/24/su-dung-sass/&#34;&gt;sử dụng Sass&lt;/a&gt;&lt;/strong&gt; để tạo đổ bóng dài, bạn cũng có thể tùy biến thêm như thêm chức năng bóng mờ cho bóng&amp;hellip;Nếu bạn không muốn làm việc với Sass nhưng vẫn muốn dùng tạo text đổ bóng dài bạn có thể sử dụng &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/labs/longshadow-jquery-plugin/&#34;&gt;Long Shadow jQuery Plugin&lt;/a&gt;&lt;/strong&gt; mình đang viết và phát triển. Mình cũng rất mong nhận được góp ý của các bạn để hoàn thiện hơn mixin cũng như jQuery plugin này.&lt;/p&gt;
@@ -519,16 +522,19 @@ function launchFullScreen(element) {
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;lraJA&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;266&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/lraJA&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Bạn cũng có thể tải Checkboxes jQuery Plugin tại &lt;a href=&#34;https://github.com/dangvanthanh/jquery.checkboxes&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
@@ -731,16 +737,19 @@ console.log(obj.age);  // value
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;290&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;jCcxI&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;266&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/jCcxI&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 </description>
     </item>

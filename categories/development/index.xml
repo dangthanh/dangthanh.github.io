@@ -131,16 +131,19 @@
  
 
 
-&lt;script
+&lt;p
+	data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;lraJA&#34;
 	data-user=&#34;dangvanthanh&#34;
-	data-height=&#34;266&#34;
 	data-default-tab=&#34;result&#34;
-	data-theme-id=&#34;652&#34;
-	class=&#34;codepen&#34;
-	async
-	src=&#34;//codepen.io/assets/embed/ei.js&#34;
-&gt;&lt;/script&gt;
+	class=&#39;codepen&#39;&gt;
+	See the
+	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/lraJA&#39;&gt;Pen&lt;/a&gt;
+	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
+	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Bạn cũng có thể tải Checkboxes jQuery Plugin tại &lt;a href=&#34;https://github.com/dangvanthanh/jquery.checkboxes&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
