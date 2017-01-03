@@ -4,16 +4,11 @@
 {{ $tab      := "result" }} {{/* html|css|js|result */}}
 {{ $theme    := 652 }}
 
-<p
-	data-height="{{ or (.Get "height") $height }}"
+<p data-height="{{ or (.Get "height") $height }}"
 	data-theme-id="{{ or (.Get "theme") $theme }}"
 	data-slug-hash="{{ .Get "id" }}"
 	data-user="{{ or (.Get "user") $user }}"
 	data-default-tab="{{ or (.Get "tab") $tab }}"
 	class='codepen'>
-	See the
-	<a href='http://codepen.io/dangvanthanh/pen/{{ .Get "id" }}'>Pen</a>
-	by Dang Van Thanh (<a href='http://codepen.io/{{ or (.Get "user") $user }}'>@dangvanthanh</a>) on
-	<a href='http://codepen.io'>CodePen</a>
 </p>
 <script defer src="//codepen.io/assets/embed/ei.js"></script>

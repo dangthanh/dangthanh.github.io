@@ -30,25 +30,25 @@ Sau khi cài đặt xong Ruby bạn cài đặt môi trường cho Ruby **(Compu
 
 Tiếp theo bạn cài đặt Sass bằng cách mở CMD và gõ:
 
-~~~
+~~~bash
 gem install sass
 ~~~
 
 Sass cung cấp hai định dạng tập tin mở rộng .scss và .sass. Để chuyển đổi tập tin sass sang .css bạn thực hiện lệnh sau:
 
-~~~
+~~~bash
 sass stylesheet.scss stylesheet.css
 ~~~
 
 Để thực hiện chuyển đổi trong quá trình làm việc bạn thực hiện lệnh sau:
 
-~~~
+~~~bash
 sass --watch stylesheet.scss:stylesheet.css
 ~~~
 
 Bạn làm việc với thư mục và cần chuyển đổi tất cả thì có thể thực hiện lệnh sau:
 
-~~~
+~~~bash
 sass --watch sass:css
 ~~~
 

@@ -103,3 +103,20 @@ body {
 	padding: 0 1rem;
 	position: relative;
 }
+
+.article blockquote {
+	margin-top: 2rem;
+	padding-top: .5rem;
+	padding-bottom: .125rem;
+	position: relative;
+}
+
+.article blockquote::before {
+	content: "";
+	background: #19a974;
+	width: 3rem;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}

@@ -11,7 +11,7 @@
   "author": "Dang Van Thanh <dangvanthanh@dangthanh.org> (http://dangthanh.org)",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^6.6.0",
+    "autoprefixer": "^6.6.1",
     "babel-core": "^6.21.0",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-es2015": "^6.18.0",
