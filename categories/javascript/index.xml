@@ -381,17 +381,12 @@ function launchFullScreen(element) {
  
 
 
-&lt;p
-	data-height=&#34;266&#34;
+&lt;p data-height=&#34;266&#34;
 	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;wLKan&#34;
 	data-user=&#34;dangvanthanh&#34;
 	data-default-tab=&#34;result&#34;
 	class=&#39;codepen&#39;&gt;
-	See the
-	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/wLKan&#39;&gt;Pen&lt;/a&gt;
-	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
-	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
 &lt;/p&gt;
 &lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
@@ -522,17 +517,12 @@ function launchFullScreen(element) {
  
 
 
-&lt;p
-	data-height=&#34;266&#34;
+&lt;p data-height=&#34;266&#34;
 	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;lraJA&#34;
 	data-user=&#34;dangvanthanh&#34;
 	data-default-tab=&#34;result&#34;
 	class=&#39;codepen&#39;&gt;
-	See the
-	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/lraJA&#39;&gt;Pen&lt;/a&gt;
-	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
-	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
 &lt;/p&gt;
 &lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
@@ -737,17 +727,12 @@ console.log(obj.age);  // value
  
 
 
-&lt;p
-	data-height=&#34;290&#34;
+&lt;p data-height=&#34;290&#34;
 	data-theme-id=&#34;652&#34;
 	data-slug-hash=&#34;jCcxI&#34;
 	data-user=&#34;dangvanthanh&#34;
 	data-default-tab=&#34;result&#34;
 	class=&#39;codepen&#39;&gt;
-	See the
-	&lt;a href=&#39;http://codepen.io/dangvanthanh/pen/jCcxI&#39;&gt;Pen&lt;/a&gt;
-	by Dang Van Thanh (&lt;a href=&#39;http://codepen.io/dangvanthanh&#39;&gt;@dangvanthanh&lt;/a&gt;) on
-	&lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;
 &lt;/p&gt;
 &lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
 
