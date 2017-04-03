@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>http://dangthanh.org/</loc>
-    <lastmod>2013-10-06T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
     <loc>http://dangthanh.org/2013/10/06/su-dung-icon-fonts/</loc>
     <lastmod>2013-10-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -121,10 +114,66 @@
   </url>
 
   <url>
+    <loc>http://dangthanh.org/</loc>
+    <lastmod>2013-10-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+
+  <url>
+    <loc>http://dangthanh.org/categories/</loc>
+    <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+
+  <url>
+    <loc>http://dangthanh.org/categories/css3/</loc>
+    <lastmod>2013-10-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+
+  <url>
+    <loc>http://dangthanh.org/categories/development/</loc>
+    <lastmod>2013-08-28T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+
+  <url>
     <loc>http://dangthanh.org/projects/</loc>
     <lastmod>0001-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>http://dangthanh.org/categories/javascript/</loc>
+    <lastmod>2013-10-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+
+  <url>
+    <loc>http://dangthanh.org/playground/</loc>
+    <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+
+  <url>
+    <loc>http://dangthanh.org/post/</loc>
+    <lastmod>2013-10-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+
+  <url>
+    <loc>http://dangthanh.org/categories/sass/</loc>
+    <lastmod>2013-09-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
   </url>
 
   <url>
