@@ -5,6 +5,8 @@ import browserify from 'browserify'
 import watchify from 'watchify'
 import babelify from 'babelify'
 import uglify from 'gulp-uglify'
+import del from 'del'
+import hash from 'gulp-hash'
 
 const dirs = {
   entry: './src/js/app.js',
@@ -30,7 +32,10 @@ function compile (watch) {
           .pipe(source('app.js'))
           .pipe(buffer())
           .pipe(uglify())
+          .pipe(hash())
           .pipe(gulp.dest(dirs.dist))
+          .pipe(hash.manifest('hash.json'))
+          .pipe(gulp.dest('./data/js'))
   }
 
   if (watch) {
@@ -44,5 +49,6 @@ function compile (watch) {
 }
 
 gulp.task('scripts', () => {
+  del(`${dirs.dist}/**/*`)
   return compile(true)
 })

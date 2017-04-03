@@ -4,6 +4,8 @@ import cssnext from 'postcss-cssnext'
 import atImport from 'postcss-import'
 import cssnano from 'cssnano'
 import autoprefixer from 'autoprefixer'
+import del from 'del'
+import hash from 'gulp-hash'
 
 const dirs = {
   entry: './src/css/app.css',
@@ -12,15 +14,22 @@ const dirs = {
 
 gulp.task('styles', () => {
   let processors = [
-    cssnext({
-      warnForDuplicates: false
-    }),
     atImport(),
     autoprefixer({ browsers: ['last 2 version'] }),
-    cssnano()
+    cssnano({
+      discardComments: { removeAll: true }
+    }),
+    cssnext({
+      warnForDuplicates: false
+    })
   ]
+
+  del(`${dirs.dist}/**/*`)
 
   return gulp.src(dirs.entry)
             .pipe(postcss(processors))
+            .pipe(hash())
             .pipe(gulp.dest(dirs.dist))
+            .pipe(hash.manifest('hash.json'))
+            .pipe(gulp.dest('./data/css'))
 })
