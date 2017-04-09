@@ -8,12 +8,12 @@
     <language>vn-vi</language>
     <lastBuildDate>Sun, 06 Oct 2013 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://dangthanh.org/post/index.xml" rel="self" type="application/rss+xml" />
-
+    
     <item>
       <title>Sử dụng Icon Fonts</title>
       <link>http://dangthanh.org/2013/10/06/su-dung-icon-fonts/</link>
       <pubDate>Sun, 06 Oct 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/10/06/su-dung-icon-fonts/</guid>
       <description>
 
@@ -91,12 +91,12 @@
 
 </description>
     </item>
-
+    
     <item>
       <title>Tạo MP3 Player với HTML5 và CSS3</title>
       <link>http://dangthanh.org/2013/10/06/tao-mp3-player-voi-html5-va-css3/</link>
       <pubDate>Sun, 06 Oct 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/10/06/tao-mp3-player-voi-html5-va-css3/</guid>
       <description>
 
@@ -267,12 +267,12 @@ function mutedMusic() {
 &lt;/ul&gt;
 </description>
     </item>
-
+    
     <item>
       <title>HTML5 Fullscreen API</title>
       <link>http://dangthanh.org/2013/09/22/html5-fullscreen-api/</link>
       <pubDate>Sun, 22 Sep 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/09/22/html5-fullscreen-api/</guid>
       <description>
 
@@ -389,12 +389,12 @@ function launchFullScreen(element) {
 
 </description>
     </item>
-
+    
     <item>
       <title>Đổ Bóng Mixin Với Text-Shadow</title>
       <link>http://dangthanh.org/2013/09/03/do-bong-mixin-voi-text-shadow/</link>
       <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/09/03/do-bong-mixin-voi-text-shadow/</guid>
       <description>
 
@@ -461,7 +461,7 @@ function launchFullScreen(element) {
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;266&#34;
@@ -477,12 +477,12 @@ function launchFullScreen(element) {
 &lt;p&gt;Trên đây mình &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/2013/07/24/su-dung-sass/&#34;&gt;sử dụng Sass&lt;/a&gt;&lt;/strong&gt; để tạo đổ bóng dài, bạn cũng có thể tùy biến thêm như thêm chức năng bóng mờ cho bóng&amp;hellip;Nếu bạn không muốn làm việc với Sass nhưng vẫn muốn dùng tạo text đổ bóng dài bạn có thể sử dụng &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/labs/longshadow-jquery-plugin/&#34;&gt;Long Shadow jQuery Plugin&lt;/a&gt;&lt;/strong&gt; mình đang viết và phát triển. Mình cũng rất mong nhận được góp ý của các bạn để hoàn thiện hơn mixin cũng như jQuery plugin này.&lt;/p&gt;
 </description>
     </item>
-
+    
     <item>
       <title>Giới Thiệu CSS3 Transform</title>
       <link>http://dangthanh.org/2013/09/01/gioi-thieu-css3-transform/</link>
       <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/09/01/gioi-thieu-css3-transform/</guid>
       <description>
 
@@ -530,7 +530,7 @@ function launchFullScreen(element) {
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;325&#34;
@@ -557,7 +557,7 @@ function launchFullScreen(element) {
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;290&#34;
@@ -584,7 +584,7 @@ function launchFullScreen(element) {
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;290&#34;
@@ -611,7 +611,7 @@ function launchFullScreen(element) {
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;290&#34;
@@ -671,7 +671,7 @@ perspective(value)
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;265&#34;
@@ -700,12 +700,12 @@ perspective(value)
 &lt;/p&gt;
 </description>
     </item>
-
+    
     <item>
       <title>Checkboxes jQuery Plugin</title>
       <link>http://dangthanh.org/2013/08/28/checkboxes-jquery-plugin/</link>
       <pubDate>Wed, 28 Aug 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/08/28/checkboxes-jquery-plugin/</guid>
       <description>
 
@@ -820,7 +820,7 @@ perspective(value)
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;266&#34;
@@ -838,12 +838,12 @@ perspective(value)
 &lt;p&gt;Đây là jQuery Plugin đầu tiên do mình viết nên cũng có thể không được tốt lắm. Mong các bạn góp ý thêm.&lt;/p&gt;
 </description>
     </item>
-
+    
     <item>
       <title>Thủ Thuật Sử Dụng Sublime Text 2</title>
       <link>http://dangthanh.org/2013/08/25/thu-thuat-su-dung-sublime-text-2/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/08/25/thu-thuat-su-dung-sublime-text-2/</guid>
       <description>
 
@@ -1002,12 +1002,12 @@ perspective(value)
 &lt;p&gt;Hi vọng với những tính năng phong phú trên, Sublime Text 2 sẽ mang lại cho bạn sự lựa chọn mới ngoài những editor khác như Notepad++, Dreamweaver&amp;hellip;&lt;/p&gt;
 </description>
     </item>
-
+    
     <item>
       <title>CSS Triangles Mixin trong Sass</title>
       <link>http://dangthanh.org/2013/08/20/css-triangles-mixin-trong-sass/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/08/20/css-triangles-mixin-trong-sass/</guid>
       <description>
 
@@ -1120,7 +1120,7 @@ p
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;266&#34;
@@ -1152,7 +1152,7 @@ p
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;266&#34;
@@ -1168,12 +1168,12 @@ p
 &lt;p&gt;Với mixin này, mình hi vọng các bạn có thể cải tiến thêm các tooltips của website mình và khám phá thêm nhiều kĩ thuật mới qua việc sử dụng các điều khiển các Sass.&lt;/p&gt;
 </description>
     </item>
-
+    
     <item>
       <title>HTML5 Geolocation và Leaflet</title>
       <link>http://dangthanh.org/2013/08/15/html5-geolocation-va-leaflet/</link>
       <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/08/15/html5-geolocation-va-leaflet/</guid>
       <description>
 
@@ -1293,12 +1293,12 @@ marker.bindPopup(&#39;&amp;lt;p&amp;gt;Tiêu đề...&amp;lt;/p&amp;gt;&#39;).op
 &lt;/ul&gt;
 </description>
     </item>
-
+    
     <item>
       <title>Web Storage</title>
       <link>http://dangthanh.org/2013/08/10/web-storage/</link>
       <pubDate>Sat, 10 Aug 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/08/10/web-storage/</guid>
       <description>
 
@@ -1360,7 +1360,7 @@ console.log(obj.age);  // value
 
 
 
-
+ 
 
 
 &lt;p data-height=&#34;290&#34;
@@ -1374,12 +1374,12 @@ console.log(obj.age);  // value
 
 </description>
     </item>
-
+    
     <item>
       <title>Sử dụng Sass</title>
       <link>http://dangthanh.org/2013/07/24/su-dung-sass/</link>
       <pubDate>Wed, 24 Jul 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/07/24/su-dung-sass/</guid>
       <description>
 
@@ -1810,12 +1810,12 @@ body {
 &lt;p&gt;Trên đây chỉ là tổng quan về Sass. Sass mang lại cho ta rất nhiều hữu ích tuy nhiên Sass không giúp ta có thể viết CSS tốt hơn. Vì thế bạn hãy nên tìm hiểu cách viết CSS tốt hơn như OOCSS (hướng đối tựng trong CSS), SMACSS, BEM&amp;hellip;Và Sass sẽ là một công cụ tốt để bạn thực hiện việc đó.&lt;/p&gt;
 </description>
     </item>
-
+    
     <item>
       <title>Blog và tôi</title>
       <link>http://dangthanh.org/2013/07/20/blog-va-toi/</link>
       <pubDate>Sat, 20 Jul 2013 00:00:00 +0000</pubDate>
-
+      
       <guid>http://dangthanh.org/2013/07/20/blog-va-toi/</guid>
       <description>
 
@@ -1846,6 +1846,6 @@ body {
 &lt;p&gt;Mình hy vọng sau này các bạn sẽ tiếp tục ủng hộ các bài viết từ blog này và cũng mong nhận được nhiều sự góp ý để mình có thể xây dựng blog hoàn thiện hơn. Mình xin cám ơn.&lt;/p&gt;
 </description>
     </item>
-
+    
   </channel>
 </rss>
