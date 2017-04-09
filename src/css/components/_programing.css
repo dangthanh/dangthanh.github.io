@@ -37,10 +37,6 @@
 	margin-right: 10px;
 }
 
-.programming-icon svg {
-	filter: grayscale(100%);
-}
-
 .programming-process {
 	border: 1px solid #ddd;
 	height: 1.125rem;

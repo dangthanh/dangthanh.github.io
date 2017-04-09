@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "serve": "hugo serve -w",
-    "dev": "gulp default",
-    "start": "run-p serve dev"
+    "watch": "gulp default",
+    "dev": "run-p serve watch"
   },
   "author": "Dang Van Thanh <dangvanthanh@dangthanh.org> (http://dangthanh.org)",
   "license": "MIT",
