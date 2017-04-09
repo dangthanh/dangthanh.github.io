@@ -19,39 +19,39 @@
 				<h1>HTML5 Geolocation và Leaflet</h1>
 			</header>
 			<button id="show" class="button">Cho phép truy cập vị trí hiện tại của bạn</button>
-  		<div id="map" class="map"></div>
+		<div id="map" class="map"></div>
 		</article>
 	</div>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.4/leaflet.js"></script>
 	<script>
-		
+
 		function success(position) {
 		  var map, marker,
 		      latitude = position.coords.latitude,
 		      longitude = position.coords.longitude;
 
-		  
+
 		  map = L.map('map').setView([latitude, longitude], 13);
 
-		  
+
 			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
 		    maxZoom: 16
 		  }).addTo(map);
 
-		  
+
 		  marker = L.marker([latitude, longitude]).addTo(map);
 
-		  
+
 		  marker.bindPopup('<p>Vị trí hiện tại của bạn</p>').openPopup();
 		}
 
-		
+
 		function error() {
 		  console.log('Get current position false');
 		}
 
-		
+
 		var show = document.getElementById('show');
 
 		show.addEventListener('click', function() {
@@ -75,5 +75,3 @@
 
 </body>
 </html>
-
-

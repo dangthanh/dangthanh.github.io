@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>vn-vi</language>
     <atom:link href="http://dangthanh.org/categories/development/index.xml" rel="self" type="application/rss+xml" />
-    
+
     <item>
       <title>Checkboxes jQuery Plugin</title>
       <link>http://dangthanh.org/2013/08/28/checkboxes-jquery-plugin/</link>
       <pubDate>Wed, 28 Aug 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>http://dangthanh.org/2013/08/28/checkboxes-jquery-plugin/</guid>
       <description>
 
@@ -127,7 +127,7 @@
 
 
 
- 
+
 
 
 &lt;p data-height=&#34;266&#34;
@@ -145,12 +145,12 @@
 &lt;p&gt;Đây là jQuery Plugin đầu tiên do mình viết nên cũng có thể không được tốt lắm. Mong các bạn góp ý thêm.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Thủ Thuật Sử Dụng Sublime Text 2</title>
       <link>http://dangthanh.org/2013/08/25/thu-thuat-su-dung-sublime-text-2/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>http://dangthanh.org/2013/08/25/thu-thuat-su-dung-sublime-text-2/</guid>
       <description>
 
@@ -309,6 +309,6 @@
 &lt;p&gt;Hi vọng với những tính năng phong phú trên, Sublime Text 2 sẽ mang lại cho bạn sự lựa chọn mới ngoài những editor khác như Notepad++, Dreamweaver&amp;hellip;&lt;/p&gt;
 </description>
     </item>
-    
+
   </channel>
 </rss>

@@ -36,27 +36,27 @@
 		  }, false);
 		};
 
-		
+
 
 		function getMap() {
 		  var map, marker;
-		  
+
 		  map = L.map('map').setView([16.463461, 107.584702], 13);
 
-		  
+
 		  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
 		    maxZoom: 16
 		  }).addTo(map);
 
-		  
+
 		  marker = L.marker([16.463461, 107.584702]).addTo(map);
 
-		  
+
 		  marker.bindPopup('<p>My Home</p>').openPopup();
 		}
 
-		
+
 
 		function fullScreen(element) {
 		  if (element.requestFullScreen) {
@@ -83,5 +83,3 @@
 
 </body>
 </html>
-
-
