@@ -1,0 +1,85 @@
+
+	<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Fullscreen API</title>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css">
+	<style>
+		@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans"),local("OpenSans"),url(http://themes.googleusercontent.com/static/fonts/opensans/v6/59ZRklaO5bWGqF5A9baEET8E0i7KZn-EPnyo3HZu7kw.woff) format("woff")}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}body{color:#47a3da;font-family:'Open Sans', sans-serif;font-size:1em;line-height:1.5}a{color:#47a3da;text-decoration:none}.container{max-width:60em;margin-left:auto;margin-right:auto}header{padding:4em 0 2.5em}header h1{font-size:3em;font-weight:400;line-height:1.1;text-align:center;margin:0 0 0.5em 0}nav{background-color:#288bc6;text-transform:uppercase;width:100%;font-size:0.75em;line-height:2.2em}nav:after{content:"";display:table;clear:both}nav a{display:block;color:#fff;font-weight:700;padding:0 1em;letter-spacing:0.1em}nav a:hover,nav a:focus{background-color:#5caede}nav a:first-child{float:left}nav a:last-child{float:right}.fullscreen{display:block;font-weight:700;text-decoration:none;padding:1em 0 .5em;text-align:center}.fullscreen:hover,.fullscreen:focus{color:#888}.map-wrapper{border:1px solid #47a3da;padding:.5em}.map{height:25em}.map:-webkit-full-screen{width:100%;height:100%}.map:-moz-full-screen{width:100%;height:100%}.map:-ms-full-screen{width:100%;height:100%}.map:full-screen{width:100%;height:100%}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="http://dangthanh.org/2013/09/22/html5-fullscreen-api/"><span>Trở lại bài viết</span></a>
+	</nav>
+	<div class="container">
+		<article>
+			<header>
+				<h1>HTML5 FullScreen API</h1>
+			</header>
+			<div class="map-wrapper">
+				<div id="map" class="map"></div>
+				<a id="fullscreen" class="fullscreen" href="#">Click chuột vào đây để hiện thị toàn bản đồ</a>
+			</div>
+		</article>
+	</div>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.4/leaflet.js"></script>
+	<script>
+		window.onload = function() {
+		  var fullscreen_element = document.getElementById('map'),
+		      fullscreen_button = document.getElementById('fullscreen');
+		  getMap();
+		  fullscreen_button.addEventListener('click', function(ev) {
+				ev.preventDefault();
+		    fullScreen(fullscreen_element);
+		  }, false);
+		};
+
+
+
+		function getMap() {
+		  var map, marker;
+
+		  map = L.map('map').setView([16.463461, 107.584702], 13);
+
+
+		  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+		    maxZoom: 16
+		  }).addTo(map);
+
+
+		  marker = L.marker([16.463461, 107.584702]).addTo(map);
+
+
+		  marker.bindPopup('<p>My Home</p>').openPopup();
+		}
+
+
+
+		function fullScreen(element) {
+		  if (element.requestFullScreen) {
+		    element.requestFullScreen();
+		  } else if (element.webkitRequestFullScreen) {
+		    element.webkitRequestFullScreen();
+		  } else if (element.mozRequestFullScreen) {
+		    element.mozRequestFullScreen();
+		  } else if (element.msRequestFullScreen) {
+		    element.msRequestFullScreen();
+		  }
+		}
+	</script>
+	<script type="text/javascript" defer>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-41117458-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</body>
+</html>

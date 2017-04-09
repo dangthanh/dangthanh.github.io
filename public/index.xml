@@ -1,0 +1,1878 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog về HTML/HTML5, CSS/CSS3, JavaScript</title>
+    <link>http://dangthanh.org/index.xml</link>
+    <description>Recent content on Blog về HTML/HTML5, CSS/CSS3, JavaScript</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vn-vi</language>
+    <lastBuildDate>Sun, 06 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://dangthanh.org/index.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Sử dụng Icon Fonts</title>
+      <link>http://dangthanh.org/2013/10/06/su-dung-icon-fonts/</link>
+      <pubDate>Sun, 06 Oct 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/10/06/su-dung-icon-fonts/</guid>
+      <description>
+
+&lt;p&gt;Icon font ngày được sử dụng rộng rãi trong các website hiện nay. Icon font mang nhiều ưu điểm:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Giảm số lượng HTTP Request, giúp website của bạn load nhanh hơn.&lt;/li&gt;
+&lt;li&gt;Dễ dàng thay đổi màu sắc, kích thước của biểu tượng.&lt;/li&gt;
+&lt;li&gt;Cung cấp nhiều biểu tượng phù hợp giúp bạn tiết kiệm thời gian thiết kế.&lt;/li&gt;
+&lt;li&gt;Có thể sử dụng CSS3 như transition, transform, text-shadow giúp các icon được linh hoạt hơn.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ta có thể nhúng icons vào trong CSS đơn giản như sau:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;@font-face {
+  font-family: &#39;your-fonts&#39;;
+  src: url(&#39;fonts/your-fonts.eot&#39;);
+  src: url(&#39;fonts/your-fonts.eot?#iefix&#39;) format(&#39;embedded-opentype&#39;),
+       url(&#39;fonts/your-fonts.woff&#39;) format(&#39;woff&#39;),
+       url(&#39;fonts/your-fonts.ttf&#39;) format(&#39;truetype&#39;),
+       url(&#39;fonts/your-fonts.svg#[set]Foundicons&#39;) format(&#39;svg&#39;);
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*=&amp;quot;icon-&amp;quot;] {
+	font-family: &#39;your-fonts&#39;;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: inherit;
+	-webkit-font-smoothing: antialiased;
+}
+
+[class*=&amp;quot;icon-&amp;quot;]:before {
+  content: &amp;quot;your-fonts-character&amp;quot;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Trong bài viết này mình sẽ giới thiệu các bạn về IcoMoon và We Love Icon Fonts.&lt;/p&gt;
+
+&lt;h3 id=&#34;icomoon&#34;&gt;IcoMoon&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://dangthanh.org/assets/images/icomoon.jpg&#34; alt=&#34;IcoMoon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://icomoon.io/&#34;&gt;IcoMoon&lt;/a&gt; cung cấp cho bạn hơn 450 icons miễn phí. Bên cạnh đó ngoài những icons của IcoMoon, IcoMoon cho phép bạn lựa chọn và tải các icons bạn muốn với những bộ icons khác như Broccolidry, Entypo, Font Awesome&amp;hellip;với số lượng lên đến gần 3800 icons. Ngoài ra IcoMoon còn cho phép bạn tải các thiết kế của bạn lên (tập tin SVG) để customize thành fonts bạn yêu thích.&lt;/p&gt;
+
+&lt;h3 id=&#34;we-love-icon-fonts&#34;&gt;We Love Icon Fonts&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://dangthanh.org/assets/images/weloveiconfonts.jpg&#34; alt=&#34;We Love Icon Fonts&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://weloveiconfonts.com/&#34;&gt;We Love Icon Fonts&lt;/a&gt; là một mã nguồn mở và dịch vụ lưu trữ miễn phí các icon fonts. Cũng như IcoMoon, We Love Icon Fonts cũng cung cấp cho bạn rất nhiều bộ icons miễn phí khác như Fontelico, Maki, Typicons, Zocial.&lt;/p&gt;
+
+&lt;h3 id=&#34;một-số-icons-fonts-miễn-phí-khác&#34;&gt;Một số icons fonts miễn phí khác&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.entypo.com/&#34;&gt;Entypo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fortawesome.github.io/Font-Awesome/&#34;&gt;Font Awesome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zurb.com/playground/foundation-icons&#34;&gt;Foundation Icon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.alessioatzeni.com/meteocons/&#34;&gt;Meteocons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://typicons.com/&#34;&gt;Typicons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://icons.marekventur.de/&#34;&gt;Raphaël Icon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+&lt;div class=&#34;tc mt4 mb4&#34;&gt;
+	&lt;a href=&#34;http://dangthanh.org/playground/icon-fonts/&#34; class=&#34;f5 link br2 ba ph4 pv2 dib&#34;&gt;Xem Demo&lt;/a&gt;
+	&lt;a href=&#34;#&#34; class=&#34;f5 link br2 ba ph4 pv2 dib&#34;&gt;Tải Về&lt;/a&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+
+    <item>
+      <title>Tạo MP3 Player với HTML5 và CSS3</title>
+      <link>http://dangthanh.org/2013/10/06/tao-mp3-player-voi-html5-va-css3/</link>
+      <pubDate>Sun, 06 Oct 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/10/06/tao-mp3-player-voi-html5-va-css3/</guid>
+      <description>
+
+&lt;p&gt;Bạn muốn tự tạo MP3 Player với phong cách riêng của mình. HTML5 Audio giúp bạn dễ dàng tùy biến giao diện và dễ dàng nhúng vào trang web của bạn.&lt;/p&gt;
+
+&lt;p&gt;Với các trình duyệt hỗ trợ HTML5 Audio, bạn có thể sử dụng:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;audio src=&amp;quot;audio.mp3&amp;quot; preload=&amp;quot;auto&amp;quot; controls autoplay loop&amp;gt;
+	&amp;lt;p&amp;gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&amp;lt;/p&amp;gt;
+&amp;lt;/audio&amp;gt;
+Hoặc
+&amp;lt;audio preload=&amp;quot;auto&amp;quot; controls autoplay loop&amp;gt;
+	&amp;lt;source src=&amp;quot;audio.mp3&amp;quot; type=&amp;quot;audio/mp3&amp;quot;&amp;gt;
+	&amp;lt;p&amp;gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&amp;lt;/p&amp;gt;
+&amp;lt;/audio&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ở ví dụ trên ta đã sử dụng một số thuộc tính của HTML5 Audio:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Thuộc tính&lt;/th&gt;
+&lt;th&gt;Mô tả&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;autoplay&lt;/td&gt;
+&lt;td&gt;Tập tin nhạc sẽ tự động chạy khi bắt đầu&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;controls&lt;/td&gt;
+&lt;td&gt;Các điều khiển cho audio sẽ hiển thị theo mặc định của trình duyệt&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;loop&lt;/td&gt;
+&lt;td&gt;Tập tin nhạc sẽ tự động lặp lại sau khi kết thúc&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;preload&lt;/td&gt;
+&lt;td&gt;Tải thông tin của tập tin nhạc &lt;br&gt; - none: Không load thông tin tập nhạc &lt;br&gt; - auto: Tự động load thông tin tập tin nhạc &lt;br&gt; - metadata: Load các siêu dữ liệu của tập tin nhạc&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;src&lt;/td&gt;
+&lt;td&gt;Nguồn của tập tin nhạc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;tạo-mp3-player&#34;&gt;Tạo MP3 Player&lt;/h3&gt;
+
+&lt;p&gt;Mình đã giới thiệu chung về HTML5 Audio. Giờ mình sẽ giới thiệu các bạn cách để xây dựng một MP3 Player cho riêng mình.&lt;/p&gt;
+
+&lt;h4 id=&#34;html&#34;&gt;HTML&lt;/h4&gt;
+
+&lt;p&gt;Đầu tiên mình sẽ xây dựng một audio với các thành phần sau:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tập tin nhạc&lt;/li&gt;
+&lt;li&gt;Loading: tạo hiệu ứng đơn giản khi chạy nhạc&lt;/li&gt;
+&lt;li&gt;Controls: gồm các điều khiển Play, Pause, Volumn, Seeking&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;player&amp;quot;&amp;gt;
+	&amp;lt;audio id=&amp;quot;player__source&amp;quot; src=&amp;quot;audio.mp3&amp;quot;&amp;gt;
+		&amp;lt;p&amp;gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&amp;lt;/p&amp;gt;
+	&amp;lt;/audio&amp;gt;
+	&amp;lt;div class=&amp;quot;player__loading&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class=&amp;quot;player__control&amp;quot;&amp;gt;
+		&amp;lt;button id=&amp;quot;playPause&amp;quot;&amp;gt;&amp;lt;/button&amp;gt;
+		&amp;lt;span id=&amp;quot;currentTime&amp;quot;&amp;gt;00:00&amp;lt;/span&amp;gt;
+		&amp;lt;input id=&amp;quot;seek&amp;quot; type=&amp;quot;range&amp;quot; min=&amp;quot;0&amp;quot; value=&amp;quot;0&amp;quot;&amp;gt;
+		&amp;lt;span id=&amp;quot;durationTime&amp;quot;&amp;gt;00:00&amp;lt;/span&amp;gt;
+		&amp;lt;button id=&amp;quot;muted&amp;quot;&amp;gt;&amp;lt;/button&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;javascript&#34;&gt;JavaScript&lt;/h4&gt;
+
+&lt;p&gt;HTML5 Audio cung cấp nhiều sự kiện giúp bạn điều khiển và đồng bộ hóa phát lại tập tin nhạc.&lt;/p&gt;
+
+&lt;p&gt;Muốn làm việc với HTML5 Audio đầu tiên ta truy vấn đến các thành phần audio mà ta đã xây dựng ở trên.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var player = document.getElementById(&#39;player__source&#39;),
+	playLoading = document.querySelectorAll(&#39;.player__loading span&#39;),
+	playPause = document.getElementById(&#39;playPause&#39;),
+	currentTime = document.getElementById(&#39;currentTime&#39;),
+	seek = document.getElementById(&#39;seek&#39;),
+	durationTime = document.getElementById(&#39;durationTime&#39;),
+	muted = document.getElementById(&#39;muted&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Play và Pause&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ta tiến hành kiểm tra nếu nhạc đang chạy sẽ nút Pause sẽ hiển thị và ngược lại.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;playPause.addEventListener(&#39;click&#39;, playPauseMusic, false);
+
+function playPauseMusic() {
+	if (player.paused) {
+		player.play();
+		// Kiểm tra thời gian hiện tại của bài nhạc
+		timeInterval = setInterval(timeUpdateMusic, 100);
+		// Thay đổi giá trị của seek
+		seek.addEventListener(&#39;change&#39;, seekMusic, false);
+	} else {
+		player.pause();
+	}
+}
+
+function timeUpdateMusic() {
+	// Thời gian toàn bộ của bài nhạc
+	durationTime.innerHTML = player.duration;
+	// Thời gian hiện tại của bài nhạc
+	currentTime.innerHTML = player.currentTime;
+	seek.max = player.duration;
+	seek.value = player.currentTime;
+}
+
+function seekMusic() {
+	player.currentTime = seek.value;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Volumn - Âm Thanh&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tương tự như Play và Pause, ta cũng kiểm tra volumn của nhạc đang tắt hay bật. Ở đây mình xây dựng volumn chỉ có hai chức năng mở âm thanh và tắt âm thanh.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;muted.addEventListener(&#39;click&#39;, mutedMusic, false);
+
+function mutedMusic() {
+	if (player.muted) {
+		// Mở âm thanh
+		player.muted = false;
+	} else {
+		// Tắt âm thanh
+		player.muted = true;
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;css3&#34;&gt;CSS3&lt;/h3&gt;
+
+&lt;p&gt;Với CSS3 bạn có thể sử dụng CSS3 Animation và Transtion để làm cho Player của bạn sinh động hơn. Mình sẽ hướng dẫn chi tiết hơn ở những bài viết sau. Ở ví dụ dưới đây mình &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/2013/10/06/su-dung-icon-fonts/&#34;&gt;sử dụng icon font&lt;/a&gt;&lt;/strong&gt; để làm các nút như play và volumn.&lt;/p&gt;
+
+
+
+
+
+&lt;div class=&#34;tc mt4 mb4&#34;&gt;
+	&lt;a href=&#34;http://dangthanh.org/playground/mp3-player-html5-audio/&#34; class=&#34;f5 link br2 ba ph4 pv2 dib&#34;&gt;Xem Demo&lt;/a&gt;
+	&lt;a href=&#34;#&#34; class=&#34;f5 link br2 ba ph4 pv2 dib&#34;&gt;Tải Về&lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;** Bạn có thể tham khảo các liên kết sau để có thể tìm hiểu sâu hơn về HTML5 Audio:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Events/Media_events&#34;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://html5doctor.com/html5-audio-the-state-of-play/&#34;&gt;HTML5 Doctor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+
+    <item>
+      <title>HTML5 Fullscreen API</title>
+      <link>http://dangthanh.org/2013/09/22/html5-fullscreen-api/</link>
+      <pubDate>Sun, 22 Sep 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/09/22/html5-fullscreen-api/</guid>
+      <description>
+
+&lt;p&gt;Khi muốn xem trang web ở chế độ toàn màn hình bạn thường nhấn phím &lt;strong&gt;F11&lt;/strong&gt;. Tuy nhiên khi bạn chỉ muốn hiển thị chế độ toàn màn hình cho một phần tử nào đó thì chúng ta không thể thực hiện bằng cách trên.&lt;/p&gt;
+
+&lt;p&gt;HTML5 cung cấp một API mới cho phép bạn hiển thị toàn màn hình bất kì phần tử nào của một trang web đó là HTML5 Fullscreen API.&lt;/p&gt;
+
+&lt;p&gt;Các phương thức chính của HTML5 Fullscreen API.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Phương thức&lt;/th&gt;
+&lt;th&gt;Mô tả&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;.requestFullScreen() &lt;br&gt; .webkitRequestFullScreen() &lt;br&gt; .mozRequestFullScreen()&lt;/td&gt;
+&lt;td&gt;Hiển thị toàn màn hình với phần tử được chỉ định&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;.cancelFullScreen() &lt;br&gt; .webkitCancelFullScreen() &lt;br&gt; .mozRequestFullScreen()&lt;/td&gt;
+&lt;td&gt;Thoát chế độ hiển thị toàn màn hình&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;.fullScreen &lt;br&gt; .webkitIsFullScreen &lt;br&gt; .mozfullScreen&lt;/td&gt;
+&lt;td&gt;Xem phần tử đang hiển thị ở chế độ toàn màn hình&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;:full-screen &lt;br&gt; :-webkit-full-screen &lt;br&gt; :-moz-fullscreen&lt;/td&gt;
+&lt;td&gt;Tương tác với phần tử được chỉ định khi ở chế độ toàn màn hình.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br&gt;HTML5 Fullscreen API thực sự rất hữu ích khi bạn làm việc với các phần tử như hình ảnh hoặc video. Sau đây để hiểu rõ hơn cách làm việc với HTML5 Fullscreen API, mình xin viết một hướng dẫn việc sử dụng fullscreen với &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/2013/08/15/html5-geolocation-va-leaflet/&#34;&gt;bản đồ sử dụng leaflet&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;html&#34;&gt;HTML&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;map-wrapper&amp;quot;&amp;gt;
+	&amp;lt;div id=&amp;quot;map&amp;quot; class=&amp;quot;map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;a id=&amp;quot;fullscreen&amp;quot; class=&amp;quot;fullscreen&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Fullscreen&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;chế-độ-fullscreen&#34;&gt;Chế độ FullScreen&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var fullscreen_element = document.getElementById(&#39;map&#39;);
+var fullscreen_button = document.getElementById(&#39;fullscreen&#39;);
+
+fullscreen_button.addEventListener(&#39;click&#39;, function() {
+	launchFullScreen(fullscreen_element);
+}, false);
+
+function launchFullScreen(element) {
+	if (element.requestFullScreen) {
+		element.requestFullScreen();
+	} else if (element.mozRequestFullScreen) {
+		element.mozRequestFullScreen();
+	} else if (element.webkitRequestFullScreen) {
+		element.webkitRequestFullScreen();
+	} else if (element.msRequestFullScreen) {
+		element.msRequestFullScreen();
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;thoát-chế-độ-fullscreen&#34;&gt;Thoát chế độ FullScreen&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function cancelFullscreen() {
+  if (document.cancelFullScreen) {
+    document.cancelFullScreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitCancelFullScreen) {
+    document.webkitCancelFullScreen();
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
+
+&lt;p&gt;Ở chế độ fullscreen ta có thể stylesheet cho thành phần được lựa chọn.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.map:-webkit-full-screen { width: 100%; height: 100%; }
+.map:-moz-full-screen { width: 100%; height: 100%; }
+.map:-ms-full-screen { width: 100%; height: 100%; }
+.map:full-screen { width: 100%; height: 100%; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;HTML5 FullScreen API là một API đơn giản và mạnh mẽ. Mình hi vọng với API đơn giản này các bạn có thể viết những ứng dụng tương tác dễ dàng hơn khi cần hiển thị chế độ toàn màn hình.&lt;/p&gt;
+
+
+
+
+&lt;caniuse features=&#34;fullscreen&#34;&gt;&lt;/caniuse&gt;
+
+
+
+
+
+
+&lt;div class=&#34;tc mt4 mb4&#34;&gt;
+	&lt;a href=&#34;http://dangthanh.org/playground/html5-fullscreen-api/&#34; class=&#34;f5 link br2 ba ph4 pv2 dib&#34;&gt;Xem Demo&lt;/a&gt;
+	&lt;a href=&#34;#&#34; class=&#34;f5 link br2 ba ph4 pv2 dib&#34;&gt;Tải Về&lt;/a&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+
+    <item>
+      <title>Đổ Bóng Mixin Với Text-Shadow</title>
+      <link>http://dangthanh.org/2013/09/03/do-bong-mixin-voi-text-shadow/</link>
+      <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/09/03/do-bong-mixin-voi-text-shadow/</guid>
+      <description>
+
+&lt;p&gt;CSS3 Text-Shadow là tính năng giúp bạn dễ dàng tạo đổ bóng cho text. Với text-shadow bạn cũng có thể dễ dàng tạo ra các kiểu chữ nghệ thuật (typography) hay kiểu chữ 3D&amp;hellip;Và hôm nay mình sẽ giới thiệu các bạn &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/2013/08/20/css-triangles-mixin-su-dung-sass/&#34;&gt;cách tạo mixin&lt;/a&gt;&lt;/strong&gt; đổ bóng dài (long shadow) trong Sass.&lt;/p&gt;
+
+&lt;h3 id=&#34;đổ-bóng-dài-long-shadow-mixin-trong-sass&#34;&gt;Đổ bóng dài (Long Shadow) mixin trong Sass&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sass&#34;&gt;/**
+ * Long Shadow Mixin
+ */
+@mixin longshadow($color, $size, $direction)
+	$ts: null
+
+	@for $i from 1 through $size
+		// Đổ bóng hướng lên trên
+		@if $direction == &amp;quot;top&amp;quot;
+			$ts: 0 #{$i * -1}px 0 $color, $ts
+		// Đổ bóng hướng sang phải
+		@else if $direction == &amp;quot;right&amp;quot;
+			$ts: #{$i}px 0 0 $color, $ts
+		// Đổ bóng hướng xuống dưới
+		@else if $direction == &amp;quot;bottom&amp;quot;
+			$ts: 0 #{$i}px 0 $color, $ts
+		// Đổ bóng hướng sang trái
+		@else if $direction == &amp;quot;left&amp;quot;
+			$ts: #{$i * -1}px 0 0 $color, $ts
+		// Đổ bóng hướng lên trên bên trái
+		@else if $direction == &amp;quot;top-left&amp;quot;
+			$ts: #{$i * -1}px #{$i * -1}px 0 $color, $ts
+		// Đổ bóng hướng lên trên bên phải
+		@else if $direction == &amp;quot;top-right&amp;quot;
+			$ts: #{$i}px #{$i * -1}px 0 $color, $ts
+		// Đổ bóng hướng xuống dưới bên trái
+		@else if $direction == &amp;quot;bottom-left&amp;quot;
+			$ts: #{$i * -1}px #{$i}px 0 $color, $ts
+		// Đổ bóng hướng xuống dưới bên phải
+		@else if $direction == &amp;quot;bottom-right&amp;quot;
+			$ts: #{$i}px #{$i}px 0 $color, $ts
+	text-shadow: $ts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;sử-dụng&#34;&gt;Sử dụng&lt;/h3&gt;
+
+&lt;p&gt;Sau khi tạo được mixin thì ta có thể sử dụng rất dễ dàng tùy theo màu sắc, độ lớn và vị trí bóng mà bạn muốn hiển thị.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sass&#34;&gt;.element--one
+	+longshadow(#e96b5e, 20, top)
+.element--two
+	+longshadow(#a13c32, 10, right)
+.element--three
+	+longshadow(#fbbc85, 30, bottom)
+.element--four
+	+longshadow(#af7a4b, 40, left)
+.element--five
+	+longshadow(#6dd7b5, 70, top-left)
+.element--six
+	+longshadow(#3e9277, 90, top-right)
+.element--seven
+	+longshadow(#8787c4, 60, bottom-left)
+.element--eight
+	+longshadow(#525283, 50, bottom-right)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;wLKan&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Trên đây mình &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/2013/07/24/su-dung-sass/&#34;&gt;sử dụng Sass&lt;/a&gt;&lt;/strong&gt; để tạo đổ bóng dài, bạn cũng có thể tùy biến thêm như thêm chức năng bóng mờ cho bóng&amp;hellip;Nếu bạn không muốn làm việc với Sass nhưng vẫn muốn dùng tạo text đổ bóng dài bạn có thể sử dụng &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/labs/longshadow-jquery-plugin/&#34;&gt;Long Shadow jQuery Plugin&lt;/a&gt;&lt;/strong&gt; mình đang viết và phát triển. Mình cũng rất mong nhận được góp ý của các bạn để hoàn thiện hơn mixin cũng như jQuery plugin này.&lt;/p&gt;
+</description>
+    </item>
+
+    <item>
+      <title>Giới Thiệu CSS3 Transform</title>
+      <link>http://dangthanh.org/2013/09/01/gioi-thieu-css3-transform/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/09/01/gioi-thieu-css3-transform/</guid>
+      <description>
+
+&lt;p&gt;CSS3 transform là một trong những chức năng mạnh mẽ mà CSS3 cung cấp. Nó cho phép tác động đến tất cả các phần tử của HTML mà không ảnh hưởng đến cách xây dựng layout cho trang web như xoay phần tử, di chuyển các phần tử sang trái, phải, lên xuống, nghiêng hay phóng to hoặc thu nhỏ phần tử.&lt;/p&gt;
+
+&lt;p&gt;CSS3 transform cung cấp cả 2D CSS transform và 3D CSS transform.&lt;/p&gt;
+
+&lt;h3 id=&#34;cú-pháp&#34;&gt;Cú pháp&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.element {
+	-webkit-transform: method(value); // Chrome, Safari, Opera
+	-moz-transform: method(value); // Firefox
+	-ms-transform: method(value); // Internet Explorer 9+
+	transform: method(value);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Các phương thức trên bạn có thể thay thế bằng một trong các phương thức sau:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;translate()&lt;/li&gt;
+&lt;li&gt;scale()&lt;/li&gt;
+&lt;li&gt;rotate()&lt;/li&gt;
+&lt;li&gt;skew()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;2d-css-transform&#34;&gt;2D CSS Transform&lt;/h3&gt;
+
+&lt;h4 id=&#34;1-translate&#34;&gt;1. Translate&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.element {
+	width: 200px;
+	height: 200px;
+	transform: translate(50px, 50px);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Translate là phương thức cho phép bạn có thể di chuyển phần tử sang các hướng trái phải, trên dưới. Phương thức này bao gồm hai giá trị &lt;strong&gt;X&lt;/strong&gt; và &lt;strong&gt;Y&lt;/strong&gt;. Giá trị &lt;strong&gt;X&lt;/strong&gt; cho phép phần tử di chuyển theo hướng ngang (trái phải) và giá trị &lt;strong&gt;Y&lt;/strong&gt; cho phép phần tử di chuyển theo hướng dọc (trên dưới). Bên cạnh phương thức translate() thì translate còn hai phương thức khác là:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;translateX()&lt;/li&gt;
+&lt;li&gt;translateY()&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;325&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;woaLp&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;h4 id=&#34;2-scale&#34;&gt;2. Scale&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.element {
+	width: 200px;
+	height: 200px;
+	transform: scale(1.5);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Scale là phương thức cho phép bạn có thể phóng to hoặc thu nhỏ phần tử so với kích thước thật của phần tử. Kích thước thật được phương thức scale() mặc định là 1. Vì thế bạn muốn phóng to thì có thể khai báo giá trị &amp;gt; 1 và thu nhỏ thì khai báo giá trị &amp;lt; 1. Đặc biệt khi bạn khai báo &lt;strong&gt;scale(0)&lt;/strong&gt; thì phần tử sẽ biến mất nên bạn cần chú ý khi sử dụng phương thức này.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;290&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;DLKHt&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;h4 id=&#34;3-rotate&#34;&gt;3. Rotate&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.element {
+	width: 200px;
+	height: 200px;
+	transform: rotate(90deg);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Rotate là phương thức cho phép bạn xoay phần tử và giá trị được ghi bằng độ (degrees).&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;290&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;Birzn&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;h4 id=&#34;4-skew&#34;&gt;4. Skew&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.element {
+	width: 200px;
+	height: 200px;
+	transform: skew(50deg, 20deg);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Skew là phương thức cho phép bạn nghiêng phần tử. Cũng như phưng thức translate() và rotate(), phương thức skew() hỗ trợ phần tử nghiêng theo chiều ngang hoặc dọc và giá trị được ghi bằng độ (degrees).&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;290&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;EbKlw&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;h4 id=&#34;5-sử-dụng-kết-hợp-nhiều-phương-thức&#34;&gt;5. Sử dụng kết hợp nhiều phương thức&lt;/h4&gt;
+
+&lt;p&gt;Ngoài việc sử dụng độc lập các phương thức translate(), scale(), rotate(), skew(). Ta có thể kết hợp các phương thức lại với nhau để tạo nên phần tử linh hoạt hơn.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.element {
+	width: 200px;
+	height: 200px;
+	transform: translate(50px, 50px) scale(1.5) rotate(90deg) skew(50deg, 20deg);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3d-css-transform&#34;&gt;3D CSS Transform&lt;/h3&gt;
+
+&lt;p&gt;3D CSS transform cũng tương tự 2D CSS transform. Nhưng 3D CSS transform hỗ trợ thêm một số phương thức cho không gian thứ ba.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;/**
+ * Translate
+ */
+translate3d(x, y, z)
+translateZ(z)
+
+/**
+ * Scale
+ */
+scale3d(sx, sy, sz)
+scaleZ(sz)
+
+/**
+ * Rotate
+ */
+rotateX(rx)
+rotateY(ry)
+rotateZ(rz)
+rotate3d(rx, ry, rz)
+
+/**
+ * Perspective
+ * Giá trị này không ảnh hưởng đến phần tử nhưng
+ * nó ảnh hưởng sự biến đổi các yếu tố của 3D transform
+ * như rotateX(), rotateY()...
+ */
+perspective(value)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;265&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;Birzn&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;h3 id=&#34;trình-duyệt-hỗ-trợ&#34;&gt;Trình duyệt hỗ trợ&lt;/h3&gt;
+
+&lt;p&gt;Hiện tại CSS3 Transform đã hỗ trợ rất nhiều trình duyệt.&lt;/p&gt;
+
+&lt;p&gt;
+
+
+&lt;caniuse features=&#34;transforms2d&#34;&gt;&lt;/caniuse&gt;
+
+
+
+
+&lt;caniuse features=&#34;transforms3d&#34;&gt;&lt;/caniuse&gt;
+&lt;/p&gt;
+</description>
+    </item>
+
+    <item>
+      <title>Checkboxes jQuery Plugin</title>
+      <link>http://dangthanh.org/2013/08/28/checkboxes-jquery-plugin/</link>
+      <pubDate>Wed, 28 Aug 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/08/28/checkboxes-jquery-plugin/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://jquery.com/&#34;&gt;jQuery&lt;/a&gt; là một thư viện tuyệt vời của JavaScript. Các jQuery plugin giúp bạn làm việc linh hoạt hơn và hiệu quả hơn. Hôm nay mình giới thiệu với các bạn một plugin mình tự viết là Checkboxes. Đây là jQuery Plugin hỗ trợ việc chọn và không chọn cho nhiều checkbox.&lt;/p&gt;
+
+&lt;h3 id=&#34;checkboxes-jquery-plugin&#34;&gt;Checkboxes jQuery Plugin&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;(function($) {
+
+  &#39;use strict&#39;;
+
+  $.fn.extend({
+    checkboxes: function(options) {
+      // Tham số mặc định.
+      var defaults = {
+        itemChild: &#39;&#39;
+      };
+
+      var option = $.extend(defaults, options);
+
+      // Hàm kiểm tra chọn hoặc không chọn cho các phần tử con.
+      function checkedValue(element, bool) {
+        if (bool) {
+          return element.each(function() {
+            $(this).prop(&#39;checked&#39;, true);
+          });
+        } else {
+          return element.each(function() {
+            $(this).prop(&#39;checked&#39;, false);
+          });
+        }
+      }
+
+      return this.each(function() {
+        var obj = option,
+            $itemAll = $(this),
+            $itemChild = $(&#39;input[name^=&amp;quot;&#39; + obj.itemChild + &#39;&amp;quot;]&#39;);
+
+        // Chọn tất cả trước khi trang khởi tạo
+        if ($itemAll.is(&#39;:checked&#39;)) {
+          checkedValue($itemChild, true);
+        }
+
+        // Đánh đấu chọn hoặc không chọn khi phần từ cha chọn hoặc không chọn.
+        $itemAll.change(function() {
+          var $self = $(this);
+
+          if ($self.is(&#39;:checked&#39;)) {
+            checkedValue($itemChild, true);
+          } else {
+            checkedValue($itemChild, false);
+          }
+        });
+
+        // Đánh dấu chọn phần tử cha khi tất cả phần tử con được đánh dấu.
+        $itemChild.change(function() {
+          var flag = true;
+
+          if (!$itemChild.is(&#39;:checked&#39;)) {
+            $itemAll.prop(&#39;checked&#39;, false);
+          }
+
+          $itemChild.each(function() {
+            var $self = $(this);
+            if (!$self.is(&#39;:checked&#39;)) {
+              flag = false;
+              return;
+            }
+          });
+
+          $itemAll.prop(&#39;checked&#39;, flag);
+        });
+
+      });
+    }
+  });
+})(jQuery);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;sử-dụng-checkboxes-jquery-plugin&#34;&gt;Sử dụng Checkboxes jQuery Plugin&lt;/h3&gt;
+
+&lt;h4 id=&#34;cú-pháp-html&#34;&gt;Cú pháp HTML&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h3&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; class=&amp;quot;selectAll&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Select All&amp;lt;/span&amp;gt;&amp;lt;/h3&amp;gt;
+&amp;lt;ul class=&amp;quot;list&amp;quot;&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk01&amp;quot; name=&amp;quot;chk01&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 01&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk02&amp;quot; name=&amp;quot;chk02&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 02&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk03&amp;quot; name=&amp;quot;chk03&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 03&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk04&amp;quot; name=&amp;quot;chk04&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 04&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk05&amp;quot; name=&amp;quot;chk05&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 05&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk06&amp;quot; name=&amp;quot;chk06&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 06&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk07&amp;quot; name=&amp;quot;chk07&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 07&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk08&amp;quot; name=&amp;quot;chk08&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 08&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk09&amp;quot; name=&amp;quot;chk09&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 09&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;chk10&amp;quot; name=&amp;quot;chk10&amp;quot;&amp;gt;&amp;lt;span&amp;gt;Item 10&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;sử-dụng&#34;&gt;Sử dụng&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;&amp;lt;script src=&amp;quot;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;checkboxes.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+  $(document).ready(function() {
+      $(&#39;.selectAll&#39;).checkboxes({
+          itemChild: &#39;chk&#39; // tên của các checkbox con
+      });
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;lraJA&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Bạn cũng có thể tải Checkboxes jQuery Plugin tại &lt;a href=&#34;https://github.com/dangvanthanh/jquery.checkboxes&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Đây là jQuery Plugin đầu tiên do mình viết nên cũng có thể không được tốt lắm. Mong các bạn góp ý thêm.&lt;/p&gt;
+</description>
+    </item>
+
+    <item>
+      <title>Thủ Thuật Sử Dụng Sublime Text 2</title>
+      <link>http://dangthanh.org/2013/08/25/thu-thuat-su-dung-sublime-text-2/</link>
+      <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/08/25/thu-thuat-su-dung-sublime-text-2/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.sublimetext.com/2&#34;&gt;Sublime Text 2&lt;/a&gt;&lt;/strong&gt; là một text editor mạnh mẽ, cung cấp nhiều chức năng hữu ích. Mình cũng đã sử dụng Sublime Text 2 một thời gian dài cho đến nay, hôm nay cũng xin giới thiệu về Sublime Text 2 và một số thủ thuật sử dụng.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://dangthanh.org/assets/images/sublime_text_2.jpg&#34; alt=&#34;Sublime Text 2&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;làm-việc-với-sublime-text-2&#34;&gt;Làm việc với Sublime Text 2&lt;/h3&gt;
+
+&lt;p&gt;Nếu bạn chưa lần nào sử dụng Sublime Text 2, bạn có thể xem &lt;strong&gt;&lt;a href=&#34;https://tutsplus.com/course/improve-workflow-in-sublime-text-2/&#34;&gt;series video miễn phí&lt;/a&gt;&lt;/strong&gt; từ Tutsplus. Với series video này bạn sẽ cái nhìn tổng quan hơn về Sublime Text 2 và liệu nó có thể thuyết phục bạn sử dụng Sublime Text 2 không?&lt;/p&gt;
+
+&lt;h3 id=&#34;package-control&#34;&gt;Package Control&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://dangthanh.org/assets/images/package_control.jpg&#34; alt=&#34;Package Control - Sublime Text 2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Package Control là một công cụ quản lý các plugin của Sublime Text 2. Nó giúp bạn tìm kiếm, cài đặt, nâng cấp cũng hơn xóa các plugin.&lt;/p&gt;
+
+&lt;p&gt;Việc cài đặt Package Control cũng rất đơn giản:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tải gói &lt;a href=&#34;https://sublime.wbond.net/Package%20Control.sublime-package&#34;&gt;Package Control.sublime-package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ở menu của Sublime Text 2 bạn chọn &lt;strong&gt;Preferences -&amp;gt; Browse Package&amp;hellip;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Lùi một thư mục và chọn thư mục &lt;strong&gt;Installed Packages&lt;/strong&gt; và chép Package Control đã tải về vào đây. Khởi động lại Sublime Text 2.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Để cài đặt plugin vào Sublime Text 2 bạn nhấn phím tắt &lt;strong&gt;Ctrl + Shift + P&lt;/strong&gt; rồi gõ Install Package rồi tìm plugin bạn cần.&lt;/p&gt;
+
+&lt;p&gt;Một số plugin mình đang sử dụng:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://emmet.io/&#34;&gt;Emmet&lt;/a&gt;: là một bộ công cụ phát triển web với nhiều cải thiện quy trình làm việc với HTML/CSS. Đây là một công cụ hầu như không thể thiếu với các bạn làm việc nhiều với HTML, CSS như Web Designer hay Front-end Developer.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/MarioRicalde/SCSS.tmbundle/&#34;&gt;SCSS&lt;/a&gt;/&lt;a href=&#34;https://github.com/nathos/sass-textmate-bundle/&#34;&gt;Sass&lt;/a&gt;: Hỗ trợ Highlight Code cho SCSS và Sass. Với cú pháp Sass bạn mở &lt;strong&gt;Preferences -&amp;gt; Browse Package&amp;hellip;&lt;/strong&gt; chọn &lt;strong&gt;Rails/Ruby Haml.tmLanguage&lt;/strong&gt;. Bạn mở tập tin Ruby Haml.tmLanguage tìm đến dòng &lt;strong&gt;&amp;lt;string&amp;gt;sass&amp;lt;/string&amp;gt;&lt;/strong&gt; và xóa nó đi.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/titoBouzout/SideBarEnhancements/&#34;&gt;SideBarEnhancements&lt;/a&gt;: công cụ cải thiện nhiều chức năng cho Sidebar của Sublime Text 2. Hỗ trợ mở các tập tin với các ứng dụng được định nghĩa như Photoshop, trình duyệt&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spadgos/sublime-jsdocs/&#34;&gt;DocBlockr&lt;/a&gt;: Hỗ trợ comments các ngôn ngữ Javascript, PHP, CoffeeScript, Actionscript, C &amp;amp; C++.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SublimeText/Tag/&#34;&gt;Tag&lt;/a&gt;: là plugin hỗ trợ làm việc các thẻ trong HTML và XML.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://buymeasoda.github.io/soda-theme/&#34;&gt;Theme Soda&lt;/a&gt;: Cung cấp giao diện cho Sublime Text 2.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;một-số-phím-tắt-trong-sublime-text-2&#34;&gt;Một số phím tắt trong Sublime Text 2&lt;/h3&gt;
+
+&lt;p&gt;Phím tắt giúp cho bạn làm việc hiệu quả hơn với các ứng dụng. Sublime Text cung cấp cho bạn nhiều phím tắt để có thể làm việc tốt hơn. Sau đây là một số phím tắt mình thường sử dụng.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Phím tắt&lt;/th&gt;
+&lt;th&gt;Mô tả&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Ctrl + C&lt;/td&gt;
+&lt;td&gt;Sao chép vùng được chọn&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + V&lt;/td&gt;
+&lt;td&gt;Dán vùng được sao chép&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + X&lt;/td&gt;
+&lt;td&gt;Cắt vùng được chọn (Xóa và sao chép vùng được chọn)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + D&lt;/td&gt;
+&lt;td&gt;Chọn những từ giống nhau theo thứ tự (rất hiệu quả khi bạn muốn chỉnh sửa hàng loạt)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Alt + F3&lt;/td&gt;
+&lt;td&gt;Chọn tất cả những từ giống nhau&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + Shift + D&lt;/td&gt;
+&lt;td&gt;Nhân đôi dòng được chọn&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + L&lt;/td&gt;
+&lt;td&gt;Chọn dòng được chọn&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + Shift + L&lt;/td&gt;
+&lt;td&gt;Chọn nhiều dòng được chọn&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + Space&lt;/td&gt;
+&lt;td&gt;Gợi ý auto-complete&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + P&lt;/td&gt;
+&lt;td&gt;Truy cập tập tin và mở tập tin. &lt;strong&gt;@&lt;/strong&gt; truy cập đến các biểu tượng (Ctrl + R), &lt;strong&gt;#&lt;/strong&gt; tìm kiếm trong tập tin (Ctrl + ;), &lt;strong&gt;:&lt;/strong&gt; tìm đến dòng trong tập tin (Ctrl + G).&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + F&lt;/td&gt;
+&lt;td&gt;Tìm kiếm&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + H&lt;/td&gt;
+&lt;td&gt;Tìm kiếm và thay thế&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + Shift + F&lt;/td&gt;
+&lt;td&gt;Tìm kiếm tất cả trong các tập tin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + KB&lt;/td&gt;
+&lt;td&gt;Tắt mở sidebar&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + Shift + Up&lt;/td&gt;
+&lt;td&gt;Chuyển những dòng được chọn lên trên&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ctrl + Shift + Down&lt;/td&gt;
+&lt;td&gt;Chuyển những dòng được chọn xuống dưới&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Alt + Shift + 1&lt;/td&gt;
+&lt;td&gt;Màn hình làm việc một cột (mặc định)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Alt + Shift + 2&lt;/td&gt;
+&lt;td&gt;Chia màn hình làm việc thành 2 cột theo chiều dọc&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Alt + Shift + 8&lt;/td&gt;
+&lt;td&gt;Chia màn hình làm việc thành 2 cột theo chiều ngang&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Shift + F1&lt;/td&gt;
+&lt;td&gt;Chuyển sang chế độ Free Mode (bạn muốn làm việc với một không gian rộng rãi hơn)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;lời-kết&#34;&gt;Lời kết&lt;/h3&gt;
+
+&lt;p&gt;Hi vọng với những tính năng phong phú trên, Sublime Text 2 sẽ mang lại cho bạn sự lựa chọn mới ngoài những editor khác như Notepad++, Dreamweaver&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+
+    <item>
+      <title>CSS Triangles Mixin trong Sass</title>
+      <link>http://dangthanh.org/2013/08/20/css-triangles-mixin-trong-sass/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/08/20/css-triangles-mixin-trong-sass/</guid>
+      <description>
+
+&lt;p&gt;Trong thiết kế web các hình khối như hình tam giác, hình tròn, hình chữ nhật&amp;hellip;thường được sử dụng khá thường xuyên. Khi muốn tạo các chú thích (tooltips), trước đây bạn thường sử dụng hình ảnh bằng việc sử dụng các công cụ như Photoshop, Fireworsk&amp;hellip;điều này có thể làm cho bạn phải vất vả thay đổi khi muốn thiết kế lại vị trí của chúng, nhưng với CSS Triangles bạn cũng có thể tạo cho mình những chú thích linh động hơn.&lt;/p&gt;
+
+&lt;p&gt;Bài viết trước mình cũng đã giới thiệu &lt;strong&gt;&lt;a href=&#34;http://dangthanh.org/2013/07/24/su-dung-sass&#34;&gt;sử dụng Sass&lt;/a&gt;&lt;/strong&gt; đến với các bạn. Hôm nay mình sẽ hướng dẫn các bạn viết CSS Triangles sử dụng Sass.&lt;/p&gt;
+
+&lt;p&gt;Để bạn có thể dễ dàng làm quen với mixin này. Đầu tiên mình sẽ hướng dẫn các bạn sử dụng điều khiển kiểm soát &lt;strong&gt;@if&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;@if&lt;/strong&gt; là một điều khiển của SassScript và được sử dụng dưới dạng lồng ghép nếu biểu thức trả về giá trị nào đó hoặc false hoặc null&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sass&#34;&gt;$type: blue
+
+p
+	@if $type == red
+		color: red
+	@else if $type == green
+		color: green
+	@else if $type == blue
+		color: blue
+	@else
+		color: white
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Khi chuyển đổi thành CSS ta được&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;p {
+	color: blue;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Và sử dụng điều hướng &lt;strong&gt;if&lt;/strong&gt; ta có thể viết CSS Triangles sử dụng Sass&lt;/p&gt;
+
+&lt;h3 id=&#34;css-triangles-mixin-trong-sass&#34;&gt;CSS Triangles Mixin trong Sass&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sass&#34;&gt;/**
+ * Dấu = bạn có thể thay thế bằng @mixin
+ * nếu bạn sử dụng cú pháp SCSS
+ */
+=arrow($direction, $color, $size)
+  $transparent: $size solid transparent
+  $sizeborder: $size solid $color // Khai báo này sẽ giúp bạn tránh lặp lại code
+  display: block
+  height: 0
+  width: 0
+
+  // Mũi tên theo hướng lên trên
+  @if $direction == &amp;quot;top&amp;quot;
+    border:
+      left: $transparent
+      right: $transparent
+      bottom: $sizeborder
+  // Mũi tên theo hướng bên phải
+  @else if $direction == &amp;quot;right&amp;quot;
+    border:
+      top: $transparent
+      bottom: $transparent
+      left: $sizeborder
+  // Mũi tên theo hướng bên dưới
+  @else if $direction == &amp;quot;bottom&amp;quot;
+    border:
+      top: $sizeborder
+      right: $transparent
+      left: $transparent
+  // Mũi tên theo hướng bên trái
+  @else if $direction == &amp;quot;left&amp;quot;
+    border:
+      top: $transparent
+      right: $sizeborder
+      bottom: $transparent
+  // Mũi tên theo hướng trên bên phải
+  @else if $direction == &amp;quot;top-right&amp;quot;
+    border:
+      top: $sizeborder
+      right: $transparent
+  // Mũi tên theo hướng trên bên trái
+  @else if $direction == &amp;quot;top-left&amp;quot;
+    border:
+      top: $sizeborder
+      left: $transparent
+  // Mũi tên theo hướng dưới bên phải
+  @else if $direction == &amp;quot;bottom-right&amp;quot;
+    border:
+      bottom: $sizeborder
+      right: $transparent
+  // Mũi tên theo hướng dưới bên trái
+  @else if $direction == &amp;quot;bottom-left&amp;quot;
+    border:
+      bottom: $sizeborder
+      left: $transparent
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;sử-dụng-css-triangles-mixin&#34;&gt;Sử dụng CSS Triangles Mixin&lt;/h3&gt;
+
+&lt;p&gt;Việc sử dụng CSS Triangles mixin cực kì đơn giản.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sass&#34;&gt;/**
+ * Dấu + bạn có thể thay thế bằng @include
+ * nếu bạn sử dụng cú pháp SCSS
+ */
+.arrow-top
+  +arrow(top, rgba(255, 10, 10, .5), 50px)
+
+.arrow-right
+  +arrow(right, rgba(255, 10, 10, .5), 50px)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;qKmfh&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;h4 id=&#34;sử-dụng-với-css3-pseudo-before-hoặc-after-để-tạo-tooltips&#34;&gt;Sử dụng với CSS3 Pseudo :before hoặc :after để tạo tooltips&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sass&#34;&gt;.tooltip
+  background-color: #e74c3c
+  display: inline-block
+  width: 500px
+  padding: 20px
+  position: relative
+  &amp;amp;:before
+    content: &amp;quot;&amp;quot;
+    position: absolute
+    top: 30px
+    left: -20px
+    +arrow(left, #e74c3c, 20px) // Bạn có thể chọn vị trí khác cho phù hợp
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;266&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;jxchk&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Với mixin này, mình hi vọng các bạn có thể cải tiến thêm các tooltips của website mình và khám phá thêm nhiều kĩ thuật mới qua việc sử dụng các điều khiển các Sass.&lt;/p&gt;
+</description>
+    </item>
+
+    <item>
+      <title>HTML5 Geolocation và Leaflet</title>
+      <link>http://dangthanh.org/2013/08/15/html5-geolocation-va-leaflet/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/08/15/html5-geolocation-va-leaflet/</guid>
+      <description>
+
+&lt;p&gt;Geolocation là một API mới của HTML5 cho phép bạn truy cập vào vị trí hiện tại của bạn trên thiết bị.&lt;/p&gt;
+
+&lt;p&gt;Geolocation gồm 3 phương thức:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;/**
+ * Lấy vị trí hiện tại của thiết bị
+ */
+navigator.geolocation.getCurrentPosition();
+
+/**
+ * Cho phép khởi tạo một xử lí khi thiết bị thay đổi vị trí
+ */
+navigator.geolocation.watchPosition();
+
+/**
+ * Xóa xử lí được khởi tạo trước đó bởi watchPosition()
+ */
+navigator.geolocation.clearWatch()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;lấy-vị-trí-hiện-tại-sử-dụng-geolocation&#34;&gt;Lấy vị trí hiện tại sử dụng Geolocation&lt;/h3&gt;
+
+&lt;p&gt;Để lấy vị trí hiện tại ta có thể sử dụng phương thức&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;navigator.geolocation.getCurrentPosition()&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function success(position) {
+	var	latitude = position.coords.latitude,
+		longitude = position.coords.longitude,
+		altitude = position.coords.altitude,
+		accuracy = position.coords.accuracy;
+
+	// Hiển thị các thông số về vị trí hiện tại của bạn.
+	console.log(latitude);
+	console.log(longitude);
+	console.log(altitude);
+	console.log(accuracy);
+}
+
+function error() {
+	console.log(&#39;Không thể truy cập đến vị trí hiện tại.&#39;);
+}
+
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+}
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;leaflet-là-gì&#34;&gt;Leaflet là gì?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://leafletjs.com/&#34;&gt;Leaflet&lt;/a&gt; là một thư viện JavaScript mã nguồn mở cung cấp các tương tác với bản đồ thân thiện với các thiết bị di động.&lt;/p&gt;
+
+&lt;p&gt;Cũng như Google Map API. Nhưng Leaflet được thiết kế đơn giản, hiệu quả và dễ sử dụng:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dễ dàng tương tác với HTML5 và CSS3.&lt;/li&gt;
+&lt;li&gt;Hỗ trợ rất nhiều plugin.&lt;/li&gt;
+&lt;li&gt;Tài liệu hướng dẫn về API rất tốt và dễ sử dụng&lt;/li&gt;
+&lt;li&gt;Cung cấp đầy đủ các tính năng để tương tác với bản đồ.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Với API của Leaflet ta có thể tương tác với bản đồ một cách linh hoạt hơn. Sau đây là ví dụ làm việc đơn giản với Leaflet&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;/**
+ * Khởi tạo bản đồ với &amp;quot;map&amp;quot; div
+ * với vị trí latitude, longitude và zoom bản đồ
+ */
+var map = L.map(&#39;map&#39;, {
+	center: [latitude, longitude],
+	zoom: 16
+});
+
+/**
+ * Khởi tạo và hiển thị các lớp trên bản đồ
+ * Bạn vào Cloudmade.com đăng kí một tài khoản để có thể lấy API
+ */
+L.tileLayer(&#39;http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png&#39;, {
+    key: &#39;760506895e284217a7442ce2efe97797&#39;, // Đây là API mình đã đăng kí với cloudmade
+    styleId: 103288,
+    maxZoom: 16
+  }).addTo(map);
+
+/**
+ * Đánh dấu vị trí trên bản đồ
+ */
+var maker = L.marker([latitude, longitude]).addTo(map);
+// Hiển thị Popup tại vị trí đánh dấu
+marker.bindPopup(&#39;&amp;lt;p&amp;gt;Tiêu đề...&amp;lt;/p&amp;gt;&#39;).openPopup();
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+&lt;div class=&#34;tc mt4 mb4&#34;&gt;
+	&lt;a href=&#34;http://dangthanh.org/playground/html5-geolocation-va-leaflet/&#34; class=&#34;f5 link br2 ba ph4 pv2 dib&#34;&gt;Xem Demo&lt;/a&gt;
+	&lt;a href=&#34;#&#34; class=&#34;f5 link br2 ba ph4 pv2 dib&#34;&gt;Tải Về&lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;** Ngoài ra, bạn có thể vào những liên kết sau để tìm hiểu thêm về Geolocation và Leaflet:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3.org/TR/geolocation-API/&#34;&gt;W3 - Geolocation API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/WebAPI/Using_geolocation&#34;&gt;Developer Mozilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://leafletjs.com/reference.html&#34;&gt;Leaflet API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cloudmade.com/&#34;&gt;Cloudmade&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+
+    <item>
+      <title>Web Storage</title>
+      <link>http://dangthanh.org/2013/08/10/web-storage/</link>
+      <pubDate>Sat, 10 Aug 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/08/10/web-storage/</guid>
+      <description>
+
+&lt;p&gt;Để lưu trữ thông tin ở phía trình duyệt, trước đây ta vẫn thường dùng cookies. Nhưng cookies vẫn còn một số hạn chế:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Khi truyền tải, cookies mang theo HTTP request, đều này sẽ làm chậm đi ứng dụng web của bạn.&lt;/li&gt;
+&lt;li&gt;Giới hạn dung lượng thấp chỉ 4 KB.&lt;/li&gt;
+&lt;li&gt;Thật khó để duy dõi nhiều cookies trên một trang web.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;HTML5 cung cấp một API mới để có thể lưu trữ dữ liệu ở phía client với nhiều cải thiện cho cookies là web storage. Một số ưu điểm web storage so với cookies:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dung lượng lên đến 5 MB (trình duyệt Google Chrome, Mozilla Firefox, Opera), 10 MB (Internet Explorer)&lt;/li&gt;
+&lt;li&gt;Dữ liệu web storage sẽ không được truyền đến máy chủ&lt;/li&gt;
+&lt;li&gt;Cung cấp hai cách lưu trữ khác nhau: local storage và session storage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;web-storage&#34;&gt;Web Storage&lt;/h3&gt;
+
+&lt;p&gt;Web Storage hiện tại đã hỗ trợ rất nhiều trình duyệt.&lt;/p&gt;
+
+
+
+
+&lt;caniuse features=&#34;namevalue-storage&#34;&gt;&lt;/caniuse&gt;
+
+
+&lt;p&gt;Web Storage cung cấp các phương thức sau. Ở đây mình sử dụng localStorage, bạn có thể sử dụng sessionStorage nếu muốn.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;localStorage.setItem(&#39;key&#39;, &#39;value&#39;) // Lưu trữ dữ liệu
+localStorage.getItem(&#39;key&#39;)          // Lấy dữ liệu
+localStorage.removeItem(&#39;key&#39;)       // Xóa dữ liệu lưu trên key
+localStorage.clear()                 // Xóa tất cả dữ liệu lưu bởi web storage
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;sử-dụng-local-storage&#34;&gt;Sử dụng Local Storage&lt;/h3&gt;
+
+&lt;p&gt;Dữ liệu trên local storage sẽ được tự động chuyển sang kiểu &amp;lsquo;string&amp;rsquo; trên trình duyệt. Tuy nhiên local storage lại hoạt động rất tốt với đối tượng trong JavaScript.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// Lưu trữ một đối tượng
+localStorage.setItem(&#39;key&#39;, {name: &#39;value&#39;});
+console.log(typeof localStorage.getItem(&#39;key&#39;)); // string
+
+// Lữu trữ một kiểu số
+localStorage.setItem(&#39;key&#39;, 1);
+console.log(typeof localStorage.getItem(&#39;key&#39;)); // string
+
+// Lưu trữ một đối tượng
+localStorage.setItem(&#39;key&#39;, JSON.stringify({name: &#39;Dang Thanh&#39;, age: 24}));
+var obj = JSON.parse(localStorage.getItem(&#39;key&#39;));
+console.log(obj.name); // value
+console.log(obj.age);  // value
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;ví-dụ-local-storage&#34;&gt;Ví dụ Local Storage&lt;/h3&gt;
+
+
+
+
+
+
+
+&lt;p data-height=&#34;290&#34;
+	data-theme-id=&#34;652&#34;
+	data-slug-hash=&#34;jCcxI&#34;
+	data-user=&#34;dangvanthanh&#34;
+	data-default-tab=&#34;result&#34;
+	class=&#39;codepen&#39;&gt;
+&lt;/p&gt;
+&lt;script defer src=&#34;//codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+
+    <item>
+      <title>Sử dụng Sass</title>
+      <link>http://dangthanh.org/2013/07/24/su-dung-sass/</link>
+      <pubDate>Wed, 24 Jul 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/07/24/su-dung-sass/</guid>
+      <description>
+
+&lt;p&gt;Bạn đã từng nghe về những CSS Preprocessors như &lt;a href=&#34;http://lesscss.org/&#34;&gt;Less&lt;/a&gt;, &lt;a href=&#34;http://sass-lang.com/&#34;&gt;Sass&lt;/a&gt; hay &lt;a href=&#34;http://learnboost.github.io/stylus/&#34;&gt;Stylus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;css-preprocessor-là-gì&#34;&gt;CSS Preprocessor là gì?&lt;/h3&gt;
+
+&lt;p&gt;CSS Preprocessor là một ngôn ngữ kịch bản mở rộng của CSS và được biên dịch thành cú pháp CSS.&lt;/p&gt;
+
+&lt;p&gt;Sau đây là một vài lợi ích của việc sử dụng CSS Preprocessor:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tiết kiệm thời gian viết CSS.&lt;/li&gt;
+&lt;li&gt;Dễ dàng bảo trì và phát triển CSS.&lt;/li&gt;
+&lt;li&gt;Linh hoạt và có thể sử dụng lại các CSS.&lt;/li&gt;
+&lt;li&gt;Các tập tin CSS được tổ chức rõ ràng.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;sass-là-gì&#34;&gt;Sass là gì?&lt;/h3&gt;
+
+&lt;p&gt;Sass là một mở rộng CSS cung cấp thêm các quy tắc xếp chồng (nested rules), biến (variables), mixins, thừa kế (selector inheritance), các hàm (function)&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Để cài đặt Sass đầu tiên bạn cần cài đặt Ruby. Mình đang xài Windows nên mình sẽ hướng dẫn các bạn cài đặt Ruby trên Windows thông qua &lt;a href=&#34;http://rubyinstaller.org/&#34;&gt;RubyInstaller&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sau khi cài đặt xong Ruby bạn cài đặt môi trường cho Ruby &lt;strong&gt;(Computer -&amp;gt; Properties -&amp;gt; Advanced -&amp;gt; Enviroment Variables&amp;hellip; )&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://dangthanh.org/assets/images/rubyinstaller.jpg&#34; alt=&#34;Cài đặt môi trường cho Ruby trên Windows&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tiếp theo bạn cài đặt Sass bằng cách mở CMD và gõ:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;gem install sass
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sass cung cấp hai định dạng tập tin mở rộng .scss và .sass. Để chuyển đổi tập tin sass sang .css bạn thực hiện lệnh sau:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sass stylesheet.scss stylesheet.css
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Để thực hiện chuyển đổi trong quá trình làm việc bạn thực hiện lệnh sau:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sass --watch stylesheet.scss:stylesheet.css
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Bạn làm việc với thư mục và cần chuyển đổi tất cả thì có thể thực hiện lệnh sau:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sass --watch sass:css
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ở trên mình sử dụng command-line để thực hiện chuyển đổi sass sang css. Nếu bạn không thân thiện với command-line bạn có thể sử dụng các GUI sau:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://mhs.github.io/scout-app/&#34;&gt;Scout&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://alphapixels.com/prepros/&#34;&gt;Prepros&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://koala-app.com/&#34;&gt;Koala&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tại-sao-lại-sử-dụng-sass&#34;&gt;Tại sao lại sử dụng Sass?&lt;/h3&gt;
+
+&lt;p&gt;Sass, Less hay Stylus đều mạnh mẽ, việc sử dụng CSS Preprocessor nào còn phụ thuộc vào môi trường làm việc của bạn. Vì thế hãy tìm hiểu và chọn cho mình một CSS Preprocessor phù hợp nhất với mình.&lt;/p&gt;
+
+&lt;h3 id=&#34;tổng-quan-về-sass&#34;&gt;Tổng quan về Sass&lt;/h3&gt;
+
+&lt;h4 id=&#34;cú-pháp&#34;&gt;Cú pháp&lt;/h4&gt;
+
+&lt;p&gt;Như đã đề cập ở trên Sass hỗ trợ hai định dạng SCSS (.scss) và Sass (.sass). Cú pháp SCSS không khác với cú pháp của CSS nên rất phù hợp với bạn nào muốn làm quen với Sass. Còn Sass thì cú pháp nghiêm ngặt hơn một tý, về cách thụt lùi khoảng trắng và không sử dụng &amp;ldquo;{}&amp;rdquo; và &amp;ldquo;;&amp;rdquo; (Mình thích sử dụng cú pháp Sass vì nó gọn gàng hơn)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;body {
+	font:
+		family: Helvetica, Arial, sans-serif;
+		size: 16px;
+		style: normal;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sass&#34;&gt;body
+	font:
+		family: Helvetica, Arial, sans-serif
+		size: 16px
+		style: normal
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sau khi biên dịch ta sẽ có:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Để các bạn dễ làm quen với Sass. Nên các ví dụ dưới đây mình sẽ dùng cú pháp SCSS.&lt;/p&gt;
+
+&lt;h4 id=&#34;quy-tắc-xếp-chồng-nested-rules&#34;&gt;Quy tắc xếp chồng (Nested Rules)&lt;/h4&gt;
+
+&lt;p&gt;Các quy tắc xếp chồng sẽ giúp bạn đồng bộ những thành phần cùng với nhau.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;nav {
+	ul {
+		list-style: none;
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		display: block;
+		padding: 10px;
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;nav ul {
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+}
+nav a {
+	display: block;
+	padding: 10px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Quy tắc xếp chồng các thuộc tính&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Trong Sass với những thuộc tính như margin, padding, border&amp;hellip;chúng ta có thể xếp chồng để tránh những khai báo không cần thiết.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;.heading {
+	text:
+		align: center;
+		decoration: none;
+		transform: uppercase;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.heading {
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Quy tắc xếp chồng media queries&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sass cung cấp quy tắc xếp chồng giúp bạn làm việc tốt hơn với media queries.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;header {
+	width: 960px;
+	@media screen and (max-width: 960px) {
+		width: 100%;
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;header {
+	width: 960px;
+}
+@media screen and (max-width: 960px) {
+	header {
+		width: 100%;
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Kí hiệu &amp;ldquo;&amp;amp;&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sass cung cấp một cách viết để thêm cho vùng chọn trước phổ biến như pseudo class như :hover, :active&amp;hellip;Ngoài ra &amp;ldquo;&amp;amp;&amp;rdquo; còn lồng ghép lớp cha cho thuộc tính được khai báo.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;a {
+	color: #f9f9f9;
+	text-decoration: none;
+	&amp;amp;:hover {
+		color: #000;
+	}
+	header &amp;amp; {
+		font-size: 30px;
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;a {
+	color: #f9f9f9;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+}
+header a {
+	font-size: 30px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;biến&#34;&gt;Biến&lt;/h4&gt;
+
+&lt;p&gt;Biến là một trong những tính năng hữu ích mà Sass cung cấp. Với Sass bạn có thể khai báo biến và sử dụng lại chúng khi cần thiết.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;$base-font: 16px;
+$base-color: #444;
+$heveltica: Helvetica, Arial, sans-serif;
+
+body {
+	color: $base-color;
+	font: $base-font $heveltica;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;body {
+	color: #444444;
+	font: 16px Helvetica, Arial, sans-serif;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;mixins&#34;&gt;Mixins&lt;/h4&gt;
+
+&lt;p&gt;Mixins cung cấp một cách hòa trộn dễ dàng giữa các thuộc tính và giá trị và chia sẻ giữa các bộ chọn khác nhau.&lt;/p&gt;
+
+&lt;p&gt;Mixins được định nghĩa bởi &lt;strong&gt;@mixin&lt;/strong&gt; (SCSS) và &lt;strong&gt;=&lt;/strong&gt; (Sass). Và bạn có thể gọi mixin bằng cách sử dụng &lt;strong&gt;@include&lt;/strong&gt; (SCSS) hoặc &lt;strong&gt;+&lt;/strong&gt; (Sass)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;@mixin button($color, $color-hover) {
+	color: $color;
+	&amp;amp;:hover {
+		color: $color-hover;
+	}
+}
+
+.button {
+	@include button(#fafafa, #aaa);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.button {
+	color: #fafafa;
+}
+.button:hover {
+	color: #aaa;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Tham số mặc định&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ta sử dụng lại ví dụ trên với giá trị tham số mặc định. Và bạn có thể ghi đè lại nếu muốn.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;@mixin button($color: #fafafa, $color-hover: #aaa) {
+	color: $color;
+	&amp;amp;:hover {
+		color: $color-hover;
+	}
+}
+.button {
+	@include button(#ddd);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.button {
+	color: #ddd;
+}
+.button:hover {
+	color: #aaa;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Nhiều biến tham số&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Khi một hoặc nhiều giá trị trong tham số bạn có thể khai báo với với &lt;strong&gt;&amp;hellip;&lt;/strong&gt; trong mixin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;@mixin transition($trans...) {
+	-webkit-transition: $trans;
+	-moz-transition: $trans;
+	transition: $trans;
+}
+.transition {
+	@include transition(all .5s linear);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.transition {
+	-webkit-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	transition: all .5s linear;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;@import&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Trong Sass &lt;strong&gt;@import&lt;/strong&gt; giúp bạn tổ chức cấu trúc các tập tin CSS được tốt hơn. Ta có thể xây dựng một cấu trúc cho website mình như sau:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;web
+|--css
+|--sass
+	 |--_normalize.scss
+	 |--_typography.scss
+	 |--_grid.scss
+	 |--_form.scss
+	 |--stylesheet.scss
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Trong tập tin &lt;strong&gt;stylesheet.scss&lt;/strong&gt; ta có thể khai báo như sau và sau đó biên dịch nó thành tập tin &lt;strong&gt;stylesheet.css&lt;/strong&gt; duy nhất.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;@import &amp;quot;normalize&amp;quot;;
+@import &amp;quot;typography&amp;quot;;
+@import &amp;quot;grid&amp;quot;, &amp;quot;form&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;kế-thừa&#34;&gt;Kế thừa&lt;/h4&gt;
+
+&lt;p&gt;Đây là tính năng giúp bạn sử dụng lại nhiều thuộc tính khai báo trong CSS.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sử dụng @extend&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;.alert {
+	background-color: #fcfcfc;
+	border-radius: 4px;
+	padding: 15px;
+}
+
+.alert-success {
+	@extend .alert;
+	color: #464646;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.alert {
+	background-color: #fcfcfc;
+	border-radius: 4px;
+	padding: 15px;
+}
+.alert-success {
+	background-color: #fcfcfc;
+	border-radius: 4px;
+	padding: 15px;
+	color: #464646;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Placeholder kế thừa&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Đây là tính năng kế thừa nhằm tránh những khai báo thuộc tính không cần thiết. Bạn có thể khai báo placeholder kế thừa bằng &lt;strong&gt;%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;%alert {
+	background-color: #fcfcfc;
+	border-radius: 4px;
+	padding: 15px;
+}
+.alert-success {
+	@extend %alert;
+	color: #464646;
+}
+.alert-error {
+	@extend %alert;
+	color: #b94a48;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.alert-success,
+.alert-error {
+	background-color: #fcfcfc;
+	border-radius: 4px;
+	padding: 15px;
+}
+.alert-success {
+	color: #464646;
+}
+.alert-error {
+	color: #b94a48;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Kế thừa phần tử&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Kế thừa trong Sass cũng hỗ trợ làm việc với các phần tử.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scss&#34;&gt;.box {
+	padding: 20px;
+	h3 {
+		font-size: 20px;
+	}
+}
+.sub-box {
+	@extend .box;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Biên dịch thành CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.box, .sub-box {
+	padding: 20px;
+
+}
+.box h3, .sub-box h3 {
+	font-size: 20px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;các-điều-khiển-trong-sass&#34;&gt;Các điều khiển trong Sass&lt;/h4&gt;
+
+&lt;p&gt;Sass cung cấp cho bạn điều khiển logic sau:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;@if&lt;/li&gt;
+&lt;li&gt;@for&lt;/li&gt;
+&lt;li&gt;@each&lt;/li&gt;
+&lt;li&gt;while&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Muốn làm việc với các điều khiển trong Sass thì bạn nên có chút kiến thức lập trình cơ bản nên mình sẽ dành riêng một bài viết hướng dẫn chi tiết hơn.&lt;/p&gt;
+
+&lt;h3 id=&#34;lời-kết&#34;&gt;Lời kết&lt;/h3&gt;
+
+&lt;p&gt;Trên đây chỉ là tổng quan về Sass. Sass mang lại cho ta rất nhiều hữu ích tuy nhiên Sass không giúp ta có thể viết CSS tốt hơn. Vì thế bạn hãy nên tìm hiểu cách viết CSS tốt hơn như OOCSS (hướng đối tựng trong CSS), SMACSS, BEM&amp;hellip;Và Sass sẽ là một công cụ tốt để bạn thực hiện việc đó.&lt;/p&gt;
+</description>
+    </item>
+
+    <item>
+      <title>Blog và tôi</title>
+      <link>http://dangthanh.org/2013/07/20/blog-va-toi/</link>
+      <pubDate>Sat, 20 Jul 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/2013/07/20/blog-va-toi/</guid>
+      <description>
+
+&lt;p&gt;Đầu tiên mình cám ơn các bạn đã ghé thăm blog này. Cũng đã làm quen với blog từ lâu, từ Wordpress, Tumblr rồi Posterous. Nhưng thực sự đến hôm nay mình mới có thể bắt đầu với việc viết blog.&lt;/p&gt;
+
+&lt;p&gt;Blog hiện tại mình xây dựng bằng &lt;a href=&#34;http://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; (một dạng blog tĩnh được viết bằng Ruby). Trước khi dùng quyết định Jekyll mình đã có một thời gian tìm hiểu và sử dụng &lt;a href=&#34;http://octopress.org/&#34;&gt;Octopress&lt;/a&gt; (một blogging framework cho Jekyll hỗ trợ rất nhiều như highlight code, responsive layout&amp;hellip;). Bạn đã từng nghe tới Jekyll chưa? Nếu bạn chưa từng nghe qua thì mình xin giới thiệu một chút về Jekyll.&lt;/p&gt;
+
+&lt;h3 id=&#34;jekyll-là-gì&#34;&gt;Jekyll là gì?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll là một nền tảng xây dựng blog. Nhưng Jekyll chỉ là dạng tĩnh, không có cơ sở dữ liệu hay ngôn ngữ phía server như PHP, Ruby, Python&amp;hellip;mà chỉ đơn thuần là các trang nội dung. Bạn chỉ cần biết về HTML, CSS là có thể xây dựng được blog này.&lt;/p&gt;
+
+&lt;h3 id=&#34;tại-sao-mình-thích-jekyll&#34;&gt;Tại sao mình thích Jekyll?&lt;/h3&gt;
+
+&lt;p&gt;Mặc dù hiện này có rất nền tảng xây dựng blog tốt như Blogger, Wordpress, Typepad&amp;hellip;Nhưng mình rất thích Jekyll vì các lý do sau:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Với ít kiến thức HTML, CSS mình có thể code tự do như giao diện&amp;hellip;cũng như các chức năng tương tác phải sử dụng JavaScript.&lt;/li&gt;
+&lt;li&gt;Chỉ cần một editor đơn giản như Notepad++ hay Sublime Text 2 mình có thể chỉnh sửa và cập nhật bài viết. Bằng cách ghi chép mọi thứ bằng Markdown.&lt;/li&gt;
+&lt;li&gt;Được học rất nhiều điều thú vị mới như Ruby, Sass/Compass và đặc biệt là Git và JavaScript.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;giao-diện-đầu-tiên&#34;&gt;Giao diện đầu tiên&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://dangthanh.org/assets/images/blog_v1.png&#34; alt=&#34;Dang Thanh Blog - phiên bản đầu tiên&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mình xây dựng giao diện dựa trên khái niệm &lt;a href=&#34;http://alistapart.com/article/responsive-web-design&#34;&gt;Responsive Web Design&lt;/a&gt;. Giao diện hiện tại chỉ chạy tốt trên desktop lẫn máy tính bảng. Còn một số lỗi khi hiển thị highlight code trên thiết bị di động (nên mình chưa thực hiện cho phiên bản di động nhưng mình sẽ cập nhật sau)&lt;/p&gt;
+
+&lt;p&gt;Mình hy vọng sau này các bạn sẽ tiếp tục ủng hộ các bài viết từ blog này và cũng mong nhận được nhiều sự góp ý để mình có thể xây dựng blog hoàn thiện hơn. Mình xin cám ơn.&lt;/p&gt;
+</description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>http://dangthanh.org/playground/html5-fullscreen-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/playground/html5-fullscreen-api/</guid>
+      <description></description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>http://dangthanh.org/playground/html5-geolocation-va-leaflet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/playground/html5-geolocation-va-leaflet/</guid>
+      <description></description>
+    </item>
+
+    <item>
+      <title></title>
+      <link>http://dangthanh.org/playground/icon-fonts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
+      <guid>http://dangthanh.org/playground/icon-fonts/</guid>
+      <description></description>
+    </item>
+
+  </channel>
+</rss>
