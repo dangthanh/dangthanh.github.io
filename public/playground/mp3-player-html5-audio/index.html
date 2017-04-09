@@ -75,7 +75,7 @@
 			player.addEventListener('ended', endedMusic, false);
 		};
 
-
+		
 		function playPauseMusic() {
 			var i, len = playLoading.length;
 			if (player.paused) {
@@ -98,12 +98,12 @@
 			}
 		}
 
-
+		
 		function seekMusic() {
 			player.currentTime = seek.value;
 		}
 
-
+		
 		function mutedMusic() {
 			if (player.muted) {
 				player.muted = false;
@@ -116,7 +116,7 @@
 			}
 		}
 
-
+		
 		function timeUpdateMusic() {
 			durationTime.innerHTML = secondToMinutes(player.duration);
 			currentTime.innerHTML = secondToMinutes(player.currentTime);
@@ -124,7 +124,7 @@
 			seek.value = player.currentTime;
 		}
 
-
+		
 		function secondToMinutes(seconds) {
 			var numMinutes = Math.floor((((seconds % 31536000) % 86400) % 3600) / 60),
 					numSeconds = (((seconds % 3153600) % 86400) % 3600) % 60;
@@ -138,7 +138,7 @@
 			}
 		}
 
-
+		
 		function endedMusic() {
 			player.pause();
 			player.currentTime = 0;
@@ -162,3 +162,5 @@
 
 </body>
 </html>
+
+
