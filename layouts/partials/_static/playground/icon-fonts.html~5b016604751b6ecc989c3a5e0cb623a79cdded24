@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sử Dụng Icon Fonts</title>
+	<style>
+		@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans"),local("OpenSans"),url(http://themes.googleusercontent.com/static/fonts/opensans/v6/59ZRklaO5bWGqF5A9baEET8E0i7KZn-EPnyo3HZu7kw.woff) format("woff")}@font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot");src:url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"),url("../fonts/icomoon.woff") format("woff"),url("../fonts/icomoon.ttf") format("truetype"),url("../fonts/icomoon.svg#icomoon") format("svg");font-weight:normal;font-style:normal}[data-icon]:before{font-family:'icomoon';content:attr(data-icon);speak:none;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-align-justify,.icon-list,.icon-align-left,.icon-align-center,.icon-align-right,.icon-graduation,.icon-airplane,.icon-earth,.icon-thumbs-down,.icon-thumbs-up,.icon-spades,.icon-clubs,.icon-diamonds,.icon-pawn,.icon-pacman,.icon-bug,.icon-apple,.icon-chart,.icon-star,.icon-key,.icon-cloudy,.icon-cloud,.icon-weather,.icon-weather-2,.icon-lightning,.icon-play,.icon-pause,.icon-stop,.icon-volume-mute,.icon-volume{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}.icon-align-justify:before{content:"\f039"}.icon-list:before{content:"\f03a"}.icon-align-left:before{content:"\f036"}.icon-align-center:before{content:"\f037"}.icon-align-right:before{content:"\f038"}.icon-graduation:before{content:"\e003"}.icon-airplane:before{content:"\e000"}.icon-earth:before{content:"\e001"}.icon-thumbs-down:before{content:"\e002"}.icon-thumbs-up:before{content:"\e004"}.icon-spades:before{content:"\e005"}.icon-clubs:before{content:"\e006"}.icon-diamonds:before{content:"\e007"}.icon-pawn:before{content:"\e008"}.icon-pacman:before{content:"\e009"}.icon-bug:before{content:"\e00a"}.icon-apple:before{content:"\e00b"}.icon-chart:before{content:"\e00c"}.icon-star:before{content:"\e00d"}.icon-key:before{content:"\e00e"}.icon-cloudy:before{content:"\e00f"}.icon-cloud:before{content:"\e010"}.icon-weather:before{content:"\e011"}.icon-weather-2:before{content:"\e012"}.icon-lightning:before{content:"\e013"}.icon-play:before{content:"\e014"}.icon-pause:before{content:"\e015"}.icon-stop:before{content:"\e016"}.icon-volume-mute:before{content:"\e017"}.icon-volume:before{content:"\e018"}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}body{color:#47a3da;font-family:'Open Sans', sans-serif;font-size:1em;line-height:1.5}a{color:#47a3da;text-decoration:none}.container{max-width:60em;margin-left:auto;margin-right:auto}header{padding:4em 0 2.5em}header h1{font-size:3em;font-weight:400;line-height:1.1;text-align:center;margin:0 0 0.5em 0}nav{background-color:#288bc6;text-transform:uppercase;width:100%;font-size:0.75em;line-height:2.2em}nav:after{content:"";display:table;clear:both}nav a{display:block;color:#fff;font-weight:700;padding:0 1em;letter-spacing:0.1em}nav a:hover,nav a:focus{background-color:#5caede}nav a:first-child{float:left}nav a:last-child{float:right}.main{text-align:center;margin-bottom:2em}.main h2{text-align:left}.list{margin:2em 0}.list:after{content:"";display:table;clear:both}.list li{display:block;float:left;width:20%}.list li i{display:inline-block;font-size:2em;width:2em;height:2em;line-height:1.6;padding:0.2em;border-radius:3px}.list__fontawesome i{border:1px solid #47a3da;color:#47a3da}.list__entypo i{border:1px solid #9b59b6;color:#9b59b6}.list__icomoon i{border:1px solid #2c3e50;color:#2c3e50}.list__broccolidry i{border:1px solid #e67e22;color:#e67e22}.list__meteocons i{border:1px solid #c0392b;color:#c0392b}.list__iconic i{border:1px solid #7f8c8d;color:#7f8c8d}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="http://dangthanh.org/2013/10/06/su-dung-icon-fonts/"><span>Trở lại bài viết</span></a>
+	</nav>
+	<div class="container">
+		<article>
+			<header>
+				<h1>Sử Dụng Icon Fonts</h1>
+			</header>
+			<section class="main">
+				<h2>Font Awesome</h2>
+				<ul class="list list__fontawesome">
+					<li><i class="icon-align-justify"></i></li>
+					<li><i class="icon-list"></i></li>
+					<li><i class="icon-align-left"></i></li>
+					<li><i class="icon-align-center"></i></li>
+					<li><i class="icon-align-right"></i></li>
+				</ul>
+				<h2>Entypo</h2>
+				<ul class="list list__entypo">
+					<li><i class="icon-graduation"></i></li>
+					<li><i class="icon-airplane"></i></li>
+					<li><i class="icon-earth"></i></li>
+					<li><i class="icon-thumbs-down"></i></li>
+					<li><i class="icon-thumbs-up"></i></li>
+				</ul>
+				<h2>IcoMoon</h2>
+				<ul class="list list__icomoon">
+					<li><i class="icon-spades"></i></li>
+					<li><i class="icon-clubs"></i></li>
+					<li><i class="icon-diamonds"></i></li>
+					<li><i class="icon-pawn"></i></li>
+					<li><i class="icon-pacman"></i></li>
+				</ul>
+				<h2>Broccolidry</h2>
+				<ul class="list list__broccolidry">
+					<li><i class="icon-bug"></i></li>
+					<li><i class="icon-apple"></i></li>
+					<li><i class="icon-chart"></i></li>
+					<li><i class="icon-star"></i></li>
+					<li><i class="icon-key"></i></li>
+				</ul>
+				<h2>Meteocons</h2>
+				<ul class="list list__meteocons">
+					<li><i class="icon-cloudy"></i></li>
+					<li><i class="icon-cloud"></i></li>
+					<li><i class="icon-weather"></i></li>
+					<li><i class="icon-weather-2"></i></li>
+					<li><i class="icon-lightning"></i></li>
+				</ul>
+				<h2>Iconic</h2>
+				<ul class="list list__iconic">
+					<li><i class="icon-play"></i></li>
+					<li><i class="icon-pause"></i></li>
+					<li><i class="icon-stop"></i></li>
+					<li><i class="icon-volume"></i></li>
+					<li><i class="icon-volume-mute"></i></li>
+				</ul>
+			</section>
+		</article>
+	</div>
+  {{ partial "google-analytics.html" . }}
+</body>
+</html>
