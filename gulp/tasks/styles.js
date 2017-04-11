@@ -1,7 +1,7 @@
 import gulp from 'gulp'
 import postcss from 'gulp-postcss'
 import cssnext from 'postcss-cssnext'
-import atImport from 'postcss-import'
+import cssImport from 'postcss-import'
 import cssnano from 'cssnano'
 import autoprefixer from 'autoprefixer'
 import del from 'del'
@@ -14,7 +14,7 @@ const dirs = {
 
 gulp.task('styles', () => {
   let processors = [
-    atImport(),
+    cssImport(),
     autoprefixer({ browsers: ['last 2 version'] }),
     cssnano({
       discardComments: { removeAll: true }
