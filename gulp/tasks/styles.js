@@ -15,7 +15,7 @@ const dirs = {
 gulp.task('styles', () => {
   let processors = [
     cssImport(),
-    autoprefixer({ browsers: ['last 2 version'] }),
+    autoprefixer({ browsers: ['last 1 version'] }),
     cssnano({
       discardComments: { removeAll: true }
     }),
