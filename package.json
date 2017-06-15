@@ -1,7 +1,7 @@
 {
   "name": "dangthanh.org",
   "version": "1.0.0",
-  "description": "Blog",
+  "description": "Dang Thanh Blog",
   "main": "index.js",
   "scripts": {
     "serve": "hugo serve -w",
