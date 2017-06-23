@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sass on Blog về HTML/HTML5, CSS/CSS3, JavaScript</title>
+    <link>https://dangthanh.org/categories/sass/</link>
+    <description>Recent content in Sass on Blog về HTML/HTML5, CSS/CSS3, JavaScript</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vn-vi</language>
+    <lastBuildDate>Tue, 03 Sep 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dangthanh.org/categories/sass/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Đổ Bóng Mixin Với Text-Shadow</title>
+      <link>https://dangthanh.org/2013/09/03/do-bong-mixin-voi-text-shadow/</link>
+      <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/09/03/do-bong-mixin-voi-text-shadow/</guid>
+      <description>CSS3 Text-Shadow là tính năng giúp bạn dễ dàng tạo đổ bóng cho text. Với text-shadow bạn cũng có thể dễ dàng tạo ra các kiểu chữ nghệ thuật (typography) hay kiểu chữ 3D&amp;hellip;Và hôm nay mình sẽ giới thiệu các bạn cách tạo mixin đổ bóng dài (long shadow) trong Sass.
+Đổ bóng dài (Long Shadow) mixin trong Sass /** * Long Shadow Mixin */ @mixin longshadow($color, $size, $direction) $ts: null @for $i from 1 through $size // Đổ bóng hướng lên trên @if $direction == &amp;quot;top&amp;quot; $ts: 0 #{$i * -1}px 0 $color, $ts // Đổ bóng hướng sang phải @else if $direction == &amp;quot;right&amp;quot; $ts: #{$i}px 0 0 $color, $ts // Đổ bóng hướng xuống dưới @else if $direction == &amp;quot;bottom&amp;quot; $ts: 0 #{$i}px 0 $color, $ts // Đổ bóng hướng sang trái @else if $direction == &amp;quot;left&amp;quot; $ts: #{$i * -1}px 0 0 $color, $ts // Đổ bóng hướng lên trên bên trái @else if $direction == &amp;quot;top-left&amp;quot; $ts: #{$i * -1}px #{$i * -1}px 0 $color, $ts // Đổ bóng hướng lên trên bên phải @else if $direction == &amp;quot;top-right&amp;quot; $ts: #{$i}px #{$i * -1}px 0 $color, $ts // Đổ bóng hướng xuống dưới bên trái @else if $direction == &amp;quot;bottom-left&amp;quot; $ts: #{$i * -1}px #{$i}px 0 $color, $ts // Đổ bóng hướng xuống dưới bên phải @else if $direction == &amp;quot;bottom-right&amp;quot; $ts: #{$i}px #{$i}px 0 $color, $ts text-shadow: $ts  Sử dụng Sau khi tạo được mixin thì ta có thể sử dụng rất dễ dàng tùy theo màu sắc, độ lớn và vị trí bóng mà bạn muốn hiển thị.</description>
+    </item>
+    
+    <item>
+      <title>CSS Triangles Mixin trong Sass</title>
+      <link>https://dangthanh.org/2013/08/20/css-triangles-mixin-trong-sass/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/08/20/css-triangles-mixin-trong-sass/</guid>
+      <description>Trong thiết kế web các hình khối như hình tam giác, hình tròn, hình chữ nhật&amp;hellip;thường được sử dụng khá thường xuyên. Khi muốn tạo các chú thích (tooltips), trước đây bạn thường sử dụng hình ảnh bằng việc sử dụng các công cụ như Photoshop, Fireworsk&amp;hellip;điều này có thể làm cho bạn phải vất vả thay đổi khi muốn thiết kế lại vị trí của chúng, nhưng với CSS Triangles bạn cũng có thể tạo cho mình những chú thích linh động hơn.</description>
+    </item>
+    
+    <item>
+      <title>Sử dụng Sass</title>
+      <link>https://dangthanh.org/2013/07/24/su-dung-sass/</link>
+      <pubDate>Wed, 24 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/07/24/su-dung-sass/</guid>
+      <description>Bạn đã từng nghe về những CSS Preprocessors như Less, Sass hay Stylus.
+CSS Preprocessor là gì? CSS Preprocessor là một ngôn ngữ kịch bản mở rộng của CSS và được biên dịch thành cú pháp CSS.
+Sau đây là một vài lợi ích của việc sử dụng CSS Preprocessor:
+ Tiết kiệm thời gian viết CSS. Dễ dàng bảo trì và phát triển CSS. Linh hoạt và có thể sử dụng lại các CSS.</description>
+    </item>
+    
+  </channel>
+</rss>
