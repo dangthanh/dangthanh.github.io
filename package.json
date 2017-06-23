@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "hugo serve -w",
     "watch": "gulp default",
-    "dev": "run-p serve watch"
+    "dev": "npm-run-all serve watch"
   },
   "author": "Dang Van Thanh <dangvanthanh@dangthanh.org> (http://dangthanh.org)",
   "license": "MIT",
