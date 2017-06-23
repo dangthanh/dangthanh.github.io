@@ -4,7 +4,7 @@ import buffer from 'vinyl-buffer'
 import browserify from 'browserify'
 import watchify from 'watchify'
 import babelify from 'babelify'
-import uglify from 'gulp-uglify'
+import butternut from 'gulp-butternut'
 import del from 'del'
 import hash from 'gulp-hash'
 
@@ -31,7 +31,7 @@ function compile (watch) {
     bundler.bundle()
           .pipe(source('app.js'))
           .pipe(buffer())
-          .pipe(uglify())
+          .pipe(butternut())
           .pipe(hash())
           .pipe(gulp.dest(dirs.dist))
           .pipe(hash.manifest('hash.json'))
