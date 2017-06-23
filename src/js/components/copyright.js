@@ -10,7 +10,8 @@ let Copyright = {
     }
   },
   mounted () {
-    this.copyright = new Date().getFullYear()
+    let today = new Date()
+    this.copyright = today.getFullYear()
   }
 }
 
