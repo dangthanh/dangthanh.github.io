@@ -10,6 +10,9 @@ git commit -m 'Committing work in progress'
 # Pull down the file we just committed help avoid merge conflicts
 git subtree pull --prefix=public origin master -m 'Merge origin'
 
+rm -rf public/css
+rm -rf public/js
+
 # Build the project.
 hugo
 
