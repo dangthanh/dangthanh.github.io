@@ -1,4 +1,4 @@
-const CACHE_VERSION = 2
+const CACHE_VERSION = 4
 
 const BASE_CACHE_FILES = [
 	'/assets/css/app-6a8825ac.css',
