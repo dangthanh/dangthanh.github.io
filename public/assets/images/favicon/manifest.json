@@ -1,6 +1,6 @@
 {
-  "name": "dangthanh-blog",
-  "short_name": "dangthanh-blog",
+  "name": "Dang Thanh",
+  "short_name": "Dang Thanh",
   "icons": [{
     "src": "/assets/images/favicon/favicon-128.png",
     "sizes": "128x128",
@@ -21,8 +21,12 @@
     "src": "/assets/images/favicon/favicon-196x196.png",
     "sizes": "196x196",
     "type": "image/png"
-  }],
-  "start_url": "/",
+  }, {
+    "src": "/assets/images/favicon/apple-touch-icon-152x152",
+    "sizes": "152x152",
+    "type": "image/png"
+	}],
+  "start_url": "/index.html",
   "display": "standalone",
   "orientation" : "portrait",
   "background_color": "#000000",
