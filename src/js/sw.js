@@ -3,8 +3,8 @@ const CACHE_VERSION = 2
 const BASE_CACHE_FILES = [
 	'/assets/css/app-6a8825ac.css',
 	'/assets/js/app-13ada58d.js',
-	'/assets/manifest.json',
-	'/assets/favicon.png'
+	'/assets/images/favicon/manifest.json',
+	'/assets/images/favicon/favicon.ico'
 ]
 
 const OFFLINE_CACHE_FILES = [
