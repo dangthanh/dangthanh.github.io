@@ -224,7 +224,7 @@ self.addEventListener('fetch', event => {
 					})
 				})
 			}
-		}).catch((err) {
+		}).catch((err) => {
 			console.log(' Error in fetch handler: ', err)
 			throw err
 		})
