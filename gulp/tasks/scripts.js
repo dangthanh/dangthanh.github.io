@@ -10,6 +10,7 @@ import hash from 'gulp-hash'
 
 const dirs = {
   entry: './src/js/app.js',
+	sw: './src/js/sw.js',
   dist: './static/assets/js/'
 }
 
@@ -20,12 +21,12 @@ function compile (watch) {
   }
 
   let bundler = watchify(
-                  browserify(bundlerConfig)
-                  .transform(babelify, {
-                    presets: ['es2015'],
-                    plugins: ['transform-runtime']
-                  })
-                )
+    browserify(bundlerConfig)
+    .transform(babelify, {
+      presets: ['es2015'],
+      plugins: ['transform-runtime']
+    })
+  )
 
   function rebundle () {
     bundler.bundle()
@@ -48,7 +49,13 @@ function compile (watch) {
   rebundle()
 }
 
+function serviceWorker () {
+	return gulp.src(dirs.sw)
+						.pipe(gulp.dest(dirs.dist))
+}
+
 gulp.task('scripts', () => {
   del(`${dirs.dist}/**/*`)
+	serviceWorker()
   return compile(true)
 })
