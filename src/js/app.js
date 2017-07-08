@@ -21,7 +21,7 @@ addZoomImage()
 addBlankLink()
 
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('sw.js', { scope: './' }).then(function (registration) {
+	navigator.serviceWorker.register('/assets/js/sw.js', { scope: './' }).then(function (registration) {
 		console.log('Service Worker Registered')
 	})
 
