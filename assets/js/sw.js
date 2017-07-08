@@ -2,20 +2,20 @@ const CACHE_VERSION = 1
 
 const BASE_CACHE_FILES = [
 	'/assets/css/app-6a8825ac.css',
-	'/assets/js/app-383359d9.js',
+	'/assets/js/app-c48bcc2f.js',
 	'/assets/manifest.json',
 	'/assets/favicon.png'
 ]
 
 const OFFLINE_CACHE_FILES = [
 	'/assets/css/app-6a8825ac.css',
-	'/assets/js/app-383359d9.js',
+	'/assets/js/app-c48bcc2f.js',
 	'/offine/index.html'
 ]
 
 const NOT_FOUND_CACHE_FILES = [
 	'/assets/css/app-6a8825ac.css',
-	'/assets/js/app-383359d9.js',
+	'/assets/js/app-c48bcc2f.js',
 	'/404.html'
 ]
 
