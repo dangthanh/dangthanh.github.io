@@ -20,6 +20,7 @@ export function addBlankLink () {
 
     if (link.getAttribute('href').indexOf('http') > -1) {
       link.setAttribute('target', '_blank')
+			link.setAttribute('rel', 'noopener')
     }
   }
 }
