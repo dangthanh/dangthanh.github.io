@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog về HTML/HTML5, CSS/CSS3, JavaScript</title>
+    <link>https://dangthanh.org/post/</link>
+    <description>Recent content in Posts on Blog về HTML/HTML5, CSS/CSS3, JavaScript</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vn-vi</language>
+    <lastBuildDate>Sun, 06 Oct 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dangthanh.org/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sử dụng Icon Fonts</title>
+      <link>https://dangthanh.org/2013/10/06/su-dung-icon-fonts/</link>
+      <pubDate>Sun, 06 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/10/06/su-dung-icon-fonts/</guid>
+      <description>Icon font ngày được sử dụng rộng rãi trong các website hiện nay. Icon font mang nhiều ưu điểm:
+ Giảm số lượng HTTP Request, giúp website của bạn load nhanh hơn. Dễ dàng thay đổi màu sắc, kích thước của biểu tượng. Cung cấp nhiều biểu tượng phù hợp giúp bạn tiết kiệm thời gian thiết kế. Có thể sử dụng CSS3 như transition, transform, text-shadow giúp các icon được linh hoạt hơn.</description>
+    </item>
+    
+    <item>
+      <title>Tạo MP3 Player với HTML5 và CSS3</title>
+      <link>https://dangthanh.org/2013/10/06/tao-mp3-player-voi-html5-va-css3/</link>
+      <pubDate>Sun, 06 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/10/06/tao-mp3-player-voi-html5-va-css3/</guid>
+      <description>Bạn muốn tự tạo MP3 Player với phong cách riêng của mình. HTML5 Audio giúp bạn dễ dàng tùy biến giao diện và dễ dàng nhúng vào trang web của bạn.
+Với các trình duyệt hỗ trợ HTML5 Audio, bạn có thể sử dụng:
+&amp;lt;audio src=&amp;quot;audio.mp3&amp;quot; preload=&amp;quot;auto&amp;quot; controls autoplay loop&amp;gt; &amp;lt;p&amp;gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&amp;lt;/p&amp;gt; &amp;lt;/audio&amp;gt; Hoặc &amp;lt;audio preload=&amp;quot;auto&amp;quot; controls autoplay loop&amp;gt; &amp;lt;source src=&amp;quot;audio.mp3&amp;quot; type=&amp;quot;audio/mp3&amp;quot;&amp;gt; &amp;lt;p&amp;gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&amp;lt;/p&amp;gt; &amp;lt;/audio&amp;gt;  Ở ví dụ trên ta đã sử dụng một số thuộc tính của HTML5 Audio:</description>
+    </item>
+    
+    <item>
+      <title>HTML5 Fullscreen API</title>
+      <link>https://dangthanh.org/2013/09/22/html5-fullscreen-api/</link>
+      <pubDate>Sun, 22 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/09/22/html5-fullscreen-api/</guid>
+      <description>Khi muốn xem trang web ở chế độ toàn màn hình bạn thường nhấn phím F11. Tuy nhiên khi bạn chỉ muốn hiển thị chế độ toàn màn hình cho một phần tử nào đó thì chúng ta không thể thực hiện bằng cách trên.
+HTML5 cung cấp một API mới cho phép bạn hiển thị toàn màn hình bất kì phần tử nào của một trang web đó là HTML5 Fullscreen API.</description>
+    </item>
+    
+    <item>
+      <title>Đổ Bóng Mixin Với Text-Shadow</title>
+      <link>https://dangthanh.org/2013/09/03/do-bong-mixin-voi-text-shadow/</link>
+      <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/09/03/do-bong-mixin-voi-text-shadow/</guid>
+      <description>CSS3 Text-Shadow là tính năng giúp bạn dễ dàng tạo đổ bóng cho text. Với text-shadow bạn cũng có thể dễ dàng tạo ra các kiểu chữ nghệ thuật (typography) hay kiểu chữ 3D&amp;hellip;Và hôm nay mình sẽ giới thiệu các bạn cách tạo mixin đổ bóng dài (long shadow) trong Sass.
+Đổ bóng dài (Long Shadow) mixin trong Sass /** * Long Shadow Mixin */ @mixin longshadow($color, $size, $direction) $ts: null @for $i from 1 through $size // Đổ bóng hướng lên trên @if $direction == &amp;quot;top&amp;quot; $ts: 0 #{$i * -1}px 0 $color, $ts // Đổ bóng hướng sang phải @else if $direction == &amp;quot;right&amp;quot; $ts: #{$i}px 0 0 $color, $ts // Đổ bóng hướng xuống dưới @else if $direction == &amp;quot;bottom&amp;quot; $ts: 0 #{$i}px 0 $color, $ts // Đổ bóng hướng sang trái @else if $direction == &amp;quot;left&amp;quot; $ts: #{$i * -1}px 0 0 $color, $ts // Đổ bóng hướng lên trên bên trái @else if $direction == &amp;quot;top-left&amp;quot; $ts: #{$i * -1}px #{$i * -1}px 0 $color, $ts // Đổ bóng hướng lên trên bên phải @else if $direction == &amp;quot;top-right&amp;quot; $ts: #{$i}px #{$i * -1}px 0 $color, $ts // Đổ bóng hướng xuống dưới bên trái @else if $direction == &amp;quot;bottom-left&amp;quot; $ts: #{$i * -1}px #{$i}px 0 $color, $ts // Đổ bóng hướng xuống dưới bên phải @else if $direction == &amp;quot;bottom-right&amp;quot; $ts: #{$i}px #{$i}px 0 $color, $ts text-shadow: $ts  Sử dụng Sau khi tạo được mixin thì ta có thể sử dụng rất dễ dàng tùy theo màu sắc, độ lớn và vị trí bóng mà bạn muốn hiển thị.</description>
+    </item>
+    
+    <item>
+      <title>Giới Thiệu CSS3 Transform</title>
+      <link>https://dangthanh.org/2013/09/01/gioi-thieu-css3-transform/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/09/01/gioi-thieu-css3-transform/</guid>
+      <description>CSS3 transform là một trong những chức năng mạnh mẽ mà CSS3 cung cấp. Nó cho phép tác động đến tất cả các phần tử của HTML mà không ảnh hưởng đến cách xây dựng layout cho trang web như xoay phần tử, di chuyển các phần tử sang trái, phải, lên xuống, nghiêng hay phóng to hoặc thu nhỏ phần tử.
+CSS3 transform cung cấp cả 2D CSS transform và 3D CSS transform.</description>
+    </item>
+    
+    <item>
+      <title>Checkboxes jQuery Plugin</title>
+      <link>https://dangthanh.org/2013/08/28/checkboxes-jquery-plugin/</link>
+      <pubDate>Wed, 28 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/08/28/checkboxes-jquery-plugin/</guid>
+      <description>jQuery là một thư viện tuyệt vời của JavaScript. Các jQuery plugin giúp bạn làm việc linh hoạt hơn và hiệu quả hơn. Hôm nay mình giới thiệu với các bạn một plugin mình tự viết là Checkboxes. Đây là jQuery Plugin hỗ trợ việc chọn và không chọn cho nhiều checkbox.
+Checkboxes jQuery Plugin (function($) { &#39;use strict&#39;; $.fn.extend({ checkboxes: function(options) { // Tham số mặc định. var defaults = { itemChild: &#39;&#39; }; var option = $.</description>
+    </item>
+    
+    <item>
+      <title>Thủ Thuật Sử Dụng Sublime Text 2</title>
+      <link>https://dangthanh.org/2013/08/25/thu-thuat-su-dung-sublime-text-2/</link>
+      <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/08/25/thu-thuat-su-dung-sublime-text-2/</guid>
+      <description>Sublime Text 2 là một text editor mạnh mẽ, cung cấp nhiều chức năng hữu ích. Mình cũng đã sử dụng Sublime Text 2 một thời gian dài cho đến nay, hôm nay cũng xin giới thiệu về Sublime Text 2 và một số thủ thuật sử dụng.
+Làm việc với Sublime Text 2 Nếu bạn chưa lần nào sử dụng Sublime Text 2, bạn có thể xem series video miễn phí từ Tutsplus.</description>
+    </item>
+    
+    <item>
+      <title>CSS Triangles Mixin trong Sass</title>
+      <link>https://dangthanh.org/2013/08/20/css-triangles-mixin-trong-sass/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/08/20/css-triangles-mixin-trong-sass/</guid>
+      <description>Trong thiết kế web các hình khối như hình tam giác, hình tròn, hình chữ nhật&amp;hellip;thường được sử dụng khá thường xuyên. Khi muốn tạo các chú thích (tooltips), trước đây bạn thường sử dụng hình ảnh bằng việc sử dụng các công cụ như Photoshop, Fireworsk&amp;hellip;điều này có thể làm cho bạn phải vất vả thay đổi khi muốn thiết kế lại vị trí của chúng, nhưng với CSS Triangles bạn cũng có thể tạo cho mình những chú thích linh động hơn.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 Geolocation và Leaflet</title>
+      <link>https://dangthanh.org/2013/08/15/html5-geolocation-va-leaflet/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/08/15/html5-geolocation-va-leaflet/</guid>
+      <description>Geolocation là một API mới của HTML5 cho phép bạn truy cập vào vị trí hiện tại của bạn trên thiết bị.
+Geolocation gồm 3 phương thức:
+/** * Lấy vị trí hiện tại của thiết bị */ navigator.geolocation.getCurrentPosition(); /** * Cho phép khởi tạo một xử lí khi thiết bị thay đổi vị trí */ navigator.geolocation.watchPosition(); /** * Xóa xử lí được khởi tạo trước đó bởi watchPosition() */ navigator.</description>
+    </item>
+    
+    <item>
+      <title>Web Storage</title>
+      <link>https://dangthanh.org/2013/08/10/web-storage/</link>
+      <pubDate>Sat, 10 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/08/10/web-storage/</guid>
+      <description>Để lưu trữ thông tin ở phía trình duyệt, trước đây ta vẫn thường dùng cookies. Nhưng cookies vẫn còn một số hạn chế:
+ Khi truyền tải, cookies mang theo HTTP request, đều này sẽ làm chậm đi ứng dụng web của bạn. Giới hạn dung lượng thấp chỉ 4 KB. Thật khó để duy dõi nhiều cookies trên một trang web.  HTML5 cung cấp một API mới để có thể lưu trữ dữ liệu ở phía client với nhiều cải thiện cho cookies là web storage.</description>
+    </item>
+    
+    <item>
+      <title>Sử dụng Sass</title>
+      <link>https://dangthanh.org/2013/07/24/su-dung-sass/</link>
+      <pubDate>Wed, 24 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/07/24/su-dung-sass/</guid>
+      <description>Bạn đã từng nghe về những CSS Preprocessors như Less, Sass hay Stylus.
+CSS Preprocessor là gì? CSS Preprocessor là một ngôn ngữ kịch bản mở rộng của CSS và được biên dịch thành cú pháp CSS.
+Sau đây là một vài lợi ích của việc sử dụng CSS Preprocessor:
+ Tiết kiệm thời gian viết CSS. Dễ dàng bảo trì và phát triển CSS. Linh hoạt và có thể sử dụng lại các CSS.</description>
+    </item>
+    
+    <item>
+      <title>Blog và tôi</title>
+      <link>https://dangthanh.org/2013/07/20/blog-va-toi/</link>
+      <pubDate>Sat, 20 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/2013/07/20/blog-va-toi/</guid>
+      <description>Đầu tiên mình cám ơn các bạn đã ghé thăm blog này. Cũng đã làm quen với blog từ lâu, từ Wordpress, Tumblr rồi Posterous. Nhưng thực sự đến hôm nay mình mới có thể bắt đầu với việc viết blog.
+Blog hiện tại mình xây dựng bằng Jekyll (một dạng blog tĩnh được viết bằng Ruby). Trước khi dùng quyết định Jekyll mình đã có một thời gian tìm hiểu và sử dụng Octopress (một blogging framework cho Jekyll hỗ trợ rất nhiều như highlight code, responsive layout&amp;hellip;).</description>
+    </item>
+    
+  </channel>
+</rss>

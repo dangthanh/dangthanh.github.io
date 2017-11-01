@@ -1,0 +1,79 @@
+
+	<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Fullscreen API</title>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css">
+	<style>
+		@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans"),local("OpenSans"),url(http://themes.googleusercontent.com/static/fonts/opensans/v6/59ZRklaO5bWGqF5A9baEET8E0i7KZn-EPnyo3HZu7kw.woff) format("woff")}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}body{color:#47a3da;font-family:'Open Sans', sans-serif;font-size:1em;line-height:1.5}a{color:#47a3da;text-decoration:none}.container{max-width:60em;margin-left:auto;margin-right:auto}header{padding:4em 0 2.5em}header h1{font-size:3em;font-weight:400;line-height:1.1;text-align:center;margin:0 0 0.5em 0}nav{background-color:#288bc6;text-transform:uppercase;width:100%;font-size:0.75em;line-height:2.2em}nav:after{content:"";display:table;clear:both}nav a{display:block;color:#fff;font-weight:700;padding:0 1em;letter-spacing:0.1em}nav a:hover,nav a:focus{background-color:#5caede}nav a:first-child{float:left}nav a:last-child{float:right}.map{height:25em}.button{background-color:#47a3da;border:1px solid transparent;color:#fff;display:block;font-size:1em;text-align:center;text-transform:uppercase;width:100%;padding:1em 0;margin:0 0 1.5em 0}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="http://dangthanh.org/2013/08/15/html5-geolocation-va-leaflet/"><span>Trở lại bài viết</span></a>
+	</nav>
+	<div class="container">
+		<article>
+			<header>
+				<h1>HTML5 Geolocation và Leaflet</h1>
+			</header>
+			<button id="show" class="button">Cho phép truy cập vị trí hiện tại của bạn</button>
+		<div id="map" class="map"></div>
+		</article>
+	</div>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.4/leaflet.js"></script>
+	<script>
+		
+		function success(position) {
+		  var map, marker,
+		      latitude = position.coords.latitude,
+		      longitude = position.coords.longitude;
+
+		  
+		  map = L.map('map').setView([latitude, longitude], 13);
+
+		  
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+		    maxZoom: 16
+		  }).addTo(map);
+
+		  
+		  marker = L.marker([latitude, longitude]).addTo(map);
+
+		  
+		  marker.bindPopup('<p>Vị trí hiện tại của bạn</p>').openPopup();
+		}
+
+		
+		function error() {
+		  console.log('Get current position false');
+		}
+
+		
+		var show = document.getElementById('show');
+
+		show.addEventListener('click', function() {
+		  if (!navigator.geolocation) {
+		    console.log("Browser doesn't support geolocation");
+		  } else {
+		    navigator.geolocation.getCurrentPosition(success, error);
+		  }
+		}, false);
+	</script>
+  <script type="text/javascript" defer>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-41117458-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</body>
+</html>
+
+
