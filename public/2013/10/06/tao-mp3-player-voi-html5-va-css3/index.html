@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Tạo MP3 Player với HTML5 và CSS3</title>
+	<meta name="description" content="Blog về HTML/HTML5, CSS/CSS3, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicon/apple-touch-icon-152x152.png">
+	<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-196x196.png" sizes="196x196">
+	<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-128.png" sizes="128x128">
+	<meta name="application-name" content="Blog về HTML/HTML5, CSS/CSS3, JavaScript"/>
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/assets/images/favicon/mstile-144x144.png">
+	<meta name="msapplication-square70x70logo" content="/assets/images/favicon/mstile-70x70.png">
+	<meta name="msapplication-square150x150logo" content="/assets/images/favicon/mstile-150x150.png">
+	<meta name="msapplication-wide310x150logo" content="/assets/images/favicon/mstile-310x150.png">
+	<meta name="msapplication-square310x310logo" content="/assets/images/favicon/mstile-310x310.png">
+	<link rel="manifest" href="/assets/images/favicon/manifest.json">
+	<link rel="stylesheet" href="/assets/css/app-6a8825ac.css">
+	<link href="" rel="alternate" type="application/rss+xml" title="Blog về HTML/HTML5, CSS/CSS3, JavaScript">
+</head>
+<body>
+	<div id="app" class="bg-near-white">
+		<header role="banner" class="bb b--black-10 black-70 bg-green">
+			<div class="db dt-l w-100 mw7 pt3 pb3 center">
+				<div class="db dtc-l v-mid w-100 w-25-l tc tl-l mb2 mb0-l">
+					<a href="/" class="link dim white f4">DT</a>
+				</div>
+				<nav role="navigation" class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+  <a href="/projects" class="link dim white f5 f5-l dib mr3 mr4-l">Dự án</a>
+  <a href="/about" class="link dim white f5 f5-l dib">Giới thiệu</a>
+</nav>
+
+			</div>
+		</header>
+
+<main role="main" class="bg-white center mw7 mt4 pa3">
+	<article class="article" itemscope itemtype="//schema.org/Article">
+		<header class="mb4" itemprop="headline">
+			<h1 class="f2-ns mb2 fw3 tc" itemprop="name">Tạo MP3 Player với HTML5 và CSS3</h1>
+			<time class="f5 gray db mt0 mb0 fw1 tc" datetime="06-10-2013"><span itemprop="datePublished">Đăng ngày 06-10-2013</span></time>
+		</header>
+		<div class="f4 lh-copy fw1" itemprop="articleBody">
+
+<p>Bạn muốn tự tạo MP3 Player với phong cách riêng của mình. HTML5 Audio giúp bạn dễ dàng tùy biến giao diện và dễ dàng nhúng vào trang web của bạn.</p>
+
+<p>Với các trình duyệt hỗ trợ HTML5 Audio, bạn có thể sử dụng:</p>
+
+<pre><code class="language-html">&lt;audio src=&quot;audio.mp3&quot; preload=&quot;auto&quot; controls autoplay loop&gt;
+	&lt;p&gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&lt;/p&gt;
+&lt;/audio&gt;
+Hoặc
+&lt;audio preload=&quot;auto&quot; controls autoplay loop&gt;
+	&lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mp3&quot;&gt;
+	&lt;p&gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&lt;/p&gt;
+&lt;/audio&gt;
+</code></pre>
+
+<p>Ở ví dụ trên ta đã sử dụng một số thuộc tính của HTML5 Audio:</p>
+
+<table>
+<thead>
+<tr>
+<th>Thuộc tính</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>autoplay</td>
+<td>Tập tin nhạc sẽ tự động chạy khi bắt đầu</td>
+</tr>
+
+<tr>
+<td>controls</td>
+<td>Các điều khiển cho audio sẽ hiển thị theo mặc định của trình duyệt</td>
+</tr>
+
+<tr>
+<td>loop</td>
+<td>Tập tin nhạc sẽ tự động lặp lại sau khi kết thúc</td>
+</tr>
+
+<tr>
+<td>preload</td>
+<td>Tải thông tin của tập tin nhạc <br> - none: Không load thông tin tập nhạc <br> - auto: Tự động load thông tin tập tin nhạc <br> - metadata: Load các siêu dữ liệu của tập tin nhạc</td>
+</tr>
+
+<tr>
+<td>src</td>
+<td>Nguồn của tập tin nhạc</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="tạo-mp3-player">Tạo MP3 Player</h3>
+
+<p>Mình đã giới thiệu chung về HTML5 Audio. Giờ mình sẽ giới thiệu các bạn cách để xây dựng một MP3 Player cho riêng mình.</p>
+
+<h4 id="html">HTML</h4>
+
+<p>Đầu tiên mình sẽ xây dựng một audio với các thành phần sau:</p>
+
+<ul>
+<li>Tập tin nhạc</li>
+<li>Loading: tạo hiệu ứng đơn giản khi chạy nhạc</li>
+<li>Controls: gồm các điều khiển Play, Pause, Volumn, Seeking</li>
+</ul>
+
+<pre><code class="language-html">&lt;div class=&quot;player&quot;&gt;
+	&lt;audio id=&quot;player__source&quot; src=&quot;audio.mp3&quot;&gt;
+		&lt;p&gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&lt;/p&gt;
+	&lt;/audio&gt;
+	&lt;div class=&quot;player__loading&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;player__control&quot;&gt;
+		&lt;button id=&quot;playPause&quot;&gt;&lt;/button&gt;
+		&lt;span id=&quot;currentTime&quot;&gt;00:00&lt;/span&gt;
+		&lt;input id=&quot;seek&quot; type=&quot;range&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;
+		&lt;span id=&quot;durationTime&quot;&gt;00:00&lt;/span&gt;
+		&lt;button id=&quot;muted&quot;&gt;&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4 id="javascript">JavaScript</h4>
+
+<p>HTML5 Audio cung cấp nhiều sự kiện giúp bạn điều khiển và đồng bộ hóa phát lại tập tin nhạc.</p>
+
+<p>Muốn làm việc với HTML5 Audio đầu tiên ta truy vấn đến các thành phần audio mà ta đã xây dựng ở trên.</p>
+
+<pre><code class="language-javascript">var player = document.getElementById('player__source'),
+	playLoading = document.querySelectorAll('.player__loading span'),
+	playPause = document.getElementById('playPause'),
+	currentTime = document.getElementById('currentTime'),
+	seek = document.getElementById('seek'),
+	durationTime = document.getElementById('durationTime'),
+	muted = document.getElementById('muted');
+</code></pre>
+
+<p><strong>Play và Pause</strong></p>
+
+<p>Ta tiến hành kiểm tra nếu nhạc đang chạy sẽ nút Pause sẽ hiển thị và ngược lại.</p>
+
+<pre><code class="language-javascript">playPause.addEventListener('click', playPauseMusic, false);
+
+function playPauseMusic() {
+	if (player.paused) {
+		player.play();
+		// Kiểm tra thời gian hiện tại của bài nhạc
+		timeInterval = setInterval(timeUpdateMusic, 100);
+		// Thay đổi giá trị của seek
+		seek.addEventListener('change', seekMusic, false);
+	} else {
+		player.pause();
+	}
+}
+
+function timeUpdateMusic() {
+	// Thời gian toàn bộ của bài nhạc
+	durationTime.innerHTML = player.duration;
+	// Thời gian hiện tại của bài nhạc
+	currentTime.innerHTML = player.currentTime;
+	seek.max = player.duration;
+	seek.value = player.currentTime;
+}
+
+function seekMusic() {
+	player.currentTime = seek.value;
+}
+</code></pre>
+
+<p><strong>Volumn - Âm Thanh</strong></p>
+
+<p>Tương tự như Play và Pause, ta cũng kiểm tra volumn của nhạc đang tắt hay bật. Ở đây mình xây dựng volumn chỉ có hai chức năng mở âm thanh và tắt âm thanh.</p>
+
+<pre><code class="language-javascript">muted.addEventListener('click', mutedMusic, false);
+
+function mutedMusic() {
+	if (player.muted) {
+		// Mở âm thanh
+		player.muted = false;
+	} else {
+		// Tắt âm thanh
+		player.muted = true;
+	}
+}
+</code></pre>
+
+<h3 id="css3">CSS3</h3>
+
+<p>Với CSS3 bạn có thể sử dụng CSS3 Animation và Transtion để làm cho Player của bạn sinh động hơn. Mình sẽ hướng dẫn chi tiết hơn ở những bài viết sau. Ở ví dụ dưới đây mình <strong><a href="/2013/10/06/su-dung-icon-fonts/">sử dụng icon font</a></strong> để làm các nút như play và volumn.</p>
+
+
+
+
+
+<div class="tc mt4 mb4">
+	<a href="/playground/mp3-player-html5-audio/" class="f5 link br2 ba ph4 pv2 dib">Xem Demo</a>
+	<a href="#" class="f5 link br2 ba ph4 pv2 dib">Tải Về</a>
+</div>
+
+
+<p>** Bạn có thể tham khảo các liên kết sau để có thể tìm hiểu sâu hơn về HTML5 Audio:</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Events/Media_events">Mozilla Developer Network</a></li>
+<li><a href="http://html5doctor.com/html5-audio-the-state-of-play/">HTML5 Doctor</a></li>
+</ul>
+</div>
+	</article>
+	<section class="center mw7 pt3 pb3">
+	<div class="cf bg-light-green pa3">
+		<img src="https://avatars2.githubusercontent.com/u/2674850?v=3&s=100" class="fl br-100 h3 w3 dib mr3" alt="avatar">
+		<div class="fl">
+			<h4 class="f4 mt0 mb0 fw7">Đặng Văn Thanh</h4>
+			<span>Có đam mê về lập trình web và các vấn đề về phát triển web.</span>
+		</div>
+	</div>
+</section>
+
+	<section class="center mw7 pt3 pb3">
+	<div id="disqus_thread"></div>
+	<script>
+		var disqus_shortname = 'dangvanthanh';
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com/" class="dsq-brlink" rel="noopener">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+</main>
+		<footer role="contentinfo" class="pa2">
+			<div class="center mw7 pt1 pb1">
+				<p>
+					&copy;2013 - <copyright></copyright>. Được xây dựng bằng
+					<a href="https://gohugo.io/" class="dib link dim green" rel="noopener">Hugo</a>,
+					<a href="https://vuejs.org/" class="dib link dim green" rel="noopener">Vue.js</a>,
+					<a href="http://tachyons.io/" class="dib link dim green" rel="noopener">Tachyons</a> và
+					<a href="https://www.netlify.com/" class="dib link dim green" rel="noopener">Netlify</a>.
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js" defer></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js" defer></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js" defer></script>
+	<script src="/assets/js/app-13ada58d.js" defer></script>
+	<script type="text/javascript" defer>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-41117458-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</body>
+</html>
+
