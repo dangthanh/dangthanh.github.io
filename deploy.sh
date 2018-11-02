@@ -27,6 +27,10 @@ echo "dangthanh.org" > public/CNAME
 touch public/robots.txt
 echo "User-agent: *" > public/robots.txt
 
+# Add .gitignore
+touch .gitignore
+echo "node_modules" > .gitignore
+
 # Add changes to git.
 git add -A
 
