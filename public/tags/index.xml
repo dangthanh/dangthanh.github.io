@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Blog về chia sẻ về web</title>
+    <link>https://dangthanh.org/tags/</link>
+    <description>Recent content in Tags on Blog về chia sẻ về web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vn-vi</language>
+    <lastBuildDate>Fri, 02 Nov 2018 01:03:37 +0700</lastBuildDate>
+    
+	<atom:link href="https://dangthanh.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Css</title>
+      <link>https://dangthanh.org/tags/css/</link>
+      <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://dangthanh.org/tags/hugo/</link>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://dangthanh.org/tags/javascript/</link>
+      <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personal</title>
+      <link>https://dangthanh.org/tags/personal/</link>
+      <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postcss</title>
+      <link>https://dangthanh.org/tags/postcss/</link>
+      <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/tags/postcss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sass</title>
+      <link>https://dangthanh.org/tags/sass/</link>
+      <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/tags/sass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://dangthanh.org/tags/tools/</link>
+      <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
