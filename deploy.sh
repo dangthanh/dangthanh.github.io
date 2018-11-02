@@ -31,6 +31,9 @@ echo "User-agent: *" > public/robots.txt
 touch .gitignore
 echo "node_modules" > .gitignore
 
+# Move favicon to root
+mv public/images/favicon/favicon.ico public
+
 # Add changes to git.
 git add -A
 
