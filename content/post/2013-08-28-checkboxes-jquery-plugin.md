@@ -2,7 +2,7 @@
 title = "Checkboxes jQuery Plugin"
 slug = "checkboxes-jquery-plugin"
 date = "2013-08-28"
-categories = ["javascript", "development"]
+tags = ["javascript"]
 +++
 
 [jQuery](http://jquery.com/) là một thư viện tuyệt vời của JavaScript. Các jQuery plugin giúp bạn làm việc linh hoạt hơn và hiệu quả hơn. Hôm nay mình giới thiệu với các bạn một plugin mình tự viết là Checkboxes. Đây là jQuery Plugin hỗ trợ việc chọn và không chọn cho nhiều checkbox.
@@ -116,7 +116,7 @@ categories = ["javascript", "development"]
 </script>
 ~~~
 
-{{% codepen id="lraJA" height="266" %}}
+{{% codepen id="lraJA" height="300" %}}
 
 Bạn cũng có thể tải Checkboxes jQuery Plugin tại [Github](https://github.com/dangvanthanh/jquery.checkboxes).
 

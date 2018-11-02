@@ -2,6 +2,7 @@
 title = "Blog và tôi"
 slug = "blog-va-toi"
 date = "2013-07-20"
+tags = ["personal"]
 +++
 
 Đầu tiên mình cám ơn các bạn đã ghé thăm blog này. Cũng đã làm quen với blog từ lâu, từ Wordpress, Tumblr rồi Posterous. Nhưng thực sự đến hôm nay mình mới có thể bắt đầu với việc viết blog.
@@ -22,7 +23,7 @@ Mặc dù hiện này có rất nền tảng xây dựng blog tốt như Blogger
 
 ### Giao diện đầu tiên
 
-![Dang Thanh Blog - phiên bản đầu tiên](/assets/images/blog_v1.png)
+![Dang Thanh Blog - phiên bản đầu tiên](/images/blog_v1.png)
 
 Mình xây dựng giao diện dựa trên khái niệm [Responsive Web Design](http://alistapart.com/article/responsive-web-design). Giao diện hiện tại chỉ chạy tốt trên desktop lẫn máy tính bảng. Còn một số lỗi khi hiển thị highlight code trên thiết bị di động (nên mình chưa thực hiện cho phiên bản di động nhưng mình sẽ cập nhật sau)
 

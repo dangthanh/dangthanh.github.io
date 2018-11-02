@@ -1,36 +1,33 @@
 {
-  "name": "dangthanh.org",
+  "name": "dangthanh.github.io",
   "version": "1.0.0",
   "description": "Dang Thanh Blog",
-  "main": "index.js",
-  "scripts": {
-    "serve": "hugo serve -w",
-    "watch": "gulp default",
-    "dev": "npm-run-all serve watch"
-  },
-  "author": "Dang Van Thanh <dangvanthanh@dangthanh.org> (http://dangthanh.org)",
-  "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
-    "babel-core": "^6.24.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-es2015": "^6.24.0",
-    "babelify": "^7.3.0",
-    "browserify": "^14.1.0",
-    "cssnano": "^3.10.0",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-butternut": "^1.0.0",
-    "gulp-hash": "^4.1.0",
-    "gulp-postcss": "^7.0.0",
-    "hugo-bin": "^0.7.0",
-    "npm-run-all": "^4.0.2",
-    "postcss-cssnext": "^2.10.0",
-    "postcss-import": "^10.0.0",
-    "require-dir": "^0.3.1",
-    "tachyons": "4.7.4",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.9.0"
-  }
+    "autoprefixer": "^9.1.5",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.7",
+    "postcss-cli": "^6.0.0",
+    "postcss-each": "^0.10.0",
+    "postcss-import": "^12.0.0",
+    "postcss-nested": "^4.1.0",
+    "postcss-normalize": "^7.0.1",
+    "postcss-preset-env": "^6.0.10"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangthanh/dangthanh.github.io.git"
+  },
+  "author": "Dang Van Thanh <chieuhue@gmail.com> (dangthanh.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dangthanh/dangthanh.github.io/issues"
+  },
+  "homepage": "https://github.com/dangthanh/dangthanh.github.io#readme"
 }

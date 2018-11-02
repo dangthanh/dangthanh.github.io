@@ -1,0 +1,42 @@
+@custom-media --tablet (width >= 800px);
+
+:root {
+  --background: #fffafa;
+  --color: #242424;
+
+  --caniuseBackground: #eee8d5;
+  --caniuseBorder: #eee8d5;
+
+  --css: #563d7c;
+  --sass: #ee0000;
+  --postcss: #e14206;
+  --javascript: #f1e05a;
+  --personal: #6866fb;
+  --tools: #ff2b2b;
+  --vue: #42b983;
+  --hugo: #ff4893;
+
+  --javascriptColor: #51350b;
+}
+
+.night {
+  --background: #36394c;
+  --color: #fff;
+
+  --caniuseBackground: #4d4d7b;
+  --caniuseBorder: #1e1e40;
+}
+
+@font-face {
+  font-family: "Times Newer Roman";
+  font-weight: 400;
+  src: url(/fonts/TimesNewerRoman-Regular.otf) format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Times Newer Roman";
+  font-weight: 700;
+  src: url(/fonts/TimesNewerRoman-Bold.otf) format("opentype");
+  font-display: swap;
+}

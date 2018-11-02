@@ -1,0 +1,53 @@
+.article {
+  margin-bottom: 1.875rem;
+
+  &.article-single {
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  time {
+    font-size: 0.875rem;
+  }
+
+  h2 {
+    margin-top: 0.675rem;
+    margin-bottom: 0.675rem;
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        text-decoration-skip-ink: auto;
+      }
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+  }
+
+  table {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0.5rem 1rem;
+    width: 100%;
+
+    th {
+      text-transform: uppercase;
+    }
+
+    th,
+    td {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--color);
+      border-style: solid;
+      border-width: 1px;
+    }
+  }
+}

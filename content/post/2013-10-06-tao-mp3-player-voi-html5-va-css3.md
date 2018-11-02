@@ -2,7 +2,7 @@
 title = "Tạo MP3 Player với HTML5 và CSS3"
 slug = "tao-mp3-player-voi-html5-va-css3"
 date = "2013-10-06"
-categories = ["css3", "javascript"]
+tags = ["css", "javascript"]
 +++
 
 Bạn muốn tự tạo MP3 Player với phong cách riêng của mình. HTML5 Audio giúp bạn dễ dàng tùy biến giao diện và dễ dàng nhúng vào trang web của bạn.
@@ -129,7 +129,7 @@ function mutedMusic() {
 
 Với CSS3 bạn có thể sử dụng CSS3 Animation và Transtion để làm cho Player của bạn sinh động hơn. Mình sẽ hướng dẫn chi tiết hơn ở những bài viết sau. Ở ví dụ dưới đây mình **[sử dụng icon font](/2013/10/06/su-dung-icon-fonts/)** để làm các nút như play và volumn.
 
-{{% preview demo="/playground/mp3-player-html5-audio/" %}}
+{{% codepen height="226" id="jbBZjw" %}}
 
 ** Bạn có thể tham khảo các liên kết sau để có thể tìm hiểu sâu hơn về HTML5 Audio:
 

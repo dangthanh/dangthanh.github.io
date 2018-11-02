@@ -2,7 +2,7 @@
 title = "HTML5 Fullscreen API"
 slug = "html5-fullscreen-api"
 date = "2013-09-22"
-categories = ["javascript"]
+tags = ["javascript"]
 +++
 
 Khi muốn xem trang web ở chế độ toàn màn hình bạn thường nhấn phím **F11**. Tuy nhiên khi bạn chỉ muốn hiển thị chế độ toàn màn hình cho một phần tử nào đó thì chúng ta không thể thực hiện bằng cách trên.
@@ -82,5 +82,3 @@ function cancelFullscreen() {
 HTML5 FullScreen API là một API đơn giản và mạnh mẽ. Mình hi vọng với API đơn giản này các bạn có thể viết những ứng dụng tương tác dễ dàng hơn khi cần hiển thị chế độ toàn màn hình.
 
 {{% caniuse features="fullscreen" %}}
-
-{{% preview demo="/playground/html5-fullscreen-api/" %}}

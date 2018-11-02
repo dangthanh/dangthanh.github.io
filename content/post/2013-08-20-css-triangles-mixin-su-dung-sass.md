@@ -2,18 +2,18 @@
 title = "CSS Triangles Mixin trong Sass"
 slug = "css-triangles-mixin-trong-sass"
 date = "2013-08-20"
-categories = ["css3", "sass"]
+tags = ["css", "sass"]
 +++
 
 Trong thiết kế web các hình khối như hình tam giác, hình tròn, hình chữ nhật...thường được sử dụng khá thường xuyên. Khi muốn tạo các chú thích (tooltips), trước đây bạn thường sử dụng hình ảnh bằng việc sử dụng các công cụ như Photoshop, Fireworsk...điều này có thể làm cho bạn phải vất vả thay đổi khi muốn thiết kế lại vị trí của chúng, nhưng với CSS Triangles bạn cũng có thể tạo cho mình những chú thích linh động hơn.
 
-Bài viết trước mình cũng đã giới thiệu **[sử dụng Sass](/2013/07/24/su-dung-sass)** đến với các bạn. Hôm nay mình sẽ hướng dẫn các bạn viết CSS Triangles sử dụng Sass.
+Bài viết trước mình cũng đã giới thiệu **[sử dụng Sass](/blog/su-dung-sass)** đến với các bạn. Hôm nay mình sẽ hướng dẫn các bạn viết CSS Triangles sử dụng Sass.
 
 Để bạn có thể dễ dàng làm quen với mixin này. Đầu tiên mình sẽ hướng dẫn các bạn sử dụng điều khiển kiểm soát **@if**
 
->**@if** là một điều khiển của SassScript và được sử dụng dưới dạng lồng ghép nếu biểu thức trả về giá trị nào đó hoặc false hoặc null
+> **@if** là một điều khiển của SassScript và được sử dụng dưới dạng lồng ghép nếu biểu thức trả về giá trị nào đó hoặc false hoặc null
 
-~~~sass
+```scss
 $type: blue
 
 p
@@ -25,21 +25,21 @@ p
 		color: blue
 	@else
 		color: white
-~~~
+```
 
 Khi chuyển đổi thành CSS ta được
 
-~~~css
+```css
 p {
-	color: blue;
+  color: blue;
 }
-~~~
+```
 
 Và sử dụng điều hướng **if** ta có thể viết CSS Triangles sử dụng Sass
 
 ### CSS Triangles Mixin trong Sass
 
-~~~sass
+```scss
 /**
  * Dấu = bạn có thể thay thế bằng @mixin
  * nếu bạn sử dụng cú pháp SCSS
@@ -95,12 +95,13 @@ Và sử dụng điều hướng **if** ta có thể viết CSS Triangles sử d
     border:
       bottom: $sizeborder
       left: $transparent
-~~~
+```
 
 ### Sử dụng CSS Triangles Mixin
+
 Việc sử dụng CSS Triangles mixin cực kì đơn giản.
 
-~~~sass
+```scss
 /**
  * Dấu + bạn có thể thay thế bằng @include
  * nếu bạn sử dụng cú pháp SCSS
@@ -110,26 +111,27 @@ Việc sử dụng CSS Triangles mixin cực kì đơn giản.
 
 .arrow-right
   +arrow(right, rgba(255, 10, 10, .5), 50px)
-~~~
+```
 
 {{% codepen id="qKmfh" height="266" %}}
 
 #### Sử dụng với CSS3 Pseudo :before hoặc :after để tạo tooltips
 
-~~~sass
+```scss
 .tooltip
   background-color: #e74c3c
   display: inline-block
   width: 500px
   padding: 20px
   position: relative
+
   &:before
     content: ""
     position: absolute
     top: 30px
     left: -20px
     +arrow(left, #e74c3c, 20px) // Bạn có thể chọn vị trí khác cho phù hợp
-~~~
+```
 
 {{% codepen id="jxchk" height="266" %}}
 

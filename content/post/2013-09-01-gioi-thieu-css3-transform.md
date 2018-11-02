@@ -2,7 +2,7 @@
 title = "Giới Thiệu CSS3 Transform"
 slug = "gioi-thieu-css3-transform"
 date = "2013-09-01"
-categories = ["css3"]
+tags = ["css"]
 +++
 
 CSS3 transform là một trong những chức năng mạnh mẽ mà CSS3 cung cấp. Nó cho phép tác động đến tất cả các phần tử của HTML mà không ảnh hưởng đến cách xây dựng layout cho trang web như xoay phần tử, di chuyển các phần tử sang trái, phải, lên xuống, nghiêng hay phóng to hoặc thu nhỏ phần tử.
@@ -44,7 +44,7 @@ Translate là phương thức cho phép bạn có thể di chuyển phần tử 
 - translateX()
 - translateY()
 
-{{% codepen height="325" id="woaLp" %}}
+{{% codepen height="365" id="woaLp" %}}
 
 #### 2. Scale
 
@@ -58,7 +58,7 @@ Translate là phương thức cho phép bạn có thể di chuyển phần tử 
 
 Scale là phương thức cho phép bạn có thể phóng to hoặc thu nhỏ phần tử so với kích thước thật của phần tử. Kích thước thật được phương thức scale() mặc định là 1. Vì thế bạn muốn phóng to thì có thể khai báo giá trị > 1 và thu nhỏ thì khai báo giá trị < 1. Đặc biệt khi bạn khai báo **scale(0)** thì phần tử sẽ biến mất nên bạn cần chú ý khi sử dụng phương thức này.
 
-{{% codepen id="DLKHt" %}}
+{{% codepen height="335" id="DLKHt" %}}
 
 #### 3. Rotate
 ~~~css
@@ -71,7 +71,7 @@ Scale là phương thức cho phép bạn có thể phóng to hoặc thu nhỏ p
 
 Rotate là phương thức cho phép bạn xoay phần tử và giá trị được ghi bằng độ (degrees).
 
-{{% codepen id="Birzn" %}}
+{{% codepen height="335" id="Birzn" %}}
 
 #### 4. Skew
 
@@ -85,7 +85,7 @@ Rotate là phương thức cho phép bạn xoay phần tử và giá trị đư�
 
 Skew là phương thức cho phép bạn nghiêng phần tử. Cũng như phưng thức translate() và rotate(), phương thức skew() hỗ trợ phần tử nghiêng theo chiều ngang hoặc dọc và giá trị được ghi bằng độ (degrees).
 
-{{% codepen id="EbKlw" %}}
+{{% codepen height="365" id="EbKlw" %}}
 
 #### 5. Sử dụng kết hợp nhiều phương thức
 
@@ -95,7 +95,10 @@ Ngoài việc sử dụng độc lập các phương thức translate(), scale()
 .element {
 	width: 200px;
 	height: 200px;
-	transform: translate(50px, 50px) scale(1.5) rotate(90deg) skew(50deg, 20deg);
+	transform: translate(50px, 50px) 
+            scale(1.5) 
+            rotate(90deg) 
+            skew(50deg, 20deg);
 }
 ~~~
 
@@ -133,7 +136,7 @@ rotate3d(rx, ry, rz)
 perspective(value)
 ~~~
 
-{{% codepen height="265" id="Birzn" %}}
+{{% codepen height="335" id="Birzn" %}}
 
 ### Trình duyệt hỗ trợ
 

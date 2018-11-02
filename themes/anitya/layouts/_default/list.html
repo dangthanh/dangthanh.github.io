@@ -1,0 +1,21 @@
+{{ define "main" -}}
+
+  {{ $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
+
+  <dl class="site-archives mt-0">
+  {{ range .Data.Pages.ByTitle }}
+    {{ $firstChar := substr .Title 0 1 | upper }}
+
+    {{ if $firstChar | in $letters }}
+      {{ $curLetter := $.Scratch.Get "curLetter" }}
+      {{ if ne $firstChar $curLetter }}
+        {{ $.Scratch.Set "curLetter" $firstChar }}
+        <dt>{{ $firstChar }}</dt>
+      {{ end }}
+      <dd>
+        <a class="no-underline hover:decoration-skip-ink" href="{{ .Permalink }}">{{ .Title }}</a>
+      </dd>
+    {{ end }}
+  {{ end }}
+  </dl>
+{{- end }}

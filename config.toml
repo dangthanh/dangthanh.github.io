@@ -1,12 +1,13 @@
 baseurl = "https://dangthanh.org/"
 languageCode = "vn-vi"
-title = "Blog về HTML/HTML5, CSS/CSS3, JavaScript"
+title = "Blog về chia sẻ về web"
+theme = "anitya"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+Paginate = 5
 
 [permalinks]
-	post = "/:year/:month/:day/:slug/"
-
-[params]
-	disqus = "dangvanthanh"
+  post = "/blog/:slug/"
 
 [sitemap]
   changefreq = "monthly"

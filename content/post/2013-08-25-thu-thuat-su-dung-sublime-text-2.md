@@ -2,12 +2,12 @@
 title = "Thủ Thuật Sử Dụng Sublime Text 2"
 slug = "thu-thuat-su-dung-sublime-text-2"
 date = "2013-08-25"
-categories = ["development"]
+tags = ["tools"]
 +++
 
 **[Sublime Text 2](http://www.sublimetext.com/2)** là một text editor mạnh mẽ, cung cấp nhiều chức năng hữu ích. Mình cũng đã sử dụng Sublime Text 2 một thời gian dài cho đến nay, hôm nay cũng xin giới thiệu về Sublime Text 2 và một số thủ thuật sử dụng.
 
-![Sublime Text 2](/assets/images/sublime_text_2.jpg)
+![Sublime Text 2](/images/sublime_text_2.jpg)
 
 ### Làm việc với Sublime Text 2
 
@@ -15,7 +15,7 @@ Nếu bạn chưa lần nào sử dụng Sublime Text 2, bạn có thể xem **[
 
 ### Package Control
 
-![Package Control - Sublime Text 2](/assets/images/package_control.jpg)
+![Package Control - Sublime Text 2](/images/package_control.jpg)
 
 Package Control là một công cụ quản lý các plugin của Sublime Text 2. Nó giúp bạn tìm kiếm, cài đặt, nâng cấp cũng hơn xóa các plugin.
 
@@ -40,28 +40,28 @@ Một số plugin mình đang sử dụng:
 
 Phím tắt giúp cho bạn làm việc hiệu quả hơn với các ứng dụng. Sublime Text cung cấp cho bạn nhiều phím tắt để có thể làm việc tốt hơn. Sau đây là một số phím tắt mình thường sử dụng.
 
-Phím tắt | Mô tả
---- | ---
-Ctrl + C | Sao chép vùng được chọn
-Ctrl + V | Dán vùng được sao chép
-Ctrl + X | Cắt vùng được chọn (Xóa và sao chép vùng được chọn)
-Ctrl + D | Chọn những từ giống nhau theo thứ tự (rất hiệu quả khi bạn muốn chỉnh sửa hàng loạt)
-Alt + F3 | Chọn tất cả những từ giống nhau
-Ctrl + Shift + D | Nhân đôi dòng được chọn
-Ctrl + L | Chọn dòng được chọn
-Ctrl + Shift + L | Chọn nhiều dòng được chọn
-Ctrl + Space | Gợi ý auto-complete
-Ctrl + P | Truy cập tập tin và mở tập tin. **@** truy cập đến các biểu tượng (Ctrl + R), **#** tìm kiếm trong tập tin (Ctrl + ;), **:** tìm đến dòng trong tập tin (Ctrl + G).
-Ctrl + F | Tìm kiếm
-Ctrl + H | Tìm kiếm và thay thế
-Ctrl + Shift + F | Tìm kiếm tất cả trong các tập tin
-Ctrl + KB | Tắt mở sidebar
-Ctrl + Shift + Up | Chuyển những dòng được chọn lên trên
-Ctrl + Shift + Down | Chuyển những dòng được chọn xuống dưới
-Alt + Shift + 1 | Màn hình làm việc một cột (mặc định)
-Alt + Shift + 2 | Chia màn hình làm việc thành 2 cột theo chiều dọc
-Alt + Shift + 8 | Chia màn hình làm việc thành 2 cột theo chiều ngang
-Shift + F1 | Chuyển sang chế độ Free Mode (bạn muốn làm việc với một không gian rộng rãi hơn)
+| Phím tắt            | Mô tả                                                                                                                                                               |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ctrl + C            | Sao chép vùng được chọn                                                                                                                                             |
+| Ctrl + V            | Dán vùng được sao chép                                                                                                                                              |
+| Ctrl + X            | Cắt vùng được chọn (Xóa và sao chép vùng được chọn)                                                                                                                 |
+| Ctrl + D            | Chọn những từ giống nhau theo thứ tự (rất hiệu quả khi bạn muốn chỉnh sửa hàng loạt)                                                                                |
+| Alt + F3            | Chọn tất cả những từ giống nhau                                                                                                                                     |
+| Ctrl + Shift + D    | Nhân đôi dòng được chọn                                                                                                                                             |
+| Ctrl + L            | Chọn dòng được chọn                                                                                                                                                 |
+| Ctrl + Shift + L    | Chọn nhiều dòng được chọn                                                                                                                                           |
+| Ctrl + Space        | Gợi ý auto-complete                                                                                                                                                 |
+| Ctrl + P            | Truy cập tập tin và mở tập tin. **@** truy cập đến các biểu tượng (Ctrl + R), **#** tìm kiếm trong tập tin (Ctrl + ;), **:** tìm đến dòng trong tập tin (Ctrl + G). |
+| Ctrl + F            | Tìm kiếm                                                                                                                                                            |
+| Ctrl + H            | Tìm kiếm và thay thế                                                                                                                                                |
+| Ctrl + Shift + F    | Tìm kiếm tất cả trong các tập tin                                                                                                                                   |
+| Ctrl + KB           | Tắt mở sidebar                                                                                                                                                      |
+| Ctrl + Shift + Up   | Chuyển những dòng được chọn lên trên                                                                                                                                |
+| Ctrl + Shift + Down | Chuyển những dòng được chọn xuống dưới                                                                                                                              |
+| Alt + Shift + 1     | Màn hình làm việc một cột (mặc định)                                                                                                                                |
+| Alt + Shift + 2     | Chia màn hình làm việc thành 2 cột theo chiều dọc                                                                                                                   |
+| Alt + Shift + 8     | Chia màn hình làm việc thành 2 cột theo chiều ngang                                                                                                                 |
+| Shift + F1          | Chuyển sang chế độ Free Mode (bạn muốn làm việc với một không gian rộng rãi hơn)                                                                                    |
 
 ### Lời kết
 

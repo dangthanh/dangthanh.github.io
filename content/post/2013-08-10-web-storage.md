@@ -2,7 +2,7 @@
 title = "Web Storage"
 slug = "web-storage"
 date = "2013-08-10"
-categories = ["javascript"]
+tags = ["javascript"]
 +++
 
 Để lưu trữ thông tin ở phía trình duyệt, trước đây ta vẫn thường dùng cookies. Nhưng cookies vẫn còn một số hạn chế:

@@ -2,7 +2,7 @@
 title = "HTML5 Geolocation và Leaflet"
 slug = "html5-geolocation-va-leaflet"
 date = "2013-08-15"
-categories = ["javascript"]
+tags = ["javascript"]
 +++
 
 Geolocation là một API mới của HTML5 cho phép bạn truy cập vào vị trí hiện tại của bạn trên thiết bị.
@@ -100,7 +100,7 @@ var maker = L.marker([latitude, longitude]).addTo(map);
 marker.bindPopup('<p>Tiêu đề...</p>').openPopup();
 ~~~
 
-{{% preview demo="/playground/html5-geolocation-va-leaflet/" %}}
+{{% codepen heght="400" id="tlpLG" %}}
 
 ** Ngoài ra, bạn có thể vào những liên kết sau để tìm hiểu thêm về Geolocation và Leaflet:
 
