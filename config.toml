@@ -1,0 +1,15 @@
+baseurl = "https://dangthanh.org/"
+languageCode = "vn-vi"
+title = "Blog về chia sẻ về web"
+theme = "anitya"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+Paginate = 5
+
+[permalinks]
+  post = "/blog/:slug/"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Blog về chia sẻ về web</title>
+    <link>https://dangthanh.org/tags/javascript/</link>
+    <description>Recent content in Javascript on Blog về chia sẻ về web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vn-vi</language>
+    <lastBuildDate>Fri, 02 Nov 2018 01:03:37 +0700</lastBuildDate>
+    
+	<atom:link href="https://dangthanh.org/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PostCSS</title>
+      <link>https://dangthanh.org/blog/postcss/</link>
+      <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/blog/postcss/</guid>
+      <description>Lần trước tui có đề cập tới PostCSS. Nay tui sẽ giới thiệu tổng quan về PostCSS cho các bạn. Cũng như Sass, PostCSS cũng cung cấp các chức năng như Sass:
+ Khai báo biến Nhúng các tập tin CSS (Partial import) Cú pháp lồng (Nesting) Sử dụng lại với Mixins Kế thừa (Extends)  Sử dụng PostCSS Trước hết PostCSS một công cụ cho việc chuyển đổi CSS sử dụng JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Tạo MP3 Player với HTML5 và CSS3</title>
+      <link>https://dangthanh.org/blog/tao-mp3-player-voi-html5-va-css3/</link>
+      <pubDate>Sun, 06 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/blog/tao-mp3-player-voi-html5-va-css3/</guid>
+      <description>Bạn muốn tự tạo MP3 Player với phong cách riêng của mình. HTML5 Audio giúp bạn dễ dàng tùy biến giao diện và dễ dàng nhúng vào trang web của bạn.
+Với các trình duyệt hỗ trợ HTML5 Audio, bạn có thể sử dụng:
+&amp;lt;audio src=&amp;#34;audio.mp3&amp;#34; preload=&amp;#34;auto&amp;#34; controls autoplay loop&amp;gt; &amp;lt;p&amp;gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&amp;lt;/p&amp;gt; &amp;lt;/audio&amp;gt; Hoặc &amp;lt;audio preload=&amp;#34;auto&amp;#34; controls autoplay loop&amp;gt; &amp;lt;source src=&amp;#34;audio.mp3&amp;#34; type=&amp;#34;audio/mp3&amp;#34;&amp;gt; &amp;lt;p&amp;gt;Trình duyệt của bạn không hỗ trợ HTML5 Audio&amp;lt;/p&amp;gt; &amp;lt;/audio&amp;gt; Ở ví dụ trên ta đã sử dụng một số thuộc tính của HTML5 Audio:</description>
+    </item>
+    
+    <item>
+      <title>HTML5 Fullscreen API</title>
+      <link>https://dangthanh.org/blog/html5-fullscreen-api/</link>
+      <pubDate>Sun, 22 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/blog/html5-fullscreen-api/</guid>
+      <description>Khi muốn xem trang web ở chế độ toàn màn hình bạn thường nhấn phím F11. Tuy nhiên khi bạn chỉ muốn hiển thị chế độ toàn màn hình cho một phần tử nào đó thì chúng ta không thể thực hiện bằng cách trên.
+HTML5 cung cấp một API mới cho phép bạn hiển thị toàn màn hình bất kì phần tử nào của một trang web đó là HTML5 Fullscreen API.</description>
+    </item>
+    
+    <item>
+      <title>Đổ Bóng Mixin Với Text-Shadow</title>
+      <link>https://dangthanh.org/blog/do-bong-mixin-voi-text-shadow/</link>
+      <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/blog/do-bong-mixin-voi-text-shadow/</guid>
+      <description>CSS3 Text-Shadow là tính năng giúp bạn dễ dàng tạo đổ bóng cho text. Với text-shadow bạn cũng có thể dễ dàng tạo ra các kiểu chữ nghệ thuật (typography) hay kiểu chữ 3D&amp;hellip;Và hôm nay mình sẽ giới thiệu các bạn cách tạo mixin đổ bóng dài (long shadow) trong Sass.
+Đổ bóng dài (Long Shadow) mixin trong Sass /** * Long Shadow Mixin */ @mixin longshadow($color, $size, $direction) $ts: null @for $i from 1 through $size // Đổ bóng hướng lên trên @if $direction == &amp;#34;top&amp;#34; $ts: 0 #{$i * -1}px 0 $color, $ts // Đổ bóng hướng sang phải @else if $direction == &amp;#34;right&amp;#34; $ts: #{$i}px 0 0 $color, $ts // Đổ bóng hướng xuống dưới @else if $direction == &amp;#34;bottom&amp;#34; $ts: 0 #{$i}px 0 $color, $ts // Đổ bóng hướng sang trái @else if $direction == &amp;#34;left&amp;#34; $ts: #{$i * -1}px 0 0 $color, $ts // Đổ bóng hướng lên trên bên trái @else if $direction == &amp;#34;top-left&amp;#34; $ts: #{$i * -1}px #{$i * -1}px 0 $color, $ts // Đổ bóng hướng lên trên bên phải @else if $direction == &amp;#34;top-right&amp;#34; $ts: #{$i}px #{$i * -1}px 0 $color, $ts // Đổ bóng hướng xuống dưới bên trái @else if $direction == &amp;#34;bottom-left&amp;#34; $ts: #{$i * -1}px #{$i}px 0 $color, $ts // Đổ bóng hướng xuống dưới bên phải @else if $direction == &amp;#34;bottom-right&amp;#34; $ts: #{$i}px #{$i}px 0 $color, $ts text-shadow: $ts Sử dụng Sau khi tạo được mixin thì ta có thể sử dụng rất dễ dàng tùy theo màu sắc, độ lớn và vị trí bóng mà bạn muốn hiển thị.</description>
+    </item>
+    
+    <item>
+      <title>Checkboxes jQuery Plugin</title>
+      <link>https://dangthanh.org/blog/checkboxes-jquery-plugin/</link>
+      <pubDate>Wed, 28 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/blog/checkboxes-jquery-plugin/</guid>
+      <description>jQuery là một thư viện tuyệt vời của JavaScript. Các jQuery plugin giúp bạn làm việc linh hoạt hơn và hiệu quả hơn. Hôm nay mình giới thiệu với các bạn một plugin mình tự viết là Checkboxes. Đây là jQuery Plugin hỗ trợ việc chọn và không chọn cho nhiều checkbox.
+Checkboxes jQuery Plugin (function($) { &amp;#39;use strict&amp;#39;; $.fn.extend({ checkboxes: function(options) { // Tham số mặc định.  var defaults = { itemChild: &amp;#39;&amp;#39; }; var option = $.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 Geolocation và Leaflet</title>
+      <link>https://dangthanh.org/blog/html5-geolocation-va-leaflet/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/blog/html5-geolocation-va-leaflet/</guid>
+      <description>Geolocation là một API mới của HTML5 cho phép bạn truy cập vào vị trí hiện tại của bạn trên thiết bị.
+Geolocation gồm 3 phương thức:
+/** * Lấy vị trí hiện tại của thiết bị */ navigator.geolocation.getCurrentPosition(); /** * Cho phép khởi tạo một xử lí khi thiết bị thay đổi vị trí */ navigator.geolocation.watchPosition(); /** * Xóa xử lí được khởi tạo trước đó bởi watchPosition() */ navigator.</description>
+    </item>
+    
+    <item>
+      <title>Web Storage</title>
+      <link>https://dangthanh.org/blog/web-storage/</link>
+      <pubDate>Sat, 10 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangthanh.org/blog/web-storage/</guid>
+      <description>Để lưu trữ thông tin ở phía trình duyệt, trước đây ta vẫn thường dùng cookies. Nhưng cookies vẫn còn một số hạn chế:
+ Khi truyền tải, cookies mang theo HTTP request, đều này sẽ làm chậm đi ứng dụng web của bạn. Giới hạn dung lượng thấp chỉ 4 KB. Thật khó để duy dõi nhiều cookies trên một trang web.  HTML5 cung cấp một API mới để có thể lưu trữ dữ liệu ở phía client với nhiều cải thiện cho cookies là web storage.</description>
+    </item>
+    
+  </channel>
+</rss>

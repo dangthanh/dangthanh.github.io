@@ -1,0 +1,18 @@
+{{ define "main" -}}
+  <div class="article article-single" itemscope itemtype="//schema.org/Article">
+    {{ if not (.Params.nointro) }}
+      <h2 itemprop="headline">{{ .Title }}</h2>
+      <ul class="no-list p-0 m-0">
+      {{ range .Params.tags }}
+        <li class="inline-block"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag tag-{{ . | urlize }}">{{ . }}</a></li>
+      {{ end }}
+      </ul>
+    {{ end }}
+    <div itemprop="articleBody">
+      {{ .Content }}
+    </div>
+    {{ if not (.Params.nointro) }}
+    {{ template "_internal/author.html" . }}
+    {{ end }}
+  </div>
+{{- end }}
