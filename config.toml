@@ -1,6 +1,6 @@
 baseurl = "https://dangthanh.org/"
 languageCode = "vn-vi"
-title = "Blog về chia sẻ về web"
+description = "Blog chia sẻ về web và phát triển web"
 theme = "anitya"
 pygmentsCodeFences = true
 pygmentsUseClasses = true

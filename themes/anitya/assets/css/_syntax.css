@@ -23,7 +23,8 @@
   /* Background */
   .chroma {
     color: #93a1a1;
-    background-color: #002b36;
+    background-color: var(--caniuseBackground);
+    border: 1px solid var(--caniuseBorder);
   }
   /* Other */
   .chroma .x {

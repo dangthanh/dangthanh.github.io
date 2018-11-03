@@ -10,35 +10,6 @@
     text-decoration: none;
   }
 
-  /* &-css {
-    background-color: var(--css);
-  }
-
-  &-sass {
-    background-color: var(--sass);
-  }
-
-  &-postcss {
-    background-color: var(--sass);
-  }
-
-  &-javascript {
-    background-color: var(--javascript);
-    color: var(--javascriptColor);
-  }
-
-  &-personal {
-    background-color: var(--personal);
-  }
-
-  &-hugo {
-    background-color: var(--personal);
-  }
-
-  &-tools {
-    background-color: var(--tools);
-  } */
-
   @each $language in css, sass, postcss, javascript, personal, hugo, tools, vue {
     &-$(language) {
       background-color: var(--$(language));

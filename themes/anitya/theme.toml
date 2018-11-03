@@ -4,8 +4,8 @@
 name = "Anitya"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
+description = "Blog chia sẻ về web và phát triển web"
+homepage = "https://dangthanh.org/"
 tags = []
 features = []
 min_version = "0.41"

@@ -17,14 +17,18 @@
   --hugo: #ff4893;
 
   --javascriptColor: #51350b;
+
+  --tableBorder: #5e3f09;
 }
 
 .night {
-  --background: #36394c;
+  --background: #1c2532;
   --color: #fff;
 
-  --caniuseBackground: #4d4d7b;
-  --caniuseBorder: #1e1e40;
+  --caniuseBackground: rgba(40, 50, 67, .4);
+  --caniuseBorder: #323e4f;
+
+  --tableBorder: #323e4f;
 }
 
 @font-face {
