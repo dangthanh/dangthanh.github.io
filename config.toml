@@ -12,7 +12,7 @@ paginate = 5
   post = "/blog/:slug/"
 
 [params]
-  googleAnalytics = "UA-41117458-1"
+  defaultDescription = "Blog chia sẻ về web và phát triển web"
 
 [sitemap]
   changefreq = "monthly"
