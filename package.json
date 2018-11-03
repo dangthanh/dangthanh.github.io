@@ -6,6 +6,7 @@
     "autoprefixer": "^9.1.5",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.7",
+    "postcss-at-rules-variables": "^0.1.6",
     "postcss-cli": "^6.0.0",
     "postcss-each": "^0.10.0",
     "postcss-import": "^12.0.0",

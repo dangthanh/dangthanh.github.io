@@ -1,6 +1,7 @@
-{{ template "_internal/google.html" . }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ partial "embed/google_adsense.html" . }}
 <script defer src="//codepen.io/assets/embed/ei.js"></script>
-<script src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
+<script defer src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
 {{ $js := resources.Get "js/anitya.js" }}
 {{ $secureJS := $js | minify | fingerprint }}
-<script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+<script defer src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>

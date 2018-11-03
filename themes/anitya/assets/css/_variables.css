@@ -7,6 +7,7 @@
   --caniuseBackground: #eee8d5;
   --caniuseBorder: #eee8d5;
 
+  --languagesName: (css, sass, postcss, javascript, personal, tools, vue, hugo);
   --css: #563d7c;
   --sass: #ee0000;
   --postcss: #e14206;

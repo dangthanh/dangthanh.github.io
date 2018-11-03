@@ -1,6 +1,6 @@
 +++
 title = "Về tui"
-nointro = true
+noIntro = true
 +++
 
 <blockquote class="site-blockquote">

@@ -3,8 +3,7 @@
 
 name = "Anitya"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = "Blog chia sẻ về web và phát triển web"
+description = "Anitya Theme For Hugo"
 homepage = "https://dangthanh.org/"
 tags = []
 features = []

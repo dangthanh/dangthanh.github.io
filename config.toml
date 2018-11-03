@@ -1,13 +1,18 @@
 baseurl = "https://dangthanh.org/"
 languageCode = "vn-vi"
+title = "Dang Thanh Blog"
 description = "Blog chia sẻ về web và phát triển web"
 theme = "anitya"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-Paginate = 5
+paginate = 5
+
 
 [permalinks]
   post = "/blog/:slug/"
+
+[params]
+  googleAnalytics = "UA-41117458-1"
 
 [sitemap]
   changefreq = "monthly"

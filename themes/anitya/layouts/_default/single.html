@@ -1,6 +1,6 @@
 {{ define "main" -}}
   <div class="article article-single" itemscope itemtype="//schema.org/Article">
-    {{ if not (.Params.nointro) }}
+    {{ if not .Params.NoIntro }}
       <h2 itemprop="headline">{{ .Title }}</h2>
       <ul class="no-list p-0 m-0">
       {{ range .Params.tags }}
@@ -8,11 +8,11 @@
       {{ end }}
       </ul>
     {{ end }}
-    <div itemprop="articleBody">
+    <div class="article-body" itemprop="articleBody">
       {{ .Content }}
     </div>
-    {{ if not (.Params.nointro) }}
-    {{ template "_internal/author.html" . }}
+    {{ if not .Params.NoIntro }}
+    {{ partial "embed/author.html" . }}
     {{ end }}
   </div>
 {{- end }}
