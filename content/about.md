@@ -17,6 +17,6 @@ Khi không làm gì thỉnh thoảng tui đạp xe đạp lòng vòng thành ph�
 
 ### Một số thông tin khác về tui
 
-- Hộp thư điện tử <a href="mailto:dangvanthanh@dangthanh.org">email</a>
+- Hộp thư điện tử <a href="mailto:dangvanthanh@dangthanh.org">Email</a>
 - Viết code ở [Github](https://github.com/dangvanthanh).
 - Chém gió lung tung trên [Twitter](https://twitter.com/dangvanthanh).
