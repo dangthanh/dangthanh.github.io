@@ -1,0 +1,20 @@
+baseurl = "https://dangthanh.org/"
+languageCode = "vn-vi"
+title = "Dang Thanh Blog"
+description = "Blog chia sẻ về web và phát triển web"
+theme = "anitya"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+paginate = 5
+
+
+[permalinks]
+  post = "/blog/:slug/"
+
+[params]
+  defaultDescription = "Blog chia sẻ về web và phát triển web"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
