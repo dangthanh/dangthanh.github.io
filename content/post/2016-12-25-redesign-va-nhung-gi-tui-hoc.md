@@ -2,7 +2,7 @@
 title = "Redesign và những gì tui học"
 slug = "redesign-va-nhung-gi-tui-hoc"
 date = "2016-12-25"
-tags = ["personal", "css", "postCSS", "hugo"]
+tags = ["personal", "css", "postcss", "hugo"]
 +++
 
 Thực ra bài viết này đã có từ lâu, nhưng tui vẫn để nó ở chế độ bản nháp và cũng do lười (quá lười) nên cũng từ lâu tui cũng bỏ thói quen viết blog. Nay tui chia sẻ những kinh nghiệm khi thiết kế lại blog này.

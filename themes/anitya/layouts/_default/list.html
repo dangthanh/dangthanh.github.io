@@ -13,7 +13,17 @@
         <dt>{{ $firstChar }}</dt>
       {{ end }}
       <dd>
-        <a class="no-underline hover:decoration-skip-ink" href="{{ .Permalink }}">{{ .Title }}</a>
+        <a class="no-underline hover:decoration-skip-ink" href="{{ .Permalink }}">
+          {{ if eq .Title "Css" }}
+            {{ .Title | upper }}
+          {{ else if eq .Title "Postcss" }}
+            PostCSS
+          {{ else if eq .Title "Javascript" }}
+            JavaScript
+          {{ else }}
+            {{ .Title }}
+          {{ end }}
+        </a>
       </dd>
     {{ end }}
   {{ end }}

@@ -55,7 +55,24 @@
     }
 
     code:not([data-lang]) {
-      font-family: "Times Newer Roman", Georgia, "Times New Roman", Times, serif;
+      font-family: var(--font);
+    }
+
+    blockquote {
+      font-weight: 700;
+      font-size: 1.2rem;
+      border-bottom: 3px solid var(--caniuseBorder);
+      border-top: 3px solid var(--caniuseBorder);
+      padding: .625rem;
+      margin: 1.625rem 0 1.625rem 3rem;
+      text-align: center;
     }
   }
+}
+
+canvas {
+	user-select: none;
+	touch-action: none;
+	content-zooming: none;
+	cursor: pointer;
 }

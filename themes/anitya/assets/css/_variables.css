@@ -3,6 +3,7 @@
 :root {
   --background: #fffafa;
   --color: #242424;
+  --font: "Times Newer Roman", Georgia, "Times New Roman", Times, serif;
 
   --caniuseBackground: #eee8d5;
   --caniuseBorder: #eee8d5;

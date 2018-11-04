@@ -5,7 +5,7 @@ date = "2013-09-03"
 tags = ["css", "sass", "javascript"]
 +++
 
-CSS3 Text-Shadow là tính năng giúp bạn dễ dàng tạo đổ bóng cho text. Với text-shadow bạn cũng có thể dễ dàng tạo ra các kiểu chữ nghệ thuật (typography) hay kiểu chữ 3D...Và hôm nay mình sẽ giới thiệu các bạn **[cách tạo mixin](/2013/08/20/css-triangles-mixin-su-dung-sass/)** đổ bóng dài (long shadow) trong Sass.
+CSS3 Text-Shadow là tính năng giúp bạn dễ dàng tạo đổ bóng cho text. Với text-shadow bạn cũng có thể dễ dàng tạo ra các kiểu chữ nghệ thuật (typography) hay kiểu chữ 3D...Và hôm nay mình sẽ giới thiệu các bạn **[cách tạo mixin](/blog/css-triangles-mixin-su-dung-sass/)** đổ bóng dài (long shadow) trong Sass.
 
 ### Đổ bóng dài (Long Shadow) mixin trong Sass
 
@@ -69,4 +69,4 @@ Sau khi tạo được mixin thì ta có thể sử dụng rất dễ dàng tùy
 
 {{% codepen height="300" id="wLKan" %}}
 
-Trên đây mình **[sử dụng Sass](/2013/07/24/su-dung-sass/)** để tạo đổ bóng dài, bạn cũng có thể tùy biến thêm như thêm chức năng bóng mờ cho bóng...Nếu bạn không muốn làm việc với Sass nhưng vẫn muốn dùng tạo text đổ bóng dài bạn có thể sử dụng **[Long Shadow jQuery Plugin](/labs/longshadow-jquery-plugin/)** mình đang viết và phát triển. Mình cũng rất mong nhận được góp ý của các bạn để hoàn thiện hơn mixin cũng như jQuery plugin này.
+Trên đây mình **[sử dụng Sass](/blog/su-dung-sass/)** để tạo đổ bóng dài, bạn cũng có thể tùy biến thêm như thêm chức năng bóng mờ cho bóng...Nếu bạn không muốn làm việc với Sass nhưng vẫn muốn dùng tạo text đổ bóng dài bạn có thể sử dụng **[Long Shadow jQuery Plugin](/labs/longshadow-jquery-plugin/)** mình đang viết và phát triển. Mình cũng rất mong nhận được góp ý của các bạn để hoàn thiện hơn mixin cũng như jQuery plugin này.

@@ -45,6 +45,62 @@ var getLinks = function() {
   }
 };
 
+var getCanvas = function() {
+  var canvas = document.getElementById('site-canvas');
+
+  if (canvas != null) {
+    var WIDTH = 650;
+    var HEIGHT = 400;
+    var ctx = canvas.getContext('2d');
+
+    var branch = function(size, angle) {
+      size < 10
+        ? ctx.strokeRect(0, 0, size, size)
+        : ctx.fillRect(0, 0, size, size);
+      if (size < 2) return;
+      var v1 = size * Math.cos((angle * Math.PI) / 180);
+      ctx.save();
+      ctx.translate(size, 0);
+      ctx.rotate((angle * Math.PI) / 180);
+      ctx.translate(-v1, -v1);
+      branch(v1, 15 + Math.random() * 60);
+      ctx.restore();
+      var v2 = size * Math.sin((angle * Math.PI) / 180);
+      ctx.save();
+      ctx.rotate(((angle - 90) * Math.PI) / 180);
+      ctx.translate(0, -v2);
+      branch(v2, 15 + Math.random() * 60);
+      ctx.restore();
+    };
+
+    var tree = function() {
+      if (window.innerWidth < 800) {
+        var PADDING = 32;
+        WIDTH = window.innerWidth - PADDING;
+      }
+
+      var width = (canvas.width = WIDTH);
+      var height = (canvas.height = HEIGHT);
+      ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = '#222';
+      ctx.globalCompositeOperation = 'xor';
+      var size = Math.min(width, height) / 7;
+      ctx.save();
+      ctx.translate(0.5 * width - size * 0.5, height - size);
+      branch(size, 15 + Math.random() * 60);
+      ctx.restore();
+    };
+
+    window.addEventListener('resize', tree, false);
+
+    ['resize', 'click', 'touchdown'].forEach(event => {
+      document.addEventListener(event, tree, false);
+    });
+
+    tree();
+  }
+};
+
 var handlerTheme = function(e) {
   e.preventDefault();
   var theme = jsCorner.getAttribute('aria-label').toLowerCase();
@@ -183,4 +239,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
       Caniuse
     }
   });
+
+  getCanvas();
 });

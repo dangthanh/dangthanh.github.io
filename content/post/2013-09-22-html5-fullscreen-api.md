@@ -18,7 +18,7 @@ Phương thức | Mô tả
 .fullScreen <br> .webkitIsFullScreen <br> .mozfullScreen | Xem phần tử đang hiển thị ở chế độ toàn màn hình
 :full-screen <br> :-webkit-full-screen <br> :-moz-fullscreen | Tương tác với phần tử được chỉ định khi ở chế độ toàn màn hình.
 
-<br>HTML5 Fullscreen API thực sự rất hữu ích khi bạn làm việc với các phần tử như hình ảnh hoặc video. Sau đây để hiểu rõ hơn cách làm việc với HTML5 Fullscreen API, mình xin viết một hướng dẫn việc sử dụng fullscreen với **[bản đồ sử dụng leaflet](/2013/08/15/html5-geolocation-va-leaflet/)**.
+<br>HTML5 Fullscreen API thực sự rất hữu ích khi bạn làm việc với các phần tử như hình ảnh hoặc video. Sau đây để hiểu rõ hơn cách làm việc với HTML5 Fullscreen API, mình xin viết một hướng dẫn việc sử dụng fullscreen với **[bản đồ sử dụng leaflet](/blog/html5-geolocation-va-leaflet/)**.
 
 ### HTML
 
