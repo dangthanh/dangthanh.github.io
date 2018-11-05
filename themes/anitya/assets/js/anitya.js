@@ -82,7 +82,7 @@ var getCanvas = function() {
       var width = (canvas.width = WIDTH);
       var height = (canvas.height = HEIGHT);
       ctx.clearRect(0, 0, width, height);
-      ctx.fillStyle = '#222';
+      ctx.fillStyle = '#111';
       ctx.globalCompositeOperation = 'xor';
       var size = Math.min(width, height) / 7;
       ctx.save();

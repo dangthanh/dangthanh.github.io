@@ -9,7 +9,7 @@
       </ul>
     {{ end }}
 
-    <div class="{{ if not .Params.NoIntro }}article-body{{ else }}{{ end }}" itemprop="articleBody">
+    <div class="{{ if .Params.NoIntro }}article-specific{{ else }}article-body{{ end }}" itemprop="articleBody">
       {{ .Content }}
     </div>
     {{ if not .Params.NoIntro }}
