@@ -42,26 +42,26 @@ Phím tắt giúp cho bạn làm việc hiệu quả hơn với các ứng dụn
 
 | Phím tắt            | Mô tả                                                                                                                                                               |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ctrl + C            | Sao chép vùng được chọn                                                                                                                                             |
-| Ctrl + V            | Dán vùng được sao chép                                                                                                                                              |
-| Ctrl + X            | Cắt vùng được chọn (Xóa và sao chép vùng được chọn)                                                                                                                 |
-| Ctrl + D            | Chọn những từ giống nhau theo thứ tự (rất hiệu quả khi bạn muốn chỉnh sửa hàng loạt)                                                                                |
-| Alt + F3            | Chọn tất cả những từ giống nhau                                                                                                                                     |
-| Ctrl + Shift + D    | Nhân đôi dòng được chọn                                                                                                                                             |
-| Ctrl + L            | Chọn dòng được chọn                                                                                                                                                 |
-| Ctrl + Shift + L    | Chọn nhiều dòng được chọn                                                                                                                                           |
-| Ctrl + Space        | Gợi ý auto-complete                                                                                                                                                 |
-| Ctrl + P            | Truy cập tập tin và mở tập tin. **@** truy cập đến các biểu tượng (Ctrl + R), **#** tìm kiếm trong tập tin (Ctrl + ;), **:** tìm đến dòng trong tập tin (Ctrl + G). |
-| Ctrl + F            | Tìm kiếm                                                                                                                                                            |
-| Ctrl + H            | Tìm kiếm và thay thế                                                                                                                                                |
-| Ctrl + Shift + F    | Tìm kiếm tất cả trong các tập tin                                                                                                                                   |
-| Ctrl + KB           | Tắt mở sidebar                                                                                                                                                      |
-| Ctrl + Shift + Up   | Chuyển những dòng được chọn lên trên                                                                                                                                |
-| Ctrl + Shift + Down | Chuyển những dòng được chọn xuống dưới                                                                                                                              |
-| Alt + Shift + 1     | Màn hình làm việc một cột (mặc định)                                                                                                                                |
-| Alt + Shift + 2     | Chia màn hình làm việc thành 2 cột theo chiều dọc                                                                                                                   |
-| Alt + Shift + 8     | Chia màn hình làm việc thành 2 cột theo chiều ngang                                                                                                                 |
-| Shift + F1          | Chuyển sang chế độ Free Mode (bạn muốn làm việc với một không gian rộng rãi hơn)                                                                                    |
+| `Ctrl + C`            | Sao chép vùng được chọn                                                                                                                                             |
+| `Ctrl + V`            | Dán vùng được sao chép                                                                                                                                              |
+| `Ctrl + X`            | Cắt vùng được chọn (Xóa và sao chép vùng được chọn)                                                                                                                 |
+| `Ctrl + D`            | Chọn những từ giống nhau theo thứ tự (rất hiệu quả khi bạn muốn chỉnh sửa hàng loạt)                                                                                |
+| `Alt + F3`            | Chọn tất cả những từ giống nhau                                                                                                                                     |
+| `Ctrl + Shift + D`    | Nhân đôi dòng được chọn                                                                                                                                             |
+| `Ctrl + L`            | Chọn dòng được chọn                                                                                                                                                 |
+| `Ctrl + Shift + L`    | Chọn nhiều dòng được chọn                                                                                                                                           |
+| `Ctrl + Space`        | Gợi ý auto-complete                                                                                                                                                 |
+| `Ctrl + P`            | Truy cập tập tin và mở tập tin. **@** truy cập đến các biểu tượng (`Ctrl + R`), **#** tìm kiếm trong tập tin (Ctrl + ;), **:** tìm đến dòng trong tập tin (`Ctrl + G`). |
+| `Ctrl + F`            | Tìm kiếm                                                                                                                                                            |
+| `Ctrl + H`            | Tìm kiếm và thay thế                                                                                                                                                |
+| `Ctrl + Shift + F`    | Tìm kiếm tất cả trong các tập tin                                                                                                                                   |
+| `Ctrl + KB`           | Tắt mở sidebar                                                                                                                                                      |
+| `Ctrl + Shift + Up`   | Chuyển những dòng được chọn lên trên                                                                                                                                |
+| `Ctrl + Shift + Down` | Chuyển những dòng được chọn xuống dưới                                                                                                                              |
+| `Alt + Shift + 1`     | Màn hình làm việc một cột (mặc định)                                                                                                                                |
+| `Alt + Shift + 2`     | Chia màn hình làm việc thành 2 cột theo chiều dọc                                                                                                                   |
+| `Alt + Shift + 8`     | Chia màn hình làm việc thành 2 cột theo chiều ngang                                                                                                                 |
+| `Shift + F1`          | Chuyển sang chế độ Free Mode (bạn muốn làm việc với một không gian rộng rãi hơn)                                                                                    |
 
 ### Lời kết
 

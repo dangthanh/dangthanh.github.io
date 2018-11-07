@@ -3,12 +3,12 @@
 :root {
   --background: #fffafa;
   --color: #242424;
-  --font-serif: "Times Newer Roman", Georgia, "Times New Roman", Times, serif;
+  --font-serif: 'Roboto Slab', serif;
+  --font-monospace: 'Fira Mono', monospace;
 
   --caniuseBackground: #eee8d5;
   --caniuseBorder: #eee8d5;
 
-  --languagesName: (css, sass, postcss, javascript, personal, tools, vue, hugo);
   --css: #563d7c;
   --sass: #ee0000;
   --postcss: #e14206;
@@ -17,32 +17,26 @@
   --tools: #ff2b2b;
   --vue: #42b983;
   --hugo: #ff4893;
+  --tailwindcss: #38a89d;
+  --elm: #34495e;
 
   --javascriptColor: #51350b;
 
   --tableBorder: #5e3f09;
+
+  --codeBackground: #2d2d2d;
+  --codeColor: #fff;
 }
 
 .night {
   --background: #1c2532;
   --color: #fff;
 
-  --caniuseBackground: rgba(40, 50, 67, .4);
+  --caniuseBackground: rgba(40, 50, 67, 0.4);
   --caniuseBorder: #323e4f;
 
   --tableBorder: #323e4f;
-}
 
-@font-face {
-  font-family: "Times Newer Roman";
-  font-weight: 400;
-  src: url(/fonts/TimesNewerRoman-Regular.otf) format("opentype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Times Newer Roman";
-  font-weight: 700;
-  src: url(/fonts/TimesNewerRoman-Bold.otf) format("opentype");
-  font-display: swap;
+  --codeBackground: #fff;
+  --codeColor: #2d2d2d;
 }

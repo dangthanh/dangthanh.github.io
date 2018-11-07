@@ -5,6 +5,9 @@
 
   &,
   code {
+    font-family: var(--font-monospace);
+    text-rendering: optimizeLegibility;
+    font-style: normal;
     text-align: left;
     white-space: pre-wrap;
     word-spacing: normal;

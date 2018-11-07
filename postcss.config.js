@@ -1,6 +1,5 @@
 module.exports = {
   plugins: {
-    'postcss-normalize': { browsers: 'last 2 versions' },
     'postcss-import': {},
     'postcss-each': {},
     'postcss-nested': {},

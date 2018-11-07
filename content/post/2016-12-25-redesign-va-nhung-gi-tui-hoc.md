@@ -52,9 +52,13 @@ Vì lí do tối giản cả thiết kế lẫn CSS. Nên với phiên bản nà
 
 **Chú ý:** *Đây là cú pháp tui viết sử dụng PostCSS được trình bày ở dưới.*
 
-#### Times Newer Roman
+#### Times Newer Roman, Roboto Slab và Ubuntu Mono
 
-Việc thay đổi font chữ [Muli](https://fonts.google.com/specimen/Muli) sang sử dụng phông chữ [Times Newer Roman](https://timesnewerroman.com/) là một bộ phông chữ tương tự Times New Roman nhưng độ dài mỗi ký tự rộng hơn giúp bạn dễ dàng đọc nội dung trên blog hơn.
+Việc thay đổi font chữ [Muli](https://fonts.google.com/specimen/Muli) sang sử dụng phông chữ [Times Newer Roman](https://timesnewerroman.com/) là một bộ phông chữ tương tự Times New Roman nhưng độ dài mỗi ký tự rộng hơn (theo như tác giả là 5 - 10%) giúp bạn dễ dàng đọc nội dung trên blog hơn.
+
+Nhưng sau khi xem blog trên Windows tui thấy phông chữ Times Newer Roman không hiển thị đẹp lắm mặc dù trên Mac hay Linux phông chữ vẫn hiển thị rất đẹp nên cuối cùng cũng chọn phông chữ [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab).
+
+Còn với code highlight tui sử dụng [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono). Mặc dù vẫn thích những phông chữ hỗ trợ `ligatures` như [Fira Code](https://github.com/tonsky/FiraCode) nhưng Ubuntu Mono vẫn dễ nhìn hơn với các bạn chưa quen với `ligatures`.
 
 #### CSS Font Loading API: Preload
 

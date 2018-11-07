@@ -131,7 +131,7 @@ Với CSS3 bạn có thể sử dụng CSS3 Animation và Transtion để làm c
 
 {{% codepen height="226" id="jbBZjw" %}}
 
-** Bạn có thể tham khảo các liên kết sau để có thể tìm hiểu sâu hơn về HTML5 Audio:
+Bạn có thể tham khảo các liên kết sau để có thể tìm hiểu sâu hơn về HTML5 Audio:
 
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Events/Media_events)
 - [HTML5 Doctor](http://html5doctor.com/html5-audio-the-state-of-play/)

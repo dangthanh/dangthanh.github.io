@@ -10,7 +10,7 @@
     text-decoration: none;
   }
 
-  @each $language in css, sass, postcss, javascript, personal, tools, vue, hugo {
+  @each $language in css, sass, postcss, javascript, personal, tools, vue, hugo, tailwindcss, elm {
     &-$(language) {
       background-color: var(--$(language));
     }

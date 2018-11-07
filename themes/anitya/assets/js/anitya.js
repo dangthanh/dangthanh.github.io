@@ -93,7 +93,9 @@ var getCanvas = function() {
 
     window.addEventListener('resize', tree, false);
 
-    ['resize', 'click', 'touchdown'].forEach(event => {
+    var events = ['resize', 'click', 'touchdown'];
+
+    events.forEach(event => {
       document.addEventListener(event, tree, false);
     });
 

@@ -59,7 +59,13 @@
     }
 
     code:not([data-lang]) {
+      background: var(--codeBackground);
+      color: var(--codeColor);
       font-family: var(--font-serif);
+      font-style: italic;
+      padding: 0 .25rem;
+      border-radius: .25rem;
+      white-space: nowrap;
     }
 
     blockquote {
