@@ -3,7 +3,6 @@ title: "Functional CSS"
 slug: "functional-css"
 date: 2018-11-06T21:03:27+07:00
 tags: ["css", "postcss", "tailwindcss"]
-draft: true
 ---
 
 Khi viết CSS cho web. Có rất nhiều CSS Framework để bạn lựa chọn. Và một số CSS Framework sau đây thì rất phổ biến:
