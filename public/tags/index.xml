@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Dang Thanh Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vn-vi</language>
-    <lastBuildDate>Fri, 02 Nov 2018 01:03:37 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Nov 2018 21:03:27 +0700</lastBuildDate>
     
 	<atom:link href="https://dangthanh.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Css</title>
       <link>https://dangthanh.org/tags/css/</link>
-      <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
+      <pubDate>Tue, 06 Nov 2018 21:03:27 +0700</pubDate>
       
       <guid>https://dangthanh.org/tags/css/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>Postcss</title>
       <link>https://dangthanh.org/tags/postcss/</link>
-      <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
+      <pubDate>Tue, 06 Nov 2018 21:03:27 +0700</pubDate>
       
       <guid>https://dangthanh.org/tags/postcss/</guid>
       <description></description>
@@ -62,6 +62,15 @@
       <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
       
       <guid>https://dangthanh.org/tags/sass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tailwindcss</title>
+      <link>https://dangthanh.org/tags/tailwindcss/</link>
+      <pubDate>Tue, 06 Nov 2018 21:03:27 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/tags/tailwindcss/</guid>
       <description></description>
     </item>
     

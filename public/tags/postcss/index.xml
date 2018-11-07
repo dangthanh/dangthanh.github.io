@@ -6,10 +6,21 @@
     <description>Recent content in Postcss on Dang Thanh Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vn-vi</language>
-    <lastBuildDate>Fri, 02 Nov 2018 01:03:37 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Nov 2018 21:03:27 +0700</lastBuildDate>
     
 	<atom:link href="https://dangthanh.org/tags/postcss/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Functional CSS</title>
+      <link>https://dangthanh.org/blog/functional-css/</link>
+      <pubDate>Tue, 06 Nov 2018 21:03:27 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/blog/functional-css/</guid>
+      <description>Khi viết CSS cho web. Có rất nhiều CSS Framework để bạn lựa chọn. Và một số CSS Framework sau đây thì rất phổ biến:
+ Bootstrap Foundation Bulma Sematic UI UI Kit  Những CSS Framework trên giúp bạn xây dựng Prototype, Responsive Design một cách linh hoạt và dễ dàng.
+Hôm nay tui sẽ giới thiệu thêm với các bạn về Functional CSS (được thường được gọi là Utility-first CSS hay Atomic CSS)</description>
+    </item>
     
     <item>
       <title>PostCSS</title>
