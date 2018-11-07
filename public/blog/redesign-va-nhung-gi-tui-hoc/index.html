@@ -24,10 +24,9 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="preload" href="/fonts/TimesNewerRoman-Regular.otf" as="font" type="font/otf" crossorigin>
-<link rel="preload" href="/fonts/TimesNewerRoman-Bold.otf" as="font" type="font/otf" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Slab&amp;subset=vietnamese" rel="stylesheet">
 
-<link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.17f0b64c93bdd4a786f7f4e09e9dcd1f4ee50c6df8646ad8dff76f4e21c1e38c.css" integrity="sha256-F/C2TJO91KeG9/Tgnp3NH07lDG34ZGrY3/dvTiHB44w=">
+<link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.535827737c141078e97d176570ed977e5482234638c6e7cd1b86356771c17d15.css" integrity="sha256-U1gnc3wUEHjpfRdlcO2XflSCI0Y4xufNG4Y1Z3HBfRU=">
 <link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
 <body>
       <a href="#" class="site-corner js-corner" aria-label="Night">
@@ -116,9 +115,13 @@
 <span class="err">}</span></code></pre></div>
 <p><strong>Chú ý:</strong> <em>Đây là cú pháp tui viết sử dụng PostCSS được trình bày ở dưới.</em></p>
 
-<h4 id="times-newer-roman">Times Newer Roman</h4>
+<h4 id="times-newer-roman-roboto-slab-và-ubuntu-mono">Times Newer Roman, Roboto Slab và Ubuntu Mono</h4>
 
-<p>Việc thay đổi font chữ <a href="https://fonts.google.com/specimen/Muli">Muli</a> sang sử dụng phông chữ <a href="https://timesnewerroman.com/">Times Newer Roman</a> là một bộ phông chữ tương tự Times New Roman nhưng độ dài mỗi ký tự rộng hơn giúp bạn dễ dàng đọc nội dung trên blog hơn.</p>
+<p>Việc thay đổi font chữ <a href="https://fonts.google.com/specimen/Muli">Muli</a> sang sử dụng phông chữ <a href="https://timesnewerroman.com/">Times Newer Roman</a> là một bộ phông chữ tương tự Times New Roman nhưng độ dài mỗi ký tự rộng hơn (theo như tác giả là 5 - 10%) giúp bạn dễ dàng đọc nội dung trên blog hơn.</p>
+
+<p>Nhưng sau khi xem blog trên Windows tui thấy phông chữ Times Newer Roman không hiển thị đẹp lắm mặc dù trên Mac hay Linux phông chữ vẫn hiển thị rất đẹp nên cuối cùng cũng chọn phông chữ <a href="https://fonts.google.com/specimen/Roboto+Slab">Roboto Slab</a>.</p>
+
+<p>Còn với code highlight tui sử dụng <a href="https://fonts.google.com/specimen/Ubuntu+Mono">Ubuntu Mono</a>. Mặc dù vẫn thích những phông chữ hỗ trợ <code>ligatures</code> như <a href="https://github.com/tonsky/FiraCode">Fira Code</a> nhưng Ubuntu Mono vẫn dễ nhìn hơn với các bạn chưa quen với <code>ligatures</code>.</p>
 
 <h4 id="css-font-loading-api-preload">CSS Font Loading API: Preload</h4>
 
@@ -222,20 +225,10 @@
 </script>
 
 
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-0445843198703009",
-    enable_page_level_ads: true
-  });
-</script>
-
-
 <script defer src="//codepen.io/assets/embed/ei.js"></script>
 <script defer src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
 
 
-<script defer src="https://dangthanh.org/js/anitya.min.e329310d6192670c9569925e653e8ed7f8572999881ec6bf18f67acf20c77a80.js" integrity="sha256-4ykxDWGSZwyVaZJeZT6O1/hXKZmIHsa/GPZ6zyDHeoA="></script>
+<script defer src="https://dangthanh.org/js/anitya.min.cd28ddb8e7a0022caf89de723eb1f24efebb2bcf9d1249cc10606c159f73e2e3.js" integrity="sha256-zSjduOegAiyvid5yPrHyTv67K8&#43;dEknMEGBsFZ9z4uM="></script>
 </body>
 </html>
