@@ -33,8 +33,8 @@ touch .gitignore
 echo "node_modules" > .gitignore
 
 # Move favicon to root
-mv public/images/favicon/favicon.ico public/favicon.ico
-mv public/images/favicon/browserconfig.xml public/browserconfig.xml
+cp public/images/favicon/favicon.ico public/favicon.ico
+cp public/images/favicon/browserconfig.xml public/browserconfig.xml
 
 # Add changes to git.
 git add -A
