@@ -225,7 +225,7 @@ var Caniuse = {
 if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
   window.addEventListener('load', function() {
     navigator.serviceWorker
-      .register('service-worker.js')
+      .register('/js/service-worker.js')
       .then(function(reg) {
         reg.onupdatefound = function() {
           var installingWorker = reg.installing;
