@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi"><meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>HTML5 Fullscreen API | Dang Thanh Blog</title>
+<meta name="description" content="Blog chia sẻ về web và phát triển web">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/manifest.json">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Slab&amp;subset=vietnamese" rel="stylesheet">
+
+<link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.d278f9e4174d14ee9d2e2b88053b717dea6619a85b35918ed79df9428374f1fc.css" integrity="sha256-0nj55BdNFO6dLiuIBTtxfepmGahbNZGO1535QoN08fw=">
+<link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
+<body>
+      <a href="#" class="site-corner js-corner" aria-label="Night">
+        <i class="icon icon-moon"></i>
+      </a>
+      <div class="site"><header role="banner" class="site-header">
+  <div class="site-logo">
+      <a href="/">DT</a>
+  </div>
+  <nav role="navigation" class="site-nav">
+    <ul class="no-list m-0 p-0">
+      <li>
+        <a href="/" data-link="home" class="no-underline hover:line-through">Bài viết</a>
+      </li>
+      <li>
+        <a href="/tags" data-link="tags" class="no-underline hover:line-through">Lưu trữ</a>
+      </li>
+      <li>
+        <a href="/about" data-link="about" class="no-underline hover:line-through">Về tui</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main role="main" class="site-main">
+          <div id="main"><div class="article article-single" itemscope itemtype="//schema.org/Article">
+    
+      <h2 itemprop="headline">HTML5 Fullscreen API</h2>
+      <ul class="no-list p-0 m-0">
+      
+        <li class="inline-block"><a href="/tags/javascript" class="tag tag-javascript">javascript</a></li>
+      
+      </ul>
+    
+
+    <div class="article-body" itemprop="articleBody">
+      
+
+<p>Khi muốn xem trang web ở chế độ toàn màn hình bạn thường nhấn phím <strong>F11</strong>. Tuy nhiên khi bạn chỉ muốn hiển thị chế độ toàn màn hình cho một phần tử nào đó thì chúng ta không thể thực hiện bằng cách trên.</p>
+
+<p>HTML5 cung cấp một API mới cho phép bạn hiển thị toàn màn hình bất kì phần tử nào của một trang web đó là HTML5 Fullscreen API.</p>
+
+<p>Các phương thức chính của HTML5 Fullscreen API.</p>
+
+<table>
+<thead>
+<tr>
+<th>Phương thức</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>.requestFullScreen() <br> .webkitRequestFullScreen() <br> .mozRequestFullScreen()</td>
+<td>Hiển thị toàn màn hình với phần tử được chỉ định</td>
+</tr>
+
+<tr>
+<td>.cancelFullScreen() <br> .webkitCancelFullScreen() <br> .mozRequestFullScreen()</td>
+<td>Thoát chế độ hiển thị toàn màn hình</td>
+</tr>
+
+<tr>
+<td>.fullScreen <br> .webkitIsFullScreen <br> .mozfullScreen</td>
+<td>Xem phần tử đang hiển thị ở chế độ toàn màn hình</td>
+</tr>
+
+<tr>
+<td>:full-screen <br> :-webkit-full-screen <br> :-moz-fullscreen</td>
+<td>Tương tác với phần tử được chỉ định khi ở chế độ toàn màn hình.</td>
+</tr>
+</tbody>
+</table>
+
+<p><br>HTML5 Fullscreen API thực sự rất hữu ích khi bạn làm việc với các phần tử như hình ảnh hoặc video. Sau đây để hiểu rõ hơn cách làm việc với HTML5 Fullscreen API, mình xin viết một hướng dẫn việc sử dụng fullscreen với <strong><a href="/blog/html5-geolocation-va-leaflet/">bản đồ sử dụng leaflet</a></strong>.</p>
+
+<h3 id="html">HTML</h3>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;map-wrapper&#34;</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;map&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;map&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;fullscreen&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fullscreen&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Fullscreen<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h3 id="javascript">JavaScript</h3>
+
+<h4 id="chế-độ-fullscreen">Chế độ FullScreen</h4>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">fullscreen_element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">fullscreen_button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;fullscreen&#39;</span><span class="p">);</span>
+
+<span class="nx">fullscreen_button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">launchFullScreen</span><span class="p">(</span><span class="nx">fullscreen_element</span><span class="p">);</span>
+<span class="p">},</span> <span class="kc">false</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">launchFullScreen</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">requestFullScreen</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">element</span><span class="p">.</span><span class="nx">requestFullScreen</span><span class="p">();</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">mozRequestFullScreen</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">element</span><span class="p">.</span><span class="nx">mozRequestFullScreen</span><span class="p">();</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">webkitRequestFullScreen</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">element</span><span class="p">.</span><span class="nx">webkitRequestFullScreen</span><span class="p">();</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">msRequestFullScreen</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">element</span><span class="p">.</span><span class="nx">msRequestFullScreen</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="thoát-chế-độ-fullscreen">Thoát chế độ FullScreen</h4>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">cancelFullscreen</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">cancelFullScreen</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">cancelFullScreen</span><span class="p">();</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">mozCancelFullScreen</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">mozCancelFullScreen</span><span class="p">();</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">webkitCancelFullScreen</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">webkitCancelFullScreen</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="css">CSS</h3>
+
+<p>Ở chế độ fullscreen ta có thể stylesheet cho thành phần được lựa chọn.</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">map</span><span class="p">:</span><span class="nd">-webkit-full-screen</span> <span class="p">{</span> <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">.</span><span class="nc">map</span><span class="p">:</span><span class="nd">-moz-full-screen</span> <span class="p">{</span> <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">.</span><span class="nc">map</span><span class="p">:</span><span class="nd">-ms-full-screen</span> <span class="p">{</span> <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">.</span><span class="nc">map</span><span class="p">:</span><span class="nd">full-screen</span> <span class="p">{</span> <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="p">}</span></code></pre></div>
+<p>HTML5 FullScreen API là một API đơn giản và mạnh mẽ. Mình hi vọng với API đơn giản này các bạn có thể viết những ứng dụng tương tác dễ dàng hơn khi cần hiển thị chế độ toàn màn hình.</p>
+
+
+
+
+<caniuse features="fullscreen"></caniuse>
+
+
+    </div>
+    
+      <section itemscope itemtype="//schema.org/Person" class="site-author cf">
+  <img itemprop="image" src="https://avatars2.githubusercontent.com/u/2674850?v=3&s=100" class="fl" alt="Đặng Văn Thanh">
+  <div class="fl">
+    <h4 itemprop="author">Đặng Văn Thanh</h4>
+    <span itemprop="description">Có đam mê về lập trình và các vấn đề về phát triển web.</span>
+  </div>
+</section>
+
+      
+  
+
+
+  <aside class="article-body article-related mt-40">
+    <h3>Bài viết liên quan</h3>
+    <ul>
+      
+      
+        <li><a href="/blog/tao-mp3-player-voi-html5-va-css3/">Tạo MP3 Player với HTML5 và CSS3</a>
+      
+        <li><a href="/blog/do-bong-mixin-voi-text-shadow/">Đổ Bóng Mixin Với Text-Shadow</a>
+      
+        <li><a href="/blog/checkboxes-jquery-plugin/">Checkboxes jQuery Plugin</a>
+      
+        <li><a href="/blog/html5-geolocation-va-leaflet/">HTML5 Geolocation và Leaflet</a>
+      
+        <li><a href="/blog/web-storage/">Web Storage</a>
+      
+    </ul>
+  </aside>
+
+
+    
+  </div>
+          </div><footer role="contentinfo" class="site-footer">
+  <p>
+    &copy;2013 - 2018. Được xây dựng bằng
+    <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a>,
+    <a href="https://vuejs.org/" rel="noopener" target="_blank">Vue.js</a>.
+  </p>
+</footer>
+
+
+</main>
+      </div>
+<script type="text/javascript" defer>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-41117458-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+
+<script defer src="//codepen.io/assets/embed/ei.js"></script>
+<script defer src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
+
+
+<script defer src="https://dangthanh.org/js/anitya.min.7326e01d63633f3b5cdc5a04fa32b58d1845494cc643a1e279c25d9d2a8034c6.js" integrity="sha256-cybgHWNjPztc3FoE&#43;jK1jRhFSUzGQ6HiecJdnSqANMY="></script>
+</body>
+</html>
