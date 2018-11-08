@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi"><meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>PostCSS | Dang Thanh Blog</title>
+<meta name="description" content="Blog chia sẻ về web và phát triển web">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/manifest.json">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Slab&amp;subset=vietnamese" rel="stylesheet">
+
+<link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.d278f9e4174d14ee9d2e2b88053b717dea6619a85b35918ed79df9428374f1fc.css" integrity="sha256-0nj55BdNFO6dLiuIBTtxfepmGahbNZGO1535QoN08fw=">
+<link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
+<body>
+      <a href="#" class="site-corner js-corner" aria-label="Night">
+        <i class="icon icon-moon"></i>
+      </a>
+      <div class="site"><header role="banner" class="site-header">
+  <div class="site-logo">
+      <a href="/">DT</a>
+  </div>
+  <nav role="navigation" class="site-nav">
+    <ul class="no-list m-0 p-0">
+      <li>
+        <a href="/" data-link="home" class="no-underline hover:line-through">Bài viết</a>
+      </li>
+      <li>
+        <a href="/tags" data-link="tags" class="no-underline hover:line-through">Lưu trữ</a>
+      </li>
+      <li>
+        <a href="/about" data-link="about" class="no-underline hover:line-through">Về tui</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main role="main" class="site-main">
+          <div id="main"><div class="article article-single" itemscope itemtype="//schema.org/Article">
+    
+      <h2 itemprop="headline">PostCSS</h2>
+      <ul class="no-list p-0 m-0">
+      
+        <li class="inline-block"><a href="/tags/css" class="tag tag-css">css</a></li>
+      
+        <li class="inline-block"><a href="/tags/sass" class="tag tag-sass">sass</a></li>
+      
+        <li class="inline-block"><a href="/tags/postcss" class="tag tag-postcss">postcss</a></li>
+      
+      </ul>
+    
+
+    <div class="article-body" itemprop="articleBody">
+      
+
+<p>Lần trước tui có đề cập tới <a href="/blog/redesign-va-nhung-gi-tui-hoc/#postcss">PostCSS</a>. Nay tui sẽ giới thiệu tổng quan về PostCSS cho các bạn. Cũng như <a href="/blog/su-dung-sass/">Sass</a>, PostCSS cũng cung cấp các chức năng như Sass:</p>
+
+<ul>
+<li>Khai báo biến</li>
+<li>Nhúng các tập tin CSS (Partial import)</li>
+<li>Cú pháp lồng (Nesting)</li>
+<li>Sử dụng lại với Mixins</li>
+<li>Kế thừa (Extends)</li>
+</ul>
+
+<h3 id="sử-dụng-postcss">Sử dụng PostCSS</h3>
+
+<p>Trước hết PostCSS một công cụ cho việc chuyển đổi CSS sử dụng JavaScript. Bạn có thể sử dụng nhiều công cụ như Webpack, Rollup, Gulp hay Grunt để chuyển đổi PostCSS sang CSS. Nhưng để đơn giản bạn nên bắt đầu làm quen PostCSS với <a href="https://github.com/postcss/postcss-cli">PostCSS CLI</a></p>
+
+<p>Cách sử dụng để chuyển đổi như sau</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ postcss <span class="o">[</span>input.css<span class="o">]</span> -o <span class="o">[</span>output.css<span class="o">]</span> </code></pre></div>
+<p><strong>Chú ý:</strong> <em>Bạn có thể đổi <code>[input.css]</code> và <code>[output.css]</code> thành tên tập tin bạn mong muốn.</em></p>
+
+<p>Hoặc bạn có thể cấu hình thêm ở tập tin <strong>postcss.config.js</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">plugins</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s1">&#39;postcss-import&#39;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s1">&#39;postcss-each&#39;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s1">&#39;postcss-nested&#39;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s1">&#39;postcss-preset-env&#39;</span><span class="o">:</span> <span class="p">{</span> <span class="nx">stage</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">browsers</span><span class="o">:</span> <span class="s1">&#39;last 2 versions&#39;</span> <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
+<h3 id="autoprefixer-và-browserlist">Autoprefixer và Browserlist</h3>
+
+<p><a href="https://github.com/postcss/autoprefixer"><strong>Autoprefixer</strong></a> là một PostCSS plugin phân tích cú pháp CSS của bạn và thêm các tiền tố (vendor prefixes) như <code>-wekit-</code>, <code>-moz-</code>, <code>-ms-</code>, <code>-o-</code> tương ứng với các trình duyệt.</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">example</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="k">grid</span><span class="p">;</span>
+  <span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>Biên dịch thành CSS</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">example</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kp">-ms-</span><span class="k">grid</span><span class="p">;</span>
+  <span class="k">display</span><span class="p">:</span> <span class="k">grid</span><span class="p">;</span>
+  <span class="kp">-webkit-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="kp">-moz-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="kp">-ms-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>Autoprefixer còn cho phép bạn có thể lựa chọn tiền tố cho từng trình duyệt cụ thể</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">autoprefixer</span><span class="o">(</span><span class="p">{</span> <span class="n">browsers</span><span class="p">:</span> <span class="s1">&#39;last 2 versions, &gt; 1%&#39;</span> <span class="p">}</span><span class="o">)</span></code></pre></div>
+<p>Với <a href="https://github.com/browserslist/browserslist"><strong>Browserlist</strong></a> thì việc cấu hình tiền tố cho từng trình duyệt cụ thể sẽ dễ dàng hơn với việc cấu hình trong <strong><code>package.json</code></strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&#34;browserslist&#34;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&#34;last 1 version&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;&gt; 1%&#34;</span><span class="p">,</span>
+  <span class="p">]</span>
+<span class="p">}</span></code></pre></div>
+<p>hoặc trong tập tin <strong><code>.browserslistrc</code></strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">last</span> <span class="nt">1</span> <span class="nt">version</span>
+<span class="o">&gt;</span> <span class="nt">1</span><span class="o">%</span></code></pre></div>
+<h3 id="postcss-preset-env">PostCSS Preset Env</h3>
+
+<p>Ngoài việc định nghĩa biến bằng các thuộc tính CSS. <a href="https://preset-env.cssdb.org/"><strong>PostCSS Preset Env</strong></a> còn có những biến định nghĩa <em>media queries</em>, <em>selectors</em>, các chức năng về <em>color function</em>, <em>pseudo-class</em>, <em>nesting rules</em>&hellip; Bên cạnh đó còn giúp chuyển đổi các CSS hiện đại thành CSS mà hầu hết trình duyệt đều hỗ trợ.</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+  <span class="nv">--length</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">custom-media</span> <span class="nt">--tablet</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">40em</span><span class="o">)</span><span class="p">;</span>
+<span class="p">@</span><span class="k">custom-selector</span> <span class="p">:</span><span class="nd">--heading</span> <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span><span class="p">;</span>
+
+<span class="p">.</span><span class="nc">round</span> <span class="p">{</span>
+  <span class="k">width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">length</span><span class="p">);</span>
+  <span class="k">height</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">length</span><span class="p">);</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">site</span> <span class="p">:</span><span class="nd">--heading</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">--tablet</span><span class="o">)</span> <span class="p">{</span>
+  <span class="p">.</span><span class="nc">site</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Biên dịch thành CSS</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">round</span> <span class="p">{</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">site</span> <span class="nt">h1</span> <span class="o">+</span> <span class="nt">p</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">site</span> <span class="nt">h2</span> <span class="o">+</span> <span class="nt">p</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">site</span> <span class="nt">h3</span> <span class="o">+</span> <span class="nt">p</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">site</span> <span class="nt">h4</span> <span class="o">+</span> <span class="nt">p</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">site</span> <span class="nt">h5</span> <span class="o">+</span> <span class="nt">p</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">site</span> <span class="nt">h6</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">40em</span><span class="o">)</span> <span class="p">{</span>
+  <span class="p">.</span><span class="nc">site</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<h3 id="css-modules">CSS Modules</h3>
+
+<p>Mỗi lúc viết CSS bạn lo lắng tên của các <code>classes</code> được sử dụng quá chung chung. <a href="https://github.com/css-modules/css-modules"><strong>CSS Modules</strong></a> giúp tên các <code>classes</code> bạn định nghĩa được ánh xạ từ tên chung đó một cách có ý nghĩa nhất. CSS Modules thực tế được dùng nhiều với các bạn viết JavaScript nhiều hơn so với các bạn Web Designer (chỉ viết HTML và CSS) vì những ưu điểm:</p>
+
+<ul>
+<li>Dễ dàng tái sử dụng</li>
+<li>Không bị ảnh hưởng tới những chỗ khác</li>
+<li>Phụ thuộc rõ ràng vào chính bản thân nó</li>
+<li>Không có phạm vi Global mà chỉ nằm trong Scoped</li>
+</ul>
+
+<p>Ví dụ ta có một file <code>style.css</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* style.css */</span>
+<span class="p">.</span><span class="nc">className</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>Khi nhúng vào trong JavaScript module.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">import</span> <span class="nx">styles</span> <span class="nx">from</span> <span class="s1">&#39;./style.css&#39;</span><span class="p">;</span>
+
+<span class="nx">element</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">&#39;&lt;div class=&#34;&#39;</span> <span class="o">+</span> <span class="nx">styles</span><span class="p">.</span><span class="nx">className</span> <span class="o">+</span> <span class="s1">&#39;&#34;&gt;&#39;</span><span class="p">;</span>
+</code></pre></div>
+<p>Sau khi thực thi ta sẽ được kết quả</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">.</span><span class="nc">_styles__title_2qkr5</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;element&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;_styles__title_2qkr5&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h3 id="stylelint">Stylelint</h3>
+
+<p><a href="https://stylelint.io/"><strong>Stylelint</strong></a> giúp bạn tránh những lỗi và đảm bảo convention cũng như cải thiện CSS khi bạn code CSS được toàn vẹn với những quy tắc chuẩn hoá và chặt chẽ. Stylelint cũng cung cấp cho PostCSS một plugin để dễ dàng cấu hình.</p>
+
+<h3 id="postcss-có-gì-hay">PostCSS Có Gì Hay</h3>
+
+<p>Tới đây, một số bạn sẽ thắc mắc vậy PostCSS có gì hay hơn Sass nhỉ? Sass hầu như cũng làm được các chức năng trên cơ mà. Tuy nhiên PostCSS còn có những ưu điểm:</p>
+
+<h4 id="từ-sass-đến-postcss">Từ Sass đến PostCSS</h4>
+
+<p>Bạn dễ dàng có thể tái sử dụng code <a href="https://github.com/jonathantneal/postcss-sass">Sass</a> hay <a href="https://github.com/postcss/postcss-scss">SCSS</a> trong PostCSS, thậm chí <a href="https://github.com/shellscape/postcss-less">Less</a> hay <a href="https://github.com/seaneking/poststylus">Stylus</a>.</p>
+
+<h4 id="postcss-plugin">PostCSS Plugin</h4>
+
+<p>Hệ thống <a href="https://www.postcss.parts/">plugin của PostCSS</a> rất đồ sộ và rất nhiều <a href="https://github.com/postcss/postcss/blob/master/docs/plugins.md">plugin mạnh mẽ</a> như:</p>
+
+<ul>
+<li><p><a href="https://github.com/hail2u/node-css-mqpacker">CSS MQPacker</a>: đóng gói các quy tắc về <em>media queries</em> giống nhau về thành một</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nt">h3</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nt">h3</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Biên dịch thành CSS</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h3</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nt">h3</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div></li>
+
+<li><p><a href="https://cssnano.co/">CSSNano</a>: Tối ưu code CSS như <em>minification</em>, <em>compresses inline SVG</em>, <em>duplicates</em>, <em>comments</em>, <em>unused rule</em>&hellip;</p></li>
+</ul>
+
+<h4 id="tuỳ-biến-postcss">Tuỳ biến PostCSS</h4>
+
+<p>Chỉ cần một ít kiến thức về JavaScript bạn có thể dễ dàng <a href="https://github.com/postcss/postcss/blob/master/docs/writing-a-plugin.md">viết plugin cho PostCSS</a> với phong cách của riêng mình như:</p>
+
+<ul>
+<li><a href="https://github.com/chancancode/postcss-canadian-stylesheets">Canadian Style Sheets</a></li>
+<li><a href="https://github.com/dangvanthanh/postcss-tipsy">Tipsy</a></li>
+<li><a href="https://github.com/juanfran/postcss-trolling">Trolling Style Sheets</a></li>
+<li><a href="https://github.com/dangvanthanh/postcss-longshadow-text">Long Shadow Text</a></li>
+</ul>
+
+    </div>
+    
+      <section itemscope itemtype="//schema.org/Person" class="site-author cf">
+  <img itemprop="image" src="https://avatars2.githubusercontent.com/u/2674850?v=3&s=100" class="fl" alt="Đặng Văn Thanh">
+  <div class="fl">
+    <h4 itemprop="author">Đặng Văn Thanh</h4>
+    <span itemprop="description">Có đam mê về lập trình và các vấn đề về phát triển web.</span>
+  </div>
+</section>
+
+      
+  
+
+
+  <aside class="article-body article-related mt-40">
+    <h3>Bài viết liên quan</h3>
+    <ul>
+      
+      
+        <li><a href="/blog/functional-css/">Functional CSS</a>
+      
+        <li><a href="/blog/redesign-va-nhung-gi-tui-hoc/">Redesign và những gì tui học</a>
+      
+        <li><a href="/blog/su-dung-icon-fonts/">Sử dụng Icon Fonts</a>
+      
+        <li><a href="/blog/tao-mp3-player-voi-html5-va-css3/">Tạo MP3 Player với HTML5 và CSS3</a>
+      
+        <li><a href="/blog/do-bong-mixin-voi-text-shadow/">Đổ Bóng Mixin Với Text-Shadow</a>
+      
+    </ul>
+  </aside>
+
+
+    
+  </div>
+          </div><footer role="contentinfo" class="site-footer">
+  <p>
+    &copy;2013 - 2018. Được xây dựng bằng
+    <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a>,
+    <a href="https://vuejs.org/" rel="noopener" target="_blank">Vue.js</a>.
+  </p>
+</footer>
+
+
+</main>
+      </div>
+<script type="text/javascript" defer>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-41117458-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+
+<script defer src="//codepen.io/assets/embed/ei.js"></script>
+<script defer src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
+
+
+<script defer src="https://dangthanh.org/js/anitya.min.7326e01d63633f3b5cdc5a04fa32b58d1845494cc643a1e279c25d9d2a8034c6.js" integrity="sha256-cybgHWNjPztc3FoE&#43;jK1jRhFSUzGQ6HiecJdnSqANMY="></script>
+</body>
+</html>
