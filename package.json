@@ -10,14 +10,16 @@
     "postcss-each": "^0.10.0",
     "postcss-import": "^12.0.0",
     "postcss-nested": "^4.1.0",
-    "postcss-preset-env": "^6.0.10"
+    "postcss-preset-env": "^6.0.10",
+    "sw-precache": "^5.2.1"
   },
   "browserslist": [
     "last 2 version",
     "> 1%"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "hugo server -D -w",
+    "sw-precache": "sw-precache --root=public --sw-file-path=public/js/service-worker.js"
   },
   "repository": {
     "type": "git",

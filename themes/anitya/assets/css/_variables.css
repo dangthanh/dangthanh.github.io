@@ -3,6 +3,7 @@
 :root {
   --background: #fffafa;
   --color: #242424;
+  --border: #eee8d5;
   --font-serif: 'Roboto Slab', serif;
   --font-monospace: 'Fira Mono', monospace;
 
@@ -31,6 +32,7 @@
 .night {
   --background: #1c2532;
   --color: #fff;
+  --border: #323e4f;
 
   --caniuseBackground: rgba(40, 50, 67, 0.4);
   --caniuseBorder: #323e4f;

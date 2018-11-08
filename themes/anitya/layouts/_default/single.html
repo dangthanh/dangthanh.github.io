@@ -13,7 +13,8 @@
       {{ .Content }}
     </div>
     {{ if not .Params.NoIntro }}
-    {{ partial "embed/author.html" . }}
+      {{ partial "embed/author.html" . }}
+      {{ partial "embed/post_related.html" . }}
     {{ end }}
   </div>
 {{- end }}

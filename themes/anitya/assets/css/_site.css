@@ -178,7 +178,7 @@ img {
   }
 
   &-footer {
-    border-top: 1px solid;
+    border-top: 1px solid var(--border);
   }
 }
 
