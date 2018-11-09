@@ -2,7 +2,7 @@
 title = "Redesign và những gì tui học"
 slug = "redesign-va-nhung-gi-tui-hoc"
 date = "2016-12-25"
-tags = ["personal", "css", "postcss", "hugo"]
+tags = ["personal", "css", "postcss", "hugo", "javascript"]
 +++
 
 Thực ra bài viết này đã có từ lâu, nhưng tui vẫn để nó ở chế độ bản nháp và cũng do lười (quá lười) nên cũng từ lâu tui cũng bỏ thói quen viết blog. Nay tui chia sẻ những kinh nghiệm khi thiết kế lại blog này.
@@ -12,6 +12,8 @@ Thực ra bài viết này đã có từ lâu, nhưng tui vẫn để nó ở ch
 Vì không phải là một Designer nên tui không giỏi về thiết kế lắm. Nên tui vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này.
 
 Blog mới cung cấp hai giao diện, giúp bạn không bị mỏi mắt khi đọc lâu. Bạn nhấn vào biểu tượng ở góc phải để đổi sang giao diện yêu thích nhé. Có thể tui sẽ cập nhật thêm về màu sắc xíu nữa cho phù hợp.
+
+![Dang Thanh Blog - phiên bản light and dark](/images/blog_v2.png)
 
 Tui cũng đã xoá đi hệ thống phản hồi (trước đây tui dùng [Disqus](https://disqus.com/)) vì thấy nó không hữu ích. Các bạn có thể liên hệ hoặc trao đổi với tui qua <a href="mailto:dangvanthanh@dangthanh.org">email</a>.
 
@@ -130,3 +132,7 @@ Với cách viết này bạn sẽ dễ dàng cập nhật thêm các biến gi�
 {{% caniuse features="webp" %}}
 
 Ban đầu tui tính chuyển tất cả hình ảnh của web hiện tại sang `webp`. Nhưng cả trình duyệt Safari và Firefox đều không hỗ trợ tốt định dạng này. Nên cuối cùng vẫn phải dùng `png` và `jpg` để nó có thể hỗ trợ hầu hết trình duyệt.
+
+### Service Worker and Offine Web
+
+Offine web giúp blog này có thể chạy ngay cả khi bạn không kết Internet (bạn có thể tắt Internet và trải nghiệm). Ở đây mình hộ trợ offine web với **[service worker](https://developers.google.com/web/fundamentals/primers/service-workers/)** và dùng **[sw-precache](https://github.com/GoogleChromeLabs/sw-precache)** một module được viết bằng Node.js để tạo ra tài nguyên offine cho Hugo.

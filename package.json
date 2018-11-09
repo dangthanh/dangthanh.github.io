@@ -10,7 +10,7 @@
     "postcss-each": "^0.10.0",
     "postcss-import": "^12.0.0",
     "postcss-nested": "^4.1.0",
-    "postcss-preset-env": "^6.0.10",
+    "postcss-preset-env": "^6.4.0",
     "sw-precache": "^5.2.1"
   },
   "browserslist": [
@@ -19,6 +19,7 @@
   ],
   "scripts": {
     "start": "hugo server -D -w",
+    "build": "rm -rf public && hugo",
     "sw-precache": "sw-precache --root=public --sw-file-path=public/service-worker.js"
   },
   "repository": {

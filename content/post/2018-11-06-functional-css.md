@@ -131,4 +131,4 @@ Như đã nói trên, **Tailwind CSS** là thư viện mà tui rất thích. Nê
 
 #### Plan
 
-{{% codepen height="280" id="oQgVOR" %}}
+{{% codepen height="400" id="oQgVOR" %}}

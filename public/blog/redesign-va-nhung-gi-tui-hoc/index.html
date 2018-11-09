@@ -26,7 +26,7 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Slab&amp;subset=vietnamese" rel="stylesheet">
 
-<link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.d278f9e4174d14ee9d2e2b88053b717dea6619a85b35918ed79df9428374f1fc.css" integrity="sha256-0nj55BdNFO6dLiuIBTtxfepmGahbNZGO1535QoN08fw=">
+<link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.b9ea1e4344bb1863e4e2d8af779e041bf1cfe4e34caa544b51cf04ede4a80b39.css" integrity="sha256-ueoeQ0S7GGPk4tivd54EG/HP5ONMqlRLUc8E7eSoCzk=">
 <link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
 <body>
       <a href="#" class="site-corner js-corner" aria-label="Night">
@@ -64,6 +64,8 @@
       
         <li class="inline-block"><a href="/tags/hugo" class="tag tag-hugo">hugo</a></li>
       
+        <li class="inline-block"><a href="/tags/javascript" class="tag tag-javascript">javascript</a></li>
+      
       </ul>
     
 
@@ -77,6 +79,8 @@
 <p>Vì không phải là một Designer nên tui không giỏi về thiết kế lắm. Nên tui vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này.</p>
 
 <p>Blog mới cung cấp hai giao diện, giúp bạn không bị mỏi mắt khi đọc lâu. Bạn nhấn vào biểu tượng ở góc phải để đổi sang giao diện yêu thích nhé. Có thể tui sẽ cập nhật thêm về màu sắc xíu nữa cho phù hợp.</p>
+
+<p><img src="/images/blog_v2.png" alt="Dang Thanh Blog - phiên bản light and dark" /></p>
 
 <p>Tui cũng đã xoá đi hệ thống phản hồi (trước đây tui dùng <a href="https://disqus.com/">Disqus</a>) vì thấy nó không hữu ích. Các bạn có thể liên hệ hoặc trao đổi với tui qua <a href="mailto:dangvanthanh@dangthanh.org">email</a>.</p>
 
@@ -190,6 +194,10 @@
 
 <p>Ban đầu tui tính chuyển tất cả hình ảnh của web hiện tại sang <code>webp</code>. Nhưng cả trình duyệt Safari và Firefox đều không hỗ trợ tốt định dạng này. Nên cuối cùng vẫn phải dùng <code>png</code> và <code>jpg</code> để nó có thể hỗ trợ hầu hết trình duyệt.</p>
 
+<h3 id="service-worker-and-offine-web">Service Worker and Offine Web</h3>
+
+<p>Offine web giúp blog này có thể chạy ngay cả khi bạn không kết Internet (bạn có thể tắt Internet và trải nghiệm). Ở đây mình hộ trợ offine web với <strong><a href="https://developers.google.com/web/fundamentals/primers/service-workers/">service worker</a></strong> và dùng <strong><a href="https://github.com/GoogleChromeLabs/sw-precache">sw-precache</a></strong> một module được viết bằng Node.js để tạo ra tài nguyên offine cho Hugo.</p>
+
     </div>
     
       <section itemscope itemtype="//schema.org/Person" class="site-author cf">
@@ -217,7 +225,7 @@
       
         <li><a href="/blog/tao-mp3-player-voi-html5-va-css3/">Tạo MP3 Player với HTML5 và CSS3</a>
       
-        <li><a href="/blog/do-bong-mixin-voi-text-shadow/">Đổ Bóng Mixin Với Text-Shadow</a>
+        <li><a href="/blog/html5-fullscreen-api/">HTML5 Fullscreen API</a>
       
     </ul>
   </aside>
