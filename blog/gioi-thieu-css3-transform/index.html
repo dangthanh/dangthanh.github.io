@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi"><meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Giới Thiệu CSS3 Transform | Dang Thanh Blog</title>
+<meta name="description" content="Blog chia sẻ về web và phát triển web">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/manifest.json">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Slab&amp;subset=vietnamese" rel="stylesheet">
+
+<link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.b9ea1e4344bb1863e4e2d8af779e041bf1cfe4e34caa544b51cf04ede4a80b39.css" integrity="sha256-ueoeQ0S7GGPk4tivd54EG/HP5ONMqlRLUc8E7eSoCzk=">
+<link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
+<body>
+      <a href="#" class="site-corner js-corner" aria-label="Night">
+        <i class="icon icon-moon"></i>
+      </a>
+      <div class="site"><header role="banner" class="site-header">
+  <div class="site-logo">
+      <a href="/">DT</a>
+  </div>
+  <nav role="navigation" class="site-nav">
+    <ul class="no-list m-0 p-0">
+      <li>
+        <a href="/" data-link="home" class="no-underline hover:line-through">Bài viết</a>
+      </li>
+      <li>
+        <a href="/tags" data-link="tags" class="no-underline hover:line-through">Lưu trữ</a>
+      </li>
+      <li>
+        <a href="/about" data-link="about" class="no-underline hover:line-through">Về tui</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main role="main" class="site-main">
+          <div id="main"><div class="article article-single" itemscope itemtype="//schema.org/Article">
+    
+      <h2 itemprop="headline">Giới Thiệu CSS3 Transform</h2>
+      <ul class="no-list p-0 m-0">
+      
+        <li class="inline-block"><a href="/tags/css" class="tag tag-css">css</a></li>
+      
+      </ul>
+    
+
+    <div class="article-body" itemprop="articleBody">
+      
+
+<p>CSS3 transform là một trong những chức năng mạnh mẽ mà CSS3 cung cấp. Nó cho phép tác động đến tất cả các phần tử của HTML mà không ảnh hưởng đến cách xây dựng layout cho trang web như xoay phần tử, di chuyển các phần tử sang trái, phải, lên xuống, nghiêng hay phóng to hoặc thu nhỏ phần tử.</p>
+
+<p>CSS3 transform cung cấp cả 2D CSS transform và 3D CSS transform.</p>
+
+<h3 id="cú-pháp">Cú pháp</h3>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
+	<span class="kp">-webkit-</span><span class="k">transform</span><span class="p">:</span> <span class="nf">method</span><span class="p">(</span><span class="n">value</span><span class="p">);</span> <span class="err">//</span> <span class="err">Chrome,</span> <span class="err">Safari,</span> <span class="err">Opera</span>
+	<span class="kp">-moz-</span><span class="k">transform</span><span class="p">:</span> <span class="nf">method</span><span class="p">(</span><span class="n">value</span><span class="p">);</span> <span class="err">//</span> <span class="err">Firefox</span>
+	<span class="kp">-ms-</span><span class="k">transform</span><span class="p">:</span> <span class="nf">method</span><span class="p">(</span><span class="n">value</span><span class="p">);</span> <span class="err">//</span> <span class="err">Internet</span> <span class="err">Explorer</span> <span class="err">9+</span>
+	<span class="k">transform</span><span class="p">:</span> <span class="nf">method</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Các phương thức trên bạn có thể thay thế bằng một trong các phương thức sau:</p>
+
+<ul>
+<li>translate()</li>
+<li>scale()</li>
+<li>rotate()</li>
+<li>skew()</li>
+</ul>
+
+<h3 id="2d-css-transform">2D CSS Transform</h3>
+
+<h4 id="1-translate">1. Translate</h4>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
+	<span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">transform</span><span class="p">:</span> <span class="nb">translate</span><span class="p">(</span><span class="mi">50</span><span class="kt">px</span><span class="p">,</span> <span class="mi">50</span><span class="kt">px</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Translate là phương thức cho phép bạn có thể di chuyển phần tử sang các hướng trái phải, trên dưới. Phương thức này bao gồm hai giá trị <strong>X</strong> và <strong>Y</strong>. Giá trị <strong>X</strong> cho phép phần tử di chuyển theo hướng ngang (trái phải) và giá trị <strong>Y</strong> cho phép phần tử di chuyển theo hướng dọc (trên dưới). Bên cạnh phương thức translate() thì translate còn hai phương thức khác là:</p>
+
+<ul>
+<li>translateX()</li>
+<li>translateY()</li>
+</ul>
+
+
+
+
+ 
+
+
+<p data-height="365"
+	data-theme-id="652"
+	data-slug-hash="woaLp"
+	data-user="dangvanthanh"
+	data-default-tab="result"
+	class='codepen'>
+</p>
+
+
+<h4 id="2-scale">2. Scale</h4>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
+	<span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Scale là phương thức cho phép bạn có thể phóng to hoặc thu nhỏ phần tử so với kích thước thật của phần tử. Kích thước thật được phương thức scale() mặc định là 1. Vì thế bạn muốn phóng to thì có thể khai báo giá trị &gt; 1 và thu nhỏ thì khai báo giá trị &lt; 1. Đặc biệt khi bạn khai báo <strong>scale(0)</strong> thì phần tử sẽ biến mất nên bạn cần chú ý khi sử dụng phương thức này.</p>
+
+
+
+
+ 
+
+
+<p data-height="335"
+	data-theme-id="652"
+	data-slug-hash="DLKHt"
+	data-user="dangvanthanh"
+	data-default-tab="result"
+	class='codepen'>
+</p>
+
+
+<h4 id="3-rotate">3. Rotate</h4>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
+	<span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">90</span><span class="kt">deg</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Rotate là phương thức cho phép bạn xoay phần tử và giá trị được ghi bằng độ (degrees).</p>
+
+
+
+
+ 
+
+
+<p data-height="335"
+	data-theme-id="652"
+	data-slug-hash="Birzn"
+	data-user="dangvanthanh"
+	data-default-tab="result"
+	class='codepen'>
+</p>
+
+
+<h4 id="4-skew">4. Skew</h4>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
+	<span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">transform</span><span class="p">:</span> <span class="nf">skew</span><span class="p">(</span><span class="mi">50</span><span class="kt">deg</span><span class="p">,</span> <span class="mi">20</span><span class="kt">deg</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Skew là phương thức cho phép bạn nghiêng phần tử. Cũng như phưng thức translate() và rotate(), phương thức skew() hỗ trợ phần tử nghiêng theo chiều ngang hoặc dọc và giá trị được ghi bằng độ (degrees).</p>
+
+
+
+
+ 
+
+
+<p data-height="365"
+	data-theme-id="652"
+	data-slug-hash="EbKlw"
+	data-user="dangvanthanh"
+	data-default-tab="result"
+	class='codepen'>
+</p>
+
+
+<h4 id="5-sử-dụng-kết-hợp-nhiều-phương-thức">5. Sử dụng kết hợp nhiều phương thức</h4>
+
+<p>Ngoài việc sử dụng độc lập các phương thức translate(), scale(), rotate(), skew(). Ta có thể kết hợp các phương thức lại với nhau để tạo nên phần tử linh hoạt hơn.</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
+	<span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+	<span class="k">transform</span><span class="p">:</span> <span class="nb">translate</span><span class="p">(</span><span class="mi">50</span><span class="kt">px</span><span class="p">,</span> <span class="mi">50</span><span class="kt">px</span><span class="p">)</span> 
+            <span class="nb">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span> 
+            <span class="nb">rotate</span><span class="p">(</span><span class="mi">90</span><span class="kt">deg</span><span class="p">)</span> 
+            <span class="nf">skew</span><span class="p">(</span><span class="mi">50</span><span class="kt">deg</span><span class="p">,</span> <span class="mi">20</span><span class="kt">deg</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<h3 id="3d-css-transform">3D CSS Transform</h3>
+
+<p>3D CSS transform cũng tương tự 2D CSS transform. Nhưng 3D CSS transform hỗ trợ thêm một số phương thức cho không gian thứ ba.</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/**
+</span><span class="c"> * Translate
+</span><span class="c"> */</span>
+<span class="nt">translate3d</span><span class="o">(</span><span class="nt">x</span><span class="o">,</span> <span class="nt">y</span><span class="o">,</span> <span class="nt">z</span><span class="o">)</span>
+<span class="nt">translateZ</span><span class="o">(</span><span class="nt">z</span><span class="o">)</span>
+
+<span class="c">/**
+</span><span class="c"> * Scale
+</span><span class="c"> */</span>
+<span class="nt">scale3d</span><span class="o">(</span><span class="nt">sx</span><span class="o">,</span> <span class="nt">sy</span><span class="o">,</span> <span class="nt">sz</span><span class="o">)</span>
+<span class="nt">scaleZ</span><span class="o">(</span><span class="nt">sz</span><span class="o">)</span>
+
+<span class="c">/**
+</span><span class="c"> * Rotate
+</span><span class="c"> */</span>
+<span class="nt">rotateX</span><span class="o">(</span><span class="nt">rx</span><span class="o">)</span>
+<span class="nt">rotateY</span><span class="o">(</span><span class="nt">ry</span><span class="o">)</span>
+<span class="nt">rotateZ</span><span class="o">(</span><span class="nt">rz</span><span class="o">)</span>
+<span class="nt">rotate3d</span><span class="o">(</span><span class="nt">rx</span><span class="o">,</span> <span class="nt">ry</span><span class="o">,</span> <span class="nt">rz</span><span class="o">)</span>
+
+<span class="c">/**
+</span><span class="c"> * Perspective
+</span><span class="c"> * Giá trị này không ảnh hưởng đến phần tử nhưng
+</span><span class="c"> * nó ảnh hưởng sự biến đổi các yếu tố của 3D transform
+</span><span class="c"> * như rotateX(), rotateY()...
+</span><span class="c"> */</span>
+<span class="nt">perspective</span><span class="o">(</span><span class="nt">value</span><span class="o">)</span></code></pre></div>
+
+
+
+ 
+
+
+<p data-height="335"
+	data-theme-id="652"
+	data-slug-hash="Birzn"
+	data-user="dangvanthanh"
+	data-default-tab="result"
+	class='codepen'>
+</p>
+
+
+<h3 id="trình-duyệt-hỗ-trợ">Trình duyệt hỗ trợ</h3>
+
+<p>Hiện tại CSS3 Transform đã hỗ trợ rất nhiều trình duyệt.</p>
+
+<p>
+
+
+<caniuse features="transforms2d"></caniuse>
+
+
+
+
+<caniuse features="transforms3d"></caniuse>
+</p>
+
+    </div>
+    
+      <section itemscope itemtype="//schema.org/Person" class="site-author cf">
+  <img itemprop="image" src="https://avatars2.githubusercontent.com/u/2674850?v=3&s=100" class="fl" alt="Đặng Văn Thanh">
+  <div class="fl">
+    <h4 itemprop="author">Đặng Văn Thanh</h4>
+    <span itemprop="description">Có đam mê về lập trình và các vấn đề về phát triển web.</span>
+  </div>
+</section>
+
+      
+  
+
+
+  <aside class="article-body article-related mt-40">
+    <h3>Bài viết liên quan</h3>
+    <ul>
+      
+      
+        <li><a href="/blog/functional-css/">Functional CSS</a>
+      
+        <li><a href="/blog/postcss/">PostCSS</a>
+      
+        <li><a href="/blog/redesign-va-nhung-gi-tui-hoc/">Redesign và những gì tui học</a>
+      
+        <li><a href="/blog/su-dung-icon-fonts/">Sử dụng Icon Fonts</a>
+      
+        <li><a href="/blog/tao-mp3-player-voi-html5-va-css3/">Tạo MP3 Player với HTML5 và CSS3</a>
+      
+    </ul>
+  </aside>
+
+
+    
+  </div>
+          </div><footer role="contentinfo" class="site-footer">
+  <p>
+    &copy;2013 - 2018. Được xây dựng bằng
+    <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a>,
+    <a href="https://vuejs.org/" rel="noopener" target="_blank">Vue.js</a>.
+  </p>
+</footer>
+
+
+</main>
+      </div>
+<script type="text/javascript" defer>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-41117458-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+
+<script defer src="//codepen.io/assets/embed/ei.js"></script>
+<script defer src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
+
+
+<script defer src="https://dangthanh.org/js/anitya.min.72210058bd1aa87963f8d6d4ba6fd9e78c65d4eac4054982b312045cfb02bd68.js" integrity="sha256-ciEAWL0aqHlj&#43;NbUum/Z54xl1OrEBUmCsxIEXPsCvWg="></script>
+</body>
+</html>
