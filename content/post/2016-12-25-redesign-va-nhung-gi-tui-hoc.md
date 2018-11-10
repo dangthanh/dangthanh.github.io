@@ -135,4 +135,4 @@ Ban đầu tui tính chuyển tất cả hình ảnh của web hiện tại sang
 
 ### Service Worker and Offine Web
 
-Offine web giúp blog này có thể chạy ngay cả khi bạn không kết Internet (bạn có thể tắt Internet và trải nghiệm). Ở đây mình hộ trợ offine web với **[service worker](https://developers.google.com/web/fundamentals/primers/service-workers/)** và dùng **[sw-precache](https://github.com/GoogleChromeLabs/sw-precache)** một module được viết bằng Node.js để tạo ra tài nguyên offine cho Hugo.
+Offine web giúp blog này có thể chạy ngay cả khi bạn không kết Internet (bạn có thể tắt Internet và trải nghiệm). Ở đây mình hộ trợ offine web với **[service worker](https://developers.google.com/web/fundamentals/primers/service-workers/)** và dùng **[Workbox](https://developers.google.com/web/tools/workbox/)** một module được viết bằng Node.js để tạo ra tài nguyên offine cho Hugo.
