@@ -10,11 +10,11 @@ git commit -m 'Committing work in progress'
 # Pull down the file we just committed help avoid merge conflicts
 git subtree pull --prefix=public origin master -m 'Merge origin'
 
-# rm -rf public
+rm -rf public
 
 # Build the project.
-# hugo
-# npm run sw-precache
+npm run build:hugo
+npm run build:sw
 
 # Add README.md
 touch public/README.md
