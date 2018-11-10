@@ -49,7 +49,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "blog/redesign-va-nhung-gi-tui-hoc/index.html",
-    "revision": "b511abdade6abedb329ed41d70869f80"
+    "revision": "7bc9c979eb72bb9a12a48ceb53029366"
   },
   {
     "url": "blog/su-dung-icon-fonts/index.html",
