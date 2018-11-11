@@ -2,6 +2,24 @@ importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js'
 );
 
+workbox.routing.registerRoute(
+  /^https:\/\/fonts\.googleapis\.com/,
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'google-fonts-stylesheets'
+  })
+);
+
+workbox.routing.registerRoute(
+  'https//codepen.io/assets/embed/ei.js',
+  workbox.strategies.cacheFirst()
+);
+
+workbox.routing.registerRoute(
+  'https//unpkg.com/vue@2.5.17/dist/vue.min.js',
+  workbox.strategies.cacheFirst()
+);
+
+workbox.googleAnalytics.initialize();
 workbox.precaching.precacheAndRoute([
   {
     "url": "404.html",
@@ -72,6 +90,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "227bb43d6774e80fb0bb3cde5da48ca4"
   },
   {
+    "url": "browserconfig.xml",
+    "revision": "1c32f682ad780c7a0ddb0d3608b14e8b"
+  },
+  {
     "url": "categories/index.html",
     "revision": "056c1a666379084314aeb5d6bfebcab1"
   },
@@ -82,6 +104,10 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "css/anitya.min.b9ea1e4344bb1863e4e2d8af779e041bf1cfe4e34caa544b51cf04ede4a80b39.css",
     "revision": "937a05d0e05c424a94758fdadde3300a"
+  },
+  {
+    "url": "favicon.ico",
+    "revision": "0fdea87b3347f8371cf143f3434fd6b5"
   },
   {
     "url": "images/blog_v1.png",
@@ -294,6 +320,14 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "projects/index.html",
     "revision": "5aa6ac6e1aa560b76fa8456a11a11ff0"
+  },
+  {
+    "url": "README.md",
+    "revision": "134c7672c481405f3861103de0aa64a0"
+  },
+  {
+    "url": "robots.txt",
+    "revision": "6978a616c585d03cb5b542a891995efb"
   },
   {
     "url": "sitemap.xml",
