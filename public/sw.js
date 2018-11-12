@@ -32,55 +32,55 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "blog/blog-va-toi/index.html",
-    "revision": "3827889f69854908b3e892773f994345"
+    "revision": "a82dae81af851324ac1f4b35fa4d590c"
   },
   {
     "url": "blog/checkboxes-jquery-plugin/index.html",
-    "revision": "746c2511120704f96787a3a7b9180b16"
+    "revision": "19dcdf19daa918e2f0bf1de2f7e37bee"
   },
   {
     "url": "blog/css-triangles-mixin-trong-sass/index.html",
-    "revision": "4c88b5d2cfbb47a893769df5e4e38627"
+    "revision": "e239156a1ece9868ef08293a119c1089"
   },
   {
     "url": "blog/do-bong-mixin-voi-text-shadow/index.html",
-    "revision": "e1928a0c381414008c360f1959e922b1"
+    "revision": "09e256a94d1b68f9b77fed605307f5db"
   },
   {
     "url": "blog/functional-css/index.html",
-    "revision": "e84608d999c14cdada73c78f93224412"
+    "revision": "1925c2935b08153582ca4b494599de5b"
   },
   {
     "url": "blog/gioi-thieu-css3-transform/index.html",
-    "revision": "f41c1c21f5a0a7e2f2f953d6e5a282cf"
+    "revision": "ed77ecc61060251a426352a7672ee825"
   },
   {
     "url": "blog/html5-fullscreen-api/index.html",
-    "revision": "1167252c0183a5161c440a562702fd33"
+    "revision": "db1845a002f0d7a166b2ceed7c979a07"
   },
   {
     "url": "blog/html5-geolocation-va-leaflet/index.html",
-    "revision": "7baef66c969281d7c554ff7836cbd06d"
+    "revision": "0225d2e1cc2ea33b9173e8cec48f67d6"
   },
   {
     "url": "blog/postcss/index.html",
-    "revision": "d139c3471585070af15b5352e1cd6a10"
+    "revision": "69d55bcb2ca60798b8a32b1daed918b6"
   },
   {
     "url": "blog/redesign-va-nhung-gi-tui-hoc/index.html",
-    "revision": "668dc336f514b199ce9c3680a357b218"
+    "revision": "08c99ec7d9f2c0ec198b4d9897f8cce7"
   },
   {
     "url": "blog/su-dung-icon-fonts/index.html",
-    "revision": "eb56fda62634f1af57e4d15b38044a06"
+    "revision": "027883058d32fb6b596d0d3bdc5c0ed6"
   },
   {
     "url": "blog/su-dung-sass/index.html",
-    "revision": "fc4aa240b1242b1068ffb34f43024d1c"
+    "revision": "911afd129dcc6254b1e1b38d04a9592b"
   },
   {
     "url": "blog/tao-mp3-player-voi-html5-va-css3/index.html",
-    "revision": "c08bcd33886e324080fd6b656407c4a5"
+    "revision": "5a3a05fa4eac1c342ce4504b823edc64"
   },
   {
     "url": "blog/thu-thuat-su-dung-sublime-text-2/index.html",
@@ -88,7 +88,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "blog/web-storage/index.html",
-    "revision": "aeaec16e5dac24ccee0c3079cba33d3d"
+    "revision": "98e2649da619240d39eab140d7d5adba"
   },
   {
     "url": "categories/index.html",
