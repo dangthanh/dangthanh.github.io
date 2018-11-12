@@ -3,7 +3,7 @@
 {{ end }}
 {{ if $.Scratch.Get "has_related" }}
   <aside class="article-body article-related mt-40">
-    <h3>Bài viết liên quan</h3>
+    <h3>Bài viết cùng chủ đề</h3>
     <ul>
       {{ $num_to_show := .Site.Params.related_content_limit | default 5 }}
       {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
