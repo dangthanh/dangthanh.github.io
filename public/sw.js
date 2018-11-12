@@ -24,75 +24,75 @@ workbox.googleAnalytics.initialize();
 workbox.precaching.precacheAndRoute([
   {
     "url": "404.html",
-    "revision": "cad4839ef67fbb07b3d5f2f5791da82e"
+    "revision": "3b9f45e24eab96e84f283be3e0bc78f1"
   },
   {
     "url": "about/index.html",
-    "revision": "0338f2126ccdb3b91958c32a215a559b"
+    "revision": "8db481f825a565aee9f6476f1f9cf6e8"
   },
   {
     "url": "blog/blog-va-toi/index.html",
-    "revision": "a82dae81af851324ac1f4b35fa4d590c"
+    "revision": "6d5396bfc4222d915f62e66756c295fc"
   },
   {
     "url": "blog/checkboxes-jquery-plugin/index.html",
-    "revision": "19dcdf19daa918e2f0bf1de2f7e37bee"
+    "revision": "f93a8c52ce2ce9001533441c746c9655"
   },
   {
     "url": "blog/css-triangles-mixin-trong-sass/index.html",
-    "revision": "e239156a1ece9868ef08293a119c1089"
+    "revision": "7330bee397cd993fbf0be5c45e5b6bdd"
   },
   {
     "url": "blog/do-bong-mixin-voi-text-shadow/index.html",
-    "revision": "09e256a94d1b68f9b77fed605307f5db"
+    "revision": "8dd4ec87d4edc12168b92a39bb8e2607"
   },
   {
     "url": "blog/functional-css/index.html",
-    "revision": "1925c2935b08153582ca4b494599de5b"
+    "revision": "d00cb5e3ce296c4cff37fbf8ec63f8c2"
   },
   {
     "url": "blog/gioi-thieu-css3-transform/index.html",
-    "revision": "ed77ecc61060251a426352a7672ee825"
+    "revision": "910c6141f61c47f4147fa3b850de01a2"
   },
   {
     "url": "blog/html5-fullscreen-api/index.html",
-    "revision": "db1845a002f0d7a166b2ceed7c979a07"
+    "revision": "5a674c0ddb86181ef82fc6c136465c52"
   },
   {
     "url": "blog/html5-geolocation-va-leaflet/index.html",
-    "revision": "0225d2e1cc2ea33b9173e8cec48f67d6"
+    "revision": "69908d68f1ffefd0c2133f668c15c17b"
   },
   {
     "url": "blog/postcss/index.html",
-    "revision": "69d55bcb2ca60798b8a32b1daed918b6"
+    "revision": "757dd67b4065be5649cd5f3074d960e7"
   },
   {
     "url": "blog/redesign-va-nhung-gi-tui-hoc/index.html",
-    "revision": "08c99ec7d9f2c0ec198b4d9897f8cce7"
+    "revision": "e599c6ff2e424746434818a1a08d7de3"
   },
   {
     "url": "blog/su-dung-icon-fonts/index.html",
-    "revision": "027883058d32fb6b596d0d3bdc5c0ed6"
+    "revision": "346101dabc6918da86068274323eaf9d"
   },
   {
     "url": "blog/su-dung-sass/index.html",
-    "revision": "911afd129dcc6254b1e1b38d04a9592b"
+    "revision": "3111cf11c2444a1dd8392722022bb1c5"
   },
   {
     "url": "blog/tao-mp3-player-voi-html5-va-css3/index.html",
-    "revision": "5a3a05fa4eac1c342ce4504b823edc64"
+    "revision": "dd1cf3a395155c248ddf70cacab7cd55"
   },
   {
     "url": "blog/thu-thuat-su-dung-sublime-text-2/index.html",
-    "revision": "c64dfc2b86e030a60d904018e3059430"
+    "revision": "288ea32bde6affa1f3cdfb6cd1c272a0"
   },
   {
     "url": "blog/web-storage/index.html",
-    "revision": "98e2649da619240d39eab140d7d5adba"
+    "revision": "b8fe0a5f2810559f8050fc0f8de5f943"
   },
   {
     "url": "categories/index.html",
-    "revision": "70fdfe8a340557bb54890b3e53ded26d"
+    "revision": "056c1a666379084314aeb5d6bfebcab1"
   },
   {
     "url": "categories/index.xml",
@@ -280,7 +280,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "75330bae230204bf983730011c3f26a3"
+    "revision": "993857a71ea75972ee0970331f6f1746"
   },
   {
     "url": "index.xml",
@@ -296,15 +296,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "page/2/index.html",
-    "revision": "e188792674ba039e4859b48539ae827b"
+    "revision": "315fdcc778877c33ede989b612cebe96"
   },
   {
     "url": "page/3/index.html",
-    "revision": "ca6ecb06025dfdf551439c6af1c253f3"
+    "revision": "641a2868c3a33740e843ba77a90b5c44"
   },
   {
     "url": "post/index.html",
-    "revision": "1c8f94a471ca0825659149144a9e7f1d"
+    "revision": "2e56747f3e2096eb6c588d2751a8fbf6"
   },
   {
     "url": "post/index.xml",
@@ -312,7 +312,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "projects/index.html",
-    "revision": "7eb85baa597b6469b54fed4bc1271b86"
+    "revision": "5aa6ac6e1aa560b76fa8456a11a11ff0"
   },
   {
     "url": "sitemap.xml",
@@ -320,7 +320,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/css/index.html",
-    "revision": "6a238d09d80b021b8f239f072ca054e9"
+    "revision": "81448608b6beae94e599c7109ae4f667"
   },
   {
     "url": "tags/css/index.xml",
@@ -328,7 +328,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/hugo/index.html",
-    "revision": "bffdb8b12d15d9263f0802fafd666084"
+    "revision": "6b1688262c5dad083ab7aabdd771e938"
   },
   {
     "url": "tags/hugo/index.xml",
@@ -336,7 +336,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/index.html",
-    "revision": "1b09709943e9cbe63a35bdc60c2b4049"
+    "revision": "707e2c1082cb1d75b2b303228577903e"
   },
   {
     "url": "tags/index.xml",
@@ -344,7 +344,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/javascript/index.html",
-    "revision": "4e3ce3f2a60d193f46a968b61bbe2552"
+    "revision": "8e8d055dfa1132bd81720c643fd18231"
   },
   {
     "url": "tags/javascript/index.xml",
@@ -352,7 +352,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/personal/index.html",
-    "revision": "f1b5d98c6c5b45cf2028d3efbb65832f"
+    "revision": "cb213ad348f462a931b0a96af8043356"
   },
   {
     "url": "tags/personal/index.xml",
@@ -360,7 +360,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/postcss/index.html",
-    "revision": "a495f1cfc67ca069b03c0e730c6ea3de"
+    "revision": "f2c2fb104e940e6cce4edb30a992cc2d"
   },
   {
     "url": "tags/postcss/index.xml",
@@ -368,7 +368,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/sass/index.html",
-    "revision": "44d1e046cd1721b270196d76fec90cca"
+    "revision": "bcd4797e29e0ede86f22e078cd5f69b9"
   },
   {
     "url": "tags/sass/index.xml",
@@ -376,7 +376,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/tailwindcss/index.html",
-    "revision": "2d08a8f31618595730acf30f53c9f21a"
+    "revision": "6a606fc3accb78c81b6ec76c2fca6be4"
   },
   {
     "url": "tags/tailwindcss/index.xml",
@@ -384,7 +384,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/tools/index.html",
-    "revision": "0568bb9ec4b3575762f4a2e9a2ac2e68"
+    "revision": "a1c181462896ed1fabe38fba065b6667"
   },
   {
     "url": "tags/tools/index.xml",
