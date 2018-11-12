@@ -23,7 +23,7 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Slab&amp;subset=vietnamese" rel="stylesheet" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Slab&amp;subset=vietnamese" rel="stylesheet">
 {{ $styles := resources.Get "css/anitya.css" | toCSS | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
 <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
