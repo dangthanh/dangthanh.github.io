@@ -29,7 +29,11 @@ var getLinks = function() {
     var pathname = window.location.pathname;
     var host = window.location.host;
 
-    if (linkHref.indexOf('http') > -1 && linkHref.indexOf(host) === -1) {
+    if (
+      linkHref &&
+      linkHref.indexOf('http') > -1 &&
+      linkHref.indexOf(host) === -1
+    ) {
       link.setAttribute('target', '_blank');
       link.setAttribute('rel', 'noopener');
     }
@@ -190,35 +194,42 @@ var Caniuse = {
       return `${value}+`;
     }
   },
-  mounted() {
-    var vm = this;
+  created() {
     var caniuseUrl = `https://raw.githubusercontent.com/Fyrd/caniuse/master/features-json/${
-      vm.features
+      this.features
     }.json`;
 
-    fetch(caniuseUrl)
-      .then(res => res.json())
-      .then(res => {
-        var supports = res.stats;
+    this.getCaniuse(caniuseUrl);
+  },
+  methods: {
+    getCaniuse(url) {
+      fetch(url)
+        .then(res => res.json())
+        .then(res => {
+          var supports = res.stats;
 
-        vm.browserTitle = res.title;
-        vm.browserCategories = res.categories;
-        vm.description = res.description;
+          this.browserTitle = res.title;
+          this.browserCategories = res.categories;
+          this.description = res.description;
 
-        for (var i = 0, len = vm.browsers.length; i < len; i++) {
-          var browser = vm.browsers[i].name;
-          var verions = supports[browser];
-          for (var version in verions) {
-            if (
-              verions[version].indexOf('y') > -1 ||
-              verions[version].indexOf('x') > -1
-            ) {
-              vm.browsers[i].version = version;
-              break;
-            }
-          }
+          this.browsers.forEach((browser, i) => {
+            var verions = supports[browser.name];
+            this.browsers[i].version = this.getVersion(verions);
+          });
+        });
+    },
+    getVersion(versions) {
+      for (var version in versions) {
+        if (
+          versions[version].indexOf('y') > -1 ||
+          versions[version].indexOf('x') > -1
+        ) {
+          return version;
         }
-      });
+      }
+
+      return '-';
+    }
   }
 };
 

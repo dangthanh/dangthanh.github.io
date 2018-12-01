@@ -96,7 +96,7 @@ Tui cũng thường hay sử dụng Bootstrap để xây dựng web. Nhưng từ
 - Dễ dàng xây dựng hầu hết các `Component UI` mà không cần viết thêm nhiều CSS.
 - Bằng việc mô tả cách sử dụng Functional CSS thì các bạn Developer cả `Backend` lẫn `Frontend` cũng dễ dàng chỉnh sửa.
 
-### Ta sử dụng thư viện Functional CSS nào?
+### Sử dụng thư viện Functional CSS nào?
 
 Nếu bạn không có thời gian để xây dựng các `Utility-first CSS` thì bạn có thể tham khảo và sử dụng những thư viện tui đề cập dưới đây:
 
