@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>{{ .Title }} | Dang Thanh Blog</title>
+<title>{{ .Title }} -{{ if eq .Title "Dang Thanh Blog" }}{{ .Site.Params.defaultDescription }}{{ else }}Dang Thanh Blog{{ end}}</title>
 <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.defaultDescription }}{{ end }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">

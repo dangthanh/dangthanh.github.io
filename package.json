@@ -17,7 +17,7 @@
     "> 1%"
   ],
   "scripts": {
-    "start": "hugo server -D -w",
+    "start": "hugo server -D -F -w",
     "build:public": "rm -rf public && hugo",
     "build:sw": "npx workbox injectManifest"
   },
