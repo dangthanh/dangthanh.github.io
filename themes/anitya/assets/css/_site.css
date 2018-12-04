@@ -190,6 +190,16 @@ img {
     display: inline-block;
     user-select: none;
     padding: 0.5rem;
+
+    &.active {
+      opacity: .7;
+
+      a {
+        text-decoration: none;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
   }
 }
 

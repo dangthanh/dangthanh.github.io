@@ -81,7 +81,8 @@ Directives trong Vue.js được sử dụng như một `attribute` trong thẻ 
 
 #### 2. Components
 
-Component là một tính năng rất hay. Với việc sử dụng Component ta có thể tái sử dụng và sử dụng vào bất kỳ nơi nào bạn muốn.
+Component là một tính năng rất hay và phổ biến hiện nay. Với việc sử dụng Component bạn có thể tự mình xây dựng những Component như `modal`, `calendar`, `datepicker`, `slider`, `charts`...và tái sử dụng lại trong ứng dụng hoặc sử dụng vào bất kỳ nơi nào bạn muốn.
+
 Component trong Vue.js có hai cách đăng ký cơ bản
 
 - Đăng ký toàn cục, sử dụng trong toàn bộ ứng dụng (Global Registration)
