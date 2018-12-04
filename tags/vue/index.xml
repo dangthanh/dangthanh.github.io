@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on Dang Thanh Blog</title>
+    <link>https://dangthanh.org/tags/vue/</link>
+    <description>Recent content in Vue on Dang Thanh Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vn-vi</language>
+    <lastBuildDate>Tue, 04 Dec 2018 03:19:52 +0700</lastBuildDate>
+    
+	<atom:link href="https://dangthanh.org/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bắt đầu với Vue.js</title>
+      <link>https://dangthanh.org/blog/bat-dau-voi-vue/</link>
+      <pubDate>Tue, 04 Dec 2018 03:19:52 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/blog/bat-dau-voi-vue/</guid>
+      <description>Vue.js là một thư viện JavaScript giúp bạn dễ dàng xây dựng các giao diện (UI) từ đơn giản đến phức tạp.
+Để bắt đầu với Vue.js bạn cần trang bị cho một những kiến thức cơ bản về HTML, CSS và JavaScript là nền tảng giúp bạn dễ dàng làm quen với Vue.js
+Vue.js có gì hay? Điểm đầu tiên tui thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ tiếng Việt.</description>
+    </item>
+    
+  </channel>
+</rss>
