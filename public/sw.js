@@ -292,7 +292,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.xml",
-    "revision": "d1ba79c18838a1e1fdf2001d18ae3688"
+    "revision": "decf3a2fbe57b432e54894d19e2dec6f"
   },
   {
     "url": "js/anitya.min.da904f651a9aa5dd4485edcdf7cc26d2050c5affee32f6590ca476763cb85939.js",
@@ -328,7 +328,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "search/index.html",
-    "revision": "da2883766031b5cef3c4107a3ffbfe2b"
+    "revision": "cad23ee341b8cce4b0693fc4ccd0f857"
   },
   {
     "url": "sitemap.xml",
