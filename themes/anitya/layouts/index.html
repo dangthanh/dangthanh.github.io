@@ -1,7 +1,7 @@
 {{ define "main" -}}
   <h1 class="accessibility">Tui học, tui làm, tui viết, tui trải nghiệm và tui chia sẻ</h1>
-  {{ $paginator := .Paginate (where .Pages "Type" "post") }}
 
+  {{ $paginator := .Paginate (where .Pages "Type" "post") }}
   <div class="articles">
   {{ range $paginator.Pages }}
   <article class="article" itemscope itemtype="//schema.org/Blog">
