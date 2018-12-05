@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi"><meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Tailwindcss -Dang Thanh Blog</title>
+<title>Search -Dang Thanh Blog</title>
 <meta name="description" content="Blog chia sẻ về web và phát triển web">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
@@ -29,7 +29,7 @@
 <link href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.b1b84617619fa2a97e3fca007822b5489a4621b7403ffb0782945392cf16d0ea.css" integrity="sha256-sbhGF2Gfoql&#43;P8oAeCK1SJpGIbdAP/sHgpRTks8W0Oo=">
-<link href="https://dangthanh.org/tags/tailwindcss/index.xml" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
+<link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
 <body>
       <a href="#" class="site-corner js-corner" aria-label="Night">
         <i class="icon icon-moon"></i>
@@ -57,27 +57,9 @@
 </header>
 <main role="main" class="site-main">
           <div id="main">
-
-  <dl class="site-archives mt-0">
-  
-    
-
-    
-      
-      
-        
-        <dt>F</dt>
-      
-      <dd>
-        <a class="no-underline hover:decoration-skip-ink" href="https://dangthanh.org/blog/functional-css/">
-          
-            Functional CSS
-          
-        </a>
-      </dd>
-    
-  
-  </dl>
+            <div data-algolia="search"></div>
+            <div data-algolia="result"></div>
+            <archives />
           </div><footer role="contentinfo" class="site-footer">
   <p>
     &copy;2013 - 2018. Được xây dựng bằng
@@ -109,5 +91,6 @@
 <script defer src="https://cdn.jsdelivr.net/npm/vue-instantsearch@0.2/dist/vue-instantsearch.js"></script>
 <script defer src="https://dangthanh.org/js/anitya.min.940217ac9697637bcec8a8f86a61ab1ee46cc9d333d52436b8037f3688b8d0c1.js" integrity="sha256-lAIXrJaXY3vOyKj4amGrHuRsydMz1SQ2uAN/Noi40ME="></script>
 
-</body>
+<script defer src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.1"></script>
+    </body>
 </html>
