@@ -40,7 +40,26 @@ return value.charAt(0).toUpperCase()+value.slice(1);},plus:function(value){if(!v
 value=value.toString();return `${value}+`;}},created(){var caniuseUrl=`https://raw.githubusercontent.com/Fyrd/caniuse/master/features-json/${
 this.features
 }.json`;this.getCaniuse(caniuseUrl);},methods:{getCaniuse(url){fetch(url).then(res=>res.json()).then(res=>{var supports=res.stats;this.browserTitle=res.title;this.browserCategories=res.categories;this.description=res.description;this.browsers.forEach((browser,i)=>{var verions=supports[browser.name];this.browsers[i].version=this.getVersion(verions);});});},getVersion(versions){for(var version in versions){if(versions[version].indexOf('y')>-1||versions[version].indexOf('x')>-1){return version;}}
-return '-';}}};if('serviceWorker'in navigator&&window.location.protocol==='https:'){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').then(function(reg){reg.onupdatefound=function(){var installingWorker=reg.installing;installingWorker.onstatechange=function(){switch(installingWorker.state){case 'installed':if(navigator.serviceWorker.controller){console.log('New or updated content is available.');}else{console.log('Content is now available offline!');}
+return '-';}}};var Archives={template:`
+    <ais-index
+      v-bind:class-names="{'ais-index': 'archives'}"
+      :app-id="algolia.appId"
+      :api-key="algolia.apiKey"
+      :index-name="algolia.indexName"
+      :routing="algolia.true">
+      <ais-search-box
+        class="archive-search"
+        placeholder="Tìm kiếm tiêu đề hoặc nội dung bài viết...">
+      </ais-search-box>
+      <ais-results v-bind:class-names="{'ais-results': 'archive-hits'}">
+        <template scope="{ result }">
+          <div class="archive-hits-item" v-if="result.title != 'Posts'">
+            <a v-bind:href="result.permalink">{{result.title}}</a></div>
+          </div>
+        </template>
+      </ais-results>
+    </ais-index>
+  `,data(){return{algolia:{appId:'6PU039291I',apiKey:'eb175854444a3544837eb2b27ccbad0f',indexName:'posts',routing:true}};}};if('serviceWorker'in navigator&&window.location.protocol==='https:'){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').then(function(reg){reg.onupdatefound=function(){var installingWorker=reg.installing;installingWorker.onstatechange=function(){switch(installingWorker.state){case 'installed':if(navigator.serviceWorker.controller){console.log('New or updated content is available.');}else{console.log('Content is now available offline!');}
 break;case 'redundant':console.error('The installing service worker became redundant.');break;}};};}).catch(function(e){console.error('Error during service worker registration:',e);});});}
 document.addEventListener('DOMContentLoaded',function(){if(localStorage.getItem('anitya::theme')!==null){var theme=localStorage.getItem('anitya::theme');var isNight=theme==='night'?true:false;getTheme(isNight);}else{getTheme(true);}
-getLinks();jsCorner.addEventListener('click',handlerTheme,false);var app=new Vue({el:'#main',components:{Caniuse}});getCanvas();});
+getLinks();jsCorner.addEventListener('click',handlerTheme,false);var app=new Vue({el:'#main',components:{Caniuse,Archives}});getCanvas();});
