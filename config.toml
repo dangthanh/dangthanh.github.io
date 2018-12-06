@@ -20,14 +20,14 @@ paginate = 5
   filename = "sitemap.xml"
 
 [outputFormats.Algolia]
-baseName = "algolia"
-isPlainText = true
-mediaType = "application/json"
-notAlternative = true
+  baseName = "algolia"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
 
 [params.algolia]
-vars = ["title", "description", "summary", "date", "lastmod", "permalink"]
-params = ["categories", "tags"]
+  vars = ["title", "description", "summary", "date", "lastmod", "permalink"]
+  params = ["categories", "tags"]
 
 [outputs]
-home = ["HTML", "RSS", "Algolia"]
+  home = ["HTML", "RSS", "Algolia"]

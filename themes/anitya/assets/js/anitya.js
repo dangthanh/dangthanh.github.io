@@ -321,5 +321,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   getCanvas();
-  // getAlgolia();
 });
