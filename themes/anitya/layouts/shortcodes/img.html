@@ -1,0 +1,8 @@
+{{/* Image Default */}}
+{{ $src   := "" }}
+{{ $alt   := "" }}
+
+<img
+  data-src="{{ or (.Get "src") $src }}"
+  alt="{{ or (.Get "alt") $alt }}"
+  class="lazy-image">

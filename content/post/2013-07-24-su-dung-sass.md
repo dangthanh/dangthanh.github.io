@@ -26,7 +26,7 @@ Sass là một mở rộng CSS cung cấp thêm các quy tắc xếp chồng (ne
 
 Sau khi cài đặt xong Ruby bạn cài đặt môi trường cho Ruby **(Computer -> Properties -> Advanced -> Enviroment Variables... )**.
 
-![Cài đặt môi trường cho Ruby trên Windows](/images/rubyinstaller.jpg)
+{{% img src="/images/rubyinstaller.jpg" alt="Cài đặt môi trường cho Ruby trên Windows" %}}
 
 Tiếp theo bạn cài đặt Sass bằng cách mở CMD và gõ:
 

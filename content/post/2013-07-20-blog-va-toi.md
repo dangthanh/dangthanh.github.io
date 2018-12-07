@@ -23,7 +23,7 @@ Mặc dù hiện này có rất nền tảng xây dựng blog tốt như Blogger
 
 ### Giao diện đầu tiên
 
-![Dang Thanh Blog - phiên bản đầu tiên](/images/blog_v1.png)
+{{% img src="/images/blog_v1.png" alt="Dang Thanh Blog - phiên bản đầu tiên" %}}
 
 Mình xây dựng giao diện dựa trên khái niệm [Responsive Web Design](http://alistapart.com/article/responsive-web-design). Giao diện hiện tại chỉ chạy tốt trên desktop lẫn máy tính bảng. Còn một số lỗi khi hiển thị highlight code trên thiết bị di động (nên mình chưa thực hiện cho phiên bản di động nhưng mình sẽ cập nhật sau)
 

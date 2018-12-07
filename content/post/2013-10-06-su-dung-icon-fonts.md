@@ -46,13 +46,13 @@ Trong bài viết này mình sẽ giới thiệu các bạn về IcoMoon và We 
 
 ### IcoMoon
 
-![IcoMoon](/images/icomoon.jpg)
+{{% img src="/images/icomoon.jpg" alt="IcoMoon" %}}
 
 [IcoMoon](http://icomoon.io/) cung cấp cho bạn hơn 450 icons miễn phí. Bên cạnh đó ngoài những icons của IcoMoon, IcoMoon cho phép bạn lựa chọn và tải các icons bạn muốn với những bộ icons khác như Broccolidry, Entypo, Font Awesome...với số lượng lên đến gần 3800 icons. Ngoài ra IcoMoon còn cho phép bạn tải các thiết kế của bạn lên (tập tin SVG) để customize thành fonts bạn yêu thích.
 
 ### We Love Icon Fonts
 
-![We Love Icon Fonts](/images/weloveiconfonts.jpg)
+{{% img src="/images/weloveiconfonts.jpg" alt="We Love Icon Fonts" %}}
 
 [We Love Icon Fonts](http://weloveiconfonts.com/) là một mã nguồn mở và dịch vụ lưu trữ miễn phí các icon fonts. Cũng như IcoMoon, We Love Icon Fonts cũng cung cấp cho bạn rất nhiều bộ icons miễn phí khác như Fontelico, Maki, Typicons, Zocial.
 

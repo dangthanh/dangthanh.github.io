@@ -69,6 +69,26 @@
       margin: 1.625rem 0 1.625rem 3rem;
       text-align: center;
     }
+
+    img {
+      background-color: #333;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      &.lazy-image {
+        opacity: 0.1;
+        will-change: opacity;
+        transition: all 0.3s;
+
+        &.loaded {
+          opacity: 1;
+          width: auto;
+          height: auto;
+          background-color: transparent;
+        }
+      }
+    }
   }
 
   &-body,

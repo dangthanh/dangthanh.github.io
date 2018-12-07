@@ -7,7 +7,7 @@ tags = ["tools"]
 
 **[Sublime Text 2](http://www.sublimetext.com/2)** là một text editor mạnh mẽ, cung cấp nhiều chức năng hữu ích. Mình cũng đã sử dụng Sublime Text 2 một thời gian dài cho đến nay, hôm nay cũng xin giới thiệu về Sublime Text 2 và một số thủ thuật sử dụng.
 
-![Sublime Text 2](/images/sublime_text_2.jpg)
+{{% img src="/images/sublime_text_2.jpg" alt="Sublime Text 2" %}}
 
 ### Làm việc với Sublime Text 2
 
@@ -15,7 +15,7 @@ Nếu bạn chưa lần nào sử dụng Sublime Text 2, bạn có thể xem **[
 
 ### Package Control
 
-![Package Control - Sublime Text 2](/images/package_control.jpg)
+{{% img src="/images/package_control.jpg" alt="Package Control - Sublime Text 2" %}}
 
 Package Control là một công cụ quản lý các plugin của Sublime Text 2. Nó giúp bạn tìm kiếm, cài đặt, nâng cấp cũng hơn xóa các plugin.
 
