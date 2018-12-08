@@ -13,7 +13,7 @@ Thực ra đối với những người làm lập trình như tui, thì lí do 
 
 Bên cạnh đó, qua quá trình mới làm quen với Algolia tui thấy nó có những điểm nổi bật sau:
 
-- Alogolia cung cấp gói [miễn phí](https://www.algolia.com/users/sign_up) cho bạn sử dụng
+- Algolia cung cấp gói [miễn phí](https://www.algolia.com/users/sign_up) cho bạn sử dụng
 - Giao diện quản lý dễ sử dụng cho phép bạn theo dõi, truy vết và giám sát các hoạt động tìm kiếm
 - Cung cấp các API Client cho nhiều ngôn ngữ như `JavaScript`, `Node.js`, `Go`, `C#`
 - Các thư viện Algolia cung cấp rất hay như [Autocomplete](https://github.com/algolia/autocomplete.js), [Algolia Places](https://community.algolia.com/places/)
