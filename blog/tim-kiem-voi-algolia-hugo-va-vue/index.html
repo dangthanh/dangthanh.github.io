@@ -167,7 +167,7 @@
 
 <p>Algolia cung cấp một thư viện JavaScript để bạn dễ dàng kết với Algolia thông qua <a href="https://community.algolia.com/instantsearch.js/">JavaScript</a> hoặc <a href="https://v2--vue-instantsearch.netlify.com/getting-started/migration.html">Vue</a>.</p>
 
-<p>Vì tui đã <a href="/blog/bat-dau-voi-vue/">giới thiệu Vue.js</a> có một tính năng rất hay đó là Component. Nên tui quyết định viết Component này sử dụng <a href="https://v2--vue-instantsearch.netlify.com/getting-started/migration.html">Vue InstantSearch</a> vừa giúp bạn biết thêm về cách xây dựng Component trong Vue.</p>
+<p>Vì tui đã <a href="/blog/bat-dau-voi-vue/">giới thiệu Vue.js</a> có một tính năng rất hay đó là Component. Nên tui quyết định viết Component này sử dụng <a href="https://v2--vue-instantsearch.netlify.com/getting-started/migration.html">Vue InstantSearch</a> vừa giúp bạn biết thêm về cách xây dựng Component trong Vue thông qua thuộc tính <strong><em>props</em></strong>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Vue</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s1">&#39;SearchAlgoliaComponent&#39;</span><span class="p">,</span> <span class="p">{</span>
   <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;SearchAlgoliaComponent&#39;</span><span class="p">,</span>
   <span class="nx">template</span><span class="o">:</span> <span class="sb">`
@@ -177,6 +177,7 @@
 </span><span class="sb">      :index-name=&#34;indexName&#34;
 </span><span class="sb">      :routing=&#34;true&#34;&gt;
 </span><span class="sb">      &lt;ais-search-box placeholder=&#34;Tìm kiếm tiêu đề hoặc nội dung bài viết...&#34;&gt;&lt;/ais-search-box&gt;
+</span><span class="sb">      &lt;ais-highlight :hit=&#34;hit&#34; attribute=&#34;title&#34;&gt;&lt;/ais-highlight&gt;
 </span><span class="sb">      &lt;ais-results&gt;
 </span><span class="sb">        // Your display results
 </span><span class="sb">      &lt;/ais-results&gt;
@@ -209,6 +210,10 @@
     <span class="na">:apiKey</span><span class="o">=</span><span class="s">&#34;yourApiKey&#34;</span> 
     <span class="na">:indexName</span><span class="o">=</span><span class="s">&#34;yourIndexName&#34;</span><span class="p">/&gt;</span>
 <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span></code></pre></div>
+<p><strong>appId</strong> và <strong>apiKey</strong> bạn vào trong Dashboard của Algolia và chọn <strong>API keys</strong> để lấy thông tin nhé.</p>
+
+<p>Giờ ta đã có một trang tìm kiếm sử dụng Algolia, Hugo và Vue.js. Bạn có thể <a href="/archives/">trải nghiệm</a> hoặc có thể chỉnh sửa thêm cho <code>SearchAlgoliaComponent</code> theo cách bạn muốn hiển thị nhé.</p>
+
     </div>
     
       <section itemscope itemtype="//schema.org/Person" class="site-author cf">
