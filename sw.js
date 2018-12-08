@@ -100,7 +100,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "blog/tim-kiem-voi-algolia-hugo-va-vue/index.html",
-    "revision": "e470ce6555d9e356d2516396e51eea51"
+    "revision": "82d4a172957a0e847bae9dc407c04493"
   },
   {
     "url": "blog/web-storage/index.html",
