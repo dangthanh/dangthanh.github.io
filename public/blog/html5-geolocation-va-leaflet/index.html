@@ -29,9 +29,6 @@
 <link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.4d35951a97d10f7f28a06a7e5f2542b647f98fbb1290c279c3cddbe17fc4fc34.css" integrity="sha256-TTWVGpfRD38ooGp&#43;XyVCtkf5j7sSkMJ5w83b4X/E/DQ=">
 <link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
 <body>
-      <a href="#" class="site-corner js-corner" aria-label="Night">
-        <i class="icon icon-moon"></i>
-      </a>
       <div class="site"><header role="banner" class="site-header">
   <div class="site-logo">
       <a href="/">DT</a>
@@ -54,7 +51,8 @@
   </nav>
 </header>
 <main role="main" class="site-main">
-          <div id="main"><div class="article article-single" itemscope itemtype="//schema.org/Article">
+          <div id="main">
+            <c-appearance></c-appearance><div class="article article-single" itemscope itemtype="//schema.org/Article">
     
       <h2 itemprop="headline">HTML5 Geolocation và Leaflet</h2>
       <ul class="no-list p-0 m-0">
@@ -144,7 +142,9 @@
 </span><span class="cm"> * Khởi tạo và hiển thị các lớp trên bản đồ
 </span><span class="cm"> * Bạn vào Cloudmade.com đăng kí một tài khoản để có thể lấy API
 </span><span class="cm"> */</span>
-<span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png&#39;</span><span class="p">,</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">tile</span> <span class="o">=</span> <span class="s1">&#39;http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png&#39;</span><span class="p">;</span>
+
+<span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="nx">tile</span><span class="p">,</span> <span class="p">{</span>
     <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;760506895e284217a7442ce2efe97797&#39;</span><span class="p">,</span> <span class="c1">// Đây là API mình đã đăng kí với cloudmade
 </span><span class="c1"></span>    <span class="nx">styleId</span><span class="o">:</span> <span class="mi">103288</span><span class="p">,</span>
     <span class="nx">maxZoom</span><span class="o">:</span> <span class="mi">16</span>
@@ -172,7 +172,7 @@
 </p>
 
 
-<p>** Ngoài ra, bạn có thể vào những liên kết sau để tìm hiểu thêm về Geolocation và Leaflet:</p>
+<p>Ngoài ra, bạn có thể vào những liên kết sau để tìm hiểu thêm về Geolocation và Leaflet:</p>
 
 <ul>
 <li><a href="http://www.w3.org/TR/geolocation-API/">W3 - Geolocation API</a></li>
@@ -244,6 +244,6 @@
 <script defer src="//cdn.jsdelivr.net/npm/vue-instantsearch@1.7.0/dist/vue-instantsearch.js"></script>
 
 
-<script defer src="https://dangthanh.org/js/anitya.min.5c87bf176f344234e62db96f5e140b5ffe5ce25c0154c34d22e437f8c98b7ce8.js" integrity="sha256-XIe/F280QjTmLblvXhQLX/5c4lwBVMNNIuQ3&#43;MmLfOg="></script>
+<script defer src="https://dangthanh.org/js/anitya.min.40ac9ea14207cae78b12e98b4709709dfb3d56e2f9bc6c6abbcf5652b2deecbd.js" integrity="sha256-QKyeoUIHyueLEumLRwlwnfs9VuL5vGxqu89WUrLe7L0="></script>
 </body>
 </html>
