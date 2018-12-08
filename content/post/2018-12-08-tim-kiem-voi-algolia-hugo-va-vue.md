@@ -5,11 +5,11 @@ date: 2018-12-08T10:59:55+07:00
 tags: ["javascript", "hugo", "vue"]
 ---
 
-Trước đây, muốn tìm kiếm bài viết, tui thường vào [danh mục](/tags) và tìm kiếm các tags như `javascript`, `sass`, `css`...Và với mong muốn tìm kiếm bài viết được tốt hơn nên tui quyết định thử nghiệm với [Algoria](https://www.algolia.com/), kết hợp một xíu với [Vue.js](/blog/bat-dau-voi-vue/).
+Trước đây, muốn tìm kiếm bài viết, tui thường vào [danh mục](/tags) và tìm kiếm các tags như `javascript`, `sass`, `css`...Và với mong muốn tìm kiếm bài viết được tốt hơn nên tui quyết định thử nghiệm với [Algolia](https://www.algolia.com/), kết hợp một xíu với [Vue.js](/blog/bat-dau-voi-vue/).
 
 ### Tại sao là Algolia?
 
-Thực ra đối với những người làm lập trình như tui, thì lí do đầu tiên là được học thêm một công nghệ mới. Thứ hai là sau khi thử nghiệm Algolia, thời gian kết quả tìm kiếm mà Algoria trả về rất nhanh, làm tui cũng rất bất ngờ và mong muốn tìm hiểu thêm về Algolia. 
+Thực ra đối với những người làm lập trình như tui, thì lí do đầu tiên là được học thêm một công nghệ mới. Thứ hai là sau khi thử nghiệm Algolia, thời gian kết quả tìm kiếm mà Algolia trả về rất nhanh, làm tui cũng rất bất ngờ và mong muốn tìm hiểu thêm về Algolia. 
 
 Bên cạnh đó, qua quá trình mới làm quen với Algolia tui thấy nó có những điểm nổi bật sau:
 
