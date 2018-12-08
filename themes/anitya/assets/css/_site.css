@@ -85,24 +85,26 @@ img {
   }
 
   &-nav {
-    text-align: center;
+    text-align: left;
     margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
 
     @media (--tablet) {
-      text-align: left;
       position: fixed;
       top: 8rem;
       margin-top: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
     }
 
     > ul {
       > li {
-        display: inline-block;
+        display: block;
         padding: 0 0.5rem;
         position: relative;
 
         @media (--tablet) {
-          display: block;
           padding: 0;
         }
 
