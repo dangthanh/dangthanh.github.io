@@ -17,7 +17,7 @@
       <pubDate>Sat, 08 Dec 2018 10:59:55 +0700</pubDate>
       
       <guid>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</guid>
-      <description>Trước đây, muốn tìm kiếm bài viết, tui thường vào danh mục và tìm kiếm các tags như javascript, sass, css&amp;hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tui quyết định thử nghiệm với Algoria, kết hợp một xíu với Vue.js.
+      <description>Trước đây, muốn tìm kiếm bài viết, tui thường vào danh mục và tìm kiếm các tags như javascript, sass, css&amp;hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tui quyết định thử nghiệm với Algolia, kết hợp một xíu với Vue.js.
 Tại sao là Algolia? Thực ra đối với những người làm lập trình như tui, thì lí do đầu tiên là được học thêm một công nghệ mới.</description>
     </item>
     
