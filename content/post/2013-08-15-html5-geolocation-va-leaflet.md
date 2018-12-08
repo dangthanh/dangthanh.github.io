@@ -86,7 +86,9 @@ var map = L.map('map', {
  * Khởi tạo và hiển thị các lớp trên bản đồ
  * Bạn vào Cloudmade.com đăng kí một tài khoản để có thể lấy API
  */
-L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
+var tile = 'http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png';
+
+L.tileLayer(tile, {
     key: '760506895e284217a7442ce2efe97797', // Đây là API mình đã đăng kí với cloudmade
     styleId: 103288,
     maxZoom: 16
@@ -102,7 +104,7 @@ marker.bindPopup('<p>Tiêu đề...</p>').openPopup();
 
 {{% codepen heght="400" id="tlpLG" %}}
 
-** Ngoài ra, bạn có thể vào những liên kết sau để tìm hiểu thêm về Geolocation và Leaflet:
+Ngoài ra, bạn có thể vào những liên kết sau để tìm hiểu thêm về Geolocation và Leaflet:
 
 - [W3 - Geolocation API](http://www.w3.org/TR/geolocation-API/)
 - [Developer Mozilla](https://developer.mozilla.org/en-US/docs/WebAPI/Using_geolocation)

@@ -2,13 +2,11 @@
 <html lang="vi">
     {{- partial "head.html" . -}}
     <body>
-      <a href="#" class="site-corner js-corner" aria-label="Night">
-        <i class="icon icon-moon"></i>
-      </a>
       <div class="site">
         {{- partial "header.html" . -}}
         <main role="main" class="site-main">
           <div id="main">
+            <c-appearance></c-appearance>
             {{- block "main" . }}{{- end }}
           </div>
           {{- partial "footer.html" . -}}
