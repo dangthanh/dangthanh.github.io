@@ -97,7 +97,7 @@ layout: "archives"
 
 Sau đó tạo thêm file HTML có tên là **layouts/static/archives.html** tương ứng với `layout` được khai báo ở trên.
 
-Algolia cung cấp một thư viện JavaScript để bạn dễ dàng kết với Algolia thông qua [JavaScript](https://community.algolia.com/instantsearch.js/) hoặc [Vue](https://v2--vue-instantsearch.netlify.com/getting-started/migration.html).
+Algolia cung cấp một thư viện JavaScript để bạn dễ dàng kết với Algolia thông qua [Instantsearch.js](https://community.algolia.com/instantsearch.js/) hoặc [Vue Instantsearch](https://v2--vue-instantsearch.netlify.com/getting-started/migration.html).
 
 Vì tui đã [giới thiệu Vue.js](/blog/bat-dau-voi-vue/) có một tính năng rất hay đó là Component. Nên tui quyết định viết Component này sử dụng [Vue InstantSearch](https://v2--vue-instantsearch.netlify.com/getting-started/migration.html) vừa giúp bạn biết thêm về cách xây dựng Component trong Vue thông qua thuộc tính ***props***.
 
