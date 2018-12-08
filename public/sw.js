@@ -32,7 +32,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "algolia.json",
-    "revision": "2da0ca0ffe4ad4facbed4d1bf89a481d"
+    "revision": "2eed0b3fea1c1917d262e5a0dfe073ae"
   },
   {
     "url": "archives/index.html",
@@ -100,7 +100,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "blog/tim-kiem-voi-algolia-hugo-va-vue/index.html",
-    "revision": "e25f690ae797f7f164a4ae5b00d1d975"
+    "revision": "ec173081baa6a8be6443763b7efb8a71"
   },
   {
     "url": "blog/web-storage/index.html",
@@ -308,7 +308,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.xml",
-    "revision": "2fa7db0b5af12e603c667ca0672610e7"
+    "revision": "b6b4f03d48818efa44184aa35d4b82a7"
   },
   {
     "url": "js/anitya.min.40ac9ea14207cae78b12e98b4709709dfb3d56e2f9bc6c6abbcf5652b2deecbd.js",
@@ -336,7 +336,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "post/index.xml",
-    "revision": "6ae53055923d055f6a0f72ad5d6ed874"
+    "revision": "53d5a69cd6aa315b131285ce29b128a3"
   },
   {
     "url": "projects/index.html",
@@ -360,7 +360,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/hugo/index.xml",
-    "revision": "488eb8cd231720b399699a4c2864a1e9"
+    "revision": "6d49e4a03decb3e0665287d0e9666ad9"
   },
   {
     "url": "tags/index.html",
@@ -376,7 +376,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/javascript/index.xml",
-    "revision": "07eeb7e69323bc74ecbe4c46b24b2ada"
+    "revision": "e00b9ac0a6dfa2208c17514b874465fb"
   },
   {
     "url": "tags/personal/index.html",
@@ -424,6 +424,6 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/vue/index.xml",
-    "revision": "4f039a0654f700edd3d742006bded2c2"
+    "revision": "d8e8dbada5088bcec4617b7a39b55129"
   }
 ]);
