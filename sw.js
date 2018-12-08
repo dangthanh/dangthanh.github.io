@@ -32,7 +32,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "algolia.json",
-    "revision": "2eed0b3fea1c1917d262e5a0dfe073ae"
+    "revision": "30d49431c8a0ad9e6650e07a99853469"
   },
   {
     "url": "archives/index.html",
@@ -100,7 +100,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "blog/tim-kiem-voi-algolia-hugo-va-vue/index.html",
-    "revision": "ec173081baa6a8be6443763b7efb8a71"
+    "revision": "e470ce6555d9e356d2516396e51eea51"
   },
   {
     "url": "blog/web-storage/index.html",
