@@ -1,21 +1,21 @@
 +++
-title = "Redesign và những gì tui học"
-slug = "redesign-va-nhung-gi-tui-hoc"
+title = "Redesign và những gì tôi học"
+slug = "redesign-va-nhung-gi-tôi-hoc"
 date = "2016-12-25"
 tags = ["personal", "css", "postcss", "hugo", "javascript"]
 +++
 
-Thực ra bài viết này đã có từ lâu, nhưng tui vẫn để nó ở chế độ bản nháp và cũng do lười (quá lười) nên cũng từ lâu tui cũng bỏ thói quen viết blog. Nay tui chia sẻ những kinh nghiệm khi thiết kế lại blog này.
+Thực ra bài viết này đã có từ lâu, nhưng tôi vẫn để nó ở chế độ bản nháp và cũng do lười (quá lười) nên cũng từ lâu tôi cũng bỏ thói quen viết blog. Nay tôi chia sẻ những kinh nghiệm khi thiết kế lại blog này.
 
 ### Thiết kế
 
-Vì không phải là một Designer nên tui không giỏi về thiết kế lắm. Nên tui vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này.
+Vì không phải là một Designer nên tôi không giỏi về thiết kế lắm. Nên tôi vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này.
 
-Blog mới cung cấp hai giao diện, giúp bạn không bị mỏi mắt khi đọc lâu. Bạn nhấn vào biểu tượng ở góc phải để đổi sang giao diện yêu thích nhé. Có thể tui sẽ cập nhật thêm về màu sắc xíu nữa cho phù hợp.
+Blog mới cung cấp hai giao diện, giúp bạn không bị mỏi mắt khi đọc lâu. Bạn nhấn vào biểu tượng ở góc phải để đổi sang giao diện yêu thích nhé. Có thể tôi sẽ cập nhật thêm về màu sắc xíu nữa cho phù hợp.
 
 {{% img src="/images/blog_v2.png" alt="Dang Thanh Blog - phiên bản light and dark" %}}
 
-Tui cũng đã xoá đi hệ thống phản hồi (trước đây tui dùng [Disqus](https://disqus.com/)) vì thấy nó không hữu ích. Các bạn có thể liên hệ hoặc trao đổi với tui qua <a href="mailto:dangvanthanh@dangthanh.org">email</a>.
+tôi cũng đã xoá đi hệ thống phản hồi (trước đây tôi dùng [Disqus](https://disqus.com/)) vì thấy nó không hữu ích. Các bạn có thể liên hệ hoặc trao đổi với tôi qua <a href="mailto:dangvanthanh@dangthanh.org">email</a>.
 
 ### Hugo
 
@@ -28,15 +28,15 @@ Hugo cung cấp thêm nhiều chức năng mới như:
 - Tối ưu các tập tin `CSS`, `JavaScript`, `JSON`, `HTML`, `SVG`, `XML`
 - Cải tiến hiển thị hightlight cho code với [Chroma](https://github.com/alecthomas/chroma)
 
-Bên cạnh đó, việc chuyển đổi sang Hugo giúp tui tuỳ biến phân trang dễ dàng. Giúp bạn dễ dàng chọn được trang cũng như tìm kiếm bài viết theo từng chủ đề trong chuyên mục [lưu trữ](/tags) cùng với hệ thống phân [bài viết theo thứ tự alphabet](/tags/css/).
+Bên cạnh đó, việc chuyển đổi sang Hugo giúp tôi tuỳ biến phân trang dễ dàng. Giúp bạn dễ dàng chọn được trang cũng như tìm kiếm bài viết theo từng chủ đề trong chuyên mục [lưu trữ](/tags) cùng với hệ thống phân [bài viết theo thứ tự alphabet](/tags/css/).
 
 ### CSS
 
-Vì lí do tối giản cả thiết kế lẫn CSS. Nên với phiên bản này tui không sử dụng [Tachyons](http://tachyons.io/) nữa. Mặc dù Tachyons rất hữu ích, giúp việc xây dựng giao diện tuỳ biến cao, cũng như xây dựng những giao diện phức tạp một cách dễ dàng. Với một vài thay đổi dưới đây, blog đã được cải tiến tốc độ cũng khá nhiều.
+Vì lí do tối giản cả thiết kế lẫn CSS. Nên với phiên bản này tôi không sử dụng [Tachyons](http://tachyons.io/) nữa. Mặc dù Tachyons rất hữu ích, giúp việc xây dựng giao diện tuỳ biến cao, cũng như xây dựng những giao diện phức tạp một cách dễ dàng. Với một vài thay đổi dưới đây, blog đã được cải tiến tốc độ cũng khá nhiều.
 
 #### CSS Grid
 
-[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) giúp tui tuỳ biến web mình dễ dàng hơn so với [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) trong cách phân chia bố cục của trang blog này cũng như tuỳ biến Responsive cho màn hình desktop và mobile.
+[CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) giúp tôi tuỳ biến web mình dễ dàng hơn so với [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) trong cách phân chia bố cục của trang blog này cũng như tuỳ biến Responsive cho màn hình desktop và mobile.
 
 ```css
 @custom-media --tablet (width >= 800px);
@@ -52,15 +52,15 @@ Vì lí do tối giản cả thiết kế lẫn CSS. Nên với phiên bản nà
 }
 ```
 
-**Chú ý:** *Đây là cú pháp tui viết sử dụng PostCSS được trình bày ở dưới.*
+**Chú ý:** *Đây là cú pháp tôi viết sử dụng PostCSS được trình bày ở dưới.*
 
 #### Times Newer Roman, Roboto Slab và Ubuntu Mono
 
 Việc thay đổi font chữ [Muli](https://fonts.google.com/specimen/Muli) sang sử dụng phông chữ [Times Newer Roman](https://timesnewerroman.com/) là một bộ phông chữ tương tự Times New Roman nhưng độ dài mỗi ký tự rộng hơn (theo như tác giả là 5 - 10%) giúp bạn dễ dàng đọc nội dung trên blog hơn.
 
-Nhưng sau khi xem blog trên Windows tui thấy phông chữ Times Newer Roman không hiển thị đẹp lắm mặc dù trên Mac hay Linux phông chữ vẫn hiển thị rất đẹp nên cuối cùng cũng chọn phông chữ [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab).
+Nhưng sau khi xem blog trên Windows tôi thấy phông chữ Times Newer Roman không hiển thị đẹp lắm mặc dù trên Mac hay Linux phông chữ vẫn hiển thị rất đẹp nên cuối cùng cũng chọn phông chữ [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab).
 
-Còn với code highlight tui sử dụng [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono). Mặc dù vẫn thích những phông chữ hỗ trợ `ligatures` như [Fira Code](https://github.com/tonsky/FiraCode) nhưng Ubuntu Mono vẫn dễ nhìn hơn với các bạn chưa quen với `ligatures`.
+Còn với code highlight tôi sử dụng [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono). Mặc dù vẫn thích những phông chữ hỗ trợ `ligatures` như [Fira Code](https://github.com/tonsky/FiraCode) nhưng Ubuntu Mono vẫn dễ nhìn hơn với các bạn chưa quen với `ligatures`.
 
 #### CSS Font Loading API: Preload
 
@@ -90,7 +90,7 @@ Khi bạn nhúng một phông chữ bằng `@font-face` hoặc từ [Google Font
 
 ### PostCSS
 
-Trước đây tui vẫn dùng [Sass](/blog/su-dung-sass/) trong một thời gian dài. Bênh cạnh những lợi ích của Sass như dễ dàng bảo trì, tối ưu, tiếm kiệt thời gian viết code CSS so với cách viết truyền thống thì [PostCSS](https://postcss.org/) cung cấp thêm nhiều chức năng và linh hoạt hơn so với Sass như [Autoprefixer](https://github.com/postcss/autoprefixer), [CSS Modules](https://github.com/css-modules/css-modules), [Browserslist](https://github.com/browserslist/browserslist)... Sắp tới tui cũng sẽ giới thiệu về PostCSS để các bạn có thể hiểu rõ hơn.
+Trước đây tôi vẫn dùng [Sass](/blog/su-dung-sass/) trong một thời gian dài. Bênh cạnh những lợi ích của Sass như dễ dàng bảo trì, tối ưu, tiếm kiệt thời gian viết code CSS so với cách viết truyền thống thì [PostCSS](https://postcss.org/) cung cấp thêm nhiều chức năng và linh hoạt hơn so với Sass như [Autoprefixer](https://github.com/postcss/autoprefixer), [CSS Modules](https://github.com/css-modules/css-modules), [Browserslist](https://github.com/browserslist/browserslist)... Sắp tới tôi cũng sẽ giới thiệu về PostCSS để các bạn có thể hiểu rõ hơn.
 
 Ví dụ ta muốn xây dựng một web với hai giao diện. Với CSS truyền thống:
 
@@ -131,7 +131,7 @@ Với cách viết này bạn sẽ dễ dàng cập nhật thêm các biến gi�
 
 {{% caniuse features="webp" %}}
 
-Ban đầu tui tính chuyển tất cả hình ảnh của web hiện tại sang `webp`. Nhưng cả trình duyệt Safari và Firefox đều không hỗ trợ tốt định dạng này. Nên cuối cùng vẫn phải dùng `png` và `jpg` để nó có thể hỗ trợ hầu hết trình duyệt.
+Ban đầu tôi tính chuyển tất cả hình ảnh của web hiện tại sang `webp`. Nhưng cả trình duyệt Safari và Firefox đều không hỗ trợ tốt định dạng này. Nên cuối cùng vẫn phải dùng `png` và `jpg` để nó có thể hỗ trợ hầu hết trình duyệt.
 
 ### Service Worker and Offine Web
 

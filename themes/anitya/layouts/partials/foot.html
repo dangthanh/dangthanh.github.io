@@ -2,6 +2,9 @@
 <script defer src="//codepen.io/assets/embed/ei.js"></script>
 <script defer src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
 <script defer src="//cdn.jsdelivr.net/npm/vue-instantsearch@1.7.0/dist/vue-instantsearch.js"></script>
+{{ $jsComponent := resources.Get "js/anitya-component.js" }}
+{{ $secureComponentJS := $jsComponent | minify | fingerprint }}
 {{ $js := resources.Get "js/anitya.js" }}
 {{ $secureJS := $js | minify | fingerprint }}
+<script defer src="{{ $secureComponentJS.Permalink }}" integrity="{{ $secureComponentJS.Data.Integrity }}"></script>
 <script defer src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>

@@ -5,13 +5,13 @@ date: 2018-12-08T10:59:55+07:00
 tags: ["javascript", "hugo", "vue"]
 ---
 
-Trước đây, muốn tìm kiếm bài viết, tui thường vào [danh mục](/tags) và tìm kiếm các tags như `javascript`, `sass`, `css`...Và với mong muốn tìm kiếm bài viết được tốt hơn nên tui quyết định thử nghiệm với [Algolia](https://www.algolia.com/), kết hợp một xíu với [Vue.js](/blog/bat-dau-voi-vue/).
+Trước đây, muốn tìm kiếm bài viết, tôi thường vào [danh mục](/tags) và tìm kiếm các tags như `javascript`, `sass`, `css`...Và với mong muốn tìm kiếm bài viết được tốt hơn nên tôi quyết định thử nghiệm với [Algolia](https://www.algolia.com/), kết hợp một xíu với [Vue.js](/blog/bat-dau-voi-vue/).
 
 ### Tại sao là Algolia?
 
-Thực ra đối với những người làm lập trình như tui, thì lí do đầu tiên là được học thêm một công nghệ mới. Thứ hai là sau khi thử nghiệm Algolia, thời gian kết quả tìm kiếm mà Algolia trả về rất nhanh, làm tui cũng rất bất ngờ và mong muốn tìm hiểu thêm về Algolia. 
+Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới. Thứ hai là sau khi thử nghiệm Algolia, thời gian kết quả tìm kiếm mà Algolia trả về rất nhanh, làm tôi cũng rất bất ngờ và mong muốn tìm hiểu thêm về Algolia. 
 
-Bên cạnh đó, qua quá trình mới làm quen với Algolia tui thấy nó có những điểm nổi bật sau:
+Bên cạnh đó, qua quá trình mới làm quen với Algolia tôi thấy nó có những điểm nổi bật sau:
 
 - Algolia cung cấp gói [miễn phí](https://www.algolia.com/users/sign_up) cho bạn sử dụng
 - Giao diện quản lý dễ sử dụng cho phép bạn theo dõi, truy vết và giám sát các hoạt động tìm kiếm
@@ -41,7 +41,7 @@ Tập tin `JSON` sẽ mang những thông tin được định nghĩa ở trên 
 
 Tập tin sẽ được tạo ra từ những thông tin các bài viết chứa trong thư mục **post**. Bạn có thể thay **post** bằng thư mục bài viết của bạn trong thư mục **content**
 
-Ở đây tui sử dụng một số [cú pháp về Functions](https://gohugo.io/categories/functions) trong Hugo. Bạn có thể tham khảo thêm nhé.
+Ở đây tôi sử dụng một số [cú pháp về Functions](https://gohugo.io/categories/functions) trong Hugo. Bạn có thể tham khảo thêm nhé.
 
 Tiếp theo ta mở tập tin **config.toml** và thêm một số cấu hình vào:
 
@@ -72,7 +72,7 @@ Bạn sẽ có một tập tin là **algolia.json** trong thư mục **public**
 
 Sau khi có tập tin **algolia.json** và [đăng ký](https://www.algolia.com/users/sign_up) xong một tài khoản Algolia. Bạn đăng nhập vào [Algolia Dashboard](https://www.algolia.com/dashboard).
 
-- Bạn tạo một App sử dụng Algolia. Ở đây tui ví dụ app có tên là *dangthanhblog*
+- Bạn tạo một App sử dụng Algolia. Ở đây tôi ví dụ app có tên là *dangthanhblog*
 
     {{% img src="/images/algolia_create_app.png" alt="Tạo app sử dụng Algolia" %}}
 
@@ -86,7 +86,7 @@ Sau khi có tập tin **algolia.json** và [đăng ký](https://www.algolia.com/
 
 ### Tạo Algolia Component với Vue.js
 
-Để hiển thị trên Hugo. Tui tạo ra một trang `static templates` với tên gọi là `archives.md` trong thư mục **content** như sau:
+Để hiển thị trên Hugo. tôi tạo ra một trang `static templates` với tên gọi là `archives.md` trong thư mục **content** như sau:
 
 ```markdown
 ---
@@ -99,7 +99,7 @@ Sau đó tạo thêm file HTML có tên là **layouts/static/archives.html** tư
 
 Algolia cung cấp một thư viện JavaScript để bạn dễ dàng kết với Algolia thông qua [Instantsearch.js](https://community.algolia.com/instantsearch.js/) hoặc [Vue Instantsearch](https://v2--vue-instantsearch.netlify.com/getting-started/migration.html).
 
-Vì tui đã [giới thiệu Vue.js](/blog/bat-dau-voi-vue/) có một tính năng rất hay đó là Component. Nên tui quyết định viết Component này sử dụng [Vue InstantSearch](https://v2--vue-instantsearch.netlify.com/getting-started/migration.html) vừa giúp bạn biết thêm về cách xây dựng Component trong Vue thông qua thuộc tính ***props***.
+Vì tôi đã [giới thiệu Vue.js](/blog/bat-dau-voi-vue/) có một tính năng rất hay đó là Component. Nên tôi quyết định viết Component này sử dụng [Vue InstantSearch](https://v2--vue-instantsearch.netlify.com/getting-started/migration.html) vừa giúp bạn biết thêm về cách xây dựng Component trong Vue thông qua thuộc tính ***props***.
 
 ```javascript
 Vue.component('SearchAlgoliaComponent', {

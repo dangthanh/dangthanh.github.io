@@ -11,13 +11,13 @@ tags: ["javascript", "vue", "css"]
 
 ### Vue.js có gì hay?
 
-Điểm đầu tiên tui thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ [tiếng Việt](https://vi.vuejs.org/). Cái này giúp ích rất nhiều, đặc biệt những bạn vừa làm quen với Vue.js và JavaScript. Bên cạnh đó tài liệu Vue.js còn hỗ trợ nhiều ngôn ngữ khác như [tiếng Anh](https://vuejs.org/), [tiếng Trung](https://cn.vuejs.org/), [tiếng Nhật](https://jp.vuejs.org), [tiếng Nga](https://ru.vuejs.org), [tiếng Hàn Quốc](https://kr.vuejs.org), [tiếng Bồ Đào Nha](https://br.vuejs.org), [tiếng Pháp](https://fr.vuejs.org).
+Điểm đầu tiên tôi thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ [tiếng Việt](https://vi.vuejs.org/). Cái này giúp ích rất nhiều, đặc biệt những bạn vừa làm quen với Vue.js và JavaScript. Bên cạnh đó tài liệu Vue.js còn hỗ trợ nhiều ngôn ngữ khác như [tiếng Anh](https://vuejs.org/), [tiếng Trung](https://cn.vuejs.org/), [tiếng Nhật](https://jp.vuejs.org), [tiếng Nga](https://ru.vuejs.org), [tiếng Hàn Quốc](https://kr.vuejs.org), [tiếng Bồ Đào Nha](https://br.vuejs.org), [tiếng Pháp](https://fr.vuejs.org).
 
 Ngoài ra, Vue.js còn có nhiều ưu điểm:
 
 - Dễ dàng để bắt đầu (với nền tảng HTML, CSS và JavaScript)
 - Kết hợp linh hoạt với `SVG` để xây dựng `icons`, `charts`
-- Giúp dễ dàng tái sử dụng thông qua các Component (tui sẽ giới thiệu thêm ở bên dưới)
+- Giúp dễ dàng tái sử dụng thông qua các Component (tôi sẽ giới thiệu thêm ở bên dưới)
 - Tích hợp dễ dàng với các thư viện JavaScript khác như [date-fns](https://date-fns.org/), [gsap](https://greensock.com/gsap), [d3.js](https://d3js.org/), [three.js](https://threejs.org/)...
 
 ### Hệ sinh thái
@@ -34,7 +34,7 @@ Vue.js có một hệ sinh thái rất mạnh mẽ, giúp bạn lựa chọn vi�
 
 ### Ứng dụng đầu tiên với Vue.js
 
-Ở trên tui đã giới thiệu các bạn về **Vue CLI** một công cụ để phát triển các ứng dụng Vue.js nhưng ở đây để dễ dàng làm quen tui sử dụng cú pháp thuần JavaScript và HTML.
+Ở trên tôi đã giới thiệu các bạn về **Vue CLI** một công cụ để phát triển các ứng dụng Vue.js nhưng ở đây để dễ dàng làm quen tôi sử dụng cú pháp thuần JavaScript và HTML.
 
 Đầu tiên bạn cần nhúng thư viện Vue.js và trong thẻ `<script>` và khai báo như sau:
 

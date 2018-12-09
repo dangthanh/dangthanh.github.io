@@ -11,11 +11,11 @@ Khi viết CSS cho web. Có rất nhiều CSS Framework để bạn lựa chọn
 - [Foundation](https://foundation.zurb.com/)
 - [Bulma](https://bulma.io/)
 - [Sematic UI](https://semantic-ui.com/)
-- [UI Kit](https://getuikit.com/)
+- [UI Kit](https://getôikit.com/)
 
 Những CSS Framework trên giúp bạn xây dựng Prototype, Responsive Design một cách linh hoạt và dễ dàng.
 
-Hôm nay tui sẽ giới thiệu thêm với các bạn về Functional CSS (được thường được gọi là `Utility-first CSS` hay `Atomic CSS`)
+Hôm nay tôi sẽ giới thiệu thêm với các bạn về Functional CSS (được thường được gọi là `Utility-first CSS` hay `Atomic CSS`)
 
 ### Vậy Functional CSS là gì?
 
@@ -87,9 +87,9 @@ Nhìn vào ví dụ trên bạn có thể nghĩ là cách viết Functional CSS 
 
 ### Lợi ích khi dùng Functional CSS
 
-Tui cũng thường hay sử dụng Bootstrap để xây dựng web. Nhưng từ sau khi chuyển sang dùng Functional CSS tui thấy có những lợi ích sau:
+tôi cũng thường hay sử dụng Bootstrap để xây dựng web. Nhưng từ sau khi chuyển sang dùng Functional CSS tôi thấy có những lợi ích sau:
 
-- Thời gian xây dựng web của tui nhanh hơn. Tăng lên khoảng 1.5 hoặc 2 lần so với trước.
+- Thời gian xây dựng web của tôi nhanh hơn. Tăng lên khoảng 1.5 hoặc 2 lần so với trước.
 - Không còn lo lắng về việc sử dụng `Naming CSS` nữa.
 - Dễ dàng bảo trì và phát triển CSS.
 - Tránh được việc lặp đi lặp lại code, tăng `performance` lên.
@@ -98,20 +98,20 @@ Tui cũng thường hay sử dụng Bootstrap để xây dựng web. Nhưng từ
 
 ### Sử dụng thư viện Functional CSS nào?
 
-Nếu bạn không có thời gian để xây dựng các `Utility-first CSS` thì bạn có thể tham khảo và sử dụng những thư viện tui đề cập dưới đây:
+Nếu bạn không có thời gian để xây dựng các `Utility-first CSS` thì bạn có thể tham khảo và sử dụng những thư viện tôi đề cập dưới đây:
 
-- [Basscss](http://basscss.com/) - thư viện đầu tiên Functional CSS mà tui sử dụng.
-- [Tachyons](http://tachyons.io/) - đây là thư viện tui sử dụng để làm giao diện blog này phiên bản trước đây.
-- [TailwindCSS](https://tailwindcss.com/) - thư tiện tui thích nhất và thường sử dụng cho đến bây giờ.
+- [Basscss](http://basscss.com/) - thư viện đầu tiên Functional CSS mà tôi sử dụng.
+- [Tachyons](http://tachyons.io/) - đây là thư viện tôi sử dụng để làm giao diện blog này phiên bản trước đây.
+- [TailwindCSS](https://tailwindcss.com/) - thư tiện tôi thích nhất và thường sử dụng cho đến bây giờ.
 - [Colors.css](https://github.com/mrmrs/colors) - sử dụng màu sắc cho web.
 
 ### Vậy Functional CSS không có nhược điểm?
 
-Bất kỳ thư viện nào đều có những ưu và nhược điểm. Nhưng thường tui chỉ nêu lên ưu điểm thôi. Còn nhược điểm có lẽ là tui để các bạn tự dùng và trải nghiệm nhé. Bởi vì có thể tui thích cái X còn bạn thì lại thích cái Y. Nên tui nghĩ rằng bạn nên thử sử dụng chúng và xem thư viện nào phù hợp với mình nhé.
+Bất kỳ thư viện nào đều có những ưu và nhược điểm. Nhưng thường tôi chỉ nêu lên ưu điểm thôi. Còn nhược điểm có lẽ là tôi để các bạn tự dùng và trải nghiệm nhé. Bởi vì có thể tôi thích cái X còn bạn thì lại thích cái Y. Nên tôi nghĩ rằng bạn nên thử sử dụng chúng và xem thư viện nào phù hợp với mình nhé.
 
 ### Tailwind CSS
 
-Như đã nói trên, **Tailwind CSS** là thư viện mà tui rất thích. Nên tui sẽ giới thiệu bạn một số ví dụ tui sử dụng nó để xây dựng UI nhé.
+Như đã nói trên, **Tailwind CSS** là thư viện mà tôi rất thích. Nên tôi sẽ giới thiệu bạn một số ví dụ tôi sử dụng nó để xây dựng UI nhé.
 
 #### Login
 

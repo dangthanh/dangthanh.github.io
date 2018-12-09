@@ -89,22 +89,43 @@ export function getCanvas() {
 export function getLazyImage() {
   let images = [...document.querySelectorAll('.lazy-image')];
 
-  const interactSettings = {
-    root: document.getElementById('main'),
-    rootMargin: '0px 0px 200px 0px'
-  };
+  if ('IntersectionObserver' in window) {
+    const interactSettings = {
+      rootMargin: '100px 0px',
+      threshold: 0.01
+    };
 
-  function onIntersection(imageEntites) {
-    imageEntites.forEach(image => {
-      if (image.isIntersecting) {
-        observer.unobserve(image.target);
-        image.target.src = image.target.dataset.src;
-        image.target.onload = () => image.target.classList.add('loaded');
-      }
-    });
+    function onIntersection(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0) {
+          const image = entry.target;
+          observer.unobserve(image);
+          loadImage(image);
+        }
+      });
+    }
+
+    let observer = new IntersectionObserver(onIntersection, interactSettings);
+
+    images.forEach(image => observer.observe(image));
+  } else {
+    images.forEach(image => loadImage(image));
   }
+}
 
-  let observer = new IntersectionObserver(onIntersection, interactSettings);
+function loadImage(image) {
+  const src = image.dataset.src;
+  fetchImage(src).then(() => {
+    image.src = src;
+    image.classList.add('loaded');
+  });
+}
 
-  images.forEach(image => observer.observe(image));
+function fetchImage(url) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.src = url;
+    image.onload = resolve;
+    image.onerror = reject;
+  });
 }
