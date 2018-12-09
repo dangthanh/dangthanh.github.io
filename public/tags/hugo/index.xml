@@ -17,18 +17,18 @@
       <pubDate>Sat, 08 Dec 2018 10:59:55 +0700</pubDate>
       
       <guid>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</guid>
-      <description>Trước đây, muốn tìm kiếm bài viết, tui thường vào danh mục và tìm kiếm các tags như javascript, sass, css&amp;hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tui quyết định thử nghiệm với Algolia, kết hợp một xíu với Vue.js.
-Tại sao là Algolia? Thực ra đối với những người làm lập trình như tui, thì lí do đầu tiên là được học thêm một công nghệ mới.</description>
+      <description>Trước đây, muốn tìm kiếm bài viết, tôi thường vào danh mục và tìm kiếm các tags như javascript, sass, css&amp;hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tôi quyết định thử nghiệm với Algolia, kết hợp một xíu với Vue.js.
+Tại sao là Algolia? Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới.</description>
     </item>
     
     <item>
-      <title>Redesign và những gì tui học</title>
-      <link>https://dangthanh.org/blog/redesign-va-nhung-gi-tui-hoc/</link>
+      <title>Redesign và những gì tôi học</title>
+      <link>https://dangthanh.org/blog/redesign-va-nhung-gi-t%C3%B4i-hoc/</link>
       <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dangthanh.org/blog/redesign-va-nhung-gi-tui-hoc/</guid>
-      <description>Thực ra bài viết này đã có từ lâu, nhưng tui vẫn để nó ở chế độ bản nháp và cũng do lười (quá lười) nên cũng từ lâu tui cũng bỏ thói quen viết blog. Nay tui chia sẻ những kinh nghiệm khi thiết kế lại blog này.
-Thiết kế Vì không phải là một Designer nên tui không giỏi về thiết kế lắm. Nên tui vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này.</description>
+      <guid>https://dangthanh.org/blog/redesign-va-nhung-gi-t%C3%B4i-hoc/</guid>
+      <description>Thực ra bài viết này đã có từ lâu, nhưng tôi vẫn để nó ở chế độ bản nháp và cũng do lười (quá lười) nên cũng từ lâu tôi cũng bỏ thói quen viết blog. Nay tôi chia sẻ những kinh nghiệm khi thiết kế lại blog này.
+Thiết kế Vì không phải là một Designer nên tôi không giỏi về thiết kế lắm. Nên tôi vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này.</description>
     </item>
     
   </channel>

@@ -45,7 +45,7 @@
         <a href="/archives" data-link="archives" class="no-underline hover:line-through">Lưu trữ</a>
       </li>
       <li>
-        <a href="/about" data-link="about" class="no-underline hover:line-through">Về tui</a>
+        <a href="/about" data-link="about" class="no-underline hover:line-through">Về tôi</a>
       </li>
     </ul>
   </nav>
@@ -69,13 +69,13 @@
     <div class="article-body" itemprop="articleBody">
       
 
-<p>Trước đây, muốn tìm kiếm bài viết, tui thường vào <a href="/tags">danh mục</a> và tìm kiếm các tags như <code>javascript</code>, <code>sass</code>, <code>css</code>&hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tui quyết định thử nghiệm với <a href="https://www.algolia.com/">Algolia</a>, kết hợp một xíu với <a href="/blog/bat-dau-voi-vue/">Vue.js</a>.</p>
+<p>Trước đây, muốn tìm kiếm bài viết, tôi thường vào <a href="/tags">danh mục</a> và tìm kiếm các tags như <code>javascript</code>, <code>sass</code>, <code>css</code>&hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tôi quyết định thử nghiệm với <a href="https://www.algolia.com/">Algolia</a>, kết hợp một xíu với <a href="/blog/bat-dau-voi-vue/">Vue.js</a>.</p>
 
 <h3 id="tại-sao-là-algolia">Tại sao là Algolia?</h3>
 
-<p>Thực ra đối với những người làm lập trình như tui, thì lí do đầu tiên là được học thêm một công nghệ mới. Thứ hai là sau khi thử nghiệm Algolia, thời gian kết quả tìm kiếm mà Algolia trả về rất nhanh, làm tui cũng rất bất ngờ và mong muốn tìm hiểu thêm về Algolia.</p>
+<p>Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới. Thứ hai là sau khi thử nghiệm Algolia, thời gian kết quả tìm kiếm mà Algolia trả về rất nhanh, làm tôi cũng rất bất ngờ và mong muốn tìm hiểu thêm về Algolia.</p>
 
-<p>Bên cạnh đó, qua quá trình mới làm quen với Algolia tui thấy nó có những điểm nổi bật sau:</p>
+<p>Bên cạnh đó, qua quá trình mới làm quen với Algolia tôi thấy nó có những điểm nổi bật sau:</p>
 
 <ul>
 <li>Algolia cung cấp gói <a href="https://www.algolia.com/users/sign_up">miễn phí</a> cho bạn sử dụng</li>
@@ -103,7 +103,7 @@
 
 <p>Tập tin sẽ được tạo ra từ những thông tin các bài viết chứa trong thư mục <strong>post</strong>. Bạn có thể thay <strong>post</strong> bằng thư mục bài viết của bạn trong thư mục <strong>content</strong></p>
 
-<p>Ở đây tui sử dụng một số <a href="https://gohugo.io/categories/functions">cú pháp về Functions</a> trong Hugo. Bạn có thể tham khảo thêm nhé.</p>
+<p>Ở đây tôi sử dụng một số <a href="https://gohugo.io/categories/functions">cú pháp về Functions</a> trong Hugo. Bạn có thể tham khảo thêm nhé.</p>
 
 <p>Tiếp theo ta mở tập tin <strong>config.toml</strong> và thêm một số cấu hình vào:</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputFormats</span><span class="p">.</span><span class="nx">Algolia</span><span class="p">]</span>
@@ -127,7 +127,7 @@
 <p>Sau khi có tập tin <strong>algolia.json</strong> và <a href="https://www.algolia.com/users/sign_up">đăng ký</a> xong một tài khoản Algolia. Bạn đăng nhập vào <a href="https://www.algolia.com/dashboard">Algolia Dashboard</a>.</p>
 
 <ul>
-<li><p>Bạn tạo một App sử dụng Algolia. Ở đây tui ví dụ app có tên là <em>dangthanhblog</em></p>
+<li><p>Bạn tạo một App sử dụng Algolia. Ở đây tôi ví dụ app có tên là <em>dangthanhblog</em></p>
 
 
 
@@ -158,7 +158,7 @@
 
 <h3 id="tạo-algolia-component-với-vue-js">Tạo Algolia Component với Vue.js</h3>
 
-<p>Để hiển thị trên Hugo. Tui tạo ra một trang <code>static templates</code> với tên gọi là <code>archives.md</code> trong thư mục <strong>content</strong> như sau:</p>
+<p>Để hiển thị trên Hugo. tôi tạo ra một trang <code>static templates</code> với tên gọi là <code>archives.md</code> trong thư mục <strong>content</strong> như sau:</p>
 <div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">---<span class="err">
 </span><span class="err"></span>type: &#34;static&#34;<span class="err">
 </span><span class="err"></span>layout: &#34;archives&#34;<span class="err">
@@ -167,7 +167,7 @@
 
 <p>Algolia cung cấp một thư viện JavaScript để bạn dễ dàng kết với Algolia thông qua <a href="https://community.algolia.com/instantsearch.js/">Instantsearch.js</a> hoặc <a href="https://v2--vue-instantsearch.netlify.com/getting-started/migration.html">Vue Instantsearch</a>.</p>
 
-<p>Vì tui đã <a href="/blog/bat-dau-voi-vue/">giới thiệu Vue.js</a> có một tính năng rất hay đó là Component. Nên tui quyết định viết Component này sử dụng <a href="https://v2--vue-instantsearch.netlify.com/getting-started/migration.html">Vue InstantSearch</a> vừa giúp bạn biết thêm về cách xây dựng Component trong Vue thông qua thuộc tính <strong><em>props</em></strong>.</p>
+<p>Vì tôi đã <a href="/blog/bat-dau-voi-vue/">giới thiệu Vue.js</a> có một tính năng rất hay đó là Component. Nên tôi quyết định viết Component này sử dụng <a href="https://v2--vue-instantsearch.netlify.com/getting-started/migration.html">Vue InstantSearch</a> vừa giúp bạn biết thêm về cách xây dựng Component trong Vue thông qua thuộc tính <strong><em>props</em></strong>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Vue</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s1">&#39;SearchAlgoliaComponent&#39;</span><span class="p">,</span> <span class="p">{</span>
   <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;SearchAlgoliaComponent&#39;</span><span class="p">,</span>
   <span class="nx">template</span><span class="o">:</span> <span class="sb">`
@@ -235,7 +235,7 @@
       
         <li><a href="/blog/bat-dau-voi-vue/">Bắt đầu với Vue.js</a>
       
-        <li><a href="/blog/redesign-va-nhung-gi-tui-hoc/">Redesign và những gì tui học</a>
+        <li><a href="/blog/redesign-va-nhung-gi-t%C3%B4i-hoc/">Redesign và những gì tôi học</a>
       
         <li><a href="/blog/tao-mp3-player-voi-html5-va-css3/">Tạo MP3 Player với HTML5 và CSS3</a>
       
@@ -277,6 +277,9 @@
 <script defer src="//cdn.jsdelivr.net/npm/vue-instantsearch@1.7.0/dist/vue-instantsearch.js"></script>
 
 
-<script defer src="https://dangthanh.org/js/anitya.min.40ac9ea14207cae78b12e98b4709709dfb3d56e2f9bc6c6abbcf5652b2deecbd.js" integrity="sha256-QKyeoUIHyueLEumLRwlwnfs9VuL5vGxqu89WUrLe7L0="></script>
+
+
+<script defer src="https://dangthanh.org/js/anitya-component.min.6d8d703ea312b20afb0dd5dea619d13c2d4eb592751883942f8300cf4edb4722.js" integrity="sha256-bY1wPqMSsgr7DdXephnRPC1OtZJ1GIOUL4MAz07bRyI="></script>
+<script defer src="https://dangthanh.org/js/anitya.min.73005194729b4f433e31a0696c86448c7935999d61bab1aa54c7c88cdaf707ac.js" integrity="sha256-cwBRlHKbT0M&#43;MaBpbIZEjHk1mZ1hurGqVMfIjNr3B6w="></script>
 </body>
 </html>

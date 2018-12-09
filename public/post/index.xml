@@ -17,8 +17,8 @@
       <pubDate>Sat, 08 Dec 2018 10:59:55 +0700</pubDate>
       
       <guid>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</guid>
-      <description>Trước đây, muốn tìm kiếm bài viết, tui thường vào danh mục và tìm kiếm các tags như javascript, sass, css&amp;hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tui quyết định thử nghiệm với Algolia, kết hợp một xíu với Vue.js.
-Tại sao là Algolia? Thực ra đối với những người làm lập trình như tui, thì lí do đầu tiên là được học thêm một công nghệ mới.</description>
+      <description>Trước đây, muốn tìm kiếm bài viết, tôi thường vào danh mục và tìm kiếm các tags như javascript, sass, css&amp;hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tôi quyết định thử nghiệm với Algolia, kết hợp một xíu với Vue.js.
+Tại sao là Algolia? Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@ Tại sao là Algolia? Thực ra đối với những người làm lập trình
       <guid>https://dangthanh.org/blog/bat-dau-voi-vue/</guid>
       <description>Vue.js là một thư viện JavaScript giúp bạn dễ dàng xây dựng các giao diện (UI) từ đơn giản đến phức tạp.
 Để bắt đầu với Vue.js bạn cần trang bị cho một những kiến thức cơ bản về HTML, CSS và JavaScript là nền tảng giúp bạn dễ dàng làm quen với Vue.js
-Vue.js có gì hay? Điểm đầu tiên tui thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ tiếng Việt.</description>
+Vue.js có gì hay? Điểm đầu tiên tôi thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ tiếng Việt.</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@ Vue.js có gì hay? Điểm đầu tiên tui thích ở Vue.js là một trong s
       <guid>https://dangthanh.org/blog/functional-css/</guid>
       <description>Khi viết CSS cho web. Có rất nhiều CSS Framework để bạn lựa chọn. Và một số CSS Framework sau đây thì rất phổ biến:
  Bootstrap Foundation Bulma Sematic UI UI Kit  Những CSS Framework trên giúp bạn xây dựng Prototype, Responsive Design một cách linh hoạt và dễ dàng.
-Hôm nay tui sẽ giới thiệu thêm với các bạn về Functional CSS (được thường được gọi là Utility-first CSS hay Atomic CSS)</description>
+Hôm nay tôi sẽ giới thiệu thêm với các bạn về Functional CSS (được thường được gọi là Utility-first CSS hay Atomic CSS)</description>
     </item>
     
     <item>
@@ -49,18 +49,18 @@ Hôm nay tui sẽ giới thiệu thêm với các bạn về Functional CSS (đ�
       <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
       
       <guid>https://dangthanh.org/blog/postcss/</guid>
-      <description>Lần trước tui có đề cập tới PostCSS. Nay tui sẽ giới thiệu tổng quan về PostCSS cho các bạn. Cũng như Sass, PostCSS cũng cung cấp các chức năng như Sass:
+      <description>Lần trước tôi có đề cập tới PostCSS. Nay tôi sẽ giới thiệu tổng quan về PostCSS cho các bạn. Cũng như Sass, PostCSS cũng cung cấp các chức năng như Sass:
  Khai báo biến Nhúng các tập tin CSS (Partial import) Cú pháp lồng (Nesting) Sử dụng lại với Mixins Kế thừa (Extends)  Sử dụng PostCSS Trước hết PostCSS một công cụ cho việc chuyển đổi CSS sử dụng JavaScript.</description>
     </item>
     
     <item>
-      <title>Redesign và những gì tui học</title>
-      <link>https://dangthanh.org/blog/redesign-va-nhung-gi-tui-hoc/</link>
+      <title>Redesign và những gì tôi học</title>
+      <link>https://dangthanh.org/blog/redesign-va-nhung-gi-t%C3%B4i-hoc/</link>
       <pubDate>Sun, 25 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dangthanh.org/blog/redesign-va-nhung-gi-tui-hoc/</guid>
-      <description>Thực ra bài viết này đã có từ lâu, nhưng tui vẫn để nó ở chế độ bản nháp và cũng do lười (quá lười) nên cũng từ lâu tui cũng bỏ thói quen viết blog. Nay tui chia sẻ những kinh nghiệm khi thiết kế lại blog này.
-Thiết kế Vì không phải là một Designer nên tui không giỏi về thiết kế lắm. Nên tui vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này.</description>
+      <guid>https://dangthanh.org/blog/redesign-va-nhung-gi-t%C3%B4i-hoc/</guid>
+      <description>Thực ra bài viết này đã có từ lâu, nhưng tôi vẫn để nó ở chế độ bản nháp và cũng do lười (quá lười) nên cũng từ lâu tôi cũng bỏ thói quen viết blog. Nay tôi chia sẻ những kinh nghiệm khi thiết kế lại blog này.
+Thiết kế Vì không phải là một Designer nên tôi không giỏi về thiết kế lắm. Nên tôi vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này.</description>
     </item>
     
     <item>
