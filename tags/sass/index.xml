@@ -17,7 +17,7 @@
       <pubDate>Fri, 02 Nov 2018 01:03:37 +0700</pubDate>
       
       <guid>https://dangthanh.org/blog/postcss/</guid>
-      <description>Lần trước tui có đề cập tới PostCSS. Nay tui sẽ giới thiệu tổng quan về PostCSS cho các bạn. Cũng như Sass, PostCSS cũng cung cấp các chức năng như Sass:
+      <description>Lần trước tôi có đề cập tới PostCSS. Nay tôi sẽ giới thiệu tổng quan về PostCSS cho các bạn. Cũng như Sass, PostCSS cũng cung cấp các chức năng như Sass:
  Khai báo biến Nhúng các tập tin CSS (Partial import) Cú pháp lồng (Nesting) Sử dụng lại với Mixins Kế thừa (Extends)  Sử dụng PostCSS Trước hết PostCSS một công cụ cho việc chuyển đổi CSS sử dụng JavaScript.</description>
     </item>
     
