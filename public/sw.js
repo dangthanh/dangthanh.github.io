@@ -28,7 +28,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "about/index.html",
-    "revision": "15f826340b181d943cccc6407c99ca24"
+    "revision": "0f508d7903a5ba3347d58153e710c4ac"
   },
   {
     "url": "algolia.json",
@@ -308,7 +308,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.xml",
-    "revision": "8c9d7c1cd8ee18630ed0fc44b064d5fb"
+    "revision": "6de0ec16f44c5ad9d3ca905397a70bef"
   },
   {
     "url": "js/anitya-component.min.6d8d703ea312b20afb0dd5dea619d13c2d4eb592751883942f8300cf4edb4722.js",
