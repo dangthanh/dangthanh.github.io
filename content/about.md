@@ -9,11 +9,17 @@ noIntro = true
 
 Tôi tên là Đặng Văn Thanh. Hiện đang sinh sống ở [Sài Gòn](<https://vi.wikipedia.org/wiki/S%C3%A0i_G%C3%B2n_(%C4%91%E1%BB%8Bnh_h%C6%B0%E1%BB%9Bng)>) và làm việc tại công ty [Poeta Digital](https://poetadigital.com).
 
-Tôi lập trình chủ yếu là JavaScript, Node.js và đang học tập Elm, Elixir/Phoenix. tôi cũng rất thích trao đổi và thảo luận các vấn đề về phát triển web.
+Tôi rất thích lập trình JavaScript và Functional Programming. 
+
+Thường ở Frontend tôi sử dụng chủ yếu là Vue.js nhưng tôi cũng thích sử dụng các thư viện và framework khác như Angular, React, Aurelia. 
+
+Thỉnh thoảng tôi cũng viết Backend sử dụng Node.js để tạo RESTful APIs. Hiện tại, tôi cũng đang học Elm và Elixir để viết web. 
+
+Tôi cũng rất thích chia sẻ, trao đổi và thảo luận các vấn đề về phát triển web.
 
 Ngoài lập trình tôi cũng rất thích đọc sách, đọc manga, đặc biệt là bấm PES với các anh em trong công ty.
 
-Khi không làm gì thỉnh thoảng tôi đạp xe đạp lòng vòng thành phố chơi.
+Khi không làm gì, tôi đạp xe đạp lòng vòng thành phố chơi.
 
 ### Một số thông tin khác về tôi
 

@@ -82,7 +82,36 @@ Sau khi có tập tin **algolia.json** và [đăng ký](https://www.algolia.com/
 
     Chọn **Manage index** -> **Upload file** chọn tập tin **algolia.json** trong thư mục **public** đã tạo được ở trên.
 
-- Ngoài cách tải trực tiếp tập tin lên, bạn có thể dùng [atomic-algolia](https://www.npmjs.com/package/atomic-algolia) để tải tập tin lên Algolia thông qua script hoặc serverless nhé.
+- Ngoài cách tải trực tiếp tập tin lên, bạn có thể dùng [atomic-algolia](https://www.npmjs.com/package/atomic-algolia) để tải tập tin lên Algolia thông qua NPM scripts hoặc serverless nhé.
+
+    ```shell
+    $ npm install atomic-algolia dotenv --save-dev
+    ```
+
+    Tạo một file `.env` với các thông số
+
+    ```json
+    ALGOLIA_APP_ID=ALGOLIA_APP_ID
+    ALGOLIA_ADMIN_KEY=YOUR_ALGOLIA_ADMIN_KEY
+    ALGOLIA_INDEX_NAME=posts
+    ALGOLIA_INDEX_FILE=algolia.json
+    ```
+
+    Ở đây tôi giả sử indexName tôi sử dụng là **posts** và tập tin có tên là **algolia.json**
+
+    Sử dụng NPM scripts trong **package.json**
+
+    ```json
+    "scripts": {
+      "algolia": "atomic-algolia"
+    }
+    ```
+
+    Chạy lệnh để tải file `algolia.json` lên Algolia
+
+    ```sheel
+    $ npm run algolia
+    ```
 
 ### Tạo Algolia Component với Vue.js
 

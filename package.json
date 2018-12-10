@@ -8,7 +8,8 @@
     "watch:js": "npx webpack -w",
     "build:js": "npx webpack",
     "build:public": "rm -rf public && hugo",
-    "build:sw": "npx workbox injectManifest"
+    "build:sw": "npx workbox injectManifest",
+    "build:algolia": "atomic-algolia"
   },
   "repository": {
     "type": "git",
@@ -26,9 +27,11 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "atomic-algolia": "^0.3.15",
     "autoprefixer": "^9.1.5",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.7",
+    "dotenv": "^6.2.0",
     "postcss-cli": "^6.0.0",
     "postcss-each": "^0.10.0",
     "postcss-import": "^12.0.0",

@@ -14,6 +14,7 @@ git subtree pull --prefix=public origin master -m 'Merge origin'
 npm run build:public
 npm run build:js
 npm run build:sw
+npm run build:algolia
 
 # Add README.md
 touch public/README.md
