@@ -28,11 +28,11 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "about/index.html",
-    "revision": "0f508d7903a5ba3347d58153e710c4ac"
+    "revision": "40d3e27ac447d54f78acb70eca7ba7a0"
   },
   {
     "url": "algolia.json",
-    "revision": "88d5b58788efd920bd98301510e6c9f7"
+    "revision": "f193f21103197be9774ce63660ec96eb"
   },
   {
     "url": "archives/index.html",
@@ -100,7 +100,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "blog/tim-kiem-voi-algolia-hugo-va-vue/index.html",
-    "revision": "b2d56999643aeb280d4e4bb76b1137d0"
+    "revision": "db1cb9fa7ff57bfc7935dd13f893aceb"
   },
   {
     "url": "blog/web-storage/index.html",
@@ -308,7 +308,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.xml",
-    "revision": "6de0ec16f44c5ad9d3ca905397a70bef"
+    "revision": "56c8cc798cf3fc3f1c79e9b7702fe2fe"
   },
   {
     "url": "js/anitya-component.min.6d8d703ea312b20afb0dd5dea619d13c2d4eb592751883942f8300cf4edb4722.js",
