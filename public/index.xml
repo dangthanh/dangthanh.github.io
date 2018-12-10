@@ -211,8 +211,8 @@ Blog hiện tại mình xây dựng bằng Jekyll (một dạng blog tĩnh đư�
       
       <guid>https://dangthanh.org/about/</guid>
       <description>&#34;Life is like riding a bycycle. To keep your balance. You must keep moving.&#34;  Tôi tên là Đặng Văn Thanh. Hiện đang sinh sống ở Sài Gòn và làm việc tại công ty Poeta Digital.
-Tôi lập trình chủ yếu là JavaScript, Node.js và đang học tập Elm, Elixir/Phoenix. tôi cũng rất thích trao đổi và thảo luận các vấn đề về phát triển web.
-Ngoài lập trình tôi cũng rất thích đọc sách, đọc manga, đặc biệt là bấm PES với các anh em trong công ty.</description>
+Tôi rất thích lập trình JavaScript và Functional Programming.
+Thường ở Frontend tôi sử dụng chủ yếu là Vue.js nhưng tôi cũng thích sử dụng các thư viện và framework khác như Angular, React, Aurelia.</description>
     </item>
     
   </channel>

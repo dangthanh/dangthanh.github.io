@@ -153,7 +153,21 @@
 
 <p>Chọn <strong>Manage index</strong> -&gt; <strong>Upload file</strong> chọn tập tin <strong>algolia.json</strong> trong thư mục <strong>public</strong> đã tạo được ở trên.</p></li>
 
-<li><p>Ngoài cách tải trực tiếp tập tin lên, bạn có thể dùng <a href="https://www.npmjs.com/package/atomic-algolia">atomic-algolia</a> để tải tập tin lên Algolia thông qua script hoặc serverless nhé.</p></li>
+<li><p>Ngoài cách tải trực tiếp tập tin lên, bạn có thể dùng <a href="https://www.npmjs.com/package/atomic-algolia">atomic-algolia</a> để tải tập tin lên Algolia thông qua NPM scripts hoặc serverless nhé.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ npm install atomic-algolia dotenv --save-dev</code></pre></div>
+<p>Tạo một file <code>.env</code> với các thông số</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">ALGOLIA_APP_ID=ALGOLIA_APP_ID</span>
+<span class="err">ALGOLIA_ADMIN_KEY=YOUR_ALGOLIA_ADMIN_KEY</span>
+<span class="err">ALGOLIA_INDEX_NAME=posts</span>
+<span class="err">ALGOLIA_INDEX_FILE=algolia.json</span></code></pre></div>
+<p>Ở đây tôi giả sử indexName tôi sử dụng là <strong>posts</strong> và tập tin có tên là <strong>algolia.json</strong></p>
+
+<p>Sử dụng NPM scripts trong <strong>package.json</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;scripts&#34;</span><span class="err">:</span> <span class="p">{</span>
+  <span class="nt">&#34;algolia&#34;</span><span class="p">:</span> <span class="s2">&#34;atomic-algolia&#34;</span>
+<span class="p">}</span></code></pre></div>
+<p>Chạy lệnh để tải file <code>algolia.json</code> lên Algolia</p>
+<div class="highlight"><pre class="chroma"><code class="language-sheel" data-lang="sheel">$ npm run algolia</code></pre></div></li>
 </ul>
 
 <h3 id="tạo-algolia-component-với-vue-js">Tạo Algolia Component với Vue.js</h3>
