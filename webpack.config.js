@@ -3,8 +3,7 @@ const path = require('path');
 module.exports = {
   mode: 'production',
   entry: {
-    anitya: './themes/anitya/src/anitya.js',
-    'anitya-component': './themes/anitya/src/anitya-component.js'
+    anitya: './themes/anitya/src/anitya.js'
   },
   output: {
     filename: './themes/anitya/assets/js/[name].js',

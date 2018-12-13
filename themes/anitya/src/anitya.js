@@ -1,4 +1,7 @@
 import { getLinks, getCanvas, getLazyImage } from './utils';
+import Appearance from './components/Appearance';
+import Caniuse from './components/Caniuse';
+import Archives from './components/Archives';
 
 if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
   window.addEventListener('load', function() {
@@ -34,6 +37,15 @@ if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  new Vue({
+    el: '#main',
+    components: {
+      'c-appearance': Appearance,
+      'c-archives': Archives,
+      'c-caniuse': Caniuse
+    }
+  });
+
   getLinks();
   getCanvas();
   getLazyImage();

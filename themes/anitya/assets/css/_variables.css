@@ -6,11 +6,14 @@
   --colorLink: #1c8479;
   --shadowLink: #fff;
   --border: #a8a7a3;
-  --font-serif: 'Roboto Slab', serif;
-  --font-monospace: 'Fira Mono', monospace;
-
   --caniuseBackground: #eee8d5;
   --caniuseBorder: #eee8d5;
+  --tableBorder: #5e3f09;
+  --codeBackground: #2d2d2d;
+  --codeColor: #fff;
+
+  --font-serif: 'Roboto Slab', serif;
+  --font-monospace: 'Fira Mono', monospace;
 
   --css: #563d7c;
   --sass: #ee0000;
@@ -22,13 +25,7 @@
   --hugo: #ff4893;
   --tailwindcss: #38a89d;
   --elm: #34495e;
-
   --javascriptColor: #51350b;
-
-  --tableBorder: #5e3f09;
-
-  --codeBackground: #2d2d2d;
-  --codeColor: #fff;
 }
 
 .night {
@@ -37,12 +34,9 @@
   --colorLink: #fff;
   --shadowLink: #1c2532;
   --border: #323e4f;
-
   --caniuseBackground: rgba(40, 50, 67, 0.4);
   --caniuseBorder: #323e4f;
-
   --tableBorder: #323e4f;
-
   --codeBackground: #fff;
   --codeColor: #2d2d2d;
 }
