@@ -47,6 +47,8 @@ img {
   height: auto;
 }
 
+.async-hide { opacity: 0 !important}
+
 .site {
   max-width: 60rem;
   margin: 0 auto;
