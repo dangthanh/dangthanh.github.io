@@ -8,5 +8,10 @@ module.exports = {
   output: {
     filename: './themes/anitya/assets/js/[name].js',
     path: path.resolve(__dirname, './')
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
   }
 };
