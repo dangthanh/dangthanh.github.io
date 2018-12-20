@@ -19,8 +19,13 @@ workbox.routing.registerRoute(
   workbox.strategies.cacheFirst()
 );
 
-workbox.strategies.networkFirst();
+workbox.routing.registerRoute(
+  'https//cdn.jsdelivr.net/npm/vue-instantsearch@1.7.0/dist/vue-instantsearch.js',
+  workbox.strategies.cacheFirst()
+);
+
 workbox.googleAnalytics.initialize();
+workbox.strategies.networkFirst();
 workbox.precaching.precacheAndRoute([
   {
     "url": "404.html",
