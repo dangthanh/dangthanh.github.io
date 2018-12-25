@@ -10,6 +10,21 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
+  /^https:\/\/fonts\.gstatic\.com/,
+  workbox.strategies.cacheFirst({
+    cacheName: 'google-fonts-webfonts',
+    plugins: [
+      new workbox.cacheableResponse.Plugin({
+        statuses: [0, 200]
+      }),
+      new workbox.expiration.Plugin({
+        maxAgeSeconds: 60 * 60 * 24 * 365
+      })
+    ]
+  })
+);
+
+workbox.routing.registerRoute(
   'https//codepen.io/assets/embed/ei.js',
   workbox.strategies.cacheFirst()
 );
