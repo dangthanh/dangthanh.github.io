@@ -10,6 +10,21 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
+  /^https:\/\/fonts\.gstatic\.com/,
+  workbox.strategies.cacheFirst({
+    cacheName: 'google-fonts-webfonts',
+    plugins: [
+      new workbox.cacheableResponse.Plugin({
+        statuses: [0, 200]
+      }),
+      new workbox.expiration.Plugin({
+        maxAgeSeconds: 60 * 60 * 24 * 365
+      })
+    ]
+  })
+);
+
+workbox.routing.registerRoute(
   'https//codepen.io/assets/embed/ei.js',
   workbox.strategies.cacheFirst()
 );
@@ -41,7 +56,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "archives/index.html",
-    "revision": "6ded1cab92a7268ea7934b777519fa4e"
+    "revision": "ccb37f8a4e5c862e81f13fce5a2d90c5"
   },
   {
     "url": "blog/bat-dau-voi-vue/index.html",
@@ -309,7 +324,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "bcd1852a4d7fe7cd70a9370456de17fe"
+    "revision": "6c932aec52febbee3541dc85d62af868"
   },
   {
     "url": "index.xml",
@@ -325,15 +340,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "page/2/index.html",
-    "revision": "e44e5133284ba1e5a1eead9b5a1a909f"
+    "revision": "daac2d15ee4b707ddba237ad345e3f02"
   },
   {
     "url": "page/3/index.html",
-    "revision": "64e238e84d261e38ab8e8752e90433aa"
+    "revision": "4f0d0f4a5090ad82c17d5385b6d027c6"
   },
   {
     "url": "page/4/index.html",
-    "revision": "e45cfcdcc0c239f4c148a6b68a8f1ae3"
+    "revision": "76fb532f64dcb7b875aa2b449ab7c310"
   },
   {
     "url": "post/index.html",
