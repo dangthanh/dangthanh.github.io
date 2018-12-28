@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on Dang Thanh Blog</title>
+    <link>https://dangthanh.org/tags/vue/</link>
+    <description>Recent content in Vue on Dang Thanh Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vn-vi</language>
+    <lastBuildDate>Sat, 08 Dec 2018 10:59:55 +0700</lastBuildDate>
+    
+	<atom:link href="https://dangthanh.org/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tìm kiếm với Algolia, Hugo và Vue.js</title>
+      <link>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</link>
+      <pubDate>Sat, 08 Dec 2018 10:59:55 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</guid>
+      <description>Trước đây, muốn tìm kiếm bài viết, tôi thường vào danh mục và tìm kiếm các tags như javascript, sass, css&amp;hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tôi quyết định thử nghiệm với Algolia, kết hợp một xíu với Vue.js.
+Tại sao là Algolia? Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới.</description>
+    </item>
+    
+    <item>
+      <title>Bắt đầu với Vue.js</title>
+      <link>https://dangthanh.org/blog/bat-dau-voi-vue/</link>
+      <pubDate>Tue, 04 Dec 2018 03:19:52 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/blog/bat-dau-voi-vue/</guid>
+      <description>Vue.js là một thư viện JavaScript giúp bạn dễ dàng xây dựng các giao diện (UI) từ đơn giản đến phức tạp.
+Để bắt đầu với Vue.js bạn cần trang bị cho một những kiến thức cơ bản về HTML, CSS và JavaScript là nền tảng giúp bạn dễ dàng làm quen với Vue.js
+Vue.js có gì hay? Điểm đầu tiên tôi thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ tiếng Việt.</description>
+    </item>
+    
+  </channel>
+</rss>

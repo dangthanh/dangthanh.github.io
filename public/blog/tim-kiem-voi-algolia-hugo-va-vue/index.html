@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Tìm kiếm với Algolia, Hugo và Vue.js -Dang Thanh Blog</title>
+  <meta name="description" content="Blog chia sẻ về web và phát triển web">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/manifest.json">
+  <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.e4144f76918b202af5341cca419b318cd38b586be6b295577ff0a52174fe8b24.css" integrity="sha256-5BRPdpGLICr1NBzKQZsxjNOLWGvmspVXf/ClIXT&#43;iyQ=">
+  <link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
+  
+<script defer>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-WZ7SGCR':true});</script>
+<script defer>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-41117458-1', 'auto');
+  ga('require', 'GTM-WZ7SGCR');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body>
+    <div class="site"><header role="banner" class="site-header">
+  <div class="site-logo">
+      <a href="/">DT</a>
+  </div>
+  <nav role="navigation" class="site-nav">
+    <ul class="no-list m-0 p-0">
+      <li>
+        <a href="/" data-link="home" class="no-underline hover:line-through">Bài viết</a>
+      </li>
+      <li>
+        <a href="/tags" data-link="tags" class="no-underline hover:line-through">Danh mục</a>
+      </li>
+      <li>
+        <a href="/archives" data-link="archives" class="no-underline hover:line-through">Lưu trữ</a>
+      </li>
+      <li>
+        <a href="/about" data-link="about" class="no-underline hover:line-through">Về tôi</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main role="main" class="site-main">
+        <div id="main">
+          <c-appearance></c-appearance><div class="article article-single" itemscope itemtype="//schema.org/Article">
+    
+      <h2 itemprop="headline">Tìm kiếm với Algolia, Hugo và Vue.js</h2>
+      <ul class="no-list p-0 m-0">
+      
+        <li class="inline-block"><a href="/tags/javascript" class="tag tag-javascript">javascript</a></li>
+      
+        <li class="inline-block"><a href="/tags/hugo" class="tag tag-hugo">hugo</a></li>
+      
+        <li class="inline-block"><a href="/tags/vue" class="tag tag-vue">vue</a></li>
+      
+      </ul>
+    
+
+    <div class="article-body" itemprop="articleBody">
+      
+
+<p>Trước đây, muốn tìm kiếm bài viết, tôi thường vào <a href="/tags">danh mục</a> và tìm kiếm các tags như <code>javascript</code>, <code>sass</code>, <code>css</code>&hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tôi quyết định thử nghiệm với <a href="https://www.algolia.com/">Algolia</a>, kết hợp một xíu với <a href="/blog/bat-dau-voi-vue/">Vue.js</a>.</p>
+
+<h3 id="tại-sao-là-algolia">Tại sao là Algolia?</h3>
+
+<p>Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới. Thứ hai là sau khi thử nghiệm Algolia, thời gian kết quả tìm kiếm mà Algolia trả về rất nhanh, làm tôi cũng rất bất ngờ và mong muốn tìm hiểu thêm về Algolia.</p>
+
+<p>Bên cạnh đó, qua quá trình mới làm quen với Algolia tôi thấy nó có những điểm nổi bật sau:</p>
+
+<ul>
+<li>Algolia cung cấp gói <a href="https://www.algolia.com/users/sign_up">miễn phí</a> cho bạn sử dụng</li>
+<li>Giao diện quản lý dễ sử dụng cho phép bạn theo dõi, truy vết và giám sát các hoạt động tìm kiếm</li>
+<li>Cung cấp các API Client cho nhiều ngôn ngữ như <code>JavaScript</code>, <code>Node.js</code>, <code>Go</code>, <code>C#</code></li>
+<li>Các thư viện Algolia cung cấp rất hay như <a href="https://github.com/algolia/autocomplete.js">Autocomplete</a>, <a href="https://community.algolia.com/places/">Algolia Places</a></li>
+</ul>
+
+<h3 id="tạo-json-search-index-trong-hugo">Tạo JSON Search Index trong Hugo</h3>
+
+<p><strong>Algolia</strong> cung cấp tìm kiếm theo chỉ mục với các định dạng file <code>JSON</code>, <code>CSV</code> hoặc <code>TSV</code> hoặc sử dụng <a href="https://www.algolia.com/doc/api-reference/api-methods/">API</a> để thêm thông tin tìm kiếm được đánh chỉ mục.</p>
+
+<p>Với <strong>Hugo</strong> mình sẽ giới thiệu các bạn cách tạo ra một file <code>JSON</code> và tải tập tin đó lên Algolia.</p>
+
+<p>Đầu tiên, ta tạo một file <code>json</code> trong <strong>layouts/_default/</strong> hoặc <strong>themes/[tên-theme-của-bạn]/layouts/_default/</strong> với tên là <strong><em>list.algolia.json</em></strong> với cấu trúc như sau.</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span><span class="err">{-</span> <span class="err">$.Scratch.Add</span> <span class="nt">&#34;index&#34;</span> <span class="err">slice</span> <span class="err">-</span><span class="p">}</span><span class="err">}</span>
+<span class="p">{</span><span class="err">{-</span> <span class="err">$section</span> <span class="err">:=</span> <span class="err">$.Site.GetPage</span> <span class="nt">&#34;post&#34;</span> <span class="err">.Section</span> <span class="p">}</span><span class="err">}</span>
+<span class="p">{</span><span class="err">{-</span> <span class="err">range</span> <span class="err">.Site.AllPages</span> <span class="err">-</span><span class="p">}</span><span class="err">}</span>
+  <span class="p">{</span><span class="err">{-</span> <span class="err">if</span> <span class="err">or</span> <span class="err">(and</span> <span class="err">(.IsDescendant</span> <span class="err">$section)</span> <span class="err">(and</span> <span class="err">(not</span> <span class="err">.Draft)</span> <span class="err">(not</span> <span class="err">.Params.private)))</span> <span class="err">$section.IsHome</span> <span class="err">-</span><span class="p">}</span><span class="err">}</span>
+    <span class="p">{</span><span class="err">{-</span> <span class="err">$.Scratch.Add</span> <span class="nt">&#34;index&#34;</span> <span class="err">(dict</span> <span class="s2">&#34;objectID&#34;</span> <span class="err">.UniqueID</span> <span class="s2">&#34;date&#34;</span> <span class="err">.Date.UTC.Unix</span> <span class="s2">&#34;description&#34;</span> <span class="err">.Description</span> <span class="s2">&#34;dir&#34;</span> <span class="err">.Dir</span> <span class="s2">&#34;expirydate&#34;</span> <span class="err">.ExpiryDate.UTC.Unix</span> <span class="s2">&#34;fuzzywordcount&#34;</span> <span class="err">.FuzzyWordCount</span> <span class="s2">&#34;keywords&#34;</span> <span class="err">.Keywords</span> <span class="s2">&#34;kind&#34;</span> <span class="err">.Kind</span> <span class="s2">&#34;lang&#34;</span> <span class="err">.Lang</span> <span class="s2">&#34;lastmod&#34;</span> <span class="err">.Lastmod.UTC.Unix</span> <span class="s2">&#34;permalink&#34;</span> <span class="err">.Permalink</span> <span class="s2">&#34;publishdate&#34;</span> <span class="err">.PublishDate</span> <span class="s2">&#34;readingtime&#34;</span> <span class="err">.ReadingTime</span> <span class="s2">&#34;relpermalink&#34;</span> <span class="err">.RelPermalink</span> <span class="s2">&#34;summary&#34;</span> <span class="err">.Summary</span> <span class="s2">&#34;title&#34;</span> <span class="err">.Title</span> <span class="s2">&#34;type&#34;</span> <span class="err">.Type</span> <span class="s2">&#34;url&#34;</span> <span class="err">.URL</span> <span class="s2">&#34;weight&#34;</span> <span class="err">.Weight</span> <span class="s2">&#34;wordcount&#34;</span> <span class="err">.WordCount</span> <span class="s2">&#34;section&#34;</span> <span class="err">.Section</span> <span class="s2">&#34;tags&#34;</span> <span class="err">.Params.Tags</span> <span class="s2">&#34;categories&#34;</span> <span class="err">.Params.Categories</span> <span class="s2">&#34;authors&#34;</span> <span class="err">.Params.Authors)</span><span class="p">}</span><span class="err">}</span>
+  <span class="p">{</span><span class="err">{-</span> <span class="err">end</span> <span class="err">-</span><span class="p">}</span><span class="err">}</span>
+<span class="p">{</span><span class="err">{-</span> <span class="err">end</span> <span class="err">-</span><span class="p">}</span><span class="err">}</span>
+<span class="p">{</span><span class="err">{-</span> <span class="err">$.Scratch.Get</span> <span class="nt">&#34;index&#34;</span> <span class="err">|</span> <span class="err">jsonify</span> <span class="err">-</span><span class="p">}</span><span class="err">}</span></code></pre></div>
+<p>Tập tin <code>JSON</code> sẽ mang những thông tin được định nghĩa ở trên như <code>authors</code>, <code>date</code>, <code>title</code>&hellip;</p>
+
+<p>Tập tin sẽ được tạo ra từ những thông tin các bài viết chứa trong thư mục <strong>post</strong>. Bạn có thể thay <strong>post</strong> bằng thư mục bài viết của bạn trong thư mục <strong>content</strong></p>
+
+<p>Ở đây tôi sử dụng một số <a href="https://gohugo.io/categories/functions">cú pháp về Functions</a> trong Hugo. Bạn có thể tham khảo thêm nhé.</p>
+
+<p>Tiếp theo ta mở tập tin <strong>config.toml</strong> và thêm một số cấu hình vào:</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputFormats</span><span class="p">.</span><span class="nx">Algolia</span><span class="p">]</span>
+  <span class="nx">baseName</span> <span class="p">=</span> <span class="s2">&#34;algolia&#34;</span>
+  <span class="nx">isPlainText</span> <span class="p">=</span> <span class="kc">true</span>
+  <span class="nx">mediaType</span> <span class="p">=</span> <span class="s2">&#34;application/json&#34;</span>
+  <span class="nx">notAlternative</span> <span class="p">=</span> <span class="kc">true</span>
+
+<span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">algolia</span><span class="p">]</span>
+  <span class="nx">vars</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;title&#34;</span><span class="p">,</span> <span class="s2">&#34;description&#34;</span><span class="p">,</span> <span class="s2">&#34;summary&#34;</span><span class="p">,</span> <span class="s2">&#34;date&#34;</span><span class="p">,</span> <span class="s2">&#34;lastmod&#34;</span><span class="p">,</span> <span class="s2">&#34;permalink&#34;</span><span class="p">]</span>
+  <span class="nx">params</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;categories&#34;</span><span class="p">,</span> <span class="s2">&#34;tags&#34;</span><span class="p">]</span>
+
+<span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
+  <span class="nx">home</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">,</span> <span class="s2">&#34;Algolia&#34;</span><span class="p">]</span></code></pre></div>
+<p>Sau đó bạn chạy lệnh</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ hugo</code></pre></div>
+<p>Bạn sẽ có một tập tin là <strong>algolia.json</strong> trong thư mục <strong>public</strong></p>
+
+<h3 id="tải-tập-tin-lên-alolia">Tải tập tin lên Alolia</h3>
+
+<p>Sau khi có tập tin <strong>algolia.json</strong> và <a href="https://www.algolia.com/users/sign_up">đăng ký</a> xong một tài khoản Algolia. Bạn đăng nhập vào <a href="https://www.algolia.com/dashboard">Algolia Dashboard</a>.</p>
+
+<ul>
+<li><p>Bạn tạo một App sử dụng Algolia. Ở đây tôi ví dụ app có tên là <em>dangthanhblog</em></p>
+
+
+
+
+
+<img
+  data-src="/images/algolia_create_app.png"
+  alt="Tạo app sử dụng Algolia"
+  class="lazy-image">
+</li>
+
+<li><p>Ở giao diện Dashboard bạn chọn <strong>Indices</strong> và nhấn vào <strong>Create index</strong> giả sử với tên là <em>posts</em></p>
+
+
+
+
+
+<img
+  data-src="/images/algolia_create_index.png"
+  alt="Tạo index trong Algolia"
+  class="lazy-image">
+
+
+<p>Chọn <strong>Manage index</strong> -&gt; <strong>Upload file</strong> chọn tập tin <strong>algolia.json</strong> trong thư mục <strong>public</strong> đã tạo được ở trên.</p></li>
+
+<li><p>Ngoài cách tải trực tiếp tập tin lên, bạn có thể dùng <a href="https://www.npmjs.com/package/atomic-algolia">atomic-algolia</a> để tải tập tin lên Algolia thông qua NPM scripts hoặc serverless nhé.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ npm install atomic-algolia dotenv --save-dev</code></pre></div>
+<p>Tạo một file <code>.env</code> với các thông số</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">ALGOLIA_APP_ID=ALGOLIA_APP_ID</span>
+<span class="err">ALGOLIA_ADMIN_KEY=YOUR_ALGOLIA_ADMIN_KEY</span>
+<span class="err">ALGOLIA_INDEX_NAME=posts</span>
+<span class="err">ALGOLIA_INDEX_FILE=algolia.json</span></code></pre></div>
+<p>Ở đây tôi giả sử indexName tôi sử dụng là <strong>posts</strong> và tập tin có tên là <strong>algolia.json</strong></p>
+
+<p>Sử dụng NPM scripts trong <strong>package.json</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;scripts&#34;</span><span class="err">:</span> <span class="p">{</span>
+  <span class="nt">&#34;algolia&#34;</span><span class="p">:</span> <span class="s2">&#34;atomic-algolia&#34;</span>
+<span class="p">}</span></code></pre></div>
+<p>Chạy lệnh để tải file <code>algolia.json</code> lên Algolia</p>
+<div class="highlight"><pre class="chroma"><code class="language-sheel" data-lang="sheel">$ npm run algolia</code></pre></div></li>
+</ul>
+
+<h3 id="tạo-algolia-component-với-vue-js">Tạo Algolia Component với Vue.js</h3>
+
+<p>Để hiển thị trên Hugo. tôi tạo ra một trang <code>static templates</code> với tên gọi là <code>archives.md</code> trong thư mục <strong>content</strong> như sau:</p>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">---<span class="err">
+</span><span class="err"></span>type: &#34;static&#34;<span class="err">
+</span><span class="err"></span>layout: &#34;archives&#34;<span class="err">
+</span><span class="err"></span>---</code></pre></div>
+<p>Sau đó tạo thêm file HTML có tên là <strong>layouts/static/archives.html</strong> tương ứng với <code>layout</code> được khai báo ở trên.</p>
+
+<p>Algolia cung cấp một thư viện JavaScript để bạn dễ dàng kết với Algolia thông qua <a href="https://community.algolia.com/instantsearch.js/">Instantsearch.js</a> hoặc <a href="https://v2--vue-instantsearch.netlify.com/getting-started/migration.html">Vue Instantsearch</a>.</p>
+
+<p>Vì tôi đã <a href="/blog/bat-dau-voi-vue/">giới thiệu Vue.js</a> có một tính năng rất hay đó là Component. Nên tôi quyết định viết Component này sử dụng <a href="https://v2--vue-instantsearch.netlify.com/getting-started/migration.html">Vue InstantSearch</a> vừa giúp bạn biết thêm về cách xây dựng Component trong Vue thông qua thuộc tính <strong><em>props</em></strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">Vue</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s1">&#39;SearchAlgoliaComponent&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;SearchAlgoliaComponent&#39;</span><span class="p">,</span>
+  <span class="nx">template</span><span class="o">:</span> <span class="sb">`
+</span><span class="sb">    &lt;ais-index
+</span><span class="sb">      :app-id=&#34;appId&#34;
+</span><span class="sb">      :api-key=&#34;apiKey&#34;
+</span><span class="sb">      :index-name=&#34;indexName&#34;
+</span><span class="sb">      :routing=&#34;true&#34;&gt;
+</span><span class="sb">      &lt;ais-search-box placeholder=&#34;Tìm kiếm tiêu đề hoặc nội dung bài viết...&#34;&gt;&lt;/ais-search-box&gt;
+</span><span class="sb">      &lt;ais-highlight :hit=&#34;hit&#34; attribute=&#34;title&#34;&gt;&lt;/ais-highlight&gt;
+</span><span class="sb">      &lt;ais-results&gt;
+</span><span class="sb">        // Your display results
+</span><span class="sb">      &lt;/ais-results&gt;
+</span><span class="sb">    &lt;/ais-index&gt;
+</span><span class="sb">  `</span><span class="p">,</span>
+  <span class="nx">props</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">appId</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+      <span class="nx">require</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="nx">apiKey</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+      <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="nx">indexName</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+      <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="nx">routing</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">type</span><span class="o">:</span> <span class="nb">Boolean</span><span class="p">,</span>
+      <span class="k">default</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>Vậy là ta đã có một Component sử dụng Vue cho Algolia. Giờ ta sẽ sử dụng nó trong <strong>layouts/static/archives.html</strong> nhé.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">main</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">search-algolia-component</span> 
+    <span class="na">:appId</span><span class="o">=</span><span class="s">&#34;yourAppId&#34;</span> 
+    <span class="na">:apiKey</span><span class="o">=</span><span class="s">&#34;yourApiKey&#34;</span> 
+    <span class="na">:indexName</span><span class="o">=</span><span class="s">&#34;yourIndexName&#34;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span></code></pre></div>
+<p><strong>appId</strong> và <strong>apiKey</strong> bạn vào trong Dashboard của Algolia và chọn <strong>API keys</strong> để lấy thông tin nhé.</p>
+
+<p>Giờ ta đã có một trang tìm kiếm sử dụng Algolia, Hugo và Vue.js. Bạn có thể <a href="/archives/">trải nghiệm</a> hoặc có thể chỉnh sửa thêm cho <code>SearchAlgoliaComponent</code> theo cách bạn muốn hiển thị nhé.</p>
+
+    </div>
+    
+      <section itemscope itemtype="//schema.org/Person" class="site-author cf">
+  <img itemprop="image" src="/images/avatar.jpeg" class="fl" alt="Đặng Văn Thanh">
+  <div class="fl">
+    <h4 itemprop="author">Đặng Văn Thanh</h4>
+    <span itemprop="description">Có đam mê về lập trình và các vấn đề về phát triển web.</span>
+  </div>
+</section>
+
+      
+  
+
+
+  <aside class="article-body article-related mt-40">
+    <h3>Bài viết cùng chủ đề</h3>
+    <ul>
+      
+      
+        <li><a href="/blog/bat-dau-voi-vue/">Bắt đầu với Vue.js</a>
+      
+        <li><a href="/blog/redesign-va-nhung-gi-t%C3%B4i-hoc/">Redesign và những gì tôi học</a>
+      
+        <li><a href="/blog/tao-mp3-player-voi-html5-va-css3/">Tạo MP3 Player với HTML5 và CSS3</a>
+      
+        <li><a href="/blog/html5-fullscreen-api/">HTML5 Fullscreen API</a>
+      
+        <li><a href="/blog/do-bong-mixin-voi-text-shadow/">Đổ Bóng Mixin Với Text-Shadow</a>
+      
+    </ul>
+  </aside>
+
+
+    
+  </div>
+        </div><footer role="contentinfo" class="site-footer">
+  <p>
+    &copy;2013 - 2018. Được xây dựng bằng
+    <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a>,
+    <a href="https://vuejs.org/" rel="noopener" target="_blank">Vue.js</a>.
+  </p>
+</footer>
+
+
+</main>
+    </div><script defer src="//codepen.io/assets/embed/ei.js"></script>
+<script defer src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
+<script defer src="//cdn.jsdelivr.net/npm/vue-instantsearch@1.7.0/dist/vue-instantsearch.js"></script>
+
+
+<script defer src="https://dangthanh.org/js/anitya.min.f8bab136bdc3eb84c50f9968181c2cad3ae70a18f78fba1cc7f2e0e721b3e7f4.js" integrity="sha256-&#43;LqxNr3D64TFD5loGBwsrTrnChj3j7ocx/Lg5yGz5/Q="></script>
+<div class="a2hs-prompt">
+  <h1>Add DangThanh Blog To Your Homescreen!</h1>
+  <div class="a2hs-btn">Add</div>
+</div>
+</body>
+</html>
