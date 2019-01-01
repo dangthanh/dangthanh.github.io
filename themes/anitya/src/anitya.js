@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  getBeforeInstallPrompt();
   getLinks();
   getCanvas();
   getLazyImage();
-  getBeforeInstallPrompt();
 });

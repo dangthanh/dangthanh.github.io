@@ -161,18 +161,30 @@ img {
     border: 1px solid var(--caniuseBorder);
     padding: 0.625rem;
     margin-top: 1rem;
+    text-align: center;
 
-    > div {
-      width: calc(100% - 5rem);
+    @media (--tablet) {
+      text-align: left;
     }
 
-    > img {
-      float: left;
+    &-picture {
+      float: none;
       width: 4rem;
       height: 4rem;
       overflow: hidden;
       border-radius: 100%;
-      margin-right: 1rem;
+
+      @media (--tablet) {
+        float: left;
+        margin-right: 1rem;
+      }
+    }
+
+    &-description {
+      @media (--tablet) {
+        float: left;
+        width: calc(100% - 5rem);
+      }
     }
 
     h4 {
