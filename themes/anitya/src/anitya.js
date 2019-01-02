@@ -2,7 +2,7 @@ import {
   getLinks,
   getCanvas,
   getLazyImage,
-  getBeforeInstallPrompt
+  getBeforeInstallPrompt,
 } from './utils';
 import Appearance from './components/Appearance';
 import Caniuse from './components/Caniuse';
@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
     components: {
       'c-appearance': Appearance,
       'c-archives': Archives,
-      'c-caniuse': Caniuse
-    }
+      'c-caniuse': Caniuse,
+    },
   });
 
   getBeforeInstallPrompt();

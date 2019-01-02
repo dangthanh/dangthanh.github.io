@@ -1,5 +1,5 @@
 .article {
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.675rem;
 
   &.article-single {
     h2 {
@@ -19,14 +19,18 @@
   &-body {
     a {
       text-decoration: none;
-      background: linear-gradient(var(--shadowLink), var(--shadowLink)), linear-gradient(var(--shadowLink), var(--shadowLink)),
+      background: linear-gradient(var(--shadowLink), var(--shadowLink)),
+        linear-gradient(var(--shadowLink), var(--shadowLink)),
         linear-gradient(var(--colorLink), var(--colorLink));
       background-repeat: no-repeat, no-repeat, repeat-x;
       background-position: 0 95%, 100% 95%, 0 95%;
       background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-      text-shadow: 0.03em 0 var(--shadowLink), -0.03em 0 var(--shadowLink), 0 0.03em var(--shadowLink), 0 -0.03em var(--shadowLink),
-        0.06em 0 var(--shadowLink), -0.06em 0 var(--shadowLink), 0.09em 0 var(--shadowLink), -0.09em 0 var(--shadowLink),
-        0.12em 0 var(--shadowLink), -0.12em 0 var(--shadowLink), 0.15em 0 var(--shadowLink), -0.15em 0 var(--shadowLink);
+      text-shadow: 0.03em 0 var(--shadowLink), -0.03em 0 var(--shadowLink),
+        0 0.03em var(--shadowLink), 0 -0.03em var(--shadowLink),
+        0.06em 0 var(--shadowLink), -0.06em 0 var(--shadowLink),
+        0.09em 0 var(--shadowLink), -0.09em 0 var(--shadowLink),
+        0.12em 0 var(--shadowLink), -0.12em 0 var(--shadowLink),
+        0.15em 0 var(--shadowLink), -0.15em 0 var(--shadowLink);
 
       &:hover,
       &:focus {
