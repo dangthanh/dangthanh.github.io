@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  {{- partial "labs/head_labs.html" . -}}
+  {{ $styles := resources.Get "labs/longshadow-jquery-plugin/longshadow-jquery-plugin.css" | toCSS | postCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+</head>
+<body>
+  <div id="labs">
+    <div class="mx-auto max-w-md px-6">
+      <div class="border-t-4 border-orange"></div>
+    </div>
+    <header role="banner">
+      <a href="https://dangthanh.org/" class="lab-home">
+        <icon-home color="#f6993f"/>
+      </a>
+      <h1 class="my-16 text-center text-5xl no-underline text-black font-semilbold">
+        jquery.longShadow
+      </h1>
+      <github-corner url="https://github.com/dangvanthanh/jquery.longShadow" color="#f6993f" style="color: #fff;"/>
+    </header>
+    <main role="main">
+      <div class="mx-auto max-w-md px-6">
+        <div class="my-3">
+          <div>
+            <a
+              href="https://github.com/dangvanthanh/jquery.longShadow"
+              target="_blank"
+              class="block border-2 border-orange py-2 rounded no-underline text-orange text-center mb-3 font-semibold hover:bg-orange hover:text-white">
+              Getting Started
+            </a>
+            <small class="text-grey-darker">Installation guide for developers</small>
+          </div>
+        </div>
+        <div class="mt-12">
+          <h2 class="text-4xl font-semibold text-center mb-8">Example</h2>
+          <div class="text-center">
+            <figure class="round js-round-1">s</figure>
+            <figure class="round js-round-2">h</figure>
+            <figure class="round js-round-3">a</figure>
+            <figure class="round js-round-4">d</figure>
+            <figure class="round js-round-5">o</figure>
+            <figure class="round js-round-6">w</figure>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <script defer src="https://unpkg.com/jquery-longshadow"></script>
+  {{- partial "labs/foot_labs.html" . -}}
+  {{ $js := resources.Get "labs/longshadow-jquery-plugin/longshadow-jquery-plugin.js" }}
+  {{ $secureJS := $js | minify | fingerprint }}
+  <script defer src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+</body>
+</html>

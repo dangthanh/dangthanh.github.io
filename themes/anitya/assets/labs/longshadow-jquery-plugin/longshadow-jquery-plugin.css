@@ -1,22 +1,17 @@
-body {
-  background: #f2f2f2;
-}
-
 .round {
-  border: 5px solid #f2f2f2;
-  border-radius: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 1rem;
   color: #ffe6d4;
   display: inline-block;
   font-family: Georgia, serif;
   font-size: 60px;
   font-weight: 700;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
+  line-height: 5.5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   overflow: hidden;
   text-align: center;
   text-transform: uppercase;
-  margin: 10px;
 
   &:nth-child(1) {
     background-color: #ec7667;
@@ -41,8 +36,4 @@ body {
   &:nth-child(6) {
     background-color: #9191cb;
   }
-}
-
-.example {
-  text-align: center;
 }
