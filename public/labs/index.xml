@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Labs on Dang Thanh Blog</title>
+    <link>https://dangthanh.org/labs/</link>
+    <description>Recent content in Labs on Dang Thanh Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vn-vi</language>
+    <lastBuildDate>Sun, 13 Jan 2019 11:56:56 +0700</lastBuildDate>
+    
+	<atom:link href="https://dangthanh.org/labs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Longshadow Jquery Plugin</title>
+      <link>https://dangthanh.org/labs/longshadow-jquery-plugin/</link>
+      <pubDate>Sun, 13 Jan 2019 11:56:56 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/labs/longshadow-jquery-plugin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tipsy</title>
+      <link>https://dangthanh.org/labs/tipsy/</link>
+      <pubDate>Sun, 13 Jan 2019 09:52:06 +0700</pubDate>
+      
+      <guid>https://dangthanh.org/labs/tipsy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

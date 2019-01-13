@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dangthanh.org/labs/longshadow-jquery-plugin/</loc>
+    <lastmod>2019-01-13T11:56:56+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dangthanh.org/labs/tipsy/</loc>
+    <lastmod>2019-01-13T09:52:06+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</loc>
     <lastmod>2018-12-08T10:59:55+07:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -143,7 +157,7 @@
   
   <url>
     <loc>https://dangthanh.org/</loc>
-    <lastmod>2018-12-08T10:59:55+07:00</lastmod>
+    <lastmod>2019-01-13T11:56:56+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -164,6 +178,13 @@
   <url>
     <loc>https://dangthanh.org/tags/javascript/</loc>
     <lastmod>2018-12-08T10:59:55+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dangthanh.org/labs/</loc>
+    <lastmod>2019-01-13T11:56:56+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
