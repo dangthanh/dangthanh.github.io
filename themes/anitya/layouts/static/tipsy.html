@@ -1,0 +1,109 @@
+<html lang="vi">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/themes/prism-solarizedlight.min.css">
+    {{- partial "head_labs.html" . -}}
+    {{ $styles := resources.Get "labs/tipsy.css" | toCSS | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+  </head>
+<body>
+  <div id="labs">
+    <header>
+      <a href="https://dangthanh.org/" class="lab-home">
+        <icon-home color="#666"/>
+      </a>
+      <h1 class="lab-intro"><a href="#">Tipsy.sass</a></h1>
+      <github-corner url="https://github.com/dangvanthanh/tipsy.sass" color="#000" style="color: #fff;"/>
+    </header>
+    <main>
+      <div class="container">
+        <ul class="example">
+          <li class="example--demo"><span class="tipsy--nw" data-tipsy="Tipsy Northwest">Northwest</span></li>
+          <li class="example--demo"><span class="tipsy--n" data-tipsy="Tipsy North">North</span></li>
+          <li class="example--demo"><span class="tipsy--ne" data-tipsy="Tipsy Northeast">Northeast</span></li>
+          <li class="example--demo"><span class="tipsy--w" data-tipsy="Tipsy West">West</span></li>
+          <li class="example--demo">&nbsp;</li>
+          <li class="example--demo"><span class="tipsy--e" data-tipsy="Tipsy East">East</span></li>
+          <li class="example--demo"><span class="tipsy--sw" data-tipsy="Tipsy Southwest">Southwest</span></li>
+          <li class="example--demo"><span class="tipsy--s" data-tipsy="Tipsy South">South</span></li>
+          <li class="example--demo"><span class="tipsy--se" data-tipsy="Tipsy Southeast">Southeast</span></li>
+        </ul>
+        <h2>Getting Started</h2>
+
+        <pre><code class="language-css">$ npm install tipsy-sass</code></pre>
+
+        <h3>You need import Tipsy.sass in your stylesheet</h3>
+
+        <pre><code class="language-css">@import "tipsy";</code></pre>
+
+        <h3>Tipsy.sass have 5 parameters allow you can customize</h3>
+
+        <h4>SCSS</h4>
+
+        <pre><code class="language-css">@mixin tipsy($gravity, $bgcolor, $bordersize, $radius, $width) {...}</code></pre>
+
+        <h4>SASS</h4>
+
+        <pre><code class="language-css">+tipsy($gravity, $bgcolor, $bordersize, $radius, $width)</code></pre>
+
+        <h4>PARAMETERS</h4>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Param</th>
+              <th>Description</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>$gravity</code></td>
+              <td>Position of tooltip</td>
+              <td>nw | n | ne | e | se | s | sw | w</td>
+            </tr>
+            <tr>
+              <td><code>$bg/color</td>
+              <td>Background color of tooltip</td>
+              <td>HEX, RGB, RGBA, HSL </td>
+            </tr>
+            <tr>
+              <td><code>$bordersize</code></td>
+              <td>Arrow size of tooltip </td>
+              <td>px, em, rem</td>
+            </tr>
+            <tr>
+              <td><code>$radius</code></td>
+              <td>Border radius of tooltip</td>
+              <td>px, em, rem</td>
+            </tr>
+            <tr>
+              <td><code>$width</code></td>
+              <td>Width of tooltip</td>
+              <td>px, em, rem</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>How to use</h3>
+
+        <h4>HTML</h4>
+
+        <pre><code class="language-css"><span class="tipsy" data-tipsy="Simple Tipsy">Simple Tipsy</span></code></pre>
+
+        <h4>SCSS</h4>
+
+        <pre><code class="language-css">.tipsy--nw { @include tipsy(nw, #34495e, 5px, 0);  }
+.tipsy--n  { @include tipsy(n, #2ecc71, 5px, 3px); }
+.tipsy--ne { @include tipsy(ne, #3498db, 5px, 0);  }
+.tipsy--e  { @include tipsy(e, #9b59b6, 5px, 3px); }
+.tipsy--se { @include tipsy(se, #f39c12, 5px, 0);  }
+.tipsy--s  { @include tipsy(s, #d35400, 5px, 3px); }
+.tipsy--sw { @include tipsy(sw, #c0392b, 5px, 0);  }
+.tipsy--w  { @include tipsy(w, #8e44ad, 5px, 3px, 10px); }</code></pre>
+      </div>
+    </main>
+  </div>
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.min.js"></script>
+  {{- partial "foot_labs.html" . -}}
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="vi">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/themes/prism-solarizedlight.min.css">
+    {{- partial "head_labs.html" . -}}
+    {{ $styles := resources.Get "labs/longshadow-jquery-plugin.css" | toCSS | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+  </head>
+<body>
+  <div id="labs">
+    <header>
+      <a href="https://dangthanh.org/" class="lab-home">
+        <icon-home color="#666"/>
+      </a>
+      <h1 class="lab-intro"><a href="#">jquery.longShadow</a></h1>
+      <github-corner url="https://github.com/dangvanthanh/jquery.longShadow" color="#000" style="color: #fff;"/>
+    </header>
+    <main>
+      <div class="container">
+        <ul class="example">
+          <figure class="round js-round-1">s</figure>
+          <figure class="round js-round-2">h</figure>
+          <figure class="round js-round-3">a</figure>
+          <figure class="round js-round-4">d</figure>
+          <figure class="round js-round-5">o</figure>
+          <figure class="round js-round-6">w</figure>
+        </ul>
+        <h2>Getting Started</h2>
+
+        <pre><code class="language-css">https://unpkg.com/jquery-longshadow</code></pre>
+
+        <h2>Usage</h2>
+
+        <pre><code class="language-javascript">$(selector).longShadow({
+    colorShadow: '#a13c32',
+    sizeShadow: 70,
+    directionShadow: 'bottom'
+});</code></pre>
+
+        <h2>Available Options</h2>
+
+        <table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colorShadow</td>
+<td>String</td>
+<td>#ccc</td>
+<td>Color of text-shadow (HEX, RGB, RGBA)</td>
+</tr>
+<tr>
+<td>sizeShadow</td>
+<td>Integer</td>
+<td>50</td>
+<td>Numbers value of text-shadow</td>
+</tr>
+<tr>
+<td>directionShadow</td>
+<td>String</td>
+<td>bottom-right</td>
+<td>Direction of text-shadow. Currently, have 8 direction: <strong>top</strong>, <strong>right</strong>, <strong>bottom</strong>, <strong>left</strong>, <strong>top-right</strong>, <strong>top-left</strong>, <strong>bottom-right</strong>, <strong>bottom-left</strong></td>
+</tr>
+      </div>
+    </main>
+  </div>
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <script defer src="https://unpkg.com/jquery-longshadow"></script>
+  {{- partial "foot_labs.html" . -}}
+</body>
+</html>

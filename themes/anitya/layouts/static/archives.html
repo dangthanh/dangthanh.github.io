@@ -1,16 +1,18 @@
 <html lang="vi">
+  <head>
     {{- partial "head.html" . -}}
-    <body>
-      <div class="site">
-        {{- partial "header.html" . -}}
-        <main role="main" class="site-main">
-          <div id="main">
-            <c-appearance></c-appearance>
-            <c-archives></c-archives>
-          </div>
-          {{- partial "footer.html" . -}}
-        </main>
+  </head>
+<body>
+  <div class="site">
+    {{- partial "header.html" . -}}
+    <main role="main" class="site-main">
+      <div id="main">
+        <c-appearance></c-appearance>
+        <c-archives></c-archives>
       </div>
-      {{- partial "foot.html" . -}}
-    </body>
+      {{- partial "footer.html" . -}}
+    </main>
+  </div>
+  {{- partial "foot.html" . -}}
+</body>
 </html>
