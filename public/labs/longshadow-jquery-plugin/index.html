@@ -1,6 +1,5 @@
-<html lang="vi">
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/themes/prism-solarizedlight.min.css"><head>
+<html lang="en">
+<head><head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Longshadow Jquery Plugin -Dang Thanh Blog</title>
@@ -26,8 +25,9 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="//cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
   
-  <link rel="stylesheet" href="https://dangthanh.org/labs/base.min.a553f6e6f220c6ac0ab22a321c86a5d155589094bd02cf35932ac9295eaa9fb5.css" integrity="sha256-pVP25vIgxqwKsioyHIal0VVYkJS9As81kyrJKV6qn7U=">
+  <link rel="stylesheet" href="https://dangthanh.org/labs/base.min.0085c5286bc55e2281f1055c9b88f488fb521a57f4352d43519c63a12ee2ca77.css" integrity="sha256-AIXFKGvFXiKB8QVcm4j0iPtSGlf0NS1DUZxjoS7iync=">
   <link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
   
 <script defer>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -48,77 +48,56 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
 </head>
 
-    <link rel="stylesheet" href="https://dangthanh.org/labs/longshadow-jquery-plugin.min.d3fc366bdc662c8219100053deeda7df4b2ef921f475909eea9fda98d6b5631c.css" integrity="sha256-0/w2a9xmLIIZEABT3u2n30su&#43;SH0dZCe6p/amNa1Yxw=">
-  </head>
+  <link rel="stylesheet" href="https://dangthanh.org/labs/longshadow-jquery-plugin/longshadow-jquery-plugin.min.b8fa0606111e921438e5de41deaa23abcb669550d287c559718b1675b5181859.css" integrity="sha256-uPoGBhEekhQ45d5B3qojq8tmlVDSh8VZcYsWdbUYGFk=">
+</head>
 <body>
   <div id="labs">
-    <header>
+    <div class="mx-auto max-w-md px-6">
+      <div class="border-t-4 border-orange"></div>
+    </div>
+    <header role="banner">
       <a href="https://dangthanh.org/" class="lab-home">
-        <icon-home color="#666"/>
+        <icon-home color="#f6993f"/>
       </a>
-      <h1 class="lab-intro"><a href="#">jquery.longShadow</a></h1>
-      <github-corner url="https://github.com/dangvanthanh/jquery.longShadow" color="#000" style="color: #fff;"/>
+      <h1 class="my-16 text-center text-5xl no-underline text-black font-semilbold">
+        jquery.longShadow
+      </h1>
+      <github-corner url="https://github.com/dangvanthanh/jquery.longShadow" color="#f6993f" style="color: #fff;"/>
     </header>
-    <main>
-      <div class="container">
-        <ul class="example">
-          <figure class="round js-round-1">s</figure>
-          <figure class="round js-round-2">h</figure>
-          <figure class="round js-round-3">a</figure>
-          <figure class="round js-round-4">d</figure>
-          <figure class="round js-round-5">o</figure>
-          <figure class="round js-round-6">w</figure>
-        </ul>
-        <h2>Getting Started</h2>
-
-        <pre><code class="language-css">https://unpkg.com/jquery-longshadow</code></pre>
-
-        <h2>Usage</h2>
-
-        <pre><code class="language-javascript">$(selector).longShadow({
-    colorShadow: '#a13c32',
-    sizeShadow: 70,
-    directionShadow: 'bottom'
-});</code></pre>
-
-        <h2>Available Options</h2>
-
-        <table class="table table-striped table-bordered">
-<thead>
-<tr>
-<th>Option</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>colorShadow</td>
-<td>String</td>
-<td>#ccc</td>
-<td>Color of text-shadow (HEX, RGB, RGBA)</td>
-</tr>
-<tr>
-<td>sizeShadow</td>
-<td>Integer</td>
-<td>50</td>
-<td>Numbers value of text-shadow</td>
-</tr>
-<tr>
-<td>directionShadow</td>
-<td>String</td>
-<td>bottom-right</td>
-<td>Direction of text-shadow. Currently, have 8 direction: <strong>top</strong>, <strong>right</strong>, <strong>bottom</strong>, <strong>left</strong>, <strong>top-right</strong>, <strong>top-left</strong>, <strong>bottom-right</strong>, <strong>bottom-left</strong></td>
-</tr>
+    <main role="main">
+      <div class="mx-auto max-w-md px-6">
+        <div class="my-3">
+          <div>
+            <a
+              href="https://github.com/dangvanthanh/jquery.longShadow"
+              target="_blank"
+              class="block border-2 border-orange py-2 rounded no-underline text-orange text-center mb-3 font-semibold hover:bg-orange hover:text-white">
+              Getting Started
+            </a>
+            <small class="text-grey-darker">Installation guide for developers</small>
+          </div>
+        </div>
+        <div class="mt-12">
+          <h2 class="text-4xl font-semibold text-center mb-8">Example</h2>
+          <div class="text-center">
+            <figure class="round js-round-1">s</figure>
+            <figure class="round js-round-2">h</figure>
+            <figure class="round js-round-3">a</figure>
+            <figure class="round js-round-4">d</figure>
+            <figure class="round js-round-5">o</figure>
+            <figure class="round js-round-6">w</figure>
+          </div>
+        </div>
       </div>
     </main>
   </div>
-  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <script defer src="https://unpkg.com/jquery-longshadow"></script><script defer src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
 
 
-<script defer src="https://dangthanh.org/labs/base.min.8a405e990146b33a68b76880fdb923b3e90d2842f3a33ff3b5f88d85589154d8.js" integrity="sha256-ikBemQFGszpot2iA/bkjs&#43;kNKELzoz/ztfiNhViRVNg="></script>
+<script defer src="https://dangthanh.org/labs/base.min.08dc0a7a3128be3b1595e79d38d54f7be4c899f71fbb84353aeb39d90c2b2da5.js" integrity="sha256-CNwKejEovjsVleedONVPe&#43;TImfcfu4Q1Ous52QwrLaU="></script>
+
+  
+  <script defer src="https://dangthanh.org/labs/longshadow-jquery-plugin/longshadow-jquery-plugin.min.c7c0e22f448db63df35f100b0c93ec1b743fe716e3afb7793e95fe3e83790e60.js" integrity="sha256-x8DiL0SNtj3zXxALDJPsG3Q/5xbjr7d5PpX&#43;PoN5DmA="></script>
 </body>
 </html>
