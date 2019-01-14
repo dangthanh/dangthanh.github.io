@@ -1,6 +1,6 @@
 +++
 title = "Redesign và những gì tôi học"
-slug = "redesign-va-nhung-gi-tôi-hoc"
+slug = "redesign-va-nhung-gi-toi-hoc"
 date = "2016-12-25"
 tags = ["personal", "css", "postcss", "hugo", "javascript"]
 +++
