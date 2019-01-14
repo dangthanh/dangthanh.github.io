@@ -5,8 +5,7 @@ description = "Blog chia sẻ về web và phát triển web"
 theme = "anitya"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-paginate = 6
-
+paginate = 5
 
 [permalinks]
   post = "/blog/:slug/"
