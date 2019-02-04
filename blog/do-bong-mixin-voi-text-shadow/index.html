@@ -27,7 +27,7 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   
-  <link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.728be34f2c0874758b88a9e606e1310396e8c4ded5aaaea90f723d826f098285.css" integrity="sha256-covjTywIdHWLiKnmBuExA5boxN7Vqq6pD3I9gm8JgoU=">
+  <link rel="stylesheet" href="https://dangthanh.org/css/anitya.min.1fa5cba9537ded65b71ecdb1b80785586841cbac5fb04b8db1ffffa80644ccb2.css" integrity="sha256-H6XLqVN97WW3Hs2xuAeFWGhBy6xfsEuNsf//qAZEzLI=">
   <link href="" rel="alternate" type="application/rss+xml" title="Dang Thanh Blog">
   
 <script defer>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -91,57 +91,57 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 <p>CSS3 Text-Shadow là tính năng giúp bạn dễ dàng tạo đổ bóng cho text. Với text-shadow bạn cũng có thể dễ dàng tạo ra các kiểu chữ nghệ thuật (typography) hay kiểu chữ 3D&hellip;Và hôm nay mình sẽ giới thiệu các bạn <strong><a href="/blog/css-triangles-mixin-su-dung-sass/">cách tạo mixin</a></strong> đổ bóng dài (long shadow) trong Sass.</p>
 
 <h3 id="đổ-bóng-dài-long-shadow-mixin-trong-sass">Đổ bóng dài (Long Shadow) mixin trong Sass</h3>
-<div class="highlight"><pre class="chroma"><code class="language-sass" data-lang="sass"><span class="err">/**</span>
-<span class="err"> * Long Shadow Mixin</span>
-<span class="err"> */</span>
-<span class="err">@mixin longshadow($color, $size, $direction)</span>
-<span class="err">	$ts: null</span>
+<div class="highlight"><pre class="chroma"><code class="language-sass" data-lang="sass"><span class="o">/**</span>
+ <span class="o">*</span> <span class="nt">Long</span> <span class="nt">Shadow</span> <span class="nt">Mixin</span>
+ <span class="o">*/</span>
+<span class="k">@mixin</span><span class="nf"> longshadow</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="nv">$size</span><span class="o">,</span> <span class="nv">$direction</span><span class="p">)</span>
+<span class="err">	</span><span class="na">$ts</span><span class="o">:</span> <span class="n">null</span>
 
-<span class="err">	@for $i from 1 through $size</span>
-<span class="err">		// Đổ bóng hướng lên trên</span>
-<span class="err">		@if $direction == &#34;top&#34;</span>
-<span class="err">			$ts: 0 #{$i * -1}px 0 $color, $ts</span>
-<span class="err">		// Đổ bóng hướng sang phải</span>
-<span class="err">		@else if $direction == &#34;right&#34;</span>
-<span class="err">			$ts: #{$i}px 0 0 $color, $ts</span>
-<span class="err">		// Đổ bóng hướng xuống dưới</span>
-<span class="err">		@else if $direction == &#34;bottom&#34;</span>
-<span class="err">			$ts: 0 #{$i}px 0 $color, $ts</span>
-<span class="err">		// Đổ bóng hướng sang trái</span>
-<span class="err">		@else if $direction == &#34;left&#34;</span>
-<span class="err">			$ts: #{$i * -1}px 0 0 $color, $ts</span>
-<span class="err">		// Đổ bóng hướng lên trên bên trái</span>
-<span class="err">		@else if $direction == &#34;top-left&#34;</span>
-<span class="err">			$ts: #{$i * -1}px #{$i * -1}px 0 $color, $ts</span>
-<span class="err">		// Đổ bóng hướng lên trên bên phải</span>
-<span class="err">		@else if $direction == &#34;top-right&#34;</span>
-<span class="err">			$ts: #{$i}px #{$i * -1}px 0 $color, $ts</span>
-<span class="err">		// Đổ bóng hướng xuống dưới bên trái</span>
-<span class="err">		@else if $direction == &#34;bottom-left&#34;</span>
-<span class="err">			$ts: #{$i * -1}px #{$i}px 0 $color, $ts</span>
-<span class="err">		// Đổ bóng hướng xuống dưới bên phải</span>
-<span class="err">		@else if $direction == &#34;bottom-right&#34;</span>
-<span class="err">			$ts: #{$i}px #{$i}px 0 $color, $ts</span>
-<span class="err">	text-shadow: $ts</span></code></pre></div>
+	<span class="o">@</span><span class="nt">for</span> <span class="err">$</span><span class="nt">i</span> <span class="nt">from</span> <span class="nt">1</span> <span class="nt">through</span> <span class="err">$</span><span class="nt">size</span>
+		<span class="o">//</span> <span class="nt">Đổ</span> <span class="nt">bóng</span> <span class="nt">hướng</span> <span class="nt">lên</span> <span class="nt">trên</span>
+<span class="err">		</span><span class="na">@if</span><span class="err"> </span><span class="na">$direction</span><span class="o"> ==</span> <span class="s2">&#34;top&#34;</span>
+<span class="err">			</span><span class="na">$ts</span><span class="o">:</span> <span class="mi">0</span> <span class="si">#{</span><span class="nv">$i</span> <span class="o">*</span> <span class="mi">-1</span><span class="si">}</span><span class="no">px</span> <span class="mi">0</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$ts</span>
+		<span class="o">//</span> <span class="nt">Đổ</span> <span class="nt">bóng</span> <span class="nt">hướng</span> <span class="nt">sang</span> <span class="nt">phải</span>
+<span class="err">		</span><span class="na">@else</span><span class="err"> </span><span class="na">if</span><span class="err"> </span><span class="na">$direction</span><span class="o"> ==</span> <span class="s2">&#34;right&#34;</span>
+<span class="err">			</span><span class="na">$ts</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$i</span><span class="si">}</span><span class="no">px</span> <span class="mi">0</span> <span class="mi">0</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$ts</span>
+		<span class="o">//</span> <span class="nt">Đổ</span> <span class="nt">bóng</span> <span class="nt">hướng</span> <span class="nt">xuống</span> <span class="nt">dưới</span>
+<span class="err">		</span><span class="na">@else</span><span class="err"> </span><span class="na">if</span><span class="err"> </span><span class="na">$direction</span><span class="o"> ==</span> <span class="s2">&#34;bottom&#34;</span>
+<span class="err">			</span><span class="na">$ts</span><span class="o">:</span> <span class="mi">0</span> <span class="si">#{</span><span class="nv">$i</span><span class="si">}</span><span class="no">px</span> <span class="mi">0</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$ts</span>
+		<span class="o">//</span> <span class="nt">Đổ</span> <span class="nt">bóng</span> <span class="nt">hướng</span> <span class="nt">sang</span> <span class="nt">trái</span>
+<span class="err">		</span><span class="na">@else</span><span class="err"> </span><span class="na">if</span><span class="err"> </span><span class="na">$direction</span><span class="o"> ==</span> <span class="s2">&#34;left&#34;</span>
+<span class="err">			</span><span class="na">$ts</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$i</span> <span class="o">*</span> <span class="mi">-1</span><span class="si">}</span><span class="no">px</span> <span class="mi">0</span> <span class="mi">0</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$ts</span>
+		<span class="o">//</span> <span class="nt">Đổ</span> <span class="nt">bóng</span> <span class="nt">hướng</span> <span class="nt">lên</span> <span class="nt">trên</span> <span class="nt">bên</span> <span class="nt">trái</span>
+<span class="err">		</span><span class="na">@else</span><span class="err"> </span><span class="na">if</span><span class="err"> </span><span class="na">$direction</span><span class="o"> ==</span> <span class="s2">&#34;top-left&#34;</span>
+<span class="err">			</span><span class="na">$ts</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$i</span> <span class="o">*</span> <span class="mi">-1</span><span class="si">}</span><span class="no">px</span> <span class="si">#{</span><span class="nv">$i</span> <span class="o">*</span> <span class="mi">-1</span><span class="si">}</span><span class="no">px</span> <span class="mi">0</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$ts</span>
+		<span class="o">//</span> <span class="nt">Đổ</span> <span class="nt">bóng</span> <span class="nt">hướng</span> <span class="nt">lên</span> <span class="nt">trên</span> <span class="nt">bên</span> <span class="nt">phải</span>
+<span class="err">		</span><span class="na">@else</span><span class="err"> </span><span class="na">if</span><span class="err"> </span><span class="na">$direction</span><span class="o"> ==</span> <span class="s2">&#34;top-right&#34;</span>
+<span class="err">			</span><span class="na">$ts</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$i</span><span class="si">}</span><span class="no">px</span> <span class="si">#{</span><span class="nv">$i</span> <span class="o">*</span> <span class="mi">-1</span><span class="si">}</span><span class="no">px</span> <span class="mi">0</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$ts</span>
+		<span class="o">//</span> <span class="nt">Đổ</span> <span class="nt">bóng</span> <span class="nt">hướng</span> <span class="nt">xuống</span> <span class="nt">dưới</span> <span class="nt">bên</span> <span class="nt">trái</span>
+<span class="err">		</span><span class="na">@else</span><span class="err"> </span><span class="na">if</span><span class="err"> </span><span class="na">$direction</span><span class="o"> ==</span> <span class="s2">&#34;bottom-left&#34;</span>
+<span class="err">			</span><span class="na">$ts</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$i</span> <span class="o">*</span> <span class="mi">-1</span><span class="si">}</span><span class="no">px</span> <span class="si">#{</span><span class="nv">$i</span><span class="si">}</span><span class="no">px</span> <span class="mi">0</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$ts</span>
+		<span class="o">//</span> <span class="nt">Đổ</span> <span class="nt">bóng</span> <span class="nt">hướng</span> <span class="nt">xuống</span> <span class="nt">dưới</span> <span class="nt">bên</span> <span class="nt">phải</span>
+<span class="err">		</span><span class="na">@else</span><span class="err"> </span><span class="na">if</span><span class="err"> </span><span class="na">$direction</span><span class="o"> ==</span> <span class="s2">&#34;bottom-right&#34;</span>
+<span class="err">			</span><span class="na">$ts</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$i</span><span class="si">}</span><span class="no">px</span> <span class="si">#{</span><span class="nv">$i</span><span class="si">}</span><span class="no">px</span> <span class="mi">0</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$ts</span>
+<span class="err">	</span><span class="na">text-shadow</span><span class="o">:</span> <span class="nv">$ts</span></code></pre></div>
 <h3 id="sử-dụng">Sử dụng</h3>
 
 <p>Sau khi tạo được mixin thì ta có thể sử dụng rất dễ dàng tùy theo màu sắc, độ lớn và vị trí bóng mà bạn muốn hiển thị.</p>
-<div class="highlight"><pre class="chroma"><code class="language-sass" data-lang="sass"><span class="err">.element--one</span>
-<span class="err">	+longshadow(#e96b5e, 20, top)</span>
-<span class="err">.element--two</span>
-<span class="err">	+longshadow(#a13c32, 10, right)</span>
-<span class="err">.element--three</span>
-<span class="err">	+longshadow(#fbbc85, 30, bottom)</span>
-<span class="err">.element--four</span>
-<span class="err">	+longshadow(#af7a4b, 40, left)</span>
-<span class="err">.element--five</span>
-<span class="err">	+longshadow(#6dd7b5, 70, top-left)</span>
-<span class="err">.element--six</span>
-<span class="err">	+longshadow(#3e9277, 90, top-right)</span>
-<span class="err">.element--seven</span>
-<span class="err">	+longshadow(#8787c4, 60, bottom-left)</span>
-<span class="err">.element--eight</span>
-<span class="err">	+longshadow(#525283, 50, bottom-right)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-sass" data-lang="sass"><span class="nc">.element--one</span>
+	<span class="o">+</span><span class="nt">longshadow</span><span class="o">(</span><span class="nn">#e96b5e</span><span class="o">,</span> <span class="nt">20</span><span class="o">,</span> <span class="nt">top</span><span class="o">)</span>
+<span class="nc">.element--two</span>
+	<span class="o">+</span><span class="nt">longshadow</span><span class="o">(</span><span class="nn">#a13c32</span><span class="o">,</span> <span class="nt">10</span><span class="o">,</span> <span class="nt">right</span><span class="o">)</span>
+<span class="nc">.element--three</span>
+	<span class="o">+</span><span class="nt">longshadow</span><span class="o">(</span><span class="nn">#fbbc85</span><span class="o">,</span> <span class="nt">30</span><span class="o">,</span> <span class="nt">bottom</span><span class="o">)</span>
+<span class="nc">.element--four</span>
+	<span class="o">+</span><span class="nt">longshadow</span><span class="o">(</span><span class="nn">#af7a4b</span><span class="o">,</span> <span class="nt">40</span><span class="o">,</span> <span class="nt">left</span><span class="o">)</span>
+<span class="nc">.element--five</span>
+	<span class="o">+</span><span class="nt">longshadow</span><span class="o">(</span><span class="nn">#6dd7b5</span><span class="o">,</span> <span class="nt">70</span><span class="o">,</span> <span class="nt">top-left</span><span class="o">)</span>
+<span class="nc">.element--six</span>
+	<span class="o">+</span><span class="nt">longshadow</span><span class="o">(</span><span class="nn">#3e9277</span><span class="o">,</span> <span class="nt">90</span><span class="o">,</span> <span class="nt">top-right</span><span class="o">)</span>
+<span class="nc">.element--seven</span>
+	<span class="o">+</span><span class="nt">longshadow</span><span class="o">(</span><span class="nn">#8787c4</span><span class="o">,</span> <span class="nt">60</span><span class="o">,</span> <span class="nt">bottom-left</span><span class="o">)</span>
+<span class="nc">.element--eight</span>
+	<span class="o">+</span><span class="nt">longshadow</span><span class="o">(</span><span class="nn">#525283</span><span class="o">,</span> <span class="nt">50</span><span class="o">,</span> <span class="nt">bottom-right</span><span class="o">)</span></code></pre></div>
 
 
 
