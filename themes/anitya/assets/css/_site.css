@@ -12,7 +12,7 @@ body {
 
 h1,
 h2 {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 1.125;
 
   @media (--tablet) {
@@ -50,20 +50,14 @@ img {
 .async-hide { opacity: 0 !important}
 
 .site {
-  max-width: 60rem;
+  max-width: 46rem;
   margin: 0 auto;
-
-  @media (--tablet) {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-  }
 
   &-logo {
     text-align: center;
 
     @media (--tablet) {
       text-align: left;
-      position: fixed;
     }
 
     > a {
@@ -80,38 +74,35 @@ img {
 
   &-header {
     padding: 1rem;
+    display: block;
 
     @media (--tablet) {
-      padding: 2rem;
+      padding: 1rem 2rem;
+      display: flex;
     }
   }
 
   &-nav {
-    text-align: left;
+    text-align: center;
     margin-top: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
 
     @media (--tablet) {
-      position: fixed;
-      top: 8rem;
-      margin-top: 0;
-      padding-bottom: 0;
-      border-bottom: 0;
+      text-align: right;
+      flex: 1;
     }
 
     > ul {
       > li {
-        display: block;
-        padding: 0 0.5rem;
+        display: inline-block;
         position: relative;
+        margin: 0 .25rem;
 
         @media (--tablet) {
-          padding: 0;
+          margin: .5rem;
         }
 
         > a {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
 
           @media (--tablet) {
             font-size: 1.6rem;
