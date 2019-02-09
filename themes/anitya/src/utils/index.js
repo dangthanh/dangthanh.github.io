@@ -144,8 +144,10 @@ export function getBeforeInstallPrompt() {
 
   function showAddToHomeScreen() {
     var a2hsBtn = document.querySelector('.a2hs-prompt');
-    a2hsBtn.style.display = 'none';
-    a2hsBtn.addEventListener('click', addToHomeScreen);
+    if (a2hsBtn) {
+      a2hsBtn.style.display = 'none';
+      a2hsBtn.addEventListener('click', addToHomeScreen);
+    }
   }
 
   function addToHomeScreen() {
