@@ -1,9 +1,4 @@
-import {
-  getLinks,
-  getCanvas,
-  getLazyImage,
-  getBeforeInstallPrompt,
-} from './utils';
+import { getLinks, getCanvas, getLazyImage } from './utils';
 import Appearance from './components/Appearance';
 import Caniuse from './components/Caniuse';
 import Archives from './components/Archives';
@@ -47,11 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
     components: {
       'c-appearance': Appearance,
       'c-archives': Archives,
-      'c-caniuse': Caniuse,
-    },
+      'c-caniuse': Caniuse
+    }
   });
 
-  getBeforeInstallPrompt();
   getLinks();
   getCanvas();
   getLazyImage();

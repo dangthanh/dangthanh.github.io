@@ -13,8 +13,9 @@ const Appearance = {
     };
   },
   created() {
-    if (localStorage.getItem('anitya::theme') !== null) {
-      const theme = localStorage.getItem('anitya::theme');
+    const theme = localStorage.getItem('anitya::theme');
+
+    if (theme !== null) {
       this.isDay = theme === 'day' ? true : false;
       this.updateTheme(this.isDay);
     } else {
