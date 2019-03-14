@@ -2,11 +2,6 @@
   <div class="article article-single" itemscope itemtype="//schema.org/Article">
     {{ if not .Params.NoIntro }}
       <h2 itemprop="headline">{{ .Title }}</h2>
-      <ul class="no-list p-0 m-0">
-      {{ range .Params.tags }}
-        <li class="inline-block"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag tag-{{ . | urlize }}">{{ . }}</a></li>
-      {{ end }}
-      </ul>
     {{ end }}
 
     <div class="{{ if .Params.NoIntro }}article-specific{{ else }}article-body{{ end }}" itemprop="articleBody">

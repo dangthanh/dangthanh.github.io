@@ -5,19 +5,19 @@
   text-transform: uppercase;
   border-radius: 0.25rem;
   font-size: 0.825rem;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 
   .article & {
     text-decoration: none;
   }
 
-  @each $language in css, sass, postcss, javascript, personal, tools, vue, hugo, tailwindcss, elm {
-    &-$(language) {
-      background-color: var(--$(language));
-    }
-  }
+  /* @each $language in css, sass, postcss, javascript, personal, tools, vue, hugo, tailwindcss, elm { */
+  /*   &-$(language) { */
+  /*     background-color: var(--$(language)); */
+  /*   } */
+  /* } */
 
-  &-javascript {
-    color: var(--javascriptColor);
-  }
+  /* &-javascript { */
+  /*   color: var(--javascriptColor); */
+  /* } */
 }
