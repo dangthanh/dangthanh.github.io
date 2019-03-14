@@ -29,11 +29,11 @@ workbox.strategies.networkFirst();
 workbox.precaching.precacheAndRoute([
   {
     "url": "404.html",
-    "revision": "ee775a6f27ea74782532adbea1d1d6d8"
+    "revision": "46fa78605fe9cc7f164e1158988b0ab6"
   },
   {
     "url": "about/index.html",
-    "revision": "4b2090d4e5452d41784a5a4034ffbb0f"
+    "revision": "a6d08da0ca9dbbd2af742882e6caf5b7"
   },
   {
     "url": "algolia.json",
@@ -41,87 +41,87 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "archives/index.html",
-    "revision": "22b7ac3e6cae7c5620cea8ac462f6d42"
+    "revision": "a2b4cae103c5c915c8a94899ce9b501e"
   },
   {
     "url": "blog/bat-dau-voi-vue/index.html",
-    "revision": "d2ab223f3ac9467ee37c44e7c0f02bb8"
+    "revision": "8c2b9f763c1c5c6a9223d6a8e6c2b058"
   },
   {
     "url": "blog/blog-va-toi/index.html",
-    "revision": "e21cda6c50dc5ca77bda2b04d2ffd05b"
+    "revision": "60ff5282601ac432fd7bcbaf5a9fd979"
   },
   {
     "url": "blog/checkboxes-jquery-plugin/index.html",
-    "revision": "0cf3931ed45eafcfaccd099623e9dfc1"
+    "revision": "961f78f96ef59fe0800bb4c1bfd03ebe"
   },
   {
     "url": "blog/css-triangles-mixin-trong-sass/index.html",
-    "revision": "dae279d0eaf610ea1caf422ad7d94b05"
+    "revision": "1561762e6058a77cc87fd37fd4e4245e"
   },
   {
     "url": "blog/do-bong-mixin-voi-text-shadow/index.html",
-    "revision": "cb23ae090e33f86fddf4f7c59fe843a6"
+    "revision": "8935b0fef0275ef65a50511c2690bc1c"
   },
   {
     "url": "blog/functional-css/index.html",
-    "revision": "05d88c2b5deb5d3f254784c58c3a5438"
+    "revision": "f405f5934ef027167eb9b654ccc388bc"
   },
   {
     "url": "blog/gioi-thieu-css3-transform/index.html",
-    "revision": "651d6e7cc86b7e437079396e4a3a0d57"
+    "revision": "15dd7ec325bb0d226d69da87f005f007"
   },
   {
     "url": "blog/html5-fullscreen-api/index.html",
-    "revision": "a9332d2b8e43896aee5da25301020790"
+    "revision": "4bcc7f4847c285447b74b138b2073184"
   },
   {
     "url": "blog/html5-geolocation-va-leaflet/index.html",
-    "revision": "e3d8fe5ccf900d1fa1cc11856dd444bd"
+    "revision": "1191ed9431c4bc432a12f85381b889db"
   },
   {
     "url": "blog/postcss/index.html",
-    "revision": "59774a3f0f1bd843785022aa9f4701bf"
+    "revision": "22196522d66d51f8ffee2388871962e2"
   },
   {
     "url": "blog/redesign-va-nhung-gi-toi-hoc/index.html",
-    "revision": "eb38e3b6210045215dd8603c7aa67bc2"
+    "revision": "745c969308b7a532f70d1d50db882a79"
   },
   {
     "url": "blog/su-dung-icon-fonts/index.html",
-    "revision": "2ce94343df3a0cdd2fed8d2a09d26ba0"
+    "revision": "b377dce15608b124b221f784b34adab2"
   },
   {
     "url": "blog/su-dung-sass/index.html",
-    "revision": "414866c42f20c16cf88dc293b9e31c2a"
+    "revision": "441abc0fc245afab89d3deb29dd7afc4"
   },
   {
     "url": "blog/tao-mp3-player-voi-html5-va-css3/index.html",
-    "revision": "37ab22f1830053aead3fc820db55be8a"
+    "revision": "70e8a0a9048d948cdb3e95b9416714cd"
   },
   {
     "url": "blog/thu-thuat-su-dung-sublime-text-2/index.html",
-    "revision": "f6abb906fbe1bd6b5b82d984d79089cd"
+    "revision": "67c75b213f41f2706becf84dcaa2812a"
   },
   {
     "url": "blog/tim-kiem-voi-algolia-hugo-va-vue/index.html",
-    "revision": "6ed9ec87bf4aa39eade1178f32ff7e9b"
+    "revision": "2ba6c995a6b549db5ded709a76fc5ed9"
   },
   {
     "url": "blog/web-storage/index.html",
-    "revision": "c1fe7bf524a6269ada1f92e4233cbe4a"
+    "revision": "19a300ec87db8d5f7f2a01015331ddae"
   },
   {
     "url": "categories/index.html",
-    "revision": "c6ca83b7450fc20cda1ac1db2b22e42b"
+    "revision": "6cfd453360d00e44705a8c5b1194c139"
   },
   {
     "url": "categories/index.xml",
     "revision": "637d65dda8358e5f68f6959d44a764c1"
   },
   {
-    "url": "css/anitya.min.9fac912f135be2a3426277c3432ec975bf8e5619dbd6b15e117ebc7c4e48df04.css",
-    "revision": "613ffea3e4850197fdd379d6944b06a4"
+    "url": "css/anitya.min.fae8a8668f86bb7645232066a03dc8246b767c120a851e8e61d596ec13b1d6f2.css",
+    "revision": "fa1e3de2f980e57d3be7065c2323a613"
   },
   {
     "url": "images/algolia_create_app.png",
@@ -309,7 +309,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "c645a3808e3a80f0b85757d7171f3822"
+    "revision": "d568d021b391a33a87a1524b7c111590"
   },
   {
     "url": "index.xml",
@@ -329,7 +329,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "labs/index.html",
-    "revision": "3fcdd55917c3dee9545609781f14c8ab"
+    "revision": "f829b115aa282e5d564d5d80f7e41ee7"
   },
   {
     "url": "labs/index.xml",
@@ -361,19 +361,19 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "page/2/index.html",
-    "revision": "3d4b934979989f758df9c8bce8b5c949"
+    "revision": "3d73efa0c814903696afd44966b0d66c"
   },
   {
     "url": "page/3/index.html",
-    "revision": "a2421f221f2c1f71b9037f0d8b84bfc9"
+    "revision": "6bfa78bd90da32d3a16fbca3d67b10c7"
   },
   {
     "url": "page/4/index.html",
-    "revision": "a168f9dbe5715f959543dc8b72248aff"
+    "revision": "5255459878f51ca625c37b4cd6acb140"
   },
   {
     "url": "post/index.html",
-    "revision": "2d945e111743cd5d6f4d15288e6e0cfe"
+    "revision": "70fac5640868354ceb4d0add80aea817"
   },
   {
     "url": "post/index.xml",
@@ -381,7 +381,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "projects/index.html",
-    "revision": "3494f73898c23a8139540bf0ad05ebe1"
+    "revision": "04453c332ef7af9201f626b8934705cb"
   },
   {
     "url": "sitemap.xml",
@@ -389,7 +389,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/css/index.html",
-    "revision": "c2c3ed81d08d4dd63beb296e78afba3f"
+    "revision": "2259af7060857be99edfdddf2b619bd0"
   },
   {
     "url": "tags/css/index.xml",
@@ -397,7 +397,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/hugo/index.html",
-    "revision": "0bab7908fb45859638f59252fc5e6231"
+    "revision": "4d6e399a1db313d97a4fdda6042aa9df"
   },
   {
     "url": "tags/hugo/index.xml",
@@ -405,7 +405,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/index.html",
-    "revision": "8f358dd9a44ab0fbf04c312d9528ca8b"
+    "revision": "a38dbc25d2ba45cfa658a91436688a47"
   },
   {
     "url": "tags/index.xml",
@@ -413,7 +413,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/javascript/index.html",
-    "revision": "d2071569d36c65b8fbde875f61f0eedd"
+    "revision": "1014124c52a8254cae77738b2308e5cf"
   },
   {
     "url": "tags/javascript/index.xml",
@@ -421,7 +421,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/personal/index.html",
-    "revision": "240cdfe0a9d32925ad890ae58841bc31"
+    "revision": "0de1ddd1d13c29b68783ef99900b153d"
   },
   {
     "url": "tags/personal/index.xml",
@@ -429,7 +429,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/postcss/index.html",
-    "revision": "14fee9551da763042d14f8114fa1ac60"
+    "revision": "6e1cdc551f1822c9fe82b923db0ef309"
   },
   {
     "url": "tags/postcss/index.xml",
@@ -437,7 +437,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/sass/index.html",
-    "revision": "32eb6457375c7895d0e3cc80e95a41d3"
+    "revision": "138f8e36ad9b2309a1fda68888b8fabd"
   },
   {
     "url": "tags/sass/index.xml",
@@ -445,7 +445,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/tailwindcss/index.html",
-    "revision": "8bcd19ce7ca3b8be032d22690255bdea"
+    "revision": "6cb44a6434dbf49266d925447cab57e0"
   },
   {
     "url": "tags/tailwindcss/index.xml",
@@ -453,7 +453,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/tools/index.html",
-    "revision": "83d9335a4de571bcfa0d539d8721b74f"
+    "revision": "7fb239abbb3fb1ff4da0840089805faf"
   },
   {
     "url": "tags/tools/index.xml",
@@ -461,7 +461,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "tags/vue/index.html",
-    "revision": "bc199a8c52de16b17470da3cdc744c39"
+    "revision": "4834e053e758939b8e688e27f759bdbd"
   },
   {
     "url": "tags/vue/index.xml",
