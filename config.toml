@@ -28,5 +28,9 @@ paginate = 5
   vars = ["title", "description", "summary", "date", "lastmod", "permalink"]
   params = ["categories", "tags"]
 
+[params.adsense]
+  client = "ca-pub-0445843198703009"
+  inArticleSlot = "0445843198703009"
+
 [outputs]
   home = ["HTML", "RSS", "Algolia"]
