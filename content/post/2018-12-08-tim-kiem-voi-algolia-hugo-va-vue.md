@@ -115,8 +115,6 @@ Sau khi có tập tin **algolia.json** và [đăng ký](https://www.algolia.com/
 
 ### Tạo Algolia Component với Vue.js
 
-<!--adsense-->
-
 Để hiển thị trên Hugo. tôi tạo ra một trang `static templates` với tên gọi là `archives.md` trong thư mục **content** như sau:
 
 ```markdown

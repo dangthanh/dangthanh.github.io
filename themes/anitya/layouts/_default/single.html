@@ -5,7 +5,7 @@
     {{ end }}
 
     <div class="{{ if .Params.NoIntro }}article-specific{{ else }}article-body{{ end }}" itemprop="articleBody">
-      {{ replace .Content "<!--adsense-->" (partial "embed/google_adsense_article.html" .) | safeHTML }}
+      {{ .Content }}
     </div>
     {{ if not .Params.NoIntro }}
       {{ partial "embed/author.html" . }}
