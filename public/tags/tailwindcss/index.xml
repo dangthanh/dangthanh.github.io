@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tailwindcss on Dang Thanh Blog</title>
-    <link>https://dangthanh.org/tags/tailwindcss/</link>
-    <description>Recent content in Tailwindcss on Dang Thanh Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>vn-vi</language>
-    <lastBuildDate>Tue, 06 Nov 2018 21:03:27 +0700</lastBuildDate>
-    
-	<atom:link href="https://dangthanh.org/tags/tailwindcss/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Functional CSS</title>
-      <link>https://dangthanh.org/blog/functional-css/</link>
-      <pubDate>Tue, 06 Nov 2018 21:03:27 +0700</pubDate>
-      
-      <guid>https://dangthanh.org/blog/functional-css/</guid>
-      <description>Khi viết CSS cho web. Có rất nhiều CSS Framework để bạn lựa chọn. Và một số CSS Framework sau đây thì rất phổ biến:
- Bootstrap Foundation Bulma Sematic UI UI Kit  Những CSS Framework trên giúp bạn xây dựng Prototype, Responsive Design một cách linh hoạt và dễ dàng.
-Hôm nay tôi sẽ giới thiệu thêm với các bạn về Functional CSS (được thường được gọi là Utility-first CSS hay Atomic CSS)</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tailwindcss on Dang Thanh Blog</title><link>https://dangthanh.org/tags/tailwindcss/</link><description>Recent content in Tailwindcss on Dang Thanh Blog</description><generator>Hugo -- gohugo.io</generator><language>vn-vi</language><lastBuildDate>Tue, 06 Nov 2018 21:03:27 +0700</lastBuildDate><atom:link href="https://dangthanh.org/tags/tailwindcss/index.xml" rel="self" type="application/rss+xml"/><item><title>Functional CSS</title><link>https://dangthanh.org/blog/functional-css/</link><pubDate>Tue, 06 Nov 2018 21:03:27 +0700</pubDate><guid>https://dangthanh.org/blog/functional-css/</guid><description>Khi viết CSS cho web. Có rất nhiều CSS Framework để bạn lựa chọn. Và một số CSS Framework sau đây thì rất phổ biến:
+Bootstrap Foundation Bulma Sematic UI UI Kit Những CSS Framework trên giúp bạn xây dựng Prototype, Responsive Design một cách linh hoạt và dễ dàng.
+Hôm nay tôi sẽ giới thiệu thêm với các bạn về Functional CSS (được thường được gọi là Utility-first CSS hay Atomic CSS)</description></item></channel></rss>
