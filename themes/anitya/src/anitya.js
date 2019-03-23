@@ -1,3 +1,4 @@
+import { GuessPlugin } from 'guess-webpack';
 import { getLinks, getCanvas, getLazyImage } from './utils';
 import Appearance from './components/Appearance';
 import Caniuse from './components/Caniuse';
@@ -45,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
       'c-caniuse': Caniuse
     }
   });
+
+  new GuessPlugin({ GA: 'UA-41117458-1' });
 
   getLinks();
   getCanvas();
