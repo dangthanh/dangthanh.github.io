@@ -1,46 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Vue on Dang Thanh Blog</title>
-    <link>https://dangthanh.org/tags/vue/</link>
-    <description>Recent content in Vue on Dang Thanh Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>vn-vi</language>
-    <lastBuildDate>Sat, 16 Mar 2019 22:31:48 +0700</lastBuildDate>
-    
-	<atom:link href="https://dangthanh.org/tags/vue/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Classes Javascript và Vue.js</title>
-      <link>https://dangthanh.org/blog/classes-javascript-va-vue/</link>
-      <pubDate>Sat, 16 Mar 2019 22:31:48 +0700</pubDate>
-      
-      <guid>https://dangthanh.org/blog/classes-javascript-va-vue/</guid>
-      <description>Trước tôi đã giới thiệu cho các bạn về Component trong Vue.js. Bây giờ chúng ta thử tạo một component để tạo một User như sau:
-&amp;lt;template&amp;gt; &amp;lt;form&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;user.firstName&amp;#34;/&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;user.lastName&amp;#34;/&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;user.hobby&amp;#34;/&amp;gt; &amp;lt;span v-show=&amp;#34;fullName&amp;#34;&amp;gt;{{ fullName }}&amp;lt;/span&amp;gt; &amp;lt;button @click.prevent=&amp;#34;handlerAddNewUser&amp;#34;&amp;gt;Add New User&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; import UserService from &amp;#39;@services/user&amp;#39;; export default { name: &amp;#39;Comment&amp;#39;, data() { return { user: { fistName: &amp;#39;&amp;#39;, lastName: &amp;#39;&amp;#39;, hobby: &amp;#39;&amp;#39;, created: 0 } } }, computed: { fullName() { return `${this.</description>
-    </item>
-    
-    <item>
-      <title>Tìm kiếm với Algolia, Hugo và Vue.js</title>
-      <link>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</link>
-      <pubDate>Sat, 08 Dec 2018 10:59:55 +0700</pubDate>
-      
-      <guid>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</guid>
-      <description>Trước đây, muốn tìm kiếm bài viết, tôi thường vào danh mục và tìm kiếm các tags như javascript, sass, css&amp;hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tôi quyết định thử nghiệm với Algolia, kết hợp một xíu với Vue.js.
-Tại sao là Algolia? Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới.</description>
-    </item>
-    
-    <item>
-      <title>Bắt đầu với Vue.js</title>
-      <link>https://dangthanh.org/blog/bat-dau-voi-vue/</link>
-      <pubDate>Tue, 04 Dec 2018 03:19:52 +0700</pubDate>
-      
-      <guid>https://dangthanh.org/blog/bat-dau-voi-vue/</guid>
-      <description>Vue.js là một thư viện JavaScript giúp bạn dễ dàng xây dựng các giao diện (UI) từ đơn giản đến phức tạp.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vue on Dang Thanh Blog</title><link>https://dangthanh.org/tags/vue/</link><description>Recent content in Vue on Dang Thanh Blog</description><generator>Hugo -- gohugo.io</generator><language>vn-vi</language><lastBuildDate>Sat, 16 Mar 2019 22:31:48 +0700</lastBuildDate><atom:link href="https://dangthanh.org/tags/vue/index.xml" rel="self" type="application/rss+xml"/><item><title>Classes Javascript và Vue.js</title><link>https://dangthanh.org/blog/classes-javascript-va-vue/</link><pubDate>Sat, 16 Mar 2019 22:31:48 +0700</pubDate><guid>https://dangthanh.org/blog/classes-javascript-va-vue/</guid><description>Trước tôi đã giới thiệu cho các bạn về Component trong Vue.js. Bây giờ chúng ta thử tạo một component để tạo một User như sau:
+&amp;lt;template&amp;gt; &amp;lt;form&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;user.firstName&amp;#34;/&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;user.lastName&amp;#34;/&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; v-model=&amp;#34;user.hobby&amp;#34;/&amp;gt; &amp;lt;span v-show=&amp;#34;fullName&amp;#34;&amp;gt;{{ fullName }}&amp;lt;/span&amp;gt; &amp;lt;button @click.prevent=&amp;#34;handlerAddNewUser&amp;#34;&amp;gt;Add New User&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; import UserService from &amp;#39;@services/user&amp;#39;; export default { name: &amp;#39;Comment&amp;#39;, data() { return { user: { fistName: &amp;#39;&amp;#39;, lastName: &amp;#39;&amp;#39;, hobby: &amp;#39;&amp;#39;, created: 0 } } }, computed: { fullName() { return `${this.</description></item><item><title>Tìm kiếm với Algolia, Hugo và Vue.js</title><link>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</link><pubDate>Sat, 08 Dec 2018 10:59:55 +0700</pubDate><guid>https://dangthanh.org/blog/tim-kiem-voi-algolia-hugo-va-vue/</guid><description>Trước đây, muốn tìm kiếm bài viết, tôi thường vào danh mục và tìm kiếm các tags như javascript, sass, css&amp;hellip;Và với mong muốn tìm kiếm bài viết được tốt hơn nên tôi quyết định thử nghiệm với Algolia, kết hợp một xíu với Vue.js.
+Tại sao là Algolia? Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới.</description></item><item><title>Bắt đầu với Vue.js</title><link>https://dangthanh.org/blog/bat-dau-voi-vue/</link><pubDate>Tue, 04 Dec 2018 03:19:52 +0700</pubDate><guid>https://dangthanh.org/blog/bat-dau-voi-vue/</guid><description>Vue.js là một thư viện JavaScript giúp bạn dễ dàng xây dựng các giao diện (UI) từ đơn giản đến phức tạp.
 Để bắt đầu với Vue.js bạn cần trang bị cho một những kiến thức cơ bản về HTML, CSS và JavaScript là nền tảng giúp bạn dễ dàng làm quen với Vue.js
-Vue.js có gì hay? Điểm đầu tiên tôi thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ tiếng Việt.</description>
-    </item>
-    
-  </channel>
-</rss>
+Vue.js có gì hay? Điểm đầu tiên tôi thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ tiếng Việt.</description></item></channel></rss>
