@@ -8,7 +8,7 @@
     "hugo": "hugo server -D -F -w",
     "watch": "npx webpack -w",
     "build:js": "npx webpack",
-    "build:public": "rm -rf public && hugo",
+    "build:public": "rm -rf public && hugo --minify",
     "build:sw": "npx workbox injectManifest",
     "build:algolia": "atomic-algolia"
   },
