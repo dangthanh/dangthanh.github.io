@@ -27,4 +27,5 @@
   {{ $styles := resources.Get "css/anitya.css" | toCSS | postCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+  {{ template "_internal/hotjar.html" . }}
   {{ template "_internal/google_analytics.html" . }}
