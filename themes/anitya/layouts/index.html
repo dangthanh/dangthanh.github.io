@@ -1,10 +1,10 @@
 {{ define "main" -}}
   <h1 class="accessibility">Tui học, tui làm, tui viết, tui trải nghiệm và tui chia sẻ</h1>
 
-  {{ $paginator := .Paginate (where .Pages "Type" "post") }}
+  {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
   <div class="articles">
   {{ range $paginator.Pages }}
-  <article class="article" itemscope itemtype="//schema.org/Blog">
+    <article class="article" itemscope itemtype="//schema.org/Blog">
       <time datetime="{{ .Date.Format "02-01-2006" }}" itemprop="datePublished">Đăng ngày {{ .Date.Format "02-01-2006" }}</time>
       <h2 itemprop="headline">
         <a href="{{ .Permalink }}" class="no-underline hover:decoration-skip-ink" itemprop="alternativeHeadline">{{ .Title }}</a>

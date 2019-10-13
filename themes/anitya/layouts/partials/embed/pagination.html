@@ -14,10 +14,10 @@
 
         {{ range $pag.Pagers }}
             {{ if eq . $pag }} <!-- Current Page -->
-            <li class="pagination-item active"><a href="{{ .URL }}" class="pagination-link">{{ .PageNumber }}</a></li>
+            <li class="pagination-item active"><a href="{{ .Permalink }}" class="pagination-link">{{ .PageNumber }}</a></li>
             {{ else if and (ge .PageNumber (sub $pag.PageNumber 2)) (le .PageNumber (add $pag.PageNumber 2)) }}
             {{ $.Scratch.Set "dot_rendered" false }} <!-- Render prev 2 page and next 2 pages -->
-            <li class="pagination-item"><a href="{{ .URL }}" class="pagination-link">{{ .PageNumber }}</a></li>
+            <li class="pagination-item"><a href="{{ .Permalink }}" class="pagination-link">{{ .PageNumber }}</a></li>
             {{ else if eq ($.Scratch.Get "dot_rendered") false }} <!-- render skip pages -->
             {{ $.Scratch.Set "dot_rendered" true }}
             <li class="pagination-item disabled"><a class="pagination-link">...</a></li>

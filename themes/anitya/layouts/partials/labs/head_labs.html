@@ -27,6 +27,7 @@
   <link href="//cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
   {{ $styles := resources.Get "labs/base.css" | toCSS | postCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+  <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+  {{ template "_internal/google_adsense.html" . }}
   {{ template "_internal/google_analytics.html" . }}
 </head>
