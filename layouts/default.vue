@@ -78,13 +78,13 @@ body {
     text-decoration: none;
     background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#fff)),-webkit-gradient(linear,left top,left bottom,from(#fff),to(#fff)),-webkit-gradient(linear,left top,left bottom,from(#1c8479),to(#1c8479));
     background: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#1c8479,#1c8479);
-    background: -webkit-gradient(linear,left top,left bottom,from(var(--shadowLink)),to(var(--shadowLink))),-webkit-gradient(linear,left top,left bottom,from(var(--shadowLink)),to(var(--shadowLink))),-webkit-gradient(linear,left top,left bottom,from(var(--colorLink)),to(var(--colorLink)));
-    background: linear-gradient(var(--shadowLink),var(--shadowLink)),linear-gradient(var(--shadowLink),var(--shadowLink)),linear-gradient(var(--colorLink),var(--colorLink));
+    background: -webkit-gradient(linear,left top,left bottom,from(#f6ad55),to(#f6ad55)),-webkit-gradient(linear,left top,left bottom,from(#f6ad55),to(#f6ad55)),-webkit-gradient(linear,left top,left bottom,from(var(--colorLink)),to(var(--colorLink)));
+    background: linear-gradient(#f6ad55,#f6ad55),linear-gradient(#f6ad55,#f6ad55),linear-gradient(var(--colorLink),var(--colorLink));
     background-repeat: no-repeat,no-repeat,repeat-x;
     background-position: 0 95%,100% 95%,0 95%;
     background-size: .05em 1px,.05em 1px,1px 1px;
     text-shadow: .03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;
-    text-shadow: .03em 0 var(--shadowLink),-.03em 0 var(--shadowLink),0 .03em var(--shadowLink),0 -.03em var(--shadowLink),.06em 0 var(--shadowLink),-.06em 0 var(--shadowLink),.09em 0 var(--shadowLink),-.09em 0 var(--shadowLink),.12em 0 var(--shadowLink),-.12em 0 var(--shadowLink),.15em 0 var(--shadowLink),-.15em 0 var(--shadowLink)
+    text-shadow: .03em 0 #f6ad55,-.03em 0 #f6ad55,0 .03em #f6ad55,0 -.03em #f6ad55,.06em 0 #f6ad55,-.06em 0 #f6ad55,.09em 0 #f6ad55,-.09em 0 #f6ad55,.12em 0 #f6ad55,-.12em 0 #f6ad55,.15em 0 #f6ad55,-.15em 0 #f6ad55
 }
 
 .article-body a:focus,.article-body a:hover {
