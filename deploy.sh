@@ -13,6 +13,7 @@ git subtree pull --prefix=dist origin master -m 'Merge origin'
 # Build the project.
 npm run build
 npm run generate
+npm run deploy
 
 # Add README.md
 touch dist/README.md
