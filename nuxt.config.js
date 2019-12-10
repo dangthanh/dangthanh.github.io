@@ -23,7 +23,7 @@ module.exports = {
   router: {
     base: '/'
   },
-  mode: 'universal',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
