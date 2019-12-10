@@ -8,7 +8,7 @@ git add -A
 git commit -m 'Committing work in progress'
 
 # Pull down the file we just committed help avoid merge conflicts
-git subtree pull --prefix=public origin master -m 'Merge origin'
+git subtree pull --prefix=dist origin master -m 'Merge origin'
 
 # Build the project.
 npm run build
@@ -38,4 +38,4 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin source
-git subtree push --prefix=public origin master
+git subtree push --prefix=dist origin master
