@@ -38,7 +38,7 @@ body {
 }
 
 .code-javascript {
-  color: #f1e05a;
+  color: #ffb115;
 }
 
 .code-vue {
