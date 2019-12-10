@@ -23,7 +23,7 @@ module.exports = {
   router: {
     base: '/dangthanh.github.io/'
   },
-  mode: 'universal',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
