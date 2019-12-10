@@ -20,6 +20,9 @@ const dynamicRoutes = getDynamicPath({
 });
 
 module.exports = {
+  router: {
+    base: '/dangvanthanh/'
+  },
   mode: 'universal',
   /*
    ** Headers of the page
