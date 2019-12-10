@@ -10,22 +10,22 @@ git commit -m 'Committing work in progress'
 # Pull down the file we just committed help avoid merge conflicts
 git subtree pull --prefix=dist origin master -m 'Merge origin'
 
+# Add README.md
+touch static/README.md
+echo "# dangthanh.org" > static/README.md
+
+# Add the CNAME
+touch static/CNAME
+echo "dangthanh.org" > static/CNAME
+
+# Add robots.txt
+touch static/robots.txt
+echo "User-agent: *" > static/robots.txt
+
 # Build the project.
 npm run build
 npm run generate
 npm run deploy
-
-# Add README.md
-touch dist/README.md
-echo "# dangthanh.org" > dist/README.md
-
-# Add the CNAME
-touch dist/CNAME
-echo "dangthanh.org" > dist/CNAME
-
-# Add robots.txt
-touch dist/robots.txt
-echo "User-agent: *" > dist/robots.txt
 
 # Add changes to git.
 git add -A
