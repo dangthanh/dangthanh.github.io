@@ -73,7 +73,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/google-adsense'],
   /*
    ** Build configuration
    */
@@ -103,7 +103,11 @@ module.exports = {
   },
 
   googleAnalytics: {
-    id: 'UA-12301-2'
+    id: 'UA-41117458-1'
+  },
+
+  'google-adsense': {
+    id: 'ca-pub-0445843198703009'
   }
 };
 
