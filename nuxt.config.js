@@ -21,7 +21,7 @@ const dynamicRoutes = getDynamicPath({
 
 module.exports = {
   router: {
-    base: '/dangthanh.github.io/'
+    base: '/'
   },
   mode: 'spa',
   /*
