@@ -1,4 +1,0 @@
-<script defer src="//unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
-{{ $js := resources.Get "labs/base.js" }}
-{{ $secureJS := $js | minify | fingerprint }}
-<script defer src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>

@@ -11,30 +11,20 @@ git commit -m 'Committing work in progress'
 git subtree pull --prefix=public origin master -m 'Merge origin'
 
 # Build the project.
-npm run build:public
-npm run build:js
-npm run build:sw
-npm run build:algolia
+npm run build
+npm run generate
 
 # Add README.md
-touch public/README.md
-echo "# dangthanh.org" > public/README.md
+touch dist/README.md
+echo "# dangthanh.org" > dist/README.md
 
 # Add the CNAME
-touch public/CNAME
-echo "dangthanh.org" > public/CNAME
+touch dist/CNAME
+echo "dangthanh.org" > dist/CNAME
 
 # Add robots.txt
-touch public/robots.txt
-echo "User-agent: *" > public/robots.txt
-
-# Add .gitignore
-touch .gitignore
-echo "node_modules" > .gitignore
-
-# Move favicon to root
-cp public/images/favicon/favicon.ico public/favicon.ico
-cp public/images/favicon/browserconfig.xml public/browserconfig.xml
+touch dist/robots.txt
+echo "User-agent: *" > dist/robots.txt
 
 # Add changes to git.
 git add -A
