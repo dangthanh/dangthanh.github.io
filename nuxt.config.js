@@ -115,9 +115,9 @@ module.exports = {
 function getDynamicPath(urlFilepathTable) {
   return [].concat(
     ...Object.keys(urlFilepathTable).map(url => {
-      var filepathGlob = urlFilepathTable[url];
+      // var filepathGlob = urlFilepathTable[url];
       return glob
-        .sync(filepathGlob, { cwd: 'content' })
+        .sync(`$/*.md`, { cwd: 'content' })
         .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
     })
   );
