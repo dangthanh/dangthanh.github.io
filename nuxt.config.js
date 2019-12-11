@@ -16,7 +16,10 @@ const md = require('markdown-it')({
   }
 });
 
-const markdownPaths = ['blog'];
+// const markdownPaths = ['blog'];
+const dynamicRoutes = getDynamicPaths({
+  blog: 'blog/*.md'
+});
 
 module.exports = {
   mode: 'universal',
@@ -98,7 +101,7 @@ module.exports = {
 
   generate: {
     fallback: true,
-    routes: dynamicMarkdownRoutes
+    routes: dynamicRoutes
   },
 
   googleAnalytics: {
@@ -110,12 +113,13 @@ module.exports = {
   }
 };
 
-function dynamicMarkdownRoutes() {
+function getDynamicPaths(urlPath) {
   return [].concat(
-    ...markdownPaths.map(mdPath => {
+    ...Object.keys(urlPath).map(url => {
+      const filePathGlob = urlPath[url];
       return glob
-        .sync(`${mdPath}/*.md`, { cwd: 'content' })
-        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`);
+        .sync(filePathGlob, { cwd: 'content' })
+        .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
     })
   );
 }
