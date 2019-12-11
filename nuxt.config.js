@@ -20,9 +20,6 @@ const dynamicRoutes = getDynamicPath({
 });
 
 module.exports = {
-  router: {
-    base: '/'
-  },
   mode: 'universal',
   /*
    ** Headers of the page
@@ -41,6 +38,12 @@ module.exports = {
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap'
+      }
+    ],
     link: [
       {
         rel: 'stylesheet',
