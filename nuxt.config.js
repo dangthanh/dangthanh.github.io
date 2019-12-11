@@ -1,4 +1,3 @@
-const Mode = require('frontmatter-markdown-loader/mode');
 const path = require('path');
 const glob = require('glob');
 const hljs = require('highlight.js');
@@ -17,7 +16,7 @@ const md = require('markdown-it')({
   }
 });
 const dynamicRoutes = getDynamicPath({
-  '/blog': 'blog/*.md'
+  '/blog': 'content/blog/*.md'
 });
 
 module.exports = {
@@ -88,10 +87,10 @@ module.exports = {
         include: path.resolve(__dirname, 'content'),
         loader: 'frontmatter-markdown-loader',
         options: {
-          mode: [Mode.VUE_COMPONENT],
           markdown: body => {
             return md.render(body);
-          }
+          },
+          vue: true
         }
       });
     }
