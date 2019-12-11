@@ -24,9 +24,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title:
-      process.env.npm_package_name ||
-      'Dang Thanh Blog -Blog chia sẻ về web và phát triển web',
+    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -58,7 +56,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/app.css'],
+  css: ['~/assets/css/app.css'],
   /*
    ** Plugins to load before mounting the App
    */
