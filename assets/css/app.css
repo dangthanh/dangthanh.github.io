@@ -109,7 +109,6 @@ body {
 }
 
 .article-body img {
-    background-color: #333;
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
