@@ -15,9 +15,11 @@ const md = require('markdown-it')({
     return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`;
   }
 });
-const dynamicRoutes = getDynamicPath({
-  '/blog': 'content/blog/*.md'
-});
+// const dynamicRoutes = getDynamicPaths({
+//   '/blog': 'content/blog/*.md'
+// });
+
+const markdownPaths = ['blog'];
 
 module.exports = {
   mode: 'universal',
@@ -59,7 +61,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['@/assets/app.css'],
+  css: ['@/assets/css/app.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -100,7 +102,7 @@ module.exports = {
   },
 
   generate: {
-    routes: dynamicRoutes
+    routes: dynamicMarkdownRoutes
   },
 
   googleAnalytics: {
@@ -112,13 +114,12 @@ module.exports = {
   }
 };
 
-function getDynamicPath(urlFilepathTable) {
+function dynamicMarkdownRoutes() {
   return [].concat(
-    ...Object.keys(urlFilepathTable).map(url => {
-      // var filepathGlob = urlFilepathTable[url];
+    ...markdownPaths.map(mdPath => {
       return glob
-        .sync(`$/*.md`, { cwd: 'content' })
-        .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
+        .sync(`${mdPath}/*.md`, { cwd: 'content' })
+        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`);
     })
   );
 }
