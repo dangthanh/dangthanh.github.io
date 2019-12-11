@@ -102,6 +102,7 @@ module.exports = {
   },
 
   generate: {
+    fallback: true,
     routes: dynamicMarkdownRoutes
   },
 
