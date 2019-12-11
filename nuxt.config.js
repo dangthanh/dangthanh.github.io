@@ -99,7 +99,7 @@ module.exports = {
     }
   },
 
-  generates: {
+  generate: {
     routes: dynamicRoutes
   },
 
