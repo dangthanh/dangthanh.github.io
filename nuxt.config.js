@@ -15,9 +15,6 @@ const md = require('markdown-it')({
     return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`;
   }
 });
-// const dynamicRoutes = getDynamicPaths({
-//   '/blog': 'content/blog/*.md'
-// });
 
 const markdownPaths = ['blog'];
 
