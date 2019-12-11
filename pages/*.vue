@@ -1,7 +1,7 @@
 <script>
 export default {
-  asyncData ({ redirect }) {
-    return redirect('/')
+  fetch({ redirect }) {
+    return redirect('/');
   }
-}
+};
 </script>
