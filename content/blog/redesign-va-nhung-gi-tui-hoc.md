@@ -13,7 +13,7 @@ Vì không phải là một Designer nên tôi không giỏi về thiết kế l
 
 Blog mới cung cấp hai giao diện, giúp bạn không bị mỏi mắt khi đọc lâu. Bạn nhấn vào biểu tượng ở góc phải để đổi sang giao diện yêu thích nhé. Có thể tôi sẽ cập nhật thêm về màu sắc xíu nữa cho phù hợp.
 
-![Dang Thanh Blog - phiên bản light and dark](/images/blog_v2.png)
+![Dang Thanh Blog - phiên bản light and dark](/images/blog/blog_v2.png)
 
 tôi cũng đã xoá đi hệ thống phản hồi (trước đây tôi dùng [Disqus](https://disqus.com/)) vì thấy nó không hữu ích. Các bạn có thể liên hệ hoặc trao đổi với tôi qua <a href="mailto:dangvanthanh@dangthanh.org">email</a>.
 
