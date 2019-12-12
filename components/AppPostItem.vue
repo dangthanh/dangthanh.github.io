@@ -111,9 +111,7 @@ export default {
 }
 
 .article-body ol li,
-.article-body ul li,
-.article-specific ol li,
-.article-specific ul li {
+.article-body ul li {
   margin: 0.625rem 0;
 }
 
@@ -126,7 +124,9 @@ export default {
 
 .article-body p,
 .article-body pre,
-.article-body h4 {
+.article-body h4,
+.article-body ul,
+.article-body ol {
   margin-bottom: 1rem;
 }
 
