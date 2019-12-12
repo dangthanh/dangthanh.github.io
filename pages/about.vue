@@ -5,10 +5,14 @@
         Tôi tên là Đặng Văn Thanh. Hiện đang sinh sống ở
         <a
           href="https://vi.wikipedia.org/wiki/S%C3%A0i_G%C3%B2n_(%C4%91%E1%BB%8Bnh_h%C6%B0%E1%BB%9Bng"
+          target="_blank"
+          rel="opener"
           >Sài Gòn</a
         >
         và làm việc tại công ty
-        <a href="https://poetadigital.com">Poeta Digital</a>.
+        <a href="https://poetadigital.com" target="_blank" rel="opener"
+          >Poeta Digital</a
+        >.
       </p>
       <p>
         Tôi rất thích lập trình JavaScript và Functional Programming. Thường ở
@@ -19,16 +23,28 @@
       </p>
       <p>
         Bạn có thể tìm thấy tôi qua
-        <a href="https://github.com/dangvanthanh">Github</a>,
-        <a href="https://twitter.com/dangvanthanh">Twitter</a> hoặc liên hệ qua
-        <a href="mailto:dangvanthanh@dangthanh.org">Email</a>.
+        <a href="https://github.com/dangvanthanh" target="_blank" rel="opener"
+          >Github</a
+        >,
+        <a href="https://twitter.com/dangvanthanh" target="_blank" rel="opener"
+          >Twitter</a
+        >
+        hoặc liên hệ qua
+        <a href="mailto:dangvanthanh@dangthanh.org" target="_blank" rel="opener"
+          >Email</a
+        >.
       </p>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  head: {
+    title: 'Về tui',
+    meta: [{ hid: 'description', name: 'description', content: 'Về tui' }]
+  }
+};
 </script>
 
 <style></style>

@@ -1,17 +1,17 @@
 <template>
   <div>
-    <site-header />
+    <app-header />
     <nuxt />
-    <site-footer />
+    <app-footer />
   </div>
 </template>
 
 <script>
-import SiteHeader from "~/components/SiteHeader.vue";
-import SiteFooter from "~/components/SiteFooter.vue";
+import AppHeader from "~/components/AppHeader.vue";
+import AppFooter from "~/components/AppFooter.vue";
 
 export default {
-  components: { SiteHeader, SiteFooter }
+  components: { AppHeader, AppFooter }
 };
 </script>
 
@@ -57,102 +57,6 @@ body {
 
 .code-personal {
   color: #4a6bef;
-}
-
-.article {
-    margin-bottom: 1.25rem
-}
-
-.article time {
-    font-size: .875rem
-}
-
-.article h2 {
-    margin-top: .675rem;
-    margin-bottom: 1.675rem
-}
-
-.article-body a {
-    text-decoration: none;
-    background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#fff)),-webkit-gradient(linear,left top,left bottom,from(#fff),to(#fff)),-webkit-gradient(linear,left top,left bottom,from(#1c8479),to(#1c8479));
-    background: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#1c8479,#1c8479);
-    background: -webkit-gradient(linear,left top,left bottom,from(#f6ad55),to(#f6ad55)),-webkit-gradient(linear,left top,left bottom,from(#f6ad55),to(#f6ad55)),-webkit-gradient(linear,left top,left bottom,from(var(--colorLink)),to(var(--colorLink)));
-    background: linear-gradient(#f6ad55,#f6ad55),linear-gradient(#f6ad55,#f6ad55),linear-gradient(var(--colorLink),var(--colorLink));
-    background-repeat: no-repeat,no-repeat,repeat-x;
-    background-position: 0 95%,100% 95%,0 95%;
-    background-size: .05em 1px,.05em 1px,1px 1px;
-    text-shadow: .03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;
-    text-shadow: .03em 0 #f6ad55,-.03em 0 #f6ad55,0 .03em #f6ad55,0 -.03em #f6ad55,.06em 0 #f6ad55,-.06em 0 #f6ad55,.09em 0 #f6ad55,-.09em 0 #f6ad55,.12em 0 #f6ad55,-.12em 0 #f6ad55,.15em 0 #f6ad55,-.15em 0 #f6ad55
-}
-
-.article-body a:focus,.article-body a:hover {
-    color: #1c8479;
-    color: #fff;
-}
-
-.article-body table {
-    border: 1px solid rgba(0,0,0,.4);
-    border-collapse: collapse;
-    border-spacing: 0;
-    padding: .5rem 1rem;
-    width: 100%
-}
-
-.article-body table th {
-    text-transform: uppercase
-}
-
-.article-body table td,.article-body table th {
-    padding: .5rem 1rem;
-    border: 1px solid #5e3f09;
-    border: 1px solid #5e3f09;
-}
-
-.article-body code:not([data-lang]) {
-    font-family: Roboto Slab,serif;
-    font-style: italic;
-    white-space: nowrap
-}
-
-.article-body blockquote {
-    font-weight: 700;
-    font-size: 1.2rem;
-    border-bottom: 3px solid #eee8d5;
-    border-bottom: 3px solid #eee8d5;
-    border-top: 3px solid #eee8d5;
-    border-top: 3px solid #eee8d5;
-    padding: .625rem;
-    margin: 1.625rem 0 1.625rem 3rem;
-    text-align: center
-}
-
-.article-body img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.article-body img.lazy-image {
-    opacity: .1;
-    will-change: opacity;
-    -webkit-transition: all .3s;
-    transition: all .3s
-}
-
-.article-body img.lazy-image.loaded {
-    opacity: 1;
-    width: auto;
-    height: auto;
-    background-color: transparent
-}
-
-.article-body ol li,.article-body ul li,.article-specific ol li,.article-specific ul li {
-    margin: .625rem 0
-}
-
-.article-body ol li:last-child,.article-body ul li:last-child,.article-specific ol li:last-child,.article-specific ul li:last-child {
-    margin-bottom: 0
 }
 
 p {

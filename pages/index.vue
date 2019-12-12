@@ -1,16 +1,18 @@
 <template>
   <div class="max-w-3xl mx-auto px-6 md:px-0 px-6 md:px-0">
-    <div v-for="post in posts" :key="post.attributes.title">
-      <post :post="post" />
+    <div class="flex flex-wrap">
+      <div v-for="post in posts" :key="post.attributes.title">
+        <app-post :post="post" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Post from '~/components/Post.vue';
+import AppPost from '~/components/AppPost.vue';
 
 export default {
-  components: { Post },
+  components: { AppPost },
   async asyncData({ params }) {
     const resolve = require.context('~/content/', true, /\.md$/);
     const imports = resolve

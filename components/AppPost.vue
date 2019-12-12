@@ -1,5 +1,4 @@
 <template>
-  <!-- <article :class="{ 'border-b border-gray-300': !post.attributes.lastIndex }"> -->
   <article class="bg-white rounded mb-4 overflow-hidden">
     <div class="flex flex-wrap p-5 relative">
       <div class="px-8 mb-3 md:px-0 md:mb-0 md:w-1/3">
