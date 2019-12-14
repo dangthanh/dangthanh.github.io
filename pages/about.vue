@@ -6,11 +6,11 @@
         <a
           href="https://vi.wikipedia.org/wiki/S%C3%A0i_G%C3%B2n_(%C4%91%E1%BB%8Bnh_h%C6%B0%E1%BB%9Bng"
           target="_blank"
-          rel="opener"
+          rel="noopener noreferrer"
           >Sài Gòn</a
         >
         và làm việc tại công ty
-        <a href="https://poetadigital.com" target="_blank" rel="opener"
+        <a href="https://poetadigital.com" target="_blank" rel="noopener noreferrer"
           >Poeta Digital</a
         >.
       </p>
@@ -23,14 +23,14 @@
       </p>
       <p>
         Bạn có thể tìm thấy tôi qua
-        <a href="https://github.com/dangvanthanh" target="_blank" rel="opener"
+        <a href="https://github.com/dangvanthanh" target="_blank" rel="noopener noreferrer"
           >Github</a
         >,
-        <a href="https://twitter.com/dangvanthanh" target="_blank" rel="opener"
+        <a href="https://twitter.com/dangvanthanh" target="_blank" rel="noopener noreferrer"
           >Twitter</a
         >
         hoặc liên hệ qua
-        <a href="mailto:dangvanthanh@dangthanh.org" target="_blank" rel="opener"
+        <a href="mailto:dangvanthanh@dangthanh.org" target="_blank" rel="noopener noreferrer"
           >Email</a
         >.
       </p>
@@ -40,9 +40,25 @@
 
 <script>
 export default {
-  head: {
-    title: 'Về tui',
-    meta: [{ hid: 'description', name: 'description', content: 'Về tui' }]
+  head() {
+    return {
+      title: 'Dang Thanh Blog - Về tôi',
+      meta: [
+        { name: 'author', content: 'Dang Van Thanh' },
+        {
+          name: 'description',
+          property: 'og:description',
+          content: 'Dang Thanh Blog - Về tôi',
+          hid: 'description'
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://dangthanh.org/about'
+        }
+      ]
+    };
   }
 };
 </script>

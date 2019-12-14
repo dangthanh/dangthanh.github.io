@@ -14,31 +14,28 @@ export default {
       return {
         post
       };
-    } catch {
-      return false;
-    }
+    } catch (__) {}
   },
   components: { AppPostItem },
-  // head: {
-  //   title: `Dang Thanh Blog`,
-  //   meta: [
-  //     { name: 'author', content: 'Dang Van Thanh' },
-  //     {
-  //       name: 'description',
-  //       property: 'og:description',
-  //       content: '',
-  //       hid: 'description'
-  //     }
-  //   ]
-  // },
-  computed: {
-    title() {
-      if (this.post) {
-        return this.post.attributes.title;
-      }
-
-      return '';
-    }
+  head() {
+    return {
+      title: `Dang Thanh Blog - ${this.post.attributes.title}`,
+      meta: [
+        { name: 'author', content: 'Dang Van Thanh' },
+        {
+          name: 'description',
+          property: 'og:description',
+          content: this.post.attributes.title,
+          hid: 'description'
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: `https://dangthanh.org/${this.post.attributes.slug}`
+        }
+      ]
+    };
   }
 };
 </script>

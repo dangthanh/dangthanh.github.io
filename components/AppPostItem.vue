@@ -38,7 +38,7 @@ export default {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #4a6bef;
   bottom: 0;
   left: 0;
@@ -90,10 +90,11 @@ export default {
 }
 
 .article-body img {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 .article-body img.lazy-image {
