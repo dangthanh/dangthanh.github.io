@@ -55,11 +55,11 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: false,
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/app.css'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */
