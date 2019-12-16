@@ -11,17 +11,17 @@
         <span
           v-for="tag in post.attributes.tags"
           :key="tag"
-          class="uppercase text-xs font-bold mr-2"
+          class="article-tag"
           :class="`code-${tag}`"
           >{{ tag }}</span
         >
-        <h2 class="text-3xl font-semibold mt-2">
+        <h2 class="article-title">
           <nuxt-link :to="`/blog/${post.attributes.slug}`">{{
             post.attributes.title
           }}</nuxt-link>
         </h2>
         <span
-          class="absolute article-number w-24 h-24 rounded-full bg-orange-400 text-2xl font-bold text-white"
+          class="article-number "
         >
           <div class="text-center">
             {{ post.attributes.number }}
@@ -40,12 +40,21 @@ export default {
 </script>
 
 <style>
+.article-title {
+  @apply text-3xl font-semibold mt-2;
+}
+
 .article-number {
   bottom: -48px;
   right: -48px;
+  @apply absolute w-24 h-24 rounded-full bg-orange-400 text-2xl font-bold text-white;
 }
 
 .article-number > div {
   margin: 10px 0 0 -40px;
+}
+
+.article-tag {
+  @apply uppercase text-xs font-bold mr-2;
 }
 </style>
