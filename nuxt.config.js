@@ -26,6 +26,9 @@ module.exports = {
   /*
    ** Headers of the page
    */
+  htmlAttrs: {
+    lang: 'vi',
+  },
   head: {
     title: 'Dang Thanh Blog - Blog chia sẻ về web và phát triển web',
     meta: [
@@ -70,13 +73,12 @@ module.exports = {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/date-fns',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/date-fns'
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/google-adsense'],
+  modules: [],
   /*
    ** Build configuration
    */
@@ -102,14 +104,6 @@ module.exports = {
   generate: {
     fallback: true,
     routes: dynamicRoutes
-  },
-
-  googleAnalytics: {
-    id: 'UA-41117458-1'
-  },
-
-  'google-adsense': {
-    id: 'ca-pub-0445843198703009'
   }
 };
 
