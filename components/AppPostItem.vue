@@ -9,7 +9,19 @@
 
 <script>
 export default {
-  props: ['post']
+  props: ['post'],
+  mounted() {
+    const links = document.querySelectorAll('a');
+    const host = window.location.host;
+
+    links.forEach(link => {
+      console.log(link.href);
+      if (link.href.indexOf(host) === -1) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  }
 };
 </script>
 
@@ -109,6 +121,12 @@ export default {
   width: auto;
   height: auto;
   background-color: transparent;
+}
+
+.article-body ol,
+.article-body ul {
+  list-style: disc;
+  padding-left: 1.5rem;
 }
 
 .article-body ol li,
