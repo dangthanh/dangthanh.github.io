@@ -4,7 +4,7 @@
       <p>
         Tôi tên là Đặng Văn Thanh. Hiện đang sinh sống ở
         <a
-          href="https://vi.wikipedia.org/wiki/S%C3%A0i_G%C3%B2n_(%C4%91%E1%BB%8Bnh_h%C6%B0%E1%BB%9Bng"
+          href="https://vi.wikipedia.org/wiki/S%C3%A0i_G%C3%B2n_(%C4%91%E1%BB%8Bnh_h%C6%B0%E1%BB%9Bng)"
           target="_blank"
           rel="noopener noreferrer"
           >Sài Gòn</a
