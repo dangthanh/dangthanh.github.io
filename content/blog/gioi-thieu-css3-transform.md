@@ -143,5 +143,9 @@ perspective(value)
 
 Hiện tại CSS3 Transform đã hỗ trợ rất nhiều trình duyệt.
 
+<app-caniuse features="transforms2d" />
+
+<app-caniuse features="transforms3d" />
+
 {{% caniuse features="transforms2d" %}}
 {{% caniuse features="transforms3d" %}}

@@ -15,7 +15,6 @@ export default {
     const host = window.location.host;
 
     links.forEach(link => {
-      console.log(link.href);
       if (link.href.indexOf(host) === -1) {
         link.setAttribute('target', '_blank');
         link.setAttribute('rel', 'noopener noreferrer');
@@ -123,10 +122,17 @@ export default {
   background-color: transparent;
 }
 
-.article-body ol,
+.article-body ul,
+.article-body ol {
+  padding-left: 1.5rem;
+}
+
 .article-body ul {
   list-style: disc;
-  padding-left: 1.5rem;
+}
+
+.article-body ol {
+  list-style: decimal;
 }
 
 .article-body ol li,

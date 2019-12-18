@@ -27,7 +27,7 @@ module.exports = {
    ** Headers of the page
    */
   htmlAttrs: {
-    lang: 'vi',
+    lang: 'vi'
   },
   head: {
     title: 'Dang Thanh Blog - Blog chia sẻ về web và phát triển web',
@@ -66,7 +66,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/caniuse-plugin.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -92,10 +92,10 @@ module.exports = {
         include: path.resolve(__dirname, 'content'),
         loader: 'frontmatter-markdown-loader',
         options: {
+          vue: true,
           markdown: body => {
             return md.render(body);
-          },
-          vue: true
+          }
         }
       });
     }
