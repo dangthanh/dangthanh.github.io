@@ -1,9 +1,7 @@
 <template>
   <div class="max-w-3xl mx-auto px-6 md:px-0 px-6 md:px-0">
-    <div class="flex flex-wrap">
-      <div v-for="post in posts" :key="post.attributes.title">
-        <app-post :post="post" />
-      </div>
+    <div v-for="post in posts" :key="post.attributes.title">
+      <app-post :post="post" />
     </div>
   </div>
 </template>

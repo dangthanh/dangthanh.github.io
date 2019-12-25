@@ -13,12 +13,12 @@ const md = require('markdown-it')({
     }
 
     return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`;
-  },
+  }
 });
 
 // const markdownPaths = ['blog'];
 const dynamicRoutes = getDynamicPaths({
-  blog: 'blog/*.md',
+  blog: 'blog/*.md'
 });
 
 module.exports = {
@@ -27,7 +27,7 @@ module.exports = {
    ** Headers of the page
    */
   htmlAttrs: {
-    lang: 'vi',
+    lang: 'vi'
   },
   head: {
     title: 'Dang Thanh Blog - Blog chia sẻ về web và phát triển web',
@@ -37,23 +37,23 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Blog chia sẻ về web và phát triển web',
-      },
+        content: 'Blog chia sẻ về web và phát triển web'
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap',
-      },
+        href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap'
+      }
     ],
     link: [
       {
         rel: 'stylesheet',
         href:
-          '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css',
-      },
-    ],
+          '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -74,7 +74,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/date-fns',
-    '@nuxtjs/google-analytics',
+    '@nuxtjs/google-analytics'
   ],
   /*
    ** Nuxt.js modules
@@ -96,24 +96,24 @@ module.exports = {
           vue: true,
           markdown: body => {
             return md.render(body);
-          },
-        },
+          }
+        }
       });
-    },
+    }
   },
 
   generate: {
     fallback: true,
-    routes: dynamicRoutes,
+    routes: dynamicRoutes
   },
 
   googleAnalytics: {
-    id: 'UA-41117458-1',
+    id: 'UA-41117458-1'
   },
 
   'google-adsense': {
-    id: 'ca-pub-0445843198703009',
-  },
+    id: 'ca-pub-0445843198703009'
+  }
 };
 
 function getDynamicPaths(urlPath) {

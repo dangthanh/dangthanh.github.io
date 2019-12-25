@@ -1,34 +1,19 @@
 <template>
   <article class="bg-white rounded mb-4 overflow-hidden">
-    <div class="flex flex-wrap p-5 relative">
-      <div class="px-8 mb-3 md:px-0 md:mb-0 md:w-1/3">
-        <img
-          src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/server_down_s4lk.svg"
-          alt=""
-        />
-      </div>
-      <div class="md:flex-1 md:pl-5">
-        <span
-          v-for="tag in post.attributes.tags"
-          :key="tag"
-          class="article-tag"
-          :class="`code-${tag}`"
-          >{{ tag }}</span
-        >
-        <h2 class="article-title">
-          <nuxt-link :to="`/blog/${post.attributes.slug}`">{{
-            post.attributes.title
-          }}</nuxt-link>
-        </h2>
-        <span
-          class="article-number "
-        >
-          <div class="text-center">
-            {{ post.attributes.number }}
-          </div>
-        </span>
-        <!-- <time class="text-gray-600 text-sm">{{ $dateFns.format(post.attributes.date, 'dd-MM-yyyy') }}</time> -->
-      </div>
+    <div class="p-5 relative">
+      <span
+        v-for="tag in post.attributes.tags"
+        :key="tag"
+        class="article-tag"
+        :class="`code-${tag}`"
+        >{{ tag }}</span
+      >
+      <h2 class="article-title">
+        <nuxt-link :to="`/blog/${post.attributes.slug}`">{{
+          post.attributes.title
+        }}</nuxt-link>
+      </h2>
+      <!-- <time class="text-gray-600 text-sm">{{ $dateFns.format(post.attributes.date, 'dd-MM-yyyy') }}</time> -->
     </div>
   </article>
 </template>
