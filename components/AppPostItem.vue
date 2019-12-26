@@ -85,7 +85,6 @@ export default {
 
 .article-body .hljs code {
   font-family: 'Fira Code', monospace;
-  font-style: italic;
   font-size: 0.875rem;
 }
 
