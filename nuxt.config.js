@@ -44,14 +44,15 @@ module.exports = {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap'
+        href:
+          'https://fonts.googleapis.com/css?family=Fira+Code|IBM+Plex+Sans&display=swap'
       }
     ],
     link: [
       {
         rel: 'stylesheet',
         href:
-          '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css'
+          '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/solarized-light.min.css'
       }
     ]
   },

@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import AppHeader from "~/components/AppHeader.vue";
-import AppFooter from "~/components/AppFooter.vue";
+import AppHeader from '~/components/AppHeader.vue';
+import AppFooter from '~/components/AppFooter.vue';
 
 export default {
-  components: { AppHeader, AppFooter }
+  components: { AppHeader, AppFooter },
 };
 </script>
 
@@ -25,7 +25,8 @@ export default {
 
 body {
   background-color: #f1f2f6;
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   word-spacing: 1px;
@@ -65,7 +66,7 @@ p {
 
 .page-enter-active,
 .page-leave-active {
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .page-enter,

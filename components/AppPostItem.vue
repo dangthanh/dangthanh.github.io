@@ -20,7 +20,7 @@ export default {
         link.setAttribute('rel', 'noopener noreferrer');
       }
     });
-  }
+  },
 };
 </script>
 
@@ -84,8 +84,9 @@ export default {
 }
 
 .article-body code:not([data-lang]) {
-  font-family: Roboto Slab, serif;
+  font-family: 'Fira Code', monospace;
   font-style: italic;
+  font-size: 0.875rem;
 }
 
 .article-body blockquote {
@@ -155,9 +156,17 @@ export default {
   margin-bottom: 1rem;
 }
 
-.article h3 {
-  font-size: 2rem;
+.article-body h3,
+.article-body h4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.article-body h3 {
+  font-size: 2rem;
+}
+
+.article-body h4 {
+  font-size: 1.4rem;
 }
 </style>
