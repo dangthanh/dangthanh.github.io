@@ -20,7 +20,7 @@ export default {
         link.setAttribute('rel', 'noopener noreferrer');
       }
     });
-  },
+  }
 };
 </script>
 
@@ -83,7 +83,7 @@ export default {
   border: 1px solid #5e3f09;
 }
 
-.article-body code:not([data-lang]) {
+.article-body .hljs code {
   font-family: 'Fira Code', monospace;
   font-style: italic;
   font-size: 0.875rem;
