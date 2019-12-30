@@ -40,15 +40,13 @@ module.exports = {
         content: 'Blog chia sẻ về web và phát triển web'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Fira+Code|IBM+Plex+Sans&display=swap'
-      }
-    ],
-    link: [
+      },
       {
         rel: 'stylesheet',
         href:
