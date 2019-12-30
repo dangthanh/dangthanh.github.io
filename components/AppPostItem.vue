@@ -86,6 +86,7 @@ export default {
 .article-body .hljs code {
   font-family: 'Fira Code', monospace;
   font-size: 0.875rem;
+  tab-size: 2;
 }
 
 .article-body blockquote {
