@@ -65,7 +65,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/caniuse-plugin.js'],
+  plugins: ['~/plugins/caniuse-api.js', '~/plugins/composition-api.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -73,7 +73,8 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/date-fns',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxt/typescript-build'
   ],
   /*
    ** Nuxt.js modules
