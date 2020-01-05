@@ -8,3 +8,5 @@ tags: ["personal"]
 Hello 2020
 
 I'm really like to learn English. But day by day my English cannot improve.
+
+But today, I want to write about web in English because I really want to improve English skill.
