@@ -1,16 +1,16 @@
 <template>
   <div class="max-w-3xl mx-auto px-6 md:px-0 px-6 md:px-0">
     <div v-for="post in posts" :key="post.attributes.title">
-      <app-post :post="post" />
+      <Post :post="post" />
     </div>
   </div>
 </template>
 
 <script>
-import AppPost from '~/components/AppPost.vue';
+import Post from '~/components/Post/Post';
 
 export default {
-  components: { AppPost },
+  components: { Post },
   async asyncData({ params }) {
     const resolve = require.context('~/content/', true, /\.md$/);
     const imports = resolve

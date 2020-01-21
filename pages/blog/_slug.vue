@@ -1,11 +1,11 @@
 <template>
   <div class="max-w-3xl mx-auto px-6 md:px-0">
-    <app-post-item :post="post" />
+    <PostItem :post="post" />
   </div>
 </template>
 
 <script>
-import AppPostItem from '~/components/AppPostItem.vue';
+import PostItem from '~/components/Post/PostItem';
 
 export default {
   async asyncData({ params }) {
@@ -16,7 +16,7 @@ export default {
       };
     } catch (__) {}
   },
-  components: { AppPostItem },
+  components: { PostItem },
   head() {
     return {
       title: `Dang Thanh Blog - ${this.post.attributes.title}`,

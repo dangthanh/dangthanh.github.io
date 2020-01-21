@@ -1,17 +1,14 @@
 <template>
-  <div>
-    <app-header />
+  <AppLayout>
     <nuxt />
-    <app-footer />
-  </div>
+  </AppLayout>
 </template>
 
 <script>
-import AppHeader from '~/components/AppHeader.vue';
-import AppFooter from '~/components/AppFooter.vue';
+import AppLayout from '~/components/Layout/AppLayout';
 
 export default {
-  components: { AppHeader, AppFooter },
+  components: { AppLayout }
 };
 </script>
 
@@ -100,4 +97,12 @@ p {
     transform: translate3d(100%, 0, 0);
   }
 } */
+
+.iframe-container iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
 </style>

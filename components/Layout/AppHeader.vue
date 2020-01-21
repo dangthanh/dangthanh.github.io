@@ -6,7 +6,6 @@
       </div>
       <nav role="navigation" class="flex-1 text-right">
         <ul>
-          <!-- <li class="inline-block px-3 py-5"><nuxt-link to="/projects">Dự án</nuxt-link></li> -->
           <li class="inline-block px-3 py-5"><nuxt-link to="/about">Về tôi</nuxt-link></li>
         </ul>
       </nav>

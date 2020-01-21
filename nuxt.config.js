@@ -3,18 +3,18 @@ const glob = require('glob');
 const hljs = require('highlight.js');
 const md = require('markdown-it')({
   html: true,
-  highlight: function(str, lang) {
+  highlight: function (str, lang) {
     if (lang && hljs.getLanguage(lang)) {
       try {
         return `<pre class="hljs"><code>${
           hljs.highlight(lang, str, true).value
-        }</code></pre>`;
-      } catch (__) {}
+          }</code></pre>`;
+      } catch (__) { }
     }
 
     return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`;
   }
-});
+}).use(require('markdown-it-iframe'));
 
 // const markdownPaths = ['blog'];
 const dynamicRoutes = getDynamicPaths({
@@ -65,7 +65,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/caniuse-api.js', '~/plugins/composition-api.js'],
+  plugins: [],
   /*
    ** Nuxt.js dev-modules
    */
@@ -73,8 +73,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/date-fns',
-    '@nuxtjs/google-analytics',
-    '@nuxt/typescript-build'
+    '@nuxtjs/google-analytics'
   ],
   /*
    ** Nuxt.js modules
