@@ -1,38 +1,37 @@
 <template>
   <div class="max-w-3xl mx-auto px-6 md:px-0">
-    <PostItem :post="post" />
+      <!-- <h1 class="text-4xl mb-5 font-semibold">{{ post.attributes.title }}</h1> -->
+      <!-- <div class="article-body" v-html="post.html"></div> -->
   </div>
 </template>
 
-<script>
-import PostItem from '~/components/Post/PostItem';
+<script lang="ts">
+import Vue from 'vue'
 
 export default {
-  async asyncData({ params }) {
-    try {
-      const post = await import(`~/content/blog/${params.slug}.md`);
-      return {
-        post
-      };
-    } catch (__) {}
+  async asyncData() {
+    // try {
+    //   const post: any = await import(`~/content/blog/${params.slug}.md`);
+    //   return {
+    //     post
+    //   };
+    // } catch (__) {}
   },
-  components: { PostItem },
   head() {
     return {
-      title: `Dang Thanh Blog - ${this.post.attributes.title}`,
+      title: `Dang Thanh Blog`,
       meta: [
         { name: 'author', content: 'Dang Van Thanh' },
         {
           name: 'description',
           property: 'og:description',
-          content: this.post.attributes.title,
+          content: '',
           hid: 'description'
         }
       ],
       link: [
         {
-          rel: 'canonical',
-          href: `https://dangthanh.org/${this.post.attributes.slug}`
+          rel: 'canonical'
         }
       ]
     };
