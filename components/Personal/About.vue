@@ -2,9 +2,16 @@
   <div>
     <div>
       My name is
-      <span class="text-3xl">{{ fullName }}</span>.
+      <span class="text-3xl">{{ user.name }}</span>.
     </div>
-    <div>I'm Front End Developer from {{ company }}.</div>
+    <div>
+      I'm a {{ user.position }} from
+      <a
+        :href="user.companyWebsite"
+        target="_blank"
+        rel="noopener noreferrer"
+      >{{ user.companyName }}</a>.
+    </div>
   </div>
 </template>
 
@@ -12,8 +19,10 @@
 import Vue, { PropOptions } from 'vue'
 
 interface User {
-  firstName: string
-  lastName: string
+  name: string
+  position: string
+  companyName: string
+  companyWebsite: string
 }
 
 export default Vue.extend({
@@ -23,16 +32,6 @@ export default Vue.extend({
       type: Object,
       required: true
     } as PropOptions<User>
-  },
-  data() {
-    return {
-      company: 'Poeta Digital'
-    }
-  },
-  computed: {
-    fullName(): string {
-      return `${this.user.lastName} ${this.user.firstName}`
-    }
   }
 })
 </script>

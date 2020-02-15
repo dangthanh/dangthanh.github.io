@@ -14,8 +14,10 @@ export default {
   data() {
     return {
       user: {
-        firstName: 'Thanh',
-        lastName: 'Dang Van'
+        name: 'Dang Van Thanh',
+        position: 'Front-end Developer',
+        companyName: 'Poeta Digital',
+        companyWebsite: 'https://poetadigital.com'
       }
     }
   }

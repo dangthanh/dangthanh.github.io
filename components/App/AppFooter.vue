@@ -1,5 +1,7 @@
 <template>
-  <footer role="contentinfo">2020</footer>
+  <footer role="contentinfo">
+    <p>&copy; 2020</p>
+  </footer>
 </template>
 
 <script lang="ts">
