@@ -1,6 +1,6 @@
-# dangthanh.github.io
+# dangthanh.org 
 
-> Blog
+> Blog About Front End Development 
 
 ## Build Setup
 
