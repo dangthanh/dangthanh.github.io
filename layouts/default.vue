@@ -8,8 +8,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import AppHeader from '~/components/App/AppHeader.vue'
-import AppFooter from '~/components/App/AppFooter.vue'
+import AppHeader from '~/components/AppHeader.vue'
+import AppFooter from '~/components/AppFooter.vue'
 
 export default Vue.extend({
   components: { AppHeader, AppFooter }

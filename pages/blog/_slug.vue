@@ -1,21 +1,19 @@
 <template>
-  <div class="max-w-3xl mx-auto px-6 md:px-0">
-      <!-- <h1 class="text-4xl mb-5 font-semibold">{{ post.attributes.title }}</h1> -->
-      <!-- <div class="article-body" v-html="post.html"></div> -->
+  <div class="max-w-2xl mx-auto px-6">
+    <h1 class="text-4xl mb-5 font-semibold">{{ post.attributes.title }}</h1>
+    <div v-html="post.html"></div>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
+<script>
 export default {
-  async asyncData() {
-    // try {
-    //   const post: any = await import(`~/content/blog/${params.slug}.md`);
-    //   return {
-    //     post
-    //   };
-    // } catch (__) {}
+  async asyncData({ params }) {
+    try {
+      const post = await import(`~/content/blog/${params.slug}.md`)
+      return {
+        post
+      }
+    } catch (__) {}
   },
   head() {
     return {
@@ -34,7 +32,7 @@ export default {
           rel: 'canonical'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>

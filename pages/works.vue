@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-     Projects
+  <div class="max-w-2xl mx-auto px-6">
+     Works
   </div>
 </template>
 
