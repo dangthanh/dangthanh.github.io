@@ -19,6 +19,39 @@ export default Vue.extend({
 </script>
 
 <style>
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-merriweather: 'merriweather', serif;
+  --font-fira-code: 'Fira Code', monospace;
+  --color-green: #6cbe96;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.bg-green {
+  background-color: var(--color-green);
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.font-merriweather {
+  font-family: var(--font-merriweather);
+}
+
 a {
   color: var(--color-green);
   text-decoration-line: none;
