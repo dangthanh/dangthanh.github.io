@@ -127,11 +127,6 @@ article img {
   margin: 0 auto;
 }
 
-/*
-Colorbrewer theme
-Original: https://github.com/mbostock/colorbrewer-theme (c) Mike Bostock <mike@ocks.org>
-Ported by Fabrício Tavares de Oliveira
-*/
 .hljs {
   display: block;
   overflow-x: auto;
