@@ -2,7 +2,9 @@
   <div class="max-w-2xl mx-auto px-5">
     <article>
       <header>
-        <h1 class="text-4xl xl:text-5xl mb-3 font-semibold font-merriweather">{{ post.attributes.title }}</h1>
+        <h1
+          class="text-4xl xl:text-5xl mb-3 font-semibold font-merriweather"
+        >{{ post.attributes.title }}</h1>
         <div class="mb-4">
           <span
             v-for="tag in post.attributes.tags"
@@ -23,28 +25,27 @@
 <script>
 export default {
   async asyncData({ params }) {
-    try {
-      const post = await import(`~/content/blog/${params.slug}.md`)
-      return {
-        post
-      }
-    } catch (__) {}
+    const post = await import(`~/content/blog/${params.slug}.md`)
+    return {
+      post
+    }
   },
   head() {
     return {
-      title: `Dang Thanh Blog`,
+      title: `Dang Thanh Blog - ${this.post.attributes.title}`,
       meta: [
         { name: 'author', content: 'Dang Van Thanh' },
         {
           name: 'description',
           property: 'og:description',
-          content: '',
+          content: this.post.attributes.title,
           hid: 'description'
         }
       ],
       link: [
         {
-          rel: 'canonical'
+          rel: 'canonical',
+          href: `https://dangthanh.org/${this.post.attributes.slug}`
         }
       ]
     }

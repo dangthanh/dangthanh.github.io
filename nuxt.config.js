@@ -57,6 +57,13 @@ module.exports = {
    ** Global CSS
    */
   css: ['~/assets/css/app.css'],
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
+  },
   /*
    ** Plugins to load before mounting the App
    */
