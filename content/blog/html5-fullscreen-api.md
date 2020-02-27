@@ -81,4 +81,4 @@ function cancelFullscreen() {
 
 HTML5 FullScreen API là một API đơn giản và mạnh mẽ. Mình hi vọng với API đơn giản này các bạn có thể viết những ứng dụng tương tác dễ dàng hơn khi cần hiển thị chế độ toàn màn hình.
 
-{{% caniuse features="fullscreen" %}}
+<!-- caniuse features="fullscreen"  -->

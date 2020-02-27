@@ -21,7 +21,7 @@ HTML5 cung cấp một API mới để có thể lưu trữ dữ liệu ở phí
 
 Web Storage hiện tại đã hỗ trợ rất nhiều trình duyệt.
 
-{{% caniuse features="namevalue-storage" %}}
+<!-- caniuse features="namevalue-storage"  -->
 
 Web Storage cung cấp các phương thức sau. Ở đây mình sử dụng localStorage, bạn có thể sử dụng sessionStorage nếu muốn.
 

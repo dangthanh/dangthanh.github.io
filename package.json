@@ -10,10 +10,11 @@
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^0.3.8",
+    "@nuxt/typescript-runtime": "^0.3.10",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@vue/composition-api": "^0.4.0",
@@ -23,10 +24,11 @@
     "markdown-it": "^10.0.0",
     "markdown-it-codesandbox": "^1.0.1",
     "node-fetch": "^2.6.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "push-dir": "^0.4.1"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.5.6",
+    "@nuxt/typescript-build": "^0.5.8",
     "@nuxtjs/date-fns": "^1.2.0",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-config-typescript": "^1.0.2",
