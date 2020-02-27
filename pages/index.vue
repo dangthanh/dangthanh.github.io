@@ -19,7 +19,7 @@
     </article>
     <hr class="border-t mb-3 w-48 inline-block border-gray-300 border-solid" />
     <article>
-      <h2 class="font-normal text-xl pb-3 uppercase">
+      <h2 class="font-normal text-lg pb-3 uppercase">
         I
         <span class="text-red-600">&#10084;</span> Open Source
       </h2>

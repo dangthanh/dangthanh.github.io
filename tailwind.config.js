@@ -12,6 +12,7 @@ module.exports = {
     'borderStyle',
     'boxShadow',
     'fontSize',
+    'fill',
     'backgroundColor',
     'display',
     'margin',

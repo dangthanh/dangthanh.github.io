@@ -113,7 +113,7 @@ Việc sử dụng CSS Triangles mixin cực kì đơn giản.
   +arrow(right, rgba(255, 10, 10, .5), 50px)
 ```
 
-{{% codepen id="qKmfh" height="266" %}}
+@[codesandbox](sass-css-triangles-69fzm?view=preview)
 
 #### Sử dụng với CSS3 Pseudo :before hoặc :after để tạo tooltips
 
@@ -133,6 +133,6 @@ Việc sử dụng CSS Triangles mixin cực kì đơn giản.
     +arrow(left, #e74c3c, 20px) // Bạn có thể chọn vị trí khác cho phù hợp
 ```
 
-{{% codepen id="jxchk" height="266" %}}
+@[codesandbox](sass-tooltips-using-css-triangles-mixin-xnky4?view=preview)
 
 Với mixin này, mình hi vọng các bạn có thể cải tiến thêm các tooltips của website mình và khám phá thêm nhiều kĩ thuật mới qua việc sử dụng các điều khiển các Sass.

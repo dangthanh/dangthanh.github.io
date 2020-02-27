@@ -104,7 +104,7 @@ tags: ["javascript"]
 
 #### Sử dụng
 
-~~~javascript
+~~~html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="checkboxes.min.js"></script>
 <script>
@@ -116,7 +116,7 @@ tags: ["javascript"]
 </script>
 ~~~
 
-{{% codepen id="lraJA" height="300" %}}
+@[codesandbox](checkboxes-jquery-plugin-lxx0m?view=preview)
 
 Bạn cũng có thể tải Checkboxes jQuery Plugin tại [Github](https://github.com/dangvanthanh/jquery.checkboxes).
 

@@ -67,6 +67,6 @@ Sau khi tạo được mixin thì ta có thể sử dụng rất dễ dàng tùy
 	+longshadow(#525283, 50, bottom-right)
 ```
 
-{{% codepen height="300" id="wLKan" %}}
+@[codesandbox](sass-long-shadow-mixin-60zj3?view=preview)
 
 Trên đây mình **[sử dụng Sass](/blog/su-dung-sass/)** để tạo đổ bóng dài, bạn cũng có thể tùy biến thêm như thêm chức năng bóng mờ cho bóng...Nếu bạn không muốn làm việc với Sass nhưng vẫn muốn dùng tạo text đổ bóng dài bạn có thể sử dụng **[Long Shadow jQuery Plugin](/labs/longshadow-jquery-plugin/)** mình đang viết và phát triển. Mình cũng rất mong nhận được góp ý của các bạn để hoàn thiện hơn mixin cũng như jQuery plugin này.

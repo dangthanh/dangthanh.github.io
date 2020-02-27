@@ -14,7 +14,7 @@ const md = require('markdown-it')({
 
     return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`;
   }
-});
+}).use(require('markdown-it-codesandbox'));
 
 // const markdownPaths = ['blog'];
 const dynamicRoutes = getDynamicPaths({
@@ -46,11 +46,6 @@ module.exports = {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Fira+Code|Merriweather|Montserrat:400,600&display=swap'
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/solarized-light.min.css'
       }
     ]
   },
@@ -65,7 +60,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['@/plugins/composition-api'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -81,7 +76,6 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv'
   ],

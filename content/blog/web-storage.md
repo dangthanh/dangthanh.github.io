@@ -54,4 +54,4 @@ console.log(obj.age);  // value
 
 ### Ví dụ Local Storage
 
-{{% codepen id="jCcxI" %}}
+@[codesandbox](web-local-storage-no1iq?view=preview)
