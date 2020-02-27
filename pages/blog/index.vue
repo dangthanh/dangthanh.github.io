@@ -1,25 +1,22 @@
 <template>
-  <div class="max-w-2xl mx-auto px-6">
-    <div v-for="post in posts" :key="post.attributes.title">
-      <article class="bg-white rounded mb-4 overflow-hidden">
-        <div class="py-3 relative">
-          <span
+  <div class="max-w-2xl mx-auto px-5">
+      <article class="rounded mb-4 overflow-hidden" v-for="(post, i) in posts" :key="post.attributes.title">
+        <div class="relative" :class="{ 'pb-2': i === 0, 'py-2': i !== 0 }">
+          <!-- <span
             v-for="tag in post.attributes.tags"
             :key="tag"
-            class="inline-block mr-2"
-            :class="`code-${tag}`"
-          >#{{ tag }}</span>
-          <h2>
+            class="inline-block mr-2 text-gray-900"
+          >#{{ tag }}</span> -->
+          <h2 class="font-merriweather m-0 mb-3">
             <nuxt-link :to="`/blog/${post.attributes.slug}`">
               {{
               post.attributes.title
               }}
             </nuxt-link>
           </h2>
-          <!-- <time class="text-gray-600 text-sm">{{ $dateFns.format(post.attributes.date, 'dd-MM-yyyy') }}</time> -->
+          <time class="text-gray-700 text-sm">{{ $dateFns.format(post.attributes.date, 'dd MMM yyyy') }}</time>
         </div>
       </article>
-    </div>
   </div>
 </template>
 

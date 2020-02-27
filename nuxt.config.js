@@ -27,7 +27,7 @@ module.exports = {
    ** Headers of the page
    */
   htmlAttrs: {
-    lang: 'vi'
+    lang: 'en'
   },
   head: {
     title: 'Dang Thanh Blog - Blog chia sẻ về web và phát triển web',
@@ -45,7 +45,7 @@ module.exports = {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Fira+Code|IBM+Plex+Sans&display=swap'
+          'https://fonts.googleapis.com/css?family=Fira+Code|Merriweather|Montserrat:400,600&display=swap'
       },
       {
         rel: 'stylesheet',
@@ -72,7 +72,8 @@ module.exports = {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxt/typescript-build',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/date-fns'
   ],
 
 
