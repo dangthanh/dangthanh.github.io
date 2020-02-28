@@ -83,8 +83,4 @@ export default {
 </script>
 
 <style>
-.poeta {
-  min-height: 460px;
-  filter: blur(3px);
-}
 </style>
