@@ -56,11 +56,11 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/app.css'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/composition-api'],
+  plugins: ['@/plugins/composition-api', { src: '~plugins/ga.js', mode: 'client' }],
   /*
    ** Nuxt.js dev-modules
    */

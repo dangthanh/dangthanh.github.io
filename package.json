@@ -24,7 +24,7 @@
     "markdown-it": "^10.0.0",
     "markdown-it-codesandbox": "^1.0.1",
     "node-fetch": "^2.6.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.11.0",
     "push-dir": "^0.4.1"
   },
   "devDependencies": {
