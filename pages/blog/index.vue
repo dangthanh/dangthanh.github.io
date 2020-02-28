@@ -3,11 +3,11 @@
       <article class="rounded mb-4 overflow-hidden" v-for="(post, i) in posts" :key="post.attributes.title">
         <div class="relative" :class="{ 'pb-2': i === 0, 'py-2': i !== 0 }">
           <h2 class="font-merriweather m-0 mb-3">
-            <nuxt-link :to="`/blog/${post.attributes.slug}`">
+            <NuxtLink :to="`/blog/${post.attributes.slug}`">
               {{
               post.attributes.title
               }}
-            </nuxt-link>
+            </NuxtLink>
           </h2>
           <time class="text-gray-700 text-sm">{{ $dateFns.format(post.attributes.date, 'dd MMM yyyy') }}</time>
         </div>

@@ -1,212 +1,23 @@
 <template>
   <div>
-    <app-header />
+    <AppHeader />
     <main role="main" class="my-8 lg:my-12">
-    <nuxt />
+      <nuxt />
     </main>
-    <app-footer />
+    <AppFooter />
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from '@vue/composition-api'
 import AppHeader from '~/components/AppHeader.vue'
 import AppFooter from '~/components/AppFooter.vue'
+import '~/assets/css/app.css'
 
-export default Vue.extend({
+export default defineComponent({
   components: { AppHeader, AppFooter }
 })
 </script>
 
 <style>
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --font-montserrat: 'Montserrat', sans-serif;
-  --font-merriweather: 'merriweather', serif;
-  --font-fira-code: 'Fira Code', monospace;
-  --color-green: #6cbe96;
-}
-
-body {
-  margin: 0;
-  font-family: var(--font-montserrat);
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
-}
-
-.bg-green {
-  background-color: var(--color-green);
-}
-
-.font-montserrat {
-  font-family: var(--font-montserrat);
-}
-
-.font-merriweather {
-  font-family: var(--font-merriweather);
-}
-
-a {
-  color: var(--color-green);
-  text-decoration-line: none;
-}
-
-a:hover,
-a:focus {
-  color: rgba(108, 190, 150, .8);
-  text-decoration: none;
-}
-
-p {
-  margin: 0 0 1rem 0;
-}
-
-.c-logo,
-.c-logo:hover,
-.c-logo:focus,
-.c-nav a {
-  color: #fff;
-}
-
-.c-logo:hover,
-.c-logo:focus {
-  text-decoration: none;
-}
-
-.c-nav .nuxt-link-exact-active {
-  background-color: rgba(64, 148, 107, .8);
-}
-
-.hljs code {
-  font-family: var(--font-fira-code);
-  font-size: .875rem;
-  tab-size: 2;
-}
-
-code {
-  font-family: var(--font-fira-code);
-}
-
-article {
-  margin-bottom: 2rem;
-}
-
-article h3,
-article h4,
-article h5 {
-  margin: 0 0 1rem 0;
-}
-
-article h3 {
-  font-size: 1.5rem;
-  line-height: 1.25;
-}
-
-article h4,
-article h5 {
-  font-size: 1.25rem;
-}
-
-article img {
-  max-width: 100%;
-}
-
-article a:hover,
-article a:focus {
-  text-decoration: underline;
-}
-
-article table {
-  border: 1px solid #718096;
-  border-collapse: collapse;
-  border-spacing: 0;
-  padding: .5rem 1rem;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-article table td,
-article table th {
-  padding: .5rem 1rem;
-  border: 1px solid #718096;
-}
-
-article table code {
-  white-space: nowrap;
-}
-
-article img {
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
-  margin: 0 auto;
-}
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #fdf6e3;
-}
-
-.hljs,
-.hljs-subst {
-  color: #000;
-}
-
-.hljs-string,
-.hljs-meta,
-.hljs-symbol,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-addition {
-  color: #756bb1;
-}
-
-.hljs-comment,
-.hljs-quote {
-  color: #636363;
-}
-
-.hljs-number,
-.hljs-regexp,
-.hljs-literal,
-.hljs-bullet,
-.hljs-link {
-  color: #31a354;
-}
-
-.hljs-deletion,
-.hljs-variable {
-  color: #88f;
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-title,
-.hljs-section,
-.hljs-built_in,
-.hljs-doctag,
-.hljs-type,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-strong {
-  color: #3182bd;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-attribute {
-  color: #e6550d;
-}
 </style>
