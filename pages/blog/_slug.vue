@@ -49,6 +49,20 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    const links = document.querySelectorAll('a[href]')
+
+    links.forEach((link) => {
+      const linkHref = link.getAttribute('href')
+      if (
+        linkHref.slice(0, 1) !== '/' &&
+        linkHref.indexOf(window.location.host) === -1
+      ) {
+        link.setAttribute('target', '_blank')
+        link.setAttribute('rel', 'noopener noreferrer')
+      }
+    })
   }
 }
 </script>
