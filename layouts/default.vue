@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style>
+/* purgecss start ignore */
 @import '~/assets/css/app.css';
+/* purgecss end ignore */
 </style>
