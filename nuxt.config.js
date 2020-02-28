@@ -46,6 +46,11 @@ module.exports = {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Fira+Code|Merriweather|Montserrat:400,600&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          '~assets/css/app.css'
       }
     ]
   },
@@ -56,7 +61,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/app.css'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */
