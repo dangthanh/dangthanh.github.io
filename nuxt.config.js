@@ -30,14 +30,14 @@ module.exports = {
     lang: 'en'
   },
   head: {
-    title: 'Dang Thanh Blog - Blog chia sẻ về web và phát triển web',
+    title: 'Dang Thanh Blog - Thoughts web technologies',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Blog chia sẻ về web và phát triển web'
+        content: 'Thoughts web technologies'
       }
     ],
     link: [
@@ -56,7 +56,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/app.css'],
   /*
    ** Plugins to load before mounting the App
    */

@@ -43,7 +43,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >Elm</a> and
-      <a href="https://elixir-lang.org/" target="_blank" rel="noopener noreferrer">Elixir</a>). Besides, I'm always shared the knowledge about web technology which I learned via
+      <a href="https://elixir-lang.org/" target="_blank" rel="noopener noreferrer">Elixir</a>). Besides, I'm always shared the knowledge about web technologies which I learned via
       <a
         href="https://dangthanh.org"
         target="_blank"
@@ -83,4 +83,8 @@ export default {
 </script>
 
 <style>
+.poeta {
+  min-height: 460px;
+  filter: blur(3px);
+}
 </style>

@@ -7,27 +7,27 @@
 module.exports = {
   corePlugins: [
     'alignItems',
+    'backgroundColor',
     'borderColor',
     'borderWidth',
     'borderStyle',
+    'borderRadius',
     'boxShadow',
+    'container',
+    'display',
     'fontSize',
     'fill',
-    'backgroundColor',
-    'display',
-    'margin',
-    'padding',
-    'container',
     'fontWeight',
     'flex',
     'flexWrap',
-    'width',
     'height',
+    'lineHeight',
+    'margin',
+    'maxWidth',
     'textAlign',
     'textColor',
     'textTransform',
-    'maxWidth',
-    'lineHeight',
-    'borderRadius'
+    'padding',
+    'width'
   ]
 }
