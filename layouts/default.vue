@@ -9,13 +9,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
 import AppHeader from '~/components/AppHeader.vue'
 import AppFooter from '~/components/AppFooter.vue'
 
-export default defineComponent({
+export default {
   components: { AppHeader, AppFooter }
-})
+}
 </script>
 
 <style>
