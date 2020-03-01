@@ -60,7 +60,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/composition-api' }, { src: '~/plugins/ga.js', mode: 'client' }],
+  plugins: ['~/plugins/composition-api'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -68,7 +68,8 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxt/typescript-build',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/date-fns'
+    '@nuxtjs/date-fns',
+    '@nuxtjs/google-analytics'
   ],
 
 
@@ -103,6 +104,10 @@ module.exports = {
 
   generate: {
     routes: dynamicRoutes
+  },
+
+  googleAnalytics: {
+    id: 'UA-41117458-1'
   }
 };
 
