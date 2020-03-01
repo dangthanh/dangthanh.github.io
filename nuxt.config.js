@@ -108,6 +108,42 @@ module.exports = {
 
   googleAnalytics: {
     id: 'UA-41117458-1'
+  },
+
+  pwa: {
+    manifest: {
+      name: 'Dang Thanh Blog',
+      short_name: 'DT',
+      display: 'standalone',
+      background_color: '#fff',
+      theme_color: '#6cbe96',
+      description: 'Thoughts web technologies',
+      icons: [{
+        src: '/android-icon-48x48.png',
+        sizes: '48x48',
+        type: 'image/png'
+      }, {
+        src: '/android-icon-72x72.png',
+        sizes: '72x72',
+        type: 'image/png'
+      }, {
+        src: '/android-icon-96x96.png',
+        sizes: '96x96',
+        type: 'image/png'
+      }, {
+        src: '/apple-icon-144x144.png',
+        sizes: '144x144',
+        type: 'image/png'
+      }, {
+        src: '/apple-icon-152x152.png',
+        sizes: '152x152',
+        type: 'image/png'
+      }, {
+        src: '/android-icon-192x192.png',
+        sizes: '192x192',
+        type: 'image/png'
+      }],
+    }
   }
 };
 
