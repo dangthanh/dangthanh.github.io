@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="max-w-3xl mx-auto px-5">
-      <img src="/images/personal/poetadigital.png" alt class="w-full rounded" />
+      <img src="/images/personal/dangthanh.jpg" alt class="w-full rounded" />
     </p>
     <p class="max-w-2xl mx-auto px-5">
       Hi, I'm
