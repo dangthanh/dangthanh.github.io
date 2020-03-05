@@ -129,7 +129,7 @@ function mutedMusic() {
 
 Với CSS3 bạn có thể sử dụng CSS3 Animation và Transtion để làm cho Player của bạn sinh động hơn. Mình sẽ hướng dẫn chi tiết hơn ở những bài viết sau. Ở ví dụ dưới đây mình **[sử dụng icon font](/blog/su-dung-icon-fonts/)** để làm các nút như play và volumn.
 
-{{% codepen height="226" id="jbBZjw" %}}
+@[codesandbox](web-simple-player-mp3-wmtxb?view=preview)
 
 Bạn có thể tham khảo các liên kết sau để có thể tìm hiểu sâu hơn về HTML5 Audio:
 

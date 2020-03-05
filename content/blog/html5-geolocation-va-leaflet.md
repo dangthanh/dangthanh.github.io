@@ -102,7 +102,7 @@ var maker = L.marker([latitude, longitude]).addTo(map);
 marker.bindPopup('<p>Tiêu đề...</p>').openPopup();
 ~~~
 
-{{% codepen heght="400" id="tlpLG" %}}
+@[codesandbox](web-geolocation-and-leaflet-rwcwo?view=preview)
 
 Ngoài ra, bạn có thể vào những liên kết sau để tìm hiểu thêm về Geolocation và Leaflet:
 
