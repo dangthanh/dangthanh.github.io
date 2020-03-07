@@ -127,64 +127,116 @@ article img {
   margin: 0 auto;
 }
 
+.article-single header,
+.article-single h2,
+.article-single h3,
+.article-single h4,
+.article-single h5,
+.article-single h6,
+.article-single p,
+.article-single ul,
+.article-single ol,
+.article-single pre {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-single header,
+.article-single h2,
+.article-single h3,
+.article-single h4,
+.article-single h5,
+.article-single h6,
+.article-single p,
+.article-single ul,
+.article-single ol,
+.article-single pre {
+  max-width: 42rem;
+}
+
+.article-single pre {
+  max-width: 48rem;
+}
+
 .hljs {
-  display: block;
+  background-color: #f7f7f7;
   overflow-x: auto;
-  padding: 0.5em;
-  background: #fdf6e3;
+  padding: 1rem;
+  white-space: pre;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
-.hljs,
-.hljs-subst {
-  color: #000;
+.hljs code {
+  font-family: var(--font-fira-code);
+  font-size: 0.875rem;
+  tab-size: 2;
 }
 
-.hljs-string,
-.hljs-meta,
-.hljs-symbol,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-addition {
-  color: #756bb1;
+code {
+  font-family: var(--font-fira-code);
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: #636363;
+  color: #8e908c;
 }
 
-.hljs-number,
-.hljs-regexp,
-.hljs-literal,
-.hljs-bullet,
-.hljs-link {
-  color: #31a354;
-}
-
-.hljs-deletion,
-.hljs-variable {
-  color: #88f;
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-title,
-.hljs-section,
-.hljs-built_in,
-.hljs-doctag,
-.hljs-type,
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
 .hljs-tag,
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class,
-.hljs-strong {
-  color: #3182bd;
+.hljs-regexp,
+.hljs-deletion {
+  color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+  color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+  color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+  color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #8959a8;
 }
 
 .hljs-emphasis {
   font-style: italic;
 }
 
-.hljs-attribute {
-  color: #e6550d;
+.hljs-strong {
+  font-weight: bold;
 }
