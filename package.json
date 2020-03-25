@@ -18,6 +18,7 @@
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@vue/composition-api": "^0.5.0",
+    "core-js": "^2.6.5",
     "frontmatter-markdown-loader": "^3.3.0",
     "highlight.js": "^9.18.1",
     "loglevel": "^1.6.7",
