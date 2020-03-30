@@ -160,6 +160,18 @@ article img {
   max-width: 48rem;
 }
 
+.article-single ul,
+.article-single ol {
+  text-indent: 2.25rem;
+}
+
+.article-single ul p,
+.article-single ol p {
+  max-width: auto;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
 .hljs {
   background-color: #f7f7f7;
   overflow-x: auto;
