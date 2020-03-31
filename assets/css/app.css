@@ -156,7 +156,8 @@ article img {
   max-width: 42rem;
 }
 
-.article-single pre {
+.article-single pre,
+.article-single table {
   max-width: 48rem;
 }
 
@@ -170,6 +171,10 @@ article img {
   max-width: auto;
   padding: 0;
   margin: 0 0 1rem 0;
+}
+
+.article-single table {
+  margin: 1rem auto;
 }
 
 .hljs {
