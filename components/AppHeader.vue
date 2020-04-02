@@ -7,10 +7,21 @@
         </h1>
         <div class="flex-1 text-right">
           <nav class="c-nav">
-            <NuxtLink class="inline-block px-3 py-1 rounded border border-transparent" to="/">Home</NuxtLink>
-            <NuxtLink class="inline-block px-3 py-1 rounded border border-transparent" to="/blog">Blog</NuxtLink>
-            <!-- <NuxtLink class="inline-block px-3 py-1 rounded border border-transparent" to="/works">Works</NuxtLink> -->
-            <NuxtLink class="inline-block px-3 py-1 rounded border border-transparent" to="/about">About</NuxtLink>
+            <NuxtLink
+              class="inline-block px-3 py-1 rounded border border-transparent"
+              to="/"
+              >Home</NuxtLink
+            >
+            <NuxtLink
+              class="inline-block px-3 py-1 rounded border border-transparent"
+              to="/blog"
+              >Blog</NuxtLink
+            >
+            <NuxtLink
+              class="inline-block px-3 py-1 rounded border border-transparent"
+              to="/about"
+              >About</NuxtLink
+            >
           </nav>
         </div>
       </div>
@@ -20,9 +31,8 @@
 
 <script>
 export default {
-  name: 'AppFooter'
+  name: 'AppFooter',
 }
 </script>
 
-<style>
-</style>
+<style></style>
