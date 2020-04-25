@@ -64,7 +64,7 @@ export default {
   async asyncData() {
     const [user, org] = await Promise.all([
       fetch(`https://api.github.com/users/dangvanthanh/repos?per_page=100`),
-      fetch(`https://api.github.com/repos/dracula/hyper`),
+      fetch(`https://api.github.com/repos/dracula/hyper`)
     ])
 
     const [userJson, orgJson] = await Promise.all([user.json(), org.json()])
@@ -81,13 +81,13 @@ export default {
         stars: d.stargazers_count,
         language: d.language,
         repoUrl: d.html_url,
-        description: d.description,
+        description: d.description
       }))
 
     return {
       repos
     }
-  },
+  }
 }
 </script>
 

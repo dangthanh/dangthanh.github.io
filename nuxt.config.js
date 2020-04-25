@@ -1,25 +1,25 @@
-const path = require('path');
-const glob = require('glob');
-const hljs = require('highlight.js');
+const path = require('path')
+const glob = require('glob')
+const hljs = require('highlight.js')
 const md = require('markdown-it')({
   html: true,
-  highlight: function (str, lang) {
+  highlight(str, lang) {
     if (lang && hljs.getLanguage(lang)) {
       try {
         return `<pre class="hljs"><code>${
           hljs.highlight(lang, str, true).value
-          }</code></pre>`;
-      } catch (__) { }
+        }</code></pre>`
+      } catch (__) {}
     }
 
-    return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`;
-  }
-}).use(require('markdown-it-codesandbox'));
+    return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`
+  },
+}).use(require('markdown-it-codesandbox'))
 
 // const markdownPaths = ['blog'];
 const dynamicRoutes = getDynamicPaths({
   blog: 'blog/*.md'
-});
+})
 
 module.exports = {
   mode: 'universal',
@@ -69,17 +69,18 @@ module.exports = {
     '@nuxt/typescript-build',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/date-fns',
-    '@nuxtjs/google-analytics'
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-41117458-1'
+      }
+    ]
   ],
-
 
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/pwa',
-    '@nuxtjs/dotenv'
-  ],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/dotenv'],
   /*
    ** Build configuration
    */
@@ -94,20 +95,16 @@ module.exports = {
         loader: 'frontmatter-markdown-loader',
         options: {
           vue: true,
-          markdown: body => {
-            return md.render(body);
+          markdown: (body) => {
+            return md.render(body)
           }
         }
-      });
+      })
     }
   },
 
   generate: {
     routes: dynamicRoutes
-  },
-
-  googleAnalytics: {
-    id: 'UA-41117458-1'
   },
 
   pwa: {
@@ -118,42 +115,49 @@ module.exports = {
       background_color: '#fff',
       theme_color: '#6cbe96',
       description: 'Thoughts web technologies',
-      icons: [{
-        src: '/android-icon-48x48.png',
-        sizes: '48x48',
-        type: 'image/png'
-      }, {
-        src: '/android-icon-72x72.png',
-        sizes: '72x72',
-        type: 'image/png'
-      }, {
-        src: '/android-icon-96x96.png',
-        sizes: '96x96',
-        type: 'image/png'
-      }, {
-        src: '/apple-icon-144x144.png',
-        sizes: '144x144',
-        type: 'image/png'
-      }, {
-        src: '/apple-icon-152x152.png',
-        sizes: '152x152',
-        type: 'image/png'
-      }, {
-        src: '/android-icon-192x192.png',
-        sizes: '192x192',
-        type: 'image/png'
-      }],
+      icons: [
+        {
+          src: '/android-icon-48x48.png',
+          sizes: '48x48',
+          type: 'image/png'
+        },
+        {
+          src: '/android-icon-72x72.png',
+          sizes: '72x72',
+          type: 'image/png'
+        },
+        {
+          src: '/android-icon-96x96.png',
+          sizes: '96x96',
+          type: 'image/png'
+        },
+        {
+          src: '/apple-icon-144x144.png',
+          sizes: '144x144',
+          type: 'image/png'
+        },
+        {
+          src: '/apple-icon-152x152.png',
+          sizes: '152x152',
+          type: 'image/png'
+        },
+        {
+          src: '/android-icon-192x192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        }
+      ]
     }
   }
-};
+}
 
 function getDynamicPaths(urlPath) {
   return [].concat(
-    ...Object.keys(urlPath).map(url => {
-      const filePathGlob = urlPath[url];
+    ...Object.keys(urlPath).map((url) => {
+      const filePathGlob = urlPath[url]
       return glob
         .sync(filePathGlob, { cwd: 'content' })
-        .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
+        .map((filepath) => `${url}/${path.basename(filepath, '.md')}`)
     })
-  );
+  )
 }
