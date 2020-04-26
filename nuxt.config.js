@@ -13,7 +13,7 @@ const md = require('markdown-it')({
     }
 
     return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`
-  },
+  }
 }).use(require('markdown-it-codesandbox'))
 
 // const markdownPaths = ['blog'];
@@ -60,7 +60,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/composition-api'],
+  plugins: ['~plugins/composition-api', { src: '~plugins/ga', mode: 'client' }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -68,13 +68,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxt/typescript-build',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/date-fns',
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'UA-41117458-1'
-      }
-    ]
+    '@nuxtjs/date-fns'
   ],
 
   /*
