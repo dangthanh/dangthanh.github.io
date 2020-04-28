@@ -20,7 +20,7 @@
     "@vue/composition-api": "^0.5.0",
     "core-js": "^2.6.5",
     "frontmatter-markdown-loader": "^3.4.0",
-    "highlight.js": "^10.0.0",
+    "highlight.js": "^10.0.1",
     "loglevel": "^1.6.8",
     "markdown-it": "^10.0.0",
     "markdown-it-codesandbox": "^1.0.1",
