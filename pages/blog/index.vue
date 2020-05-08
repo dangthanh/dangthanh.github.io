@@ -6,9 +6,9 @@
       :key="post.attributes.title"
     >
       <div class="relative" :class="{ 'pb-2': i === 0, 'py-2': i !== 0 }">
-        <time class="text-gray-600 text-sm">{{
-          $dateFns.format(post.attributes.date, 'MMMM dd, yyyy')
-        }}</time>
+        <!-- <time class="text-gray-600 text-sm">{{ -->
+        <!--   $dateFns.format(post.attributes.date, 'MMMM dd, yyyy') -->
+        <!-- }}</time> -->
         <h2 class="font-merriweather m-0 mb-3">
           <NuxtLink :to="`/blog/${post.attributes.slug}`">{{
             post.attributes.title
