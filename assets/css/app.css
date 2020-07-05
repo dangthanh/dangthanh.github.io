@@ -32,13 +32,13 @@ body {
 }
 
 a {
-  color: var(--color-green);
+  color: #222;
   text-decoration-line: none;
 }
 
 a:hover,
 a:focus {
-  color: rgba(108, 190, 150, 0.8);
+  /* color: rgba(108, 190, 150, 0.8); */
   text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ p {
 .c-logo:hover,
 .c-logo:focus,
 .c-nav a {
-  color: #fff;
+  color: #222;
 }
 
 .c-logo:hover,
@@ -58,11 +58,8 @@ p {
   text-decoration: none;
 }
 
-.c-nav .nuxt-link-exact-active {
-  background-color: rgba(64, 148, 107, 0.8);
-}
-
-.hljs code {
+.nuxt-content-highlight pre,
+.nuxt-content-highlight code {
   font-family: var(--font-fira-code);
   font-size: 0.875rem;
   tab-size: 2;
@@ -186,74 +183,3 @@ article img {
   word-wrap: break-word;
 }
 
-.hljs code {
-  font-family: var(--font-fira-code);
-  font-size: 0.875rem;
-  tab-size: 2;
-}
-
-code {
-  font-family: var(--font-fira-code);
-}
-
-.hljs-comment,
-.hljs-quote {
-  color: #8e908c;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-  color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-  color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-  color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-  color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-  color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #8959a8;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}

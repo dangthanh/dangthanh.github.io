@@ -1,20 +1,20 @@
 const path = require('path')
 const glob = require('glob')
-const hljs = require('highlight.js')
-const md = require('markdown-it')({
-  html: true,
-  highlight(str, lang) {
-    if (lang && hljs.getLanguage(lang)) {
-      try {
-        return `<pre class="hljs"><code>${
-          hljs.highlight(lang, str, true).value
-        }</code></pre>`
-      } catch (__) {}
-    }
+// const hljs = require('highlight.js')
+// const md = require('markdown-it')({
+//   html: true,
+//   highlight(str, lang) {
+//     if (lang && hljs.getLanguage(lang)) {
+//       try {
+//         return `<pre class="hljs"><code>${
+//           hljs.highlight(lang, str, true).value
+//         }</code></pre>`
+//       } catch (__) {}
+//     }
 
-    return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`
-  }
-}).use(require('markdown-it-codesandbox'))
+//     return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`
+//   }
+// }).use(require('markdown-it-codesandbox'))
 
 // const markdownPaths = ['blog'];
 const dynamicRoutes = getDynamicPaths({
@@ -23,6 +23,8 @@ const dynamicRoutes = getDynamicPaths({
 
 module.exports = {
   mode: 'universal',
+
+  components: true,
   /*
    ** Headers of the page
    */
@@ -60,7 +62,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~plugins/composition-api', { src: '~plugins/ga', mode: 'client' }],
+  plugins: ['~plugins/composition-api'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -74,7 +76,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/dotenv'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/dotenv', '@nuxt/content'],
   /*
    ** Build configuration
    */
@@ -83,17 +85,17 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      config.module.rules.push({
-        test: /\.md$/,
-        include: path.resolve(__dirname, 'content'),
-        loader: 'frontmatter-markdown-loader',
-        options: {
-          vue: true,
-          markdown: (body) => {
-            return md.render(body)
-          }
-        }
-      })
+      // config.module.rules.push({
+      //   test: /\.md$/,
+      //   include: path.resolve(__dirname, 'content'),
+      //   loader: 'frontmatter-markdown-loader',
+      //   options: {
+      //     vue: true,
+      //     markdown: (body) => {
+      //       return md.render(body)
+      //     }
+      //   }
+      // })
     }
   },
 
@@ -102,13 +104,19 @@ module.exports = {
   },
 
   pwa: {
+    meta: {
+      name: 'Dang Thanh Blog',
+      author: 'Dang Van Thanh',
+      description: 'Thoughts web technologies',
+      theme_color: 'white'
+    },
     manifest: {
       name: 'Dang Thanh Blog',
       short_name: 'DT',
       display: 'standalone',
       background_color: '#fff',
-      theme_color: '#6cbe96',
       description: 'Thoughts web technologies',
+      theme_color: 'white',
       icons: [
         {
           src: '/android-icon-48x48.png',

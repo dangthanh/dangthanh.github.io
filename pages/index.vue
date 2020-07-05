@@ -7,52 +7,31 @@
       </div>
       <div class="text-2xl">
         I'm write code with JavaScript and love cycling. Currently, I'm
-        <strong class="font-semibold">UI Developer</strong> at
+        <strong
+          class="font-semibold"
+        >UI Developer</strong> at
         <a
           href="https://poetadigital.com"
           target="_blank"
           rel="noopener noreferrer"
-          >Poeta Digital</a
-        >.
+        >Poeta Digital</a>.
       </div>
     </article>
     <hr class="border-t mb-3 w-48 inline-block border-gray-300 border-solid" />
-    <article>
-      <h2 class="font-normal text-lg pb-3 uppercase">
-        I
-        <span class="text-red-600">&#10084;</span> Open Source
-      </h2>
-      <div class="border border-gray-300 border-solid rounded shadow">
-        <div
-          v-for="repo in repos"
-          :key="repo.id"
-          class="flex flex-wrap items-center"
-        >
-          <div
-            class="w-full flex flex-wrap items-center p-3 border-b border-t-0 border-r-0 border-l-0 border-gray-300 border-solid"
-          >
-            <div class="flex-1">
-              <a
-                :href="repo.repoUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="font-semibold"
-                >{{ repo.name }}</a
-              >
-              <span class="text-sm">
-                in
-                <span>{{ repo.language }}</span>
-              </span>
-              <p class="text-gray-600 text-sm mb-0">{{ repo.description }}</p>
-            </div>
-            <div class="w-32 text-gray-600 text-sm text-right">
-              <icon-star />
-              {{ repo.stars }}
-            </div>
-          </div>
+    <div>
+      <h2 class="font-semibold text-lg pb-3 uppercase">Latest</h2>
+      <article class="rounded mb-3 overflow-hidden" v-for="(post, i) in posts" :key="post.slug">
+        <div class="relative" :class="{ 'pb-2': i === 0, 'py-2': i !== 0 }">
+          <h2 class="font-merriweather m-0">
+            <NuxtLink :to="`/blog/${post.slug}`">
+              {{
+              post.title
+              }}
+            </NuxtLink>
+          </h2>
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
 </template>
 
@@ -61,31 +40,14 @@ import IconStar from '~/components/IconStar'
 
 export default {
   components: { IconStar },
-  async asyncData() {
-    const [user, org] = await Promise.all([
-      fetch(`https://api.github.com/users/dangvanthanh/repos?per_page=100`),
-      fetch(`https://api.github.com/repos/dracula/hyper`)
-    ])
-
-    const [userJson, orgJson] = await Promise.all([user.json(), org.json()])
-
-    let data = []
-    data.push(orgJson)
-    data = [...data, ...userJson]
-
-    const repos = data
-      .filter((d) => d.stargazers_count >= 10)
-      .sort((a, b) => (a.stargazers_count < b.stargazers_count ? 1 : -1))
-      .map((d) => ({
-        name: d.name,
-        stars: d.stargazers_count,
-        language: d.language,
-        repoUrl: d.html_url,
-        description: d.description
-      }))
+  async asyncData({$content}) {
+    let posts = await $content('blog').limit(5).only(['title','slug', 'date']).fetch();
+    posts.sort((a, b) => {
+      return new Date(b.date) - new Date(a.date);
+    });
 
     return {
-      repos
+      posts,
     }
   }
 }

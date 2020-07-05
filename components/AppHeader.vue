@@ -3,25 +3,14 @@
     <div class="max-w-2xl mx-auto px-5">
       <div class="flex flex-wrap items-center">
         <h1 class="text-xl my-3 leading-none">
-          <NuxtLink class="block c-logo text-2xl" to="/">D</NuxtLink>
+          <nuxt-link class="block c-logo text-2xl" to="/">D</nuxt-link>
         </h1>
         <div class="flex-1 text-right">
           <nav class="c-nav">
-            <NuxtLink
-              class="inline-block px-3 py-1 rounded border border-transparent"
-              to="/"
-              >Home</NuxtLink
-            >
-            <NuxtLink
-              class="inline-block px-3 py-1 rounded border border-transparent"
-              to="/blog"
-              >Blog</NuxtLink
-            >
-            <NuxtLink
-              class="inline-block px-3 py-1 rounded border border-transparent"
-              to="/about"
-              >About</NuxtLink
-            >
+            <nuxt-link class="c-nav-item" to="/">Home</nuxt-link>
+            <nuxt-link class="c-nav-item" to="/blog">Blog</nuxt-link>
+            <nuxt-link class="c-nav-item" to="/projects">Projects</nuxt-link>
+            <nuxt-link class="c-nav-item" to="/about">About</nuxt-link>
           </nav>
         </div>
       </div>
@@ -31,8 +20,18 @@
 
 <script>
 export default {
-  name: 'AppFooter',
+  name: 'AppHeader',
 }
 </script>
 
-<style></style>
+<style>
+.c-nav-item {
+  @apply inline-block px-3 py-1 rounded border border-transparent;
+}
+
+.c-nav-item:hover,
+.c-nav-item:focus,
+.c-nav .nuxt-link-exact-active {
+  background-color: rgba(64, 148, 107, 0.8);
+}
+</style>
