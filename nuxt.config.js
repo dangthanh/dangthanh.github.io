@@ -18,18 +18,20 @@ const glob = require('glob')
 
 // const markdownPaths = ['blog'];
 const dynamicRoutes = getDynamicPaths({
-  blog: 'blog/*.md'
+  blog: 'blog/*.md',
 })
 
 module.exports = {
   mode: 'universal',
 
   components: true,
+
+  target: 'static',
   /*
    ** Headers of the page
    */
   htmlAttrs: {
-    lang: 'en'
+    lang: 'en',
   },
   head: {
     title: 'Dang Thanh Blog - Thoughts web technologies',
@@ -39,17 +41,17 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Thoughts web technologies'
-      }
+        content: 'Thoughts web technologies',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Fira+Code|Merriweather|Montserrat:400,600&display=swap'
-      }
-    ]
+          'https://fonts.googleapis.com/css?family=Fira+Code|Merriweather|Montserrat:400,600&display=swap',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
@@ -69,8 +71,7 @@ module.exports = {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxt/typescript-build',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/date-fns'
+    '@nuxtjs/date-fns',
   ],
 
   /*
@@ -84,31 +85,19 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
-      // config.module.rules.push({
-      //   test: /\.md$/,
-      //   include: path.resolve(__dirname, 'content'),
-      //   loader: 'frontmatter-markdown-loader',
-      //   options: {
-      //     vue: true,
-      //     markdown: (body) => {
-      //       return md.render(body)
-      //     }
-      //   }
-      // })
-    }
+    extend(config, ctx) {},
   },
 
-  generate: {
-    routes: dynamicRoutes
-  },
+  //generate: {
+  // routes: dynamicRoutes,
+  //},
 
   pwa: {
     meta: {
       name: 'Dang Thanh Blog',
       author: 'Dang Van Thanh',
       description: 'Thoughts web technologies',
-      theme_color: 'white'
+      theme_color: 'white',
     },
     manifest: {
       name: 'Dang Thanh Blog',
@@ -121,36 +110,36 @@ module.exports = {
         {
           src: '/android-icon-48x48.png',
           sizes: '48x48',
-          type: 'image/png'
+          type: 'image/png',
         },
         {
           src: '/android-icon-72x72.png',
           sizes: '72x72',
-          type: 'image/png'
+          type: 'image/png',
         },
         {
           src: '/android-icon-96x96.png',
           sizes: '96x96',
-          type: 'image/png'
+          type: 'image/png',
         },
         {
           src: '/apple-icon-144x144.png',
           sizes: '144x144',
-          type: 'image/png'
+          type: 'image/png',
         },
         {
           src: '/apple-icon-152x152.png',
           sizes: '152x152',
-          type: 'image/png'
+          type: 'image/png',
         },
         {
           src: '/android-icon-192x192.png',
           sizes: '192x192',
-          type: 'image/png'
-        }
-      ]
-    }
-  }
+          type: 'image/png',
+        },
+      ],
+    },
+  },
 }
 
 function getDynamicPaths(urlPath) {
