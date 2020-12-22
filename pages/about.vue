@@ -15,7 +15,7 @@
       >.
     </p>
     <p class="max-w-2xl mx-auto px-5">
-      In 2012, I worked as Front-end Developer for
+      In 2012, I worked as a Front-end Developer for
       <a href="https://evolable.asia/" target="_blank" rel="noopener noreferrer"
         >Asia Evolable</a
       >, an offshore services company. Since 2014, I joined
@@ -25,7 +25,7 @@
         rel="noopener noreferrer"
         >Poeta Digital</a
       >
-      as UI Developer for development and maintain the education system of
+      as UI Developer for the education system of
       <a
         href="https://www1.linkit.com/"
         target="_blank"
@@ -35,7 +35,7 @@
       project.
     </p>
     <p class="max-w-2xl mx-auto px-5">
-      I'm primary worked in front-end development and focused on JavaScript
+      I'm worked in front-end development and focused on JavaScript
       (specially
       <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"
         >Vue.js</a
@@ -43,7 +43,7 @@
       and
       <a href="https://d3js.org/" target="_blank" rel="noopener noreferrer"
         >D3.js</a
-      >), but also have interested in functional programming (
+      >). I'm also interested in functional programming (
       <a href="https://elm-lang.org/" target="_blank" rel="noopener noreferrer"
         >Elm</a
       >
@@ -53,8 +53,8 @@
         target="_blank"
         rel="noopener noreferrer"
         >Elixir</a
-      >). Besides, I'm always shared the knowledge about web technologies which
-      I learned via
+      >), too. Besides, I'm always shared the knowledge which
+      I practiced and learned via
       <a href="https://dangthanh.org" target="_blank" rel="noopener noreferrer"
         >my blog</a
       >

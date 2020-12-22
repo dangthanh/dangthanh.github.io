@@ -1,31 +1,5 @@
-const path = require('path')
-const glob = require('glob')
-// const hljs = require('highlight.js')
-// const md = require('markdown-it')({
-//   html: true,
-//   highlight(str, lang) {
-//     if (lang && hljs.getLanguage(lang)) {
-//       try {
-//         return `<pre class="hljs"><code>${
-//           hljs.highlight(lang, str, true).value
-//         }</code></pre>`
-//       } catch (__) {}
-//     }
-
-//     return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`
-//   }
-// }).use(require('markdown-it-codesandbox'))
-
-// const markdownPaths = ['blog'];
-const dynamicRoutes = getDynamicPaths({
-  blog: 'blog/*.md',
-})
-
 module.exports = {
-  mode: 'universal',
-
   components: true,
-
   target: 'static',
   /*
    ** Headers of the page
@@ -85,13 +59,8 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
+    extend() {},
   },
-
-  //generate: {
-  // routes: dynamicRoutes,
-  //},
-
   pwa: {
     meta: {
       name: 'Dang Thanh Blog',
@@ -142,13 +111,3 @@ module.exports = {
   },
 }
 
-function getDynamicPaths(urlPath) {
-  return [].concat(
-    ...Object.keys(urlPath).map((url) => {
-      const filePathGlob = urlPath[url]
-      return glob
-        .sync(filePathGlob, { cwd: 'content' })
-        .map((filepath) => `${url}/${path.basename(filepath, '.md')}`)
-    })
-  )
-}

@@ -29,7 +29,7 @@
               <p class="text-gray-600 text-sm mb-0">{{ repo.description }}</p>
             </div>
             <div class="w-32 text-gray-600 text-sm text-right">
-              <icon-star />
+              <IconStar />
               {{ repo.stars }}
             </div>
           </div>
@@ -45,6 +45,7 @@ import IconStar from '~/components/IconStar'
 export default {
   components: { IconStar },
   async asyncData() {
+    const STARGAZERS_COUNT = 20;
     const [user, org] = await Promise.all([
       fetch(`https://api.github.com/users/dangvanthanh/repos?per_page=100`),
       fetch(`https://api.github.com/repos/dracula/hyper`)
@@ -57,7 +58,7 @@ export default {
     data = [...data, ...userJson]
 
     const repos = data
-      .filter((d) => d.stargazers_count >= 10)
+      .filter((d) => d.stargazers_count >= STARGAZERS_COUNT)
       .sort((a, b) => (a.stargazers_count < b.stargazers_count ? 1 : -1))
       .map((d) => ({
         name: d.name,
