@@ -8,9 +8,7 @@
       <div class="text-2xl">
         I'm write code with JavaScript and love cycling. Currently, I'm
         <strong class="font-semibold">UI Developer</strong> at
-        <a href="https://poetadigital.com" target="_blank" rel="noopener noreferrer"
-          >Poeta Digital</a
-        >.
+        <a href="https://poetadigital.com" target="_blank" rel="noopener noreferrer">Poeta Digital</a>.
       </div>
     </article>
     <hr class="border-t mb-3 w-48 inline-block border-gray-300 border-solid" />
@@ -37,10 +35,10 @@ export default {
       return new Date(b.date) - new Date(a.date)
     })
 
-    posts = posts.slice(0, 5);
+    posts = posts.slice(0, 5)
 
     return {
-      posts
+      posts,
     }
   },
 }

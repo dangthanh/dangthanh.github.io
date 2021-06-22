@@ -12,14 +12,10 @@
           >{{ tag }}</span
         >
       </div>
-      <time class="text-gray-600 text-sm block">{{
-        $dateFns.format(post.date, 'MMM d, yyyy')
-      }}</time>
+      <time class="text-gray-600 text-sm block">{{ $dayjs(post.date).format('MMM d, YYYY') }}</time>
     </header>
     <div class="max-w-2xl mx-auto px-5">
-      <hr
-        class="border-b mt-6 mb-3 w-48 inline-block border-gray-300 border-solid"
-      />
+      <hr class="border-b mt-6 mb-3 w-48 inline-block border-gray-300 border-solid" />
     </div>
     <nuxt-content :document="post" />
   </article>
@@ -28,16 +24,11 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const post = await $content('blog', params.slug).fetch();
+    const post = await $content('blog', params.slug).fetch()
 
     return {
-      post
+      post,
     }
-
-    // const post = await import(`~/content/blog/${params.slug}.md`)
-    // return {
-    //   post,
-    // }
   },
   head() {
     return {
@@ -64,10 +55,7 @@ export default {
 
     links.forEach((link) => {
       const linkHref = link.getAttribute('href')
-      if (
-        linkHref.slice(0, 1) !== '/' &&
-        linkHref.indexOf(window.location.host) === -1
-      ) {
+      if (linkHref.slice(0, 1) !== '/' && !linkHref.includes(window.location.host)) {
         link.setAttribute('target', '_blank')
         link.setAttribute('rel', 'noopener noreferrer')
       }

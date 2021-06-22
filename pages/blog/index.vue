@@ -1,12 +1,10 @@
 <template>
   <div class="max-w-2xl mx-auto px-5">
-    <article class="rounded mb-4 overflow-hidden" v-for="(post, i) in posts" :key="post.title">
+    <article v-for="(post, i) in posts" :key="post.title" class="rounded mb-4 overflow-hidden">
       <div class="relative" :class="{ 'pb-2': i === 0, 'py-2': i !== 0 }">
         <h2 class="font-merriweather m-0 mb-3">
           <NuxtLink :to="`/blog/${post.slug}`">
-            {{
-            post.title
-            }}
+            {{ post.title }}
           </NuxtLink>
         </h2>
       </div>
@@ -16,7 +14,7 @@
 
 <script>
 export default {
-  async asyncData({$content}) {
+  async asyncData({ $content }) {
     // const resolve = require.context('~/content/', true, /\.md$/)
     // let posts = resolve
     //   .keys()
@@ -28,11 +26,11 @@ export default {
     //     return new Date(b.attributes.date) - new Date(a.attributes.date)
     //   })
 
-    let posts = await $content('blog').fetch();
+    const posts = await $content('blog').fetch()
 
     posts.sort((a, b) => {
-      return new Date(b.date) - new Date(a.date);
-    });
+      return new Date(b.date) - new Date(a.date)
+    })
 
     return {
       posts,
@@ -40,7 +38,7 @@ export default {
   },
   head() {
     return {
-      title: `Blog - Dang Thanh Blog`,
+      title: 'Blog - Dang Thanh Blog',
       meta: [
         { name: 'author', content: 'Dang Van Thanh' },
         {
@@ -53,11 +51,11 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: `https://dangthanh.org/blog`,
+          href: 'https://dangthanh.org/blog',
         },
       ],
     }
-  }
+  },
 }
 </script>
 

@@ -1,113 +1,34 @@
 module.exports = {
   components: true,
   target: 'static',
-  /*
-   ** Headers of the page
-   */
   htmlAttrs: {
     lang: 'en',
   },
   head: {
-    title: 'Dang Thanh Blog - Thoughts web technologies',
+    title: 'Dang Thanh Blog - Digital garden about web technologies',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Thoughts web technologies',
+        content: 'Digital garden about web technologies',
       },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Fira+Code|Merriweather|Montserrat:400,600&display=swap',
+        href: 'https://fonts.googleapis.com/css?family=Fira+Code|Merriweather|Montserrat:400,600&display=swap',
       },
     ],
   },
-  /*
-   ** Customize the progress-bar color
-   */
   loading: false,
-  /*
-   ** Global CSS
-   */
   css: ['~/assets/css/app.css'],
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: ['~plugins/composition-api'],
-  /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxt/typescript-build',
-    '@nuxtjs/date-fns',
-  ],
-
-  /*
-   ** Nuxt.js modules
-   */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/dotenv', '@nuxt/content'],
-  /*
-   ** Build configuration
-   */
+  plugins: [],
+  buildModules: ['@nuxtjs/dayjs'],
+  modules: ['@nuxtjs/dotenv', '@nuxt/content'],
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend() {},
   },
-  pwa: {
-    meta: {
-      name: 'Dang Thanh Blog',
-      author: 'Dang Van Thanh',
-      description: 'Thoughts web technologies',
-      theme_color: 'white',
-    },
-    manifest: {
-      name: 'Dang Thanh Blog',
-      short_name: 'DT',
-      display: 'standalone',
-      background_color: '#fff',
-      description: 'Thoughts web technologies',
-      theme_color: 'white',
-      icons: [
-        {
-          src: '/android-icon-48x48.png',
-          sizes: '48x48',
-          type: 'image/png',
-        },
-        {
-          src: '/android-icon-72x72.png',
-          sizes: '72x72',
-          type: 'image/png',
-        },
-        {
-          src: '/android-icon-96x96.png',
-          sizes: '96x96',
-          type: 'image/png',
-        },
-        {
-          src: '/apple-icon-144x144.png',
-          sizes: '144x144',
-          type: 'image/png',
-        },
-        {
-          src: '/apple-icon-152x152.png',
-          sizes: '152x152',
-          type: 'image/png',
-        },
-        {
-          src: '/android-icon-192x192.png',
-          sizes: '192x192',
-          type: 'image/png',
-        },
-      ],
-    },
-  },
 }
-
