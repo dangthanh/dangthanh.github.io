@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<script>
+window.componentPath = "/src/pages/garden.js";
+window.wrapperComponentPath = "/src/page-wrapper.js";
+window.dataPath = undefined;
+</script>
+<html >
+  <head>
+  <title data-react-helmet="true"></title>
+  
+  <link data-react-helmet="true" rel="stylesheet" href="/styles.css"/>
+  
+  
+  </head>
+  <body >
+    <div id="toast-page-section"><header role="banner"><nav role="navigation" class="max-w-2xl mx-auto px-5"><a href="/">Home</a><a href="/garden">Garden</a><a href="/project">Project</a><a href="/about">About</a></nav></header><main role="main"><article></article></main></div>
+    <script type="module">
+    /* @jsx jsx */
+
+async function renderPage() {
+  const promises = [
+    import(window.componentPath),
+    window.wrapperComponentPath
+      ? import(window.wrapperComponentPath)
+      : undefined,
+    window.dataPath
+      ? fetch(window.dataPath).then(response => {
+          return response.json();
+        })
+      : {},
+    import("/web_modules/preact.js")
+  ];
+
+  let pageWrapper = ({ children }) => h("div", null, children);
+  const [
+    PageModule,
+    PageWrapperModule,
+    pageData,
+    { render, h }
+  ] = await Promise.all(promises);
+  const Page = PageModule.default;
+  if(PageWrapperModule) {
+    pageWrapper = PageWrapperModule.default
+  }
+
+  render(
+    h(pageWrapper, pageData, h(Page, pageData)),
+    document.getElementById("toast-page-section")
+  );
+}
+
+renderPage();
+
+</script>
+  </body>
+</html>

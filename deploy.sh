@@ -4,16 +4,16 @@ echo -e "\033[0;32mDeploying updates to Github...\033[0m"
 
 git checkout source
 git pull origin source
-git add -A
-git commit -m 'Committing work in progress'
+git add .
+git commit -am 'Committing work in progress'
 
 # Pull down the file we just committed help avoid merge conflicts
 git subtree pull --prefix=dist origin master -m 'Merge origin'
 
 # Build the project.
-npm run build
-npm run generate
-npm run deploy
+# npm run build
+# npm run generate
+# npm run deploy
 
 # Add changes to git.
 git add -A
