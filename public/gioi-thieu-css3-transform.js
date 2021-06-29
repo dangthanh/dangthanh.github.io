@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Giới Thiệu CSS3 Transform",
     slug: "/gioi-thieu-css3-transform",
@@ -16,14 +17,7 @@ function MDXContent({ components , ...props }) {
         components: components
     }, props), mdx("p", null, "CSS3 transform là một trong những chức năng mạnh mẽ mà CSS3 cung cấp. Nó cho phép tác động đến tất cả các phần tử của HTML mà không ảnh hưởng đến cách xây dựng layout cho trang web như xoay phần tử, di chuyển các phần tử sang trái, phải, lên xuống, nghiêng hay phóng to hoặc thu nhỏ phần tử."), mdx("p", null, "CSS3 transform cung cấp cả 2D CSS transform và 3D CSS transform."), mdx("h3", {
         id: "cú-pháp"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#cú-pháp",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Cú pháp"), mdx("codeblock", {
+    }, "Cú pháp"), mdx("codeblock", {
         className: "language-css",
         codestring: ".element {\n  -webkit-transform: method(value); // Chrome, Safari, Opera\n  -moz-transform: method(value); // Firefox\n  -ms-transform: method(value); // Internet Explorer 9+\n  transform: method(value);\n}"
     }, mdx("pre", {
@@ -326,23 +320,9 @@ function MDXContent({ components , ...props }) {
         parentName: "ul"
     }, "skew()")), mdx("h3", {
         id: "2d-css-transform"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#2d-css-transform",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "2D CSS Transform"), mdx("h4", {
+    }, "2D CSS Transform"), mdx("h4", {
         id: "1-translate"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#1-translate",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "1. Translate"), mdx("codeblock", {
+    }, "1. Translate"), mdx("codeblock", {
         className: "language-css",
         codestring: ".element {\n  width: 200px;\n  height: 200px;\n  transform: translate(50px, 50px);\n}"
     }, mdx("pre", {
@@ -571,14 +551,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "codesandbox")), mdx("h4", {
         id: "2-scale"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#2-scale",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "2. Scale"), mdx("codeblock", {
+    }, "2. Scale"), mdx("codeblock", {
         className: "language-css",
         codestring: ".element {\n  width: 200px;\n  height: 200px;\n  transform: scale(1.5);\n}"
     }, mdx("pre", {
@@ -776,14 +749,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "codesandbox")), mdx("h4", {
         id: "3-rotate"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#3-rotate",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "3. Rotate"), mdx("codeblock", {
+    }, "3. Rotate"), mdx("codeblock", {
         className: "language-css",
         codestring: ".element {\n  width: 200px;\n  height: 200px;\n  transform: rotate(90deg);\n}"
     }, mdx("pre", {
@@ -982,14 +948,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "codesandbox")), mdx("h4", {
         id: "4-skew"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#4-skew",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "4. Skew"), mdx("codeblock", {
+    }, "4. Skew"), mdx("codeblock", {
         className: "language-css",
         codestring: ".element {\n  width: 200px;\n  height: 200px;\n  transform: skew(50deg, 20deg);\n}"
     }, mdx("pre", {
@@ -1206,14 +1165,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "codesandbox")), mdx("h4", {
         id: "5-sử-dụng-kết-hợp-nhiều-phương-thức"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#5-sử-dụng-kết-hợp-nhiều-phương-thức",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "5. Sử dụng kết hợp nhiều phương thức"), mdx("p", null, "Ngoài việc sử dụng độc lập các phương thức translate(), scale(), rotate(), skew(). Ta có thể kết hợp các phương thức lại với nhau để tạo nên phần tử linh hoạt hơn."), mdx("codeblock", {
+    }, "5. Sử dụng kết hợp nhiều phương thức"), mdx("p", null, "Ngoài việc sử dụng độc lập các phương thức translate(), scale(), rotate(), skew(). Ta có thể kết hợp các phương thức lại với nhau để tạo nên phần tử linh hoạt hơn."), mdx("codeblock", {
         className: "language-css",
         codestring: ".element {\n  width: 200px;\n  height: 200px;\n  transform: translate(50px, 50px) scale(1.5) rotate(90deg) skew(50deg, 20deg);\n}"
     }, mdx("pre", {
@@ -1532,14 +1484,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("h3", {
         id: "3d-css-transform"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#3d-css-transform",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "3D CSS Transform"), mdx("p", null, "3D CSS transform cũng tương tự 2D CSS transform. Nhưng 3D CSS transform hỗ trợ thêm một số phương thức cho không gian thứ ba."), mdx("codeblock", {
+    }, "3D CSS Transform"), mdx("p", null, "3D CSS transform cũng tương tự 2D CSS transform. Nhưng 3D CSS transform hỗ trợ thêm một số phương thức cho không gian thứ ba."), mdx("codeblock", {
         className: "language-css",
         codestring: "/**\n * Translate\n */\ntranslate3d(x, y, z)\ntranslateZ(z)\n\n/**\n * Scale\n */\nscale3d(sx, sy, sz)\nscaleZ(sz)\n\n/**\n * Rotate\n */\nrotateX(rx)\nrotateY(ry)\nrotateZ(rz)\nrotate3d(rx, ry, rz)\n\n/**\n * Perspective\n * Giá trị này không ảnh hưởng đến phần tử nhưng\n * nó ảnh hưởng sự biến đổi các yếu tố của 3D transform\n * như rotateX(), rotateY()...\n */\nperspective(value)"
     }, mdx("pre", {
@@ -2151,14 +2096,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ")")))), mdx("h3", {
         id: "trình-duyệt-hỗ-trợ"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#trình-duyệt-hỗ-trợ",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Trình duyệt hỗ trợ"), mdx("p", null, "Hiện tại CSS3 Transform đã hỗ trợ rất nhiều trình duyệt."), mdx("p", null, "caniuse transforms2d\ncaniuse transforms3d"));
+    }, "Trình duyệt hỗ trợ"), mdx("p", null, "Hiện tại CSS3 Transform đã hỗ trợ rất nhiều trình duyệt."), mdx("p", null, "caniuse transforms2d\ncaniuse transforms3d"));
 }
 MDXContent.isMDXComponent = true;
 export default MDXContent;

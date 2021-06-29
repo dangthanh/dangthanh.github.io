@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "HTML5 Fullscreen API",
     slug: "/html5-fullscreen-api",
@@ -23,14 +24,7 @@ function MDXContent({ components , ...props }) {
         parentName: "strong"
     }, "bản đồ sử dụng leaflet")), "."), mdx("h3", {
         id: "html"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#html",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "HTML"), mdx("codeblock", {
+    }, "HTML"), mdx("codeblock", {
         className: "language-html",
         codestring: "<div class=\"map-wrapper\">\n  <div id=\"map\" class=\"map\"></div>\n  <a id=\"fullscreen\" class=\"fullscreen\" href=\"#\">Fullscreen</a>\n</div>"
     }, mdx("pre", {
@@ -417,23 +411,9 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ">")))), mdx("h3", {
         id: "javascript"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#javascript",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "JavaScript"), mdx("h4", {
+    }, "JavaScript"), mdx("h4", {
         id: "chế-độ-fullscreen"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#chế-độ-fullscreen",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Chế độ FullScreen"), mdx("codeblock", {
+    }, "Chế độ FullScreen"), mdx("codeblock", {
         className: "language-javascript",
         codestring: "var fullscreen_element = document.getElementById(\"map\");\nvar fullscreen_button = document.getElementById(\"fullscreen\");\n\nfullscreen_button.addEventListener(\n  \"click\",\n  function () {\n    launchFullScreen(fullscreen_element);\n  },\n  false\n);\n\nfunction launchFullScreen(element) {\n  if (element.requestFullScreen) {\n    element.requestFullScreen();\n  } else if (element.mozRequestFullScreen) {\n    element.mozRequestFullScreen();\n  } else if (element.webkitRequestFullScreen) {\n    element.webkitRequestFullScreen();\n  } else if (element.msRequestFullScreen) {\n    element.msRequestFullScreen();\n  }\n}"
     }, mdx("pre", {
@@ -1333,14 +1313,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("h4", {
         id: "thoát-chế-độ-fullscreen"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#thoát-chế-độ-fullscreen",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Thoát chế độ FullScreen"), mdx("codeblock", {
+    }, "Thoát chế độ FullScreen"), mdx("codeblock", {
         className: "language-javascript",
         codestring: "function cancelFullscreen() {\n  if (document.cancelFullScreen) {\n    document.cancelFullScreen();\n  } else if (document.mozCancelFullScreen) {\n    document.mozCancelFullScreen();\n  } else if (document.webkitCancelFullScreen) {\n    document.webkitCancelFullScreen();\n  }\n}"
     }, mdx("pre", {
@@ -1781,14 +1754,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("h3", {
         id: "css"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#css",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "CSS"), mdx("p", null, "Ở chế độ fullscreen ta có thể stylesheet cho thành phần được lựa chọn."), mdx("codeblock", {
+    }, "CSS"), mdx("p", null, "Ở chế độ fullscreen ta có thể stylesheet cho thành phần được lựa chọn."), mdx("codeblock", {
         className: "language-css",
         codestring: ".map:-webkit-full-screen {\n  width: 100%;\n  height: 100%;\n}\n.map:-moz-full-screen {\n  width: 100%;\n  height: 100%;\n}\n.map:-ms-full-screen {\n  width: 100%;\n  height: 100%;\n}\n.map:full-screen {\n  width: 100%;\n  height: 100%;\n}"
     }, mdx("pre", {

@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Web Storage",
     slug: "/web-storage",
@@ -28,14 +29,7 @@ function MDXContent({ components , ...props }) {
         parentName: "ul"
     }, "Cung cấp hai cách lưu trữ khác nhau: local storage và session storage")), mdx("h3", {
         id: "web-storage"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#web-storage",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Web Storage"), mdx("p", null, "Web Storage hiện tại đã hỗ trợ rất nhiều trình duyệt."), mdx("p", null, "caniuse features=\"namevalue-storage\""), mdx("p", null, "Web Storage cung cấp các phương thức sau. Ở đây mình sử dụng localStorage, bạn có thể sử dụng sessionStorage nếu muốn."), mdx("codeblock", {
+    }, "Web Storage"), mdx("p", null, "Web Storage hiện tại đã hỗ trợ rất nhiều trình duyệt."), mdx("p", null, "caniuse features=\"namevalue-storage\""), mdx("p", null, "Web Storage cung cấp các phương thức sau. Ở đây mình sử dụng localStorage, bạn có thể sử dụng sessionStorage nếu muốn."), mdx("codeblock", {
         className: "language-javascript",
         codestring: "localStorage.setItem(\"key\", \"value\"); // Lưu trữ dữ liệu\nlocalStorage.getItem(\"key\"); // Lấy dữ liệu\nlocalStorage.removeItem(\"key\"); // Xóa dữ liệu lưu trên key\nlocalStorage.clear(); // Xóa tất cả dữ liệu lưu bởi web storage"
     }, mdx("pre", {
@@ -306,14 +300,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "// Xóa tất cả dữ liệu lưu bởi web storage")))), mdx("h3", {
         id: "sử-dụng-local-storage"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#sử-dụng-local-storage",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Sử dụng Local Storage"), mdx("p", null, "Dữ liệu trên local storage sẽ được tự động chuyển sang kiểu 'string' trên trình duyệt. Tuy nhiên local storage lại hoạt động rất tốt với đối tượng trong JavaScript."), mdx("codeblock", {
+    }, "Sử dụng Local Storage"), mdx("p", null, "Dữ liệu trên local storage sẽ được tự động chuyển sang kiểu 'string' trên trình duyệt. Tuy nhiên local storage lại hoạt động rất tốt với đối tượng trong JavaScript."), mdx("codeblock", {
         className: "language-javascript",
         codestring: "// Lưu trữ một đối tượng\nlocalStorage.setItem(\"key\", { name: \"value\" });\nconsole.log(typeof localStorage.getItem(\"key\")); // string\n\n// Lữu trữ một kiểu số\nlocalStorage.setItem(\"key\", 1);\nconsole.log(typeof localStorage.getItem(\"key\")); // string\n\n// Lưu trữ một đối tượng\nlocalStorage.setItem(\"key\", JSON.stringify({ name: \"Dang Thanh\", age: 24 }));\nvar obj = JSON.parse(localStorage.getItem(\"key\"));\nconsole.log(obj.name); // value\nconsole.log(obj.age); // value"
     }, mdx("pre", {
@@ -1163,14 +1150,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "// value")))), mdx("h3", {
         id: "ví-dụ-local-storage"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#ví-dụ-local-storage",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Ví dụ Local Storage"), mdx("p", null, "@", mdx("a", {
+    }, "Ví dụ Local Storage"), mdx("p", null, "@", mdx("a", {
         href: "web-local-storage-no1iq?view=preview",
         parentName: "p"
     }, "codesandbox")));

@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "HTML5 Geolocation và Leaflet",
     slug: "/html5-geolocation-va-leaflet",
@@ -350,14 +351,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ";")))), mdx("h3", {
         id: "lấy-vị-trí-hiện-tại-sử-dụng-geolocation"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#lấy-vị-trí-hiện-tại-sử-dụng-geolocation",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Lấy vị trí hiện tại sử dụng Geolocation"), mdx("p", null, "Để lấy vị trí hiện tại ta có thể sử dụng phương thức"), mdx("ul", null, mdx("li", {
+    }, "Lấy vị trí hiện tại sử dụng Geolocation"), mdx("p", null, "Để lấy vị trí hiện tại ta có thể sử dụng phương thức"), mdx("ul", null, mdx("li", {
         parentName: "ul"
     }, mdx("strong", {
         parentName: "li"
@@ -1253,14 +1247,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ";")))), mdx("h3", {
         id: "leaflet-là-gì"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#leaflet-là-gì",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Leaflet là gì?"), mdx("p", null, mdx("a", {
+    }, "Leaflet là gì?"), mdx("p", null, mdx("a", {
         href: "http://leafletjs.com/",
         parentName: "p"
     }, "Leaflet"), " là một thư viện JavaScript mã nguồn mở cung cấp các tương tác với bản đồ thân thiện với các thiết bị di động."), mdx("p", null, "Cũng như Google Map API. Nhưng Leaflet được thiết kế đơn giản, hiệu quả và dễ sử dụng:"), mdx("ul", null, mdx("li", {

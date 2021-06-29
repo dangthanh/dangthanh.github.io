@@ -2,7 +2,6 @@ import { h, Fragment } from "preact";
 
 export default (props) => (
   <Fragment>
-    <div class="max-w-2xl mx-auto px-5">
       <article class="mb-8">
         <div class="text-3xl mb-3">
           Hello, I'm
@@ -21,6 +20,5 @@ export default (props) => (
           .
         </div>
       </article>
-    </div>
   </Fragment>
 );

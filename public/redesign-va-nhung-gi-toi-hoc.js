@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Redesign và những gì tôi học",
     slug: "/redesign-va-nhung-gi-toi-hoc",
@@ -20,14 +21,7 @@ function MDXContent({ components , ...props }) {
         components: components
     }, props), mdx("p", null, "Thực ra bài viết này đã có từ lâu, nhưng tôi vẫn để nó ở chế độ bản nháp và cũng do lười (quá lười) nên cũng từ lâu tôi cũng bỏ thói quen viết blog. Nay tôi chia sẻ những kinh nghiệm khi thiết kế lại blog này."), mdx("h3", {
         id: "thiết-kế"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#thiết-kế",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Thiết kế"), mdx("p", null, "Vì không phải là một Designer nên tôi không giỏi về thiết kế lắm. Nên tôi vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này."), mdx("p", null, "Blog mới cung cấp hai giao diện, giúp bạn không bị mỏi mắt khi đọc lâu. Bạn nhấn vào biểu tượng ở góc phải để đổi sang giao diện yêu thích nhé. Có thể tôi sẽ cập nhật thêm về màu sắc xíu nữa cho phù hợp."), mdx("p", null, mdx("img", {
+    }, "Thiết kế"), mdx("p", null, "Vì không phải là một Designer nên tôi không giỏi về thiết kế lắm. Nên tôi vẫn giữ kiểu thiết kế tối giản (minimalism) cho trang blog này."), mdx("p", null, "Blog mới cung cấp hai giao diện, giúp bạn không bị mỏi mắt khi đọc lâu. Bạn nhấn vào biểu tượng ở góc phải để đổi sang giao diện yêu thích nhé. Có thể tôi sẽ cập nhật thêm về màu sắc xíu nữa cho phù hợp."), mdx("p", null, mdx("img", {
         src: "/images/blog/blog_v2.png",
         alt: "Dang Thanh Blog - phiên bản light and dark",
         parentName: "p"
@@ -39,14 +33,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "email"), "."), mdx("h3", {
         id: "hugo"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#hugo",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Hugo"), mdx("p", null, "So với ", mdx("a", {
+    }, "Hugo"), mdx("p", null, "So với ", mdx("a", {
         href: "/blog/blog-va-toi/",
         parentName: "p"
     }, "Jekyll"), ", ", mdx("a", {
@@ -89,26 +76,12 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "bài viết theo thứ tự alphabet"), "."), mdx("h3", {
         id: "css"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#css",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "CSS"), mdx("p", null, "Vì lí do tối giản cả thiết kế lẫn CSS. Nên với phiên bản này tôi không sử dụng ", mdx("a", {
+    }, "CSS"), mdx("p", null, "Vì lí do tối giản cả thiết kế lẫn CSS. Nên với phiên bản này tôi không sử dụng ", mdx("a", {
         href: "http://tachyons.io/",
         parentName: "p"
     }, "Tachyons"), " nữa. Mặc dù Tachyons rất hữu ích, giúp việc xây dựng giao diện tuỳ biến cao, cũng như xây dựng những giao diện phức tạp một cách dễ dàng. Với một vài thay đổi dưới đây, blog đã được cải tiến tốc độ cũng khá nhiều."), mdx("h4", {
         id: "css-grid"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#css-grid",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "CSS Grid"), mdx("p", null, mdx("a", {
+    }, "CSS Grid"), mdx("p", null, mdx("a", {
         href: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout",
         parentName: "p"
     }, "CSS Grid"), " giúp tôi tuỳ biến web mình dễ dàng hơn so với ", mdx("a", {
@@ -485,14 +458,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "Đây là cú pháp tôi viết sử dụng PostCSS được trình bày ở dưới.")), mdx("h4", {
         id: "times-newer-roman-roboto-slab-và-ubuntu-mono"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#times-newer-roman-roboto-slab-và-ubuntu-mono",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Times Newer Roman, Roboto Slab và Ubuntu Mono"), mdx("p", null, "Việc thay đổi font chữ ", mdx("a", {
+    }, "Times Newer Roman, Roboto Slab và Ubuntu Mono"), mdx("p", null, "Việc thay đổi font chữ ", mdx("a", {
         href: "https://fonts.google.com/specimen/Muli",
         parentName: "p"
     }, "Muli"), " sang sử dụng phông chữ ", mdx("a", {
@@ -513,14 +479,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "ligatures"), "."), mdx("h4", {
         id: "css-font-loading-api-preload"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#css-font-loading-api-preload",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "CSS Font Loading API: Preload"), mdx("p", null, "caniuse features=\"link-rel-preload\""), mdx("codeblock", {
+    }, "CSS Font Loading API: Preload"), mdx("p", null, "caniuse features=\"link-rel-preload\""), mdx("codeblock", {
         className: "language-html",
         codestring: "<link\n  rel=\"preload\"\n  href=\"/fonts/TimesNewerRoman-Regular.otf\"\n  as=\"font\"\n  type=\"font/otf\"\n  crossorigin\n/>"
     }, mdx("pre", {
@@ -797,14 +756,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "@font-face")), mdx("h4", {
         id: "css-font-loading-api-font-display"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#css-font-loading-api-font-display",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "CSS Font Loading API: Font Display"), mdx("p", null, "caniuse features=\"css-font-rendering-controls\""), mdx("codeblock", {
+    }, "CSS Font Loading API: Font Display"), mdx("p", null, "caniuse features=\"css-font-rendering-controls\""), mdx("codeblock", {
         className: "language-css",
         codestring: "@font-face {\n  font-family: \"Times Newer Roman\";\n  font-weight: 700;\n  src: url(/fonts/TimesNewerRoman-Bold.otf) format(\"opentype\");\n  font-display: swap;\n}"
     }, mdx("pre", {
@@ -1054,14 +1006,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "font-display: swap"), " làm cho khoảng thời gian tải phông chữ và quá trình hiển thị phông chữ mượt hơn. Hạn chế của thuộc tính này là chỉ hỗ trợ những trình duyệt mới."), mdx("h3", {
         id: "postcss"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#postcss",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "PostCSS"), mdx("p", null, "Trước đây tôi vẫn dùng ", mdx("a", {
+    }, "PostCSS"), mdx("p", null, "Trước đây tôi vẫn dùng ", mdx("a", {
         href: "/blog/su-dung-sass/",
         parentName: "p"
     }, "Sass"), " trong một thời gian dài. Bênh cạnh những lợi ích của Sass như dễ dàng bảo trì, tối ưu, tiếm kiệt thời gian viết code CSS so với cách viết truyền thống thì ", mdx("a", {
@@ -1761,14 +1706,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("p", null, "Với cách viết này bạn sẽ dễ dàng cập nhật thêm các biến giá trị tuỳ biến."), mdx("h3", {
         id: "webp-images"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#webp-images",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Webp Images"), mdx("p", null, "caniuse features=\"webp\""), mdx("p", null, "Ban đầu tôi tính chuyển tất cả hình ảnh của web hiện tại sang ", mdx("inlineCode", {
+    }, "Webp Images"), mdx("p", null, "caniuse features=\"webp\""), mdx("p", null, "Ban đầu tôi tính chuyển tất cả hình ảnh của web hiện tại sang ", mdx("inlineCode", {
         parentName: "p"
     }, "webp"), ". Nhưng cả trình duyệt Safari và Firefox đều không hỗ trợ tốt định dạng này. Nên cuối cùng vẫn phải dùng ", mdx("inlineCode", {
         parentName: "p"
@@ -1776,14 +1714,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "jpg"), " để nó có thể hỗ trợ hầu hết trình duyệt."), mdx("h3", {
         id: "service-worker-and-offine-web"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#service-worker-and-offine-web",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Service Worker and Offine Web"), mdx("p", null, "Offine web giúp blog này có thể chạy ngay cả khi bạn không kết Internet (bạn có thể tắt Internet và trải nghiệm). Ở đây mình hộ trợ offine web với ", mdx("strong", {
+    }, "Service Worker and Offine Web"), mdx("p", null, "Offine web giúp blog này có thể chạy ngay cả khi bạn không kết Internet (bạn có thể tắt Internet và trải nghiệm). Ở đây mình hộ trợ offine web với ", mdx("strong", {
         parentName: "p"
     }, mdx("a", {
         href: "https://developers.google.com/web/fundamentals/primers/service-workers/",

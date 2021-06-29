@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Classes Javascript và Vue.js",
     slug: "/classes-javascript-va-vue",
@@ -4144,14 +4145,7 @@ function MDXContent({ components , ...props }) {
         parentName: "ul"
     }, "Việc quản lý logic ở một nơi sẽ giúp bạn dễ dàng kiểm soát và tái sử dụng")), mdx("h3", {
         id: "ý-kiến-chuyên-gia"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#ý-kiến-chuyên-gia",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Ý kiến chuyên gia"), mdx("p", null, "Theo một số ý kiến chuyên gia thì ", mdx("a", {
+    }, "Ý kiến chuyên gia"), mdx("p", null, "Theo một số ý kiến chuyên gia thì ", mdx("a", {
         href: "https://twitter.com/_ericelliott/status/573090480004591617",
         parentName: "p"
     }, "không nên sử dụng ES6 Classes"), ". Nhưng theo tôi trong trường hợp này việc sử dụng Classes trong Vue.js giúp cải thiện khả năng quản lý lỗi cũng như logic được tốt hơn."));

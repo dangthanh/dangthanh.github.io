@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Tìm kiếm với Algolia, Hugo và Vue.js",
     slug: "/tim-kiem-voi-algolia-hugo-va-vue",
@@ -33,14 +34,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "Vue.js"), "."), mdx("h3", {
         id: "tại-sao-là-algolia"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#tại-sao-là-algolia",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Tại sao là Algolia?"), mdx("p", null, "Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới. Thứ hai là sau khi thử nghiệm Algolia, thời gian kết quả tìm kiếm mà Algolia trả về rất nhanh, làm tôi cũng rất bất ngờ và mong muốn tìm hiểu thêm về Algolia."), mdx("p", null, "Bên cạnh đó, qua quá trình mới làm quen với Algolia tôi thấy nó có những điểm nổi bật sau:"), mdx("ul", null, mdx("li", {
+    }, "Tại sao là Algolia?"), mdx("p", null, "Thực ra đối với những người làm lập trình như tôi, thì lí do đầu tiên là được học thêm một công nghệ mới. Thứ hai là sau khi thử nghiệm Algolia, thời gian kết quả tìm kiếm mà Algolia trả về rất nhanh, làm tôi cũng rất bất ngờ và mong muốn tìm hiểu thêm về Algolia."), mdx("p", null, "Bên cạnh đó, qua quá trình mới làm quen với Algolia tôi thấy nó có những điểm nổi bật sau:"), mdx("ul", null, mdx("li", {
         parentName: "ul"
     }, "Algolia cung cấp gói ", mdx("a", {
         href: "https://www.algolia.com/users/sign_up",
@@ -67,14 +61,7 @@ function MDXContent({ components , ...props }) {
         parentName: "li"
     }, "Algolia Places"))), mdx("h3", {
         id: "tạo-json-search-index-trong-hugo"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#tạo-json-search-index-trong-hugo",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Tạo JSON Search Index trong Hugo"), mdx("p", null, mdx("strong", {
+    }, "Tạo JSON Search Index trong Hugo"), mdx("p", null, mdx("strong", {
         parentName: "p"
     }, "Algolia"), " cung cấp tìm kiếm theo chỉ mục với các định dạng file ", mdx("inlineCode", {
         parentName: "p"
@@ -1246,14 +1233,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "public")), mdx("h3", {
         id: "tải-tập-tin-lên-alolia"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#tải-tập-tin-lên-alolia",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Tải tập tin lên Alolia"), mdx("p", null, "Sau khi có tập tin ", mdx("strong", {
+    }, "Tải tập tin lên Alolia"), mdx("p", null, "Sau khi có tập tin ", mdx("strong", {
         parentName: "p"
     }, "algolia.json"), " và ", mdx("a", {
         href: "https://www.algolia.com/users/sign_up",
@@ -1520,14 +1500,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "$ npm run algolia")))))), mdx("h3", {
         id: "tạo-algolia-component-với-vuejs"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#tạo-algolia-component-với-vuejs",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Tạo Algolia Component với Vue.js"), mdx("p", null, "Để hiển thị trên Hugo. tôi tạo ra một trang ", mdx("inlineCode", {
+    }, "Tạo Algolia Component với Vue.js"), mdx("p", null, "Để hiển thị trên Hugo. tôi tạo ra một trang ", mdx("inlineCode", {
         parentName: "p"
     }, "static templates"), " với tên gọi là ", mdx("inlineCode", {
         parentName: "p"

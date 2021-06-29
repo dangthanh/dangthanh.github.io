@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Thủ Thuật Sử Dụng Sublime Text 2",
     slug: "/thu-thuat-su-dung-sublime-text-2",
@@ -25,28 +26,14 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     })), mdx("h3", {
         id: "làm-việc-với-sublime-text-2"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#làm-việc-với-sublime-text-2",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Làm việc với Sublime Text 2"), mdx("p", null, "Nếu bạn chưa lần nào sử dụng Sublime Text 2, bạn có thể xem ", mdx("strong", {
+    }, "Làm việc với Sublime Text 2"), mdx("p", null, "Nếu bạn chưa lần nào sử dụng Sublime Text 2, bạn có thể xem ", mdx("strong", {
         parentName: "p"
     }, mdx("a", {
         href: "https://tutsplus.com/course/improve-workflow-in-sublime-text-2/",
         parentName: "strong"
     }, "series video miễn phí")), " từ Tutsplus. Với series video này bạn sẽ cái nhìn tổng quan hơn về Sublime Text 2 và liệu nó có thể thuyết phục bạn sử dụng Sublime Text 2 không?"), mdx("h3", {
         id: "package-control"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#package-control",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Package Control"), mdx("p", null, mdx("img", {
+    }, "Package Control"), mdx("p", null, mdx("img", {
         src: "/images/blog/package_control.jpg",
         alt: "Package Control - Sublime Text 2",
         parentName: "p"
@@ -106,14 +93,7 @@ function MDXContent({ components , ...props }) {
         parentName: "li"
     }, "Theme Soda"), ": Cung cấp giao diện cho Sublime Text 2.")), mdx("h3", {
         id: "một-số-phím-tắt-trong-sublime-text-2"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#một-số-phím-tắt-trong-sublime-text-2",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Một số phím tắt trong Sublime Text 2"), mdx("p", null, "Phím tắt giúp cho bạn làm việc hiệu quả hơn với các ứng dụng. Sublime Text cung cấp cho bạn nhiều phím tắt để có thể làm việc tốt hơn. Sau đây là một số phím tắt mình thường sử dụng."), mdx("p", null, "| Phím tắt | Mô tả |\n| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| ", mdx("inlineCode", {
+    }, "Một số phím tắt trong Sublime Text 2"), mdx("p", null, "Phím tắt giúp cho bạn làm việc hiệu quả hơn với các ứng dụng. Sublime Text cung cấp cho bạn nhiều phím tắt để có thể làm việc tốt hơn. Sau đây là một số phím tắt mình thường sử dụng."), mdx("p", null, "| Phím tắt | Mô tả |\n| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| ", mdx("inlineCode", {
         parentName: "p"
     }, "Ctrl + C"), " | Sao chép vùng được chọn |\n| ", mdx("inlineCode", {
         parentName: "p"
@@ -165,14 +145,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "Shift + F1"), " | Chuyển sang chế độ Free Mode (bạn muốn làm việc với một không gian rộng rãi hơn) |"), mdx("h3", {
         id: "lời-kết"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#lời-kết",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Lời kết"), mdx("p", null, "Hi vọng với những tính năng phong phú trên, Sublime Text 2 sẽ mang lại cho bạn sự lựa chọn mới ngoài những editor khác như Notepad++, Dreamweaver..."));
+    }, "Lời kết"), mdx("p", null, "Hi vọng với những tính năng phong phú trên, Sublime Text 2 sẽ mang lại cho bạn sự lựa chọn mới ngoài những editor khác như Notepad++, Dreamweaver..."));
 }
 MDXContent.isMDXComponent = true;
 export default MDXContent;

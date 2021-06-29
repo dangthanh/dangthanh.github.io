@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Blog và tôi",
     slug: "/blog-va-toi",
@@ -22,23 +23,9 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "Octopress"), " (một blogging framework cho Jekyll hỗ trợ rất nhiều như highlight code, responsive layout...). Bạn đã từng nghe tới Jekyll chưa? Nếu bạn chưa từng nghe qua thì mình xin giới thiệu một chút về Jekyll."), mdx("h3", {
         id: "jekyll-là-gì"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#jekyll-là-gì",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Jekyll là gì?"), mdx("p", null, "Jekyll là một nền tảng xây dựng blog. Nhưng Jekyll chỉ là dạng tĩnh, không có cơ sở dữ liệu hay ngôn ngữ phía server như PHP, Ruby, Python...mà chỉ đơn thuần là các trang nội dung. Bạn chỉ cần biết về HTML, CSS là có thể xây dựng được blog này."), mdx("h3", {
+    }, "Jekyll là gì?"), mdx("p", null, "Jekyll là một nền tảng xây dựng blog. Nhưng Jekyll chỉ là dạng tĩnh, không có cơ sở dữ liệu hay ngôn ngữ phía server như PHP, Ruby, Python...mà chỉ đơn thuần là các trang nội dung. Bạn chỉ cần biết về HTML, CSS là có thể xây dựng được blog này."), mdx("h3", {
         id: "tại-sao-mình-thích-jekyll"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#tại-sao-mình-thích-jekyll",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Tại sao mình thích Jekyll?"), mdx("p", null, "Mặc dù hiện này có rất nền tảng xây dựng blog tốt như Blogger, Wordpress, Typepad...Nhưng mình rất thích Jekyll vì các lý do sau:"), mdx("ul", null, mdx("li", {
+    }, "Tại sao mình thích Jekyll?"), mdx("p", null, "Mặc dù hiện này có rất nền tảng xây dựng blog tốt như Blogger, Wordpress, Typepad...Nhưng mình rất thích Jekyll vì các lý do sau:"), mdx("ul", null, mdx("li", {
         parentName: "ul"
     }, "Với ít kiến thức HTML, CSS mình có thể code tự do như giao diện...cũng như các chức năng tương tác phải sử dụng JavaScript."), mdx("li", {
         parentName: "ul"
@@ -46,14 +33,7 @@ function MDXContent({ components , ...props }) {
         parentName: "ul"
     }, "Được học rất nhiều điều thú vị mới như Ruby, Sass/Compass và đặc biệt là Git và JavaScript.")), mdx("h3", {
         id: "giao-diện-đầu-tiên"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#giao-diện-đầu-tiên",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Giao diện đầu tiên"), mdx("p", null, mdx("img", {
+    }, "Giao diện đầu tiên"), mdx("p", null, mdx("img", {
         src: "/images/blog/blog_v1.png",
         alt: "Dang Thanh Blog - phiên bản đầu tiên",
         parentName: "p"

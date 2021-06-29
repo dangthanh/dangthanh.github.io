@@ -46,9 +46,7 @@ export default class Project extends Component {
         });
     }
     render({}, { repos  }) {
-        return h(Fragment, null, h("div", {
-            class: "max-w-2xl mx-auto px-5"
-        }, h("article", null, h("h2", {
+        return h(Fragment, null, h("article", null, h("h2", {
             class: "font-normal text-lg pb-3 uppercase"
         }, "I", h("span", {
             class: "text-red-600"
@@ -57,6 +55,6 @@ export default class Project extends Component {
         }, Array.from(new Set(repos)).map((repository)=>h(Repository, {
                 repository: repository
             })
-        )))));
+        ))));
     }
 };

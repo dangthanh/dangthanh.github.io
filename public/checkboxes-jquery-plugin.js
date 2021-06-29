@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Checkboxes jQuery Plugin",
     slug: "/checkboxes-jquery-plugin",
@@ -19,14 +20,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "jQuery"), " là một thư viện tuyệt vời của JavaScript. Các jQuery plugin giúp bạn làm việc linh hoạt hơn và hiệu quả hơn. Hôm nay mình giới thiệu với các bạn một plugin mình tự viết là Checkboxes. Đây là jQuery Plugin hỗ trợ việc chọn và không chọn cho nhiều checkbox."), mdx("h3", {
         id: "checkboxes-jquery-plugin"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#checkboxes-jquery-plugin",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Checkboxes jQuery Plugin"), mdx("codeblock", {
+    }, "Checkboxes jQuery Plugin"), mdx("codeblock", {
         className: "language-javascript",
         codestring: "(function ($) {\n  \"use strict\";\n\n  $.fn.extend({\n    checkboxes: function (options) {\n      // Tham số mặc định.\n      var defaults = {\n        itemChild: \"\",\n      };\n\n      var option = $.extend(defaults, options);\n\n      // Hàm kiểm tra chọn hoặc không chọn cho các phần tử con.\n      function checkedValue(element, bool) {\n        if (bool) {\n          return element.each(function () {\n            $(this).prop(\"checked\", true);\n          });\n        } else {\n          return element.each(function () {\n            $(this).prop(\"checked\", false);\n          });\n        }\n      }\n\n      return this.each(function () {\n        var obj = option,\n          $itemAll = $(this),\n          $itemChild = $('input[name^=\"' + obj.itemChild + '\"]');\n\n        // Chọn tất cả trước khi trang khởi tạo\n        if ($itemAll.is(\":checked\")) {\n          checkedValue($itemChild, true);\n        }\n\n        // Đánh đấu chọn hoặc không chọn khi phần từ cha chọn hoặc không chọn.\n        $itemAll.change(function () {\n          var $self = $(this);\n\n          if ($self.is(\":checked\")) {\n            checkedValue($itemChild, true);\n          } else {\n            checkedValue($itemChild, false);\n          }\n        });\n\n        // Đánh dấu chọn phần tử cha khi tất cả phần tử con được đánh dấu.\n        $itemChild.change(function () {\n          var flag = true;\n\n          if (!$itemChild.is(\":checked\")) {\n            $itemAll.prop(\"checked\", false);\n          }\n\n          $itemChild.each(function () {\n            var $self = $(this);\n            if (!$self.is(\":checked\")) {\n              flag = false;\n              return;\n            }\n          });\n\n          $itemAll.prop(\"checked\", flag);\n        });\n      });\n    },\n  });\n})(jQuery);"
     }, mdx("pre", {
@@ -2725,23 +2719,9 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ";")))), mdx("h3", {
         id: "sử-dụng-checkboxes-jquery-plugin"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#sử-dụng-checkboxes-jquery-plugin",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Sử dụng Checkboxes jQuery Plugin"), mdx("h4", {
+    }, "Sử dụng Checkboxes jQuery Plugin"), mdx("h4", {
         id: "cú-pháp-html"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#cú-pháp-html",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Cú pháp HTML"), mdx("codeblock", {
+    }, "Cú pháp HTML"), mdx("codeblock", {
         className: "language-html",
         codestring: "<h3><input type=\"checkbox\" class=\"selectAll\" /><span>Select All</span></h3>\n<ul class=\"list\">\n  <li><input type=\"checkbox\" id=\"chk01\" name=\"chk01\" /><span>Item 01</span></li>\n  <li><input type=\"checkbox\" id=\"chk02\" name=\"chk02\" /><span>Item 02</span></li>\n  <li><input type=\"checkbox\" id=\"chk03\" name=\"chk03\" /><span>Item 03</span></li>\n  <li><input type=\"checkbox\" id=\"chk04\" name=\"chk04\" /><span>Item 04</span></li>\n  <li><input type=\"checkbox\" id=\"chk05\" name=\"chk05\" /><span>Item 05</span></li>\n  <li><input type=\"checkbox\" id=\"chk06\" name=\"chk06\" /><span>Item 06</span></li>\n  <li><input type=\"checkbox\" id=\"chk07\" name=\"chk07\" /><span>Item 07</span></li>\n  <li><input type=\"checkbox\" id=\"chk08\" name=\"chk08\" /><span>Item 08</span></li>\n  <li><input type=\"checkbox\" id=\"chk09\" name=\"chk09\" /><span>Item 09</span></li>\n  <li><input type=\"checkbox\" id=\"chk10\" name=\"chk10\" /><span>Item 10</span></li>\n</ul>"
     }, mdx("pre", {
@@ -5249,14 +5229,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ">")))), mdx("h4", {
         id: "sử-dụng"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#sử-dụng",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Sử dụng"), mdx("codeblock", {
+    }, "Sử dụng"), mdx("codeblock", {
         className: "language-html",
         codestring: "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>\n<script src=\"checkboxes.min.js\"></script>\n<script>\n  $(document).ready(function () {\n    $(\".selectAll\").checkboxes({\n      itemChild: \"chk\", // tên của các checkbox con\n    });\n  });\n</script>"
     }, mdx("pre", {

@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "PostCSS",
     slug: "/postcss",
@@ -34,14 +35,7 @@ function MDXContent({ components , ...props }) {
         parentName: "ul"
     }, "Kế thừa (Extends)")), mdx("h3", {
         id: "sử-dụng-postcss"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#sử-dụng-postcss",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Sử dụng PostCSS"), mdx("p", null, "Trước hết PostCSS một công cụ cho việc chuyển đổi CSS sử dụng JavaScript. Bạn có thể sử dụng nhiều công cụ như Webpack, Rollup, Gulp hay Grunt để chuyển đổi PostCSS sang CSS. Nhưng để đơn giản bạn nên bắt đầu làm quen PostCSS với ", mdx("a", {
+    }, "Sử dụng PostCSS"), mdx("p", null, "Trước hết PostCSS một công cụ cho việc chuyển đổi CSS sử dụng JavaScript. Bạn có thể sử dụng nhiều công cụ như Webpack, Rollup, Gulp hay Grunt để chuyển đổi PostCSS sang CSS. Nhưng để đơn giản bạn nên bắt đầu làm quen PostCSS với ", mdx("a", {
         href: "https://github.com/postcss/postcss-cli",
         parentName: "p"
     }, "PostCSS CLI")), mdx("p", null, "Cách sử dụng để chuyển đổi như sau"), mdx("codeblock", {
@@ -454,14 +448,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ";")))), mdx("h3", {
         id: "autoprefixer-và-browserlist"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#autoprefixer-và-browserlist",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Autoprefixer và Browserlist"), mdx("p", null, mdx("a", {
+    }, "Autoprefixer và Browserlist"), mdx("p", null, mdx("a", {
         href: "https://github.com/postcss/autoprefixer",
         parentName: "p"
     }, mdx("strong", {
@@ -1074,14 +1061,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "%")))), mdx("h3", {
         id: "postcss-preset-env"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#postcss-preset-env",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "PostCSS Preset Env"), mdx("p", null, "Ngoài việc định nghĩa biến bằng các thuộc tính CSS. ", mdx("a", {
+    }, "PostCSS Preset Env"), mdx("p", null, "Ngoài việc định nghĩa biến bằng các thuộc tính CSS. ", mdx("a", {
         href: "https://preset-env.cssdb.org/",
         parentName: "p"
     }, mdx("strong", {
@@ -2620,14 +2600,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("h3", {
         id: "css-modules"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#css-modules",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "CSS Modules"), mdx("p", null, "Mỗi lúc viết CSS bạn lo lắng tên của các ", mdx("inlineCode", {
+    }, "CSS Modules"), mdx("p", null, "Mỗi lúc viết CSS bạn lo lắng tên của các ", mdx("inlineCode", {
         parentName: "p"
     }, "classes"), " được sử dụng quá chung chung. ", mdx("a", {
         href: "https://github.com/css-modules/css-modules",
@@ -3241,37 +3214,16 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ">")))), mdx("h3", {
         id: "stylelint"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#stylelint",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Stylelint"), mdx("p", null, mdx("a", {
+    }, "Stylelint"), mdx("p", null, mdx("a", {
         href: "https://stylelint.io/",
         parentName: "p"
     }, mdx("strong", {
         parentName: "a"
     }, "Stylelint")), " giúp bạn tránh những lỗi và đảm bảo convention cũng như cải thiện CSS khi bạn code CSS được toàn vẹn với những quy tắc chuẩn hoá và chặt chẽ. Stylelint cũng cung cấp cho PostCSS một plugin để dễ dàng cấu hình."), mdx("h3", {
         id: "postcss-có-gì-hay"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#postcss-có-gì-hay",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "PostCSS Có Gì Hay"), mdx("p", null, "Tới đây, một số bạn sẽ thắc mắc vậy PostCSS có gì hay hơn Sass nhỉ? Sass hầu như cũng làm được các chức năng trên cơ mà. Tuy nhiên PostCSS còn có những ưu điểm:"), mdx("h4", {
+    }, "PostCSS Có Gì Hay"), mdx("p", null, "Tới đây, một số bạn sẽ thắc mắc vậy PostCSS có gì hay hơn Sass nhỉ? Sass hầu như cũng làm được các chức năng trên cơ mà. Tuy nhiên PostCSS còn có những ưu điểm:"), mdx("h4", {
         id: "từ-sass-đến-postcss"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#từ-sass-đến-postcss",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Từ Sass đến PostCSS"), mdx("p", null, "Bạn dễ dàng có thể tái sử dụng code ", mdx("a", {
+    }, "Từ Sass đến PostCSS"), mdx("p", null, "Bạn dễ dàng có thể tái sử dụng code ", mdx("a", {
         href: "https://github.com/jonathantneal/postcss-sass",
         parentName: "p"
     }, "Sass"), " hay ", mdx("a", {
@@ -3285,14 +3237,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "Stylus"), "."), mdx("h4", {
         id: "postcss-plugin"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#postcss-plugin",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "PostCSS Plugin"), mdx("p", null, "Hệ thống ", mdx("a", {
+    }, "PostCSS Plugin"), mdx("p", null, "Hệ thống ", mdx("a", {
         href: "https://www.postcss.parts/",
         parentName: "p"
     }, "plugin của PostCSS"), " rất đồ sộ và rất nhiều ", mdx("a", {
@@ -4357,14 +4302,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "unused rule"), "..."))), mdx("h4", {
         id: "tuỳ-biến-postcss"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#tuỳ-biến-postcss",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Tuỳ biến PostCSS"), mdx("p", null, "Chỉ cần một ít kiến thức về JavaScript bạn có thể dễ dàng ", mdx("a", {
+    }, "Tuỳ biến PostCSS"), mdx("p", null, "Chỉ cần một ít kiến thức về JavaScript bạn có thể dễ dàng ", mdx("a", {
         href: "https://github.com/postcss/postcss/blob/master/docs/writing-a-plugin.md",
         parentName: "p"
     }, "viết plugin cho PostCSS"), " với phong cách của riêng mình như:"), mdx("ul", null, mdx("li", {

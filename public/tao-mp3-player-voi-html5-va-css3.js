@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Tạo MP3 Player với HTML5 và CSS3",
     slug: "/tao-mp3-player-voi-html5-va-css3",
@@ -551,23 +552,9 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ">")))), mdx("p", null, "Ở ví dụ trên ta đã sử dụng một số thuộc tính của HTML5 Audio:"), mdx("p", null, "| Thuộc tính | Mô tả |\n| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| autoplay | Tập tin nhạc sẽ tự động chạy khi bắt đầu |\n| controls | Các điều khiển cho audio sẽ hiển thị theo mặc định của trình duyệt |\n| loop | Tập tin nhạc sẽ tự động lặp lại sau khi kết thúc |\n| preload | Tải thông tin của tập tin nhạc - none: Không load thông tin tập nhạc - auto: Tự động load thông tin tập tin nhạc - metadata: Load các siêu dữ liệu của tập tin nhạc |\n| src | Nguồn của tập tin nhạc |"), mdx("h3", {
         id: "tạo-mp3-player"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#tạo-mp3-player",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Tạo MP3 Player"), mdx("p", null, "Mình đã giới thiệu chung về HTML5 Audio. Giờ mình sẽ giới thiệu các bạn cách để xây dựng một MP3 Player cho riêng mình."), mdx("h4", {
+    }, "Tạo MP3 Player"), mdx("p", null, "Mình đã giới thiệu chung về HTML5 Audio. Giờ mình sẽ giới thiệu các bạn cách để xây dựng một MP3 Player cho riêng mình."), mdx("h4", {
         id: "html"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#html",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "HTML"), mdx("p", null, "Đầu tiên mình sẽ xây dựng một audio với các thành phần sau:"), mdx("ul", null, mdx("li", {
+    }, "HTML"), mdx("p", null, "Đầu tiên mình sẽ xây dựng một audio với các thành phần sau:"), mdx("ul", null, mdx("li", {
         parentName: "ul"
     }, "Tập tin nhạc"), mdx("li", {
         parentName: "ul"
@@ -1573,14 +1560,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ">")))), mdx("h4", {
         id: "javascript"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#javascript",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "JavaScript"), mdx("p", null, "HTML5 Audio cung cấp nhiều sự kiện giúp bạn điều khiển và đồng bộ hóa phát lại tập tin nhạc."), mdx("p", null, "Muốn làm việc với HTML5 Audio đầu tiên ta truy vấn đến các thành phần audio mà ta đã xây dựng ở trên."), mdx("codeblock", {
+    }, "JavaScript"), mdx("p", null, "HTML5 Audio cung cấp nhiều sự kiện giúp bạn điều khiển và đồng bộ hóa phát lại tập tin nhạc."), mdx("p", null, "Muốn làm việc với HTML5 Audio đầu tiên ta truy vấn đến các thành phần audio mà ta đã xây dựng ở trên."), mdx("codeblock", {
         className: "language-javascript",
         codestring: "var player = document.getElementById(\"player__source\"),\n  playLoading = document.querySelectorAll(\".player__loading span\"),\n  playPause = document.getElementById(\"playPause\"),\n  currentTime = document.getElementById(\"currentTime\"),\n  seek = document.getElementById(\"seek\"),\n  durationTime = document.getElementById(\"durationTime\"),\n  muted = document.getElementById(\"muted\");"
     }, mdx("pre", {
@@ -3389,14 +3369,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("h3", {
         id: "css3"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#css3",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "CSS3"), mdx("p", null, "Với CSS3 bạn có thể sử dụng CSS3 Animation và Transtion để làm cho Player của bạn sinh động hơn. Mình sẽ hướng dẫn chi tiết hơn ở những bài viết sau. Ở ví dụ dưới đây mình ", mdx("strong", {
+    }, "CSS3"), mdx("p", null, "Với CSS3 bạn có thể sử dụng CSS3 Animation và Transtion để làm cho Player của bạn sinh động hơn. Mình sẽ hướng dẫn chi tiết hơn ở những bài viết sau. Ở ví dụ dưới đây mình ", mdx("strong", {
         parentName: "p"
     }, mdx("a", {
         href: "/blog/su-dung-icon-fonts/",

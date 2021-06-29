@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Sử dụng Icon Fonts",
     slug: "/su-dung-icon-fonts",
@@ -1002,14 +1003,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("p", null, "Trong bài viết này mình sẽ giới thiệu các bạn về IcoMoon và We Love Icon Fonts."), mdx("h3", {
         id: "icomoon"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#icomoon",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "IcoMoon"), mdx("p", null, mdx("img", {
+    }, "IcoMoon"), mdx("p", null, mdx("img", {
         src: "/images/blog/icomoon.jpg",
         alt: "IcoMoon",
         parentName: "p"
@@ -1018,14 +1012,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "IcoMoon"), " cung cấp cho bạn hơn 450 icons miễn phí. Bên cạnh đó ngoài những icons của IcoMoon, IcoMoon cho phép bạn lựa chọn và tải các icons bạn muốn với những bộ icons khác như Broccolidry, Entypo, Font Awesome...với số lượng lên đến gần 3800 icons. Ngoài ra IcoMoon còn cho phép bạn tải các thiết kế của bạn lên (tập tin SVG) để customize thành fonts bạn yêu thích."), mdx("h3", {
         id: "we-love-icon-fonts"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#we-love-icon-fonts",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "We Love Icon Fonts"), mdx("p", null, mdx("img", {
+    }, "We Love Icon Fonts"), mdx("p", null, mdx("img", {
         src: "/images/blog/weloveiconfonts.jpg",
         alt: "We Love Icon Fonts",
         parentName: "p"
@@ -1034,14 +1021,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "We Love Icon Fonts"), " là một mã nguồn mở và dịch vụ lưu trữ miễn phí các icon fonts. Cũng như IcoMoon, We Love Icon Fonts cũng cung cấp cho bạn rất nhiều bộ icons miễn phí khác như Fontelico, Maki, Typicons, Zocial."), mdx("h3", {
         id: "một-số-icons-fonts-miễn-phí-khác"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#một-số-icons-fonts-miễn-phí-khác",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Một số icons fonts miễn phí khác"), mdx("ul", null, mdx("li", {
+    }, "Một số icons fonts miễn phí khác"), mdx("ul", null, mdx("li", {
         parentName: "ul"
     }, mdx("a", {
         href: "http://www.entypo.com/",

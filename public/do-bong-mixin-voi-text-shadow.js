@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Đổ Bóng Mixin Với Text-Shadow",
     slug: "/do-bong-mixin-voi-text-shadow",
@@ -23,14 +24,7 @@ function MDXContent({ components , ...props }) {
         parentName: "strong"
     }, "cách tạo mixin")), " đổ bóng dài (long shadow) trong Sass."), mdx("h3", {
         id: "đổ-bóng-dài-long-shadow-mixin-trong-sass"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#đổ-bóng-dài-long-shadow-mixin-trong-sass",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Đổ bóng dài (Long Shadow) mixin trong Sass"), mdx("codeblock", {
+    }, "Đổ bóng dài (Long Shadow) mixin trong Sass"), mdx("codeblock", {
         className: "language-sass",
         codestring: "/**\n * Long Shadow Mixin\n */\n@mixin longshadow($color, $size, $direction)\n    $ts: null\n\n    @for $i from 1 through $size\n        // Đổ bóng hướng lên trên\n        @if $direction == \"top\"\n            $ts: 0 #{$i * -1}px 0 $color, $ts\n        // Đổ bóng hướng sang phải\n        @else if $direction == \"right\"\n            $ts: #{$i}px 0 0 $color, $ts\n        // Đổ bóng hướng xuống dưới\n        @else if $direction == \"bottom\"\n            $ts: 0 #{$i}px 0 $color, $ts\n        // Đổ bóng hướng sang trái\n        @else if $direction == \"left\"\n            $ts: #{$i * -1}px 0 0 $color, $ts\n        // Đổ bóng hướng lên trên bên trái\n        @else if $direction == \"top-left\"\n            $ts: #{$i * -1}px #{$i * -1}px 0 $color, $ts\n        // Đổ bóng hướng lên trên bên phải\n        @else if $direction == \"top-right\"\n            $ts: #{$i}px #{$i * -1}px 0 $color, $ts\n        // Đổ bóng hướng xuống dưới bên trái\n        @else if $direction == \"bottom-left\"\n            $ts: #{$i * -1}px #{$i}px 0 $color, $ts\n        // Đổ bóng hướng xuống dưới bên phải\n        @else if $direction == \"bottom-right\"\n            $ts: #{$i}px #{$i}px 0 $color, $ts\n    text-shadow: $ts"
     }, mdx("pre", {
@@ -1112,14 +1106,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "$ts")))), mdx("h3", {
         id: "sử-dụng"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#sử-dụng",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Sử dụng"), mdx("p", null, "Sau khi tạo được mixin thì ta có thể sử dụng rất dễ dàng tùy theo màu sắc, độ lớn và vị trí bóng mà bạn muốn hiển thị."), mdx("codeblock", {
+    }, "Sử dụng"), mdx("p", null, "Sau khi tạo được mixin thì ta có thể sử dụng rất dễ dàng tùy theo màu sắc, độ lớn và vị trí bóng mà bạn muốn hiển thị."), mdx("codeblock", {
         className: "language-sass",
         codestring: ".element--one\n    +longshadow(#e96b5e, 20, top)\n.element--two\n    +longshadow(#a13c32, 10, right)\n.element--three\n    +longshadow(#fbbc85, 30, bottom)\n.element--four\n    +longshadow(#af7a4b, 40, left)\n.element--five\n    +longshadow(#6dd7b5, 70, top-left)\n.element--six\n    +longshadow(#3e9277, 90, top-right)\n.element--seven\n    +longshadow(#8787c4, 60, bottom-left)\n.element--eight\n    +longshadow(#525283, 50, bottom-right)"
     }, mdx("pre", {

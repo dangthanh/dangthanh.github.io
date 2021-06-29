@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Sử dụng Sass",
     slug: "/su-dung-sass",
@@ -26,14 +27,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "Stylus"), "."), mdx("h3", {
         id: "css-preprocessor-là-gì"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#css-preprocessor-là-gì",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "CSS Preprocessor là gì?"), mdx("p", null, "CSS Preprocessor là một ngôn ngữ kịch bản mở rộng của CSS và được biên dịch thành cú pháp CSS."), mdx("p", null, "Sau đây là một vài lợi ích của việc sử dụng CSS Preprocessor:"), mdx("ul", null, mdx("li", {
+    }, "CSS Preprocessor là gì?"), mdx("p", null, "CSS Preprocessor là một ngôn ngữ kịch bản mở rộng của CSS và được biên dịch thành cú pháp CSS."), mdx("p", null, "Sau đây là một vài lợi ích của việc sử dụng CSS Preprocessor:"), mdx("ul", null, mdx("li", {
         parentName: "ul"
     }, "Tiết kiệm thời gian viết CSS."), mdx("li", {
         parentName: "ul"
@@ -43,14 +37,7 @@ function MDXContent({ components , ...props }) {
         parentName: "ul"
     }, "Các tập tin CSS được tổ chức rõ ràng.")), mdx("h3", {
         id: "sass-là-gì"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#sass-là-gì",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Sass là gì?"), mdx("p", null, "Sass là một mở rộng CSS cung cấp thêm các quy tắc xếp chồng (nested rules), biến (variables), mixins, thừa kế (selector inheritance), các hàm (function)..."), mdx("p", null, "Để cài đặt Sass đầu tiên bạn cần cài đặt Ruby. Mình đang xài Windows nên mình sẽ hướng dẫn các bạn cài đặt Ruby trên Windows thông qua ", mdx("a", {
+    }, "Sass là gì?"), mdx("p", null, "Sass là một mở rộng CSS cung cấp thêm các quy tắc xếp chồng (nested rules), biến (variables), mixins, thừa kế (selector inheritance), các hàm (function)..."), mdx("p", null, "Để cài đặt Sass đầu tiên bạn cần cài đặt Ruby. Mình đang xài Windows nên mình sẽ hướng dẫn các bạn cài đặt Ruby trên Windows thông qua ", mdx("a", {
         href: "http://rubyinstaller.org/",
         parentName: "p"
     }, "RubyInstaller"), "."), mdx("p", null, "Sau khi cài đặt xong Ruby bạn cài đặt môi trường cho Ruby ", mdx("strong", {
@@ -167,32 +154,11 @@ function MDXContent({ components , ...props }) {
         parentName: "strong"
     }, "Koala")))), mdx("h3", {
         id: "tại-sao-lại-sử-dụng-sass"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#tại-sao-lại-sử-dụng-sass",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Tại sao lại sử dụng Sass?"), mdx("p", null, "Sass, Less hay Stylus đều mạnh mẽ, việc sử dụng CSS Preprocessor nào còn phụ thuộc vào môi trường làm việc của bạn. Vì thế hãy tìm hiểu và chọn cho mình một CSS Preprocessor phù hợp nhất với mình."), mdx("h3", {
+    }, "Tại sao lại sử dụng Sass?"), mdx("p", null, "Sass, Less hay Stylus đều mạnh mẽ, việc sử dụng CSS Preprocessor nào còn phụ thuộc vào môi trường làm việc của bạn. Vì thế hãy tìm hiểu và chọn cho mình một CSS Preprocessor phù hợp nhất với mình."), mdx("h3", {
         id: "tổng-quan-về-sass"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#tổng-quan-về-sass",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Tổng quan về Sass"), mdx("h4", {
+    }, "Tổng quan về Sass"), mdx("h4", {
         id: "cú-pháp"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#cú-pháp",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Cú pháp"), mdx("p", null, "Như đã đề cập ở trên Sass hỗ trợ hai định dạng ", mdx("strong", {
+    }, "Cú pháp"), mdx("p", null, "Như đã đề cập ở trên Sass hỗ trợ hai định dạng ", mdx("strong", {
         parentName: "p"
     }, "SCSS (.scss)"), " và ", mdx("strong", {
         parentName: "p"
@@ -723,14 +689,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("p", null, "Để các bạn dễ làm quen với Sass. Nên các ví dụ dưới đây mình sẽ dùng cú pháp SCSS."), mdx("h4", {
         id: "quy-tắc-xếp-chồng-nested-rules"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#quy-tắc-xếp-chồng-nested-rules",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Quy tắc xếp chồng (Nested Rules)"), mdx("p", null, "Các quy tắc xếp chồng sẽ giúp bạn đồng bộ những thành phần cùng với nhau."), mdx("codeblock", {
+    }, "Quy tắc xếp chồng (Nested Rules)"), mdx("p", null, "Các quy tắc xếp chồng sẽ giúp bạn đồng bộ những thành phần cùng với nhau."), mdx("codeblock", {
         className: "language-css",
         codestring: "nav {\n  ul {\n    list-style: none;\n  }\n  li {\n    display: inline-block;\n  }\n  a {\n    display: block;\n    padding: 10px;\n  }\n}"
     }, mdx("pre", {
@@ -2260,26 +2219,31 @@ function MDXContent({ components , ...props }) {
         className: "token plain",
         parentName: "div"
     }, " none"), mdx("span", {
-        className: "token selector",
+        className: "token punctuation",
         style: {
-            color: "rgb(199, 146, 234)",
-            fontStyle: "italic"
+            color: "rgb(199, 146, 234)"
         },
         parentName: "div"
-    }, ";")), mdx("div", {
+    }, ";"), mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    })), mdx("div", {
         className: "token-line",
         style: {
             color: "#d6deeb"
         },
         parentName: "pre"
     }, mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    }, "  "), mdx("span", {
         className: "token selector",
         style: {
             color: "rgb(199, 146, 234)",
             fontStyle: "italic"
         },
         parentName: "div"
-    }, "  &"), mdx("span", {
+    }, "&"), mdx("span", {
         className: "token selector pseudo-class",
         style: {
             color: "rgb(199, 146, 234)",
@@ -2753,14 +2717,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("h4", {
         id: "biến"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#biến",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Biến"), mdx("p", null, "Biến là một trong những tính năng hữu ích mà Sass cung cấp. Với Sass bạn có thể khai báo biến và sử dụng lại chúng khi cần thiết."), mdx("codeblock", {
+    }, "Biến"), mdx("p", null, "Biến là một trong những tính năng hữu ích mà Sass cung cấp. Với Sass bạn có thể khai báo biến và sử dụng lại chúng khi cần thiết."), mdx("codeblock", {
         className: "language-css",
         codestring: "$base-font: 16px;\n$base-color: #444;\n$heveltica: Helvetica, Arial, sans-serif;\n\nbody {\n  color: $base-color;\n  font: $base-font $heveltica;\n}"
     }, mdx("pre", {
@@ -2891,24 +2848,24 @@ function MDXContent({ components , ...props }) {
         className: "token plain",
         parentName: "div"
     }, " sans-serif"), mdx("span", {
-        className: "token selector",
+        className: "token punctuation",
         style: {
-            color: "rgb(199, 146, 234)",
-            fontStyle: "italic"
+            color: "rgb(199, 146, 234)"
         },
         parentName: "div"
-    }, ";")), mdx("div", {
+    }, ";"), mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    })), mdx("div", {
         className: "token-line",
         style: {
             color: "#d6deeb"
         },
         parentName: "pre"
     }, mdx("span", {
-        className: "token selector",
+        className: "token plain",
         style: {
-            display: "inline-block",
-            color: "rgb(199, 146, 234)",
-            fontStyle: "italic"
+            display: "inline-block"
         },
         parentName: "div"
     }, "\n")), mdx("div", {
@@ -2918,6 +2875,9 @@ function MDXContent({ components , ...props }) {
         },
         parentName: "pre"
     }, mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    }), mdx("span", {
         className: "token selector",
         style: {
             color: "rgb(199, 146, 234)",
@@ -3168,14 +3128,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("h4", {
         id: "mixins"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#mixins",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Mixins"), mdx("p", null, "Mixins cung cấp một cách hòa trộn dễ dàng giữa các thuộc tính và giá trị và chia sẻ giữa các bộ chọn khác nhau."), mdx("p", null, "Mixins được định nghĩa bởi ", mdx("strong", {
+    }, "Mixins"), mdx("p", null, "Mixins cung cấp một cách hòa trộn dễ dàng giữa các thuộc tính và giá trị và chia sẻ giữa các bộ chọn khác nhau."), mdx("p", null, "Mixins được định nghĩa bởi ", mdx("strong", {
         parentName: "p"
     }, "@mixin"), " (SCSS) và ", mdx("strong", {
         parentName: "p"
@@ -3272,26 +3225,31 @@ function MDXContent({ components , ...props }) {
         className: "token plain",
         parentName: "div"
     }, " $color"), mdx("span", {
-        className: "token selector",
+        className: "token punctuation",
         style: {
-            color: "rgb(199, 146, 234)",
-            fontStyle: "italic"
+            color: "rgb(199, 146, 234)"
         },
         parentName: "div"
-    }, ";")), mdx("div", {
+    }, ";"), mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    })), mdx("div", {
         className: "token-line",
         style: {
             color: "#d6deeb"
         },
         parentName: "pre"
     }, mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    }, "  "), mdx("span", {
         className: "token selector",
         style: {
             color: "rgb(199, 146, 234)",
             fontStyle: "italic"
         },
         parentName: "div"
-    }, "  &"), mdx("span", {
+    }, "&"), mdx("span", {
         className: "token selector pseudo-class",
         style: {
             color: "rgb(199, 146, 234)",
@@ -3793,26 +3751,31 @@ function MDXContent({ components , ...props }) {
         className: "token plain",
         parentName: "div"
     }, " $color"), mdx("span", {
-        className: "token selector",
+        className: "token punctuation",
         style: {
-            color: "rgb(199, 146, 234)",
-            fontStyle: "italic"
+            color: "rgb(199, 146, 234)"
         },
         parentName: "div"
-    }, ";")), mdx("div", {
+    }, ";"), mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    })), mdx("div", {
         className: "token-line",
         style: {
             color: "#d6deeb"
         },
         parentName: "pre"
     }, mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    }, "  "), mdx("span", {
         className: "token selector",
         style: {
             color: "rgb(199, 146, 234)",
             fontStyle: "italic"
         },
         parentName: "div"
-    }, "  &"), mdx("span", {
+    }, "&"), mdx("span", {
         className: "token selector pseudo-class",
         style: {
             color: "rgb(199, 146, 234)",
@@ -4888,14 +4851,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, ";")))), mdx("h4", {
         id: "kế-thừa"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#kế-thừa",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Kế thừa"), mdx("p", null, "Đây là tính năng giúp bạn sử dụng lại nhiều thuộc tính khai báo trong CSS."), mdx("p", null, mdx("strong", {
+    }, "Kế thừa"), mdx("p", null, "Đây là tính năng giúp bạn sử dụng lại nhiều thuộc tính khai báo trong CSS."), mdx("p", null, mdx("strong", {
         parentName: "p"
     }, "Sử dụng @extend")), mdx("codeblock", {
         className: "language-css",
@@ -6382,26 +6338,31 @@ function MDXContent({ components , ...props }) {
         className: "token unit",
         parentName: "div"
     }, "px"), mdx("span", {
-        className: "token selector",
+        className: "token punctuation",
         style: {
-            color: "rgb(199, 146, 234)",
-            fontStyle: "italic"
+            color: "rgb(199, 146, 234)"
         },
         parentName: "div"
-    }, ";")), mdx("div", {
+    }, ";"), mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    })), mdx("div", {
         className: "token-line",
         style: {
             color: "#d6deeb"
         },
         parentName: "pre"
     }, mdx("span", {
+        className: "token plain",
+        parentName: "div"
+    }, "  "), mdx("span", {
         className: "token selector",
         style: {
             color: "rgb(199, 146, 234)",
             fontStyle: "italic"
         },
         parentName: "div"
-    }, "  h3"), mdx("span", {
+    }, "h3"), mdx("span", {
         className: "token plain",
         parentName: "div"
     }, " "), mdx("span", {
@@ -6822,14 +6783,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "}")))), mdx("h4", {
         id: "các-điều-khiển-trong-sass"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#các-điều-khiển-trong-sass",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Các điều khiển trong Sass"), mdx("p", null, "Sass cung cấp cho bạn điều khiển logic sau:"), mdx("ul", null, mdx("li", {
+    }, "Các điều khiển trong Sass"), mdx("p", null, "Sass cung cấp cho bạn điều khiển logic sau:"), mdx("ul", null, mdx("li", {
         parentName: "ul"
     }, "@if"), mdx("li", {
         parentName: "ul"
@@ -6839,14 +6793,7 @@ function MDXContent({ components , ...props }) {
         parentName: "ul"
     }, "@while")), mdx("p", null, "Muốn làm việc với các điều khiển trong Sass thì bạn nên có chút kiến thức lập trình cơ bản nên mình sẽ dành riêng một bài viết hướng dẫn chi tiết hơn."), mdx("h3", {
         id: "lời-kết"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#lời-kết",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Lời kết"), mdx("p", null, "Trên đây chỉ là tổng quan về Sass. Sass mang lại cho ta rất nhiều hữu ích tuy nhiên Sass không giúp ta có thể viết CSS tốt hơn. Vì thế bạn hãy nên tìm hiểu cách viết CSS tốt hơn như OOCSS (hướng đối tựng trong CSS), SMACSS, BEM...Và Sass sẽ là một công cụ tốt để bạn thực hiện việc đó."));
+    }, "Lời kết"), mdx("p", null, "Trên đây chỉ là tổng quan về Sass. Sass mang lại cho ta rất nhiều hữu ích tuy nhiên Sass không giúp ta có thể viết CSS tốt hơn. Vì thế bạn hãy nên tìm hiểu cách viết CSS tốt hơn như OOCSS (hướng đối tựng trong CSS), SMACSS, BEM...Và Sass sẽ là một công cụ tốt để bạn thực hiện việc đó."));
 }
 MDXContent.isMDXComponent = true;
 export default MDXContent;

@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "CSS Triangles Mixin trong Sass",
     slug: "/css-triangles-mixin-trong-sass",
@@ -435,14 +436,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "if"), " ta có thể viết CSS Triangles sử dụng Sass"), mdx("h3", {
         id: "css-triangles-mixin-trong-sass"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#css-triangles-mixin-trong-sass",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "CSS Triangles Mixin trong Sass"), mdx("codeblock", {
+    }, "CSS Triangles Mixin trong Sass"), mdx("codeblock", {
         className: "language-scss",
         codestring: "/**\n * Dấu = bạn có thể thay thế bằng @mixin\n * nếu bạn sử dụng cú pháp SCSS\n */\n=arrow($direction, $color, $size)\n  $transparent: $size solid transparent\n  $sizeborder: $size solid $color // Khai báo này sẽ giúp bạn tránh lặp lại code\n  display: block\n  height: 0\n  width: 0\n\n  // Mũi tên theo hướng lên trên\n  @if $direction == \"top\"\n    border:\n      left: $transparent\n      right: $transparent\n      bottom: $sizeborder\n  // Mũi tên theo hướng bên phải\n  @else if $direction == \"right\"\n    border:\n      top: $transparent\n      bottom: $transparent\n      left: $sizeborder\n  // Mũi tên theo hướng bên dưới\n  @else if $direction == \"bottom\"\n    border:\n      top: $sizeborder\n      right: $transparent\n      left: $transparent\n  // Mũi tên theo hướng bên trái\n  @else if $direction == \"left\"\n    border:\n      top: $transparent\n      right: $sizeborder\n      bottom: $transparent\n  // Mũi tên theo hướng trên bên phải\n  @else if $direction == \"top-right\"\n    border:\n      top: $sizeborder\n      right: $transparent\n  // Mũi tên theo hướng trên bên trái\n  @else if $direction == \"top-left\"\n    border:\n      top: $sizeborder\n      left: $transparent\n  // Mũi tên theo hướng dưới bên phải\n  @else if $direction == \"bottom-right\"\n    border:\n      bottom: $sizeborder\n      right: $transparent\n  // Mũi tên theo hướng dưới bên trái\n  @else if $direction == \"bottom-left\"\n    border:\n      bottom: $sizeborder\n      left: $transparent"
     }, mdx("pre", {
@@ -2129,14 +2123,7 @@ function MDXContent({ components , ...props }) {
         parentName: "div"
     }, "$transparent")))), mdx("h3", {
         id: "sử-dụng-css-triangles-mixin"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#sử-dụng-css-triangles-mixin",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Sử dụng CSS Triangles Mixin"), mdx("p", null, "Việc sử dụng CSS Triangles mixin cực kì đơn giản."), mdx("codeblock", {
+    }, "Sử dụng CSS Triangles Mixin"), mdx("p", null, "Việc sử dụng CSS Triangles mixin cực kì đơn giản."), mdx("codeblock", {
         className: "language-scss",
         codestring: "/**\n * Dấu + bạn có thể thay thế bằng @include\n * nếu bạn sử dụng cú pháp SCSS\n */\n.arrow-top\n  +arrow(top, rgba(255, 10, 10, .5), 50px)\n\n.arrow-right\n  +arrow(right, rgba(255, 10, 10, .5), 50px)"
     }, mdx("pre", {
@@ -2491,14 +2478,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "codesandbox")), mdx("h4", {
         id: "sử-dụng-với-css3-pseudo-before-hoặc-after-để-tạo-tooltips"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#sử-dụng-với-css3-pseudo-before-hoặc-after-để-tạo-tooltips",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Sử dụng với CSS3 Pseudo :before hoặc :after để tạo tooltips"), mdx("codeblock", {
+    }, "Sử dụng với CSS3 Pseudo :before hoặc :after để tạo tooltips"), mdx("codeblock", {
         className: "language-scss",
         codestring: ".tooltip\n  background-color: #e74c3c\n  display: inline-block\n  width: 500px\n  padding: 20px\n  position: relative\n\n  &:before\n    content: \"\"\n    position: absolute\n    top: 30px\n    left: -20px\n    +arrow(left, #e74c3c, 20px) // Bạn có thể chọn vị trí khác cho phù hợp"
     }, mdx("pre", {

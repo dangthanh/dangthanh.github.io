@@ -7,22 +7,23 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "./postinstall.js",
-    "start": "watchexec -e js,css,html npm run build",
+    "start": "watchexec -w src npm run build",
     "build": "npm run build:css && npm run build:site",
     "build:css": "NODE_ENV=production postcss --config legacy-commonjs index.css -o public/styles.css",
     "build:css:watch": "postcss --config legacy-commonjs index.css -o public/styles.css -w",
     "build:site": "toast incremental ."
   },
   "dependencies": {
-    "esinstall": "1.1.4",
     "@toastdotdev/mdx": "^0.2.3",
-    "postcss": "^8.2.9",
+    "dayjs": "^1.10.5",
+    "esinstall": "^1.1.6",
+    "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.1.1",
+    "tailwindcss": "^2.2.4",
     "toast": "^0.3.43"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
     "pretty-bytes": "5.6.0"
   }
 }

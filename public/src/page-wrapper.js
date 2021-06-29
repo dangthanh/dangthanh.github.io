@@ -9,7 +9,9 @@ const components = {
 export default function PageWrapper(props) {
     return h(MDXProvider, {
         components: components
-    }, h(Fragment, null, h(Helmet, null, h("link", {
+    }, h(Fragment, null, h(Helmet, null, h("meta", {
+        charSet: "utf-8"
+    }), h("title", null, props.title ? props.title : "Digital garden about web development"), h("link", {
         rel: "stylesheet",
         href: "/styles.css"
     })), h("header", {
@@ -27,5 +29,7 @@ export default function PageWrapper(props) {
         href: "/about"
     }, "About"))), h("main", {
         role: "main"
-    }, props.children)));
+    }, h("div", {
+        class: "max-w-2xl mx-auto px-5"
+    }, props.children))));
 };

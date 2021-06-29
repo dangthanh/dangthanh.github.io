@@ -52,18 +52,16 @@ export default class Project extends Component {
   render({}, { repos }) {
     return (
       <Fragment>
-        <div class="max-w-2xl mx-auto px-5">
-          <article>
-            <h2 class="font-normal text-lg pb-3 uppercase">
-              I<span class="text-red-600">&#10084;</span> Open Source
-            </h2>
-            <div class="border border-gray-300 border-solid rounded shadow">
-              {Array.from(new Set(repos)).map((repository) => (
-                <Repository repository={repository} />
-              ))}
-            </div>
-          </article>
-        </div>
+        <article>
+          <h2 class="font-normal text-lg pb-3 uppercase">
+            I<span class="text-red-600">&#10084;</span> Open Source
+          </h2>
+          <div class="border border-gray-300 border-solid rounded shadow">
+            {Array.from(new Set(repos)).map((repository) => (
+              <Repository repository={repository} />
+            ))}
+          </div>
+        </article>
       </Fragment>
     );
   }

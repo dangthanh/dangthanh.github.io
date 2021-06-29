@@ -3,7 +3,7 @@ export const specs = [
   "preact/hooks",
   "@mdx-js/preact",
   "react-helmet",
-  "preact/compat",
+  "preact/compat"
 ];
 
 export const options = {

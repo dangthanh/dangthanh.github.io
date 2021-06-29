@@ -1,7 +1,8 @@
-/** @jsxRuntime classic */
 /** @jsx mdx */
-/** @jsxFrag mdx.Fragment */
 import { mdx } from '/web_modules/@mdx-js/preact.js';
+/* @jsxRuntime classic */
+/* @jsx mdx */
+/* @jsxFrag mdx.Fragment */
 export const meta = {
     title: "Bắt đầu với Vue.js",
     slug: "/bat-dau-voi-vue",
@@ -23,14 +24,7 @@ function MDXContent({ components , ...props }) {
         parentName: "a"
     }, "Vue.js")), " là một thư viện JavaScript giúp bạn dễ dàng xây dựng các giao diện (UI) từ đơn giản đến phức tạp."), mdx("p", null, "Để bắt đầu với Vue.js bạn cần trang bị cho một những kiến thức cơ bản về HTML, CSS và JavaScript là nền tảng giúp bạn dễ dàng làm quen với Vue.js"), mdx("h3", {
         id: "vuejs-có-gì-hay"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#vuejs-có-gì-hay",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Vue.js có gì hay?"), mdx("p", null, "Điểm đầu tiên tôi thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ ", mdx("a", {
+    }, "Vue.js có gì hay?"), mdx("p", null, "Điểm đầu tiên tôi thích ở Vue.js là một trong số ít những thư viện JavaScript phát triển mà tài liệu hỗ trợ ngôn ngữ ", mdx("a", {
         href: "https://vi.vuejs.org/",
         parentName: "p"
     }, "tiếng Việt"), ". Cái này giúp ích rất nhiều, đặc biệt những bạn vừa làm quen với Vue.js và JavaScript. Bên cạnh đó tài liệu Vue.js còn hỗ trợ nhiều ngôn ngữ khác như ", mdx("a", {
@@ -82,14 +76,7 @@ function MDXContent({ components , ...props }) {
         parentName: "li"
     }, "three.js"), "...")), mdx("h3", {
         id: "hệ-sinh-thái"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#hệ-sinh-thái",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Hệ sinh thái"), mdx("p", null, "Vue.js có một hệ sinh thái rất mạnh mẽ, giúp bạn lựa chọn viết cả ứng dụng web, mobile hay cả desktop:"), mdx("ul", null, mdx("li", {
+    }, "Hệ sinh thái"), mdx("p", null, "Vue.js có một hệ sinh thái rất mạnh mẽ, giúp bạn lựa chọn viết cả ứng dụng web, mobile hay cả desktop:"), mdx("ul", null, mdx("li", {
         parentName: "ul"
     }, mdx("a", {
         href: "https://cli.vuejs.org/",
@@ -129,14 +116,7 @@ function MDXContent({ components , ...props }) {
         parentName: "li"
     }, "Vuido"))), mdx("h3", {
         id: "ứng-dụng-đầu-tiên-với-vuejs"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#ứng-dụng-đầu-tiên-với-vuejs",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Ứng dụng đầu tiên với Vue.js"), mdx("p", null, "Ở trên tôi đã giới thiệu các bạn về ", mdx("strong", {
+    }, "Ứng dụng đầu tiên với Vue.js"), mdx("p", null, "Ở trên tôi đã giới thiệu các bạn về ", mdx("strong", {
         parentName: "p"
     }, "Vue CLI"), " một công cụ để phát triển các ứng dụng Vue.js nhưng ở đây để dễ dàng làm quen tôi sử dụng cú pháp thuần JavaScript và HTML."), mdx("p", null, "Đầu tiên bạn cần nhúng thư viện Vue.js và trong thẻ ", mdx("inlineCode", {
         parentName: "p"
@@ -694,14 +674,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "codesandbox")), mdx("h3", {
         id: "làm-quen-với-vuejs"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#làm-quen-với-vuejs",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Làm quen với Vue.js"), mdx("p", null, "Để bắt đầu làm quen với Vue.js bạn cần chú ý những khái niệm chính sau:"), mdx("ul", null, mdx("li", {
+    }, "Làm quen với Vue.js"), mdx("p", null, "Để bắt đầu làm quen với Vue.js bạn cần chú ý những khái niệm chính sau:"), mdx("ul", null, mdx("li", {
         parentName: "ul"
     }, "Directives"), mdx("li", {
         parentName: "ul"
@@ -709,14 +682,7 @@ function MDXContent({ components , ...props }) {
         parentName: "ul"
     }, "Transitions và Animations")), mdx("h4", {
         id: "1-directives"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#1-directives",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "1. Directives"), mdx("p", null, "Directives trong Vue.js được sử dụng như một ", mdx("inlineCode", {
+    }, "1. Directives"), mdx("p", null, "Directives trong Vue.js được sử dụng như một ", mdx("inlineCode", {
         parentName: "p"
     }, "attribute"), " trong thẻ của HTML, cung cấp những chức năng:"), mdx("ul", null, mdx("li", {
         parentName: "ul"
@@ -755,14 +721,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "codesandbox")), mdx("h4", {
         id: "2-components"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#2-components",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "2. Components"), mdx("p", null, "Component là một tính năng rất hay và phổ biến hiện nay trong các thư viện được viết bằng JavaScript. Với việc sử dụng Component trong Vue.js bạn có thể tự mình xây dựng những Component như ", mdx("inlineCode", {
+    }, "2. Components"), mdx("p", null, "Component là một tính năng rất hay và phổ biến hiện nay trong các thư viện được viết bằng JavaScript. Với việc sử dụng Component trong Vue.js bạn có thể tự mình xây dựng những Component như ", mdx("inlineCode", {
         parentName: "p"
     }, "modal"), ", ", mdx("inlineCode", {
         parentName: "p"
@@ -1293,14 +1252,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "codesandbox")), mdx("h4", {
         id: "3-transitions-và-animations"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#3-transitions-và-animations",
-        parentName: "h4"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "3. Transitions và Animations"), mdx("p", null, "Transitions và Animations là một phần hầu như không thể thiếu trong thiết kế UI và UX."), mdx("p", null, "Transitions và Animations trong Vue.js khá linh hoạt. Bạn có thể sử dụng các thuộc tính của CSS transitions và animations hoặc các thư viện CSS animations như ", mdx("a", {
+    }, "3. Transitions và Animations"), mdx("p", null, "Transitions và Animations là một phần hầu như không thể thiếu trong thiết kế UI và UX."), mdx("p", null, "Transitions và Animations trong Vue.js khá linh hoạt. Bạn có thể sử dụng các thuộc tính của CSS transitions và animations hoặc các thư viện CSS animations như ", mdx("a", {
         href: "https://daneden.github.io/animate.css/",
         parentName: "p"
     }, "Animate.css"), " hoặc thư viện JavaScript như ", mdx("a", {
@@ -1750,14 +1702,7 @@ function MDXContent({ components , ...props }) {
         parentName: "p"
     }, "codesandbox")), mdx("h3", {
         id: "túm-lại"
-    }, mdx("a", {
-        className: "heading-link-anchor",
-        href: "#túm-lại",
-        parentName: "h3"
-    }, mdx("heading-link-icon", {
-        className: "heading-link-icon",
-        parentName: "a"
-    })), "Túm lại"), mdx("p", null, "Vue.js là một thư viện khá tốt để các bạn đã có sẵn nền tảng về lập trình HTML, CSS và JavaScript có thể bắt đầu."));
+    }, "Túm lại"), mdx("p", null, "Vue.js là một thư viện khá tốt để các bạn đã có sẵn nền tảng về lập trình HTML, CSS và JavaScript có thể bắt đầu."));
 }
 MDXContent.isMDXComponent = true;
 export default MDXContent;

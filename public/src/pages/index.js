@@ -1,7 +1,5 @@
 import { h, Fragment } from "/web_modules/preact.js";
-export default ((props)=>h(Fragment, null, h("div", {
-        class: "max-w-2xl mx-auto px-5"
-    }, h("article", {
+export default ((props)=>h(Fragment, null, h("article", {
         class: "mb-8"
     }, h("div", {
         class: "text-3xl mb-3"
@@ -15,5 +13,5 @@ export default ((props)=>h(Fragment, null, h("div", {
         href: "https://poetadigital.com",
         target: "_blank",
         rel: "noopener noreferrer"
-    }, "Poeta Digital"), "."))))
+    }, "Poeta Digital"), ".")))
 );
