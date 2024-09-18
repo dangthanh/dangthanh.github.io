@@ -1,0 +1,1 @@
+import{A as r}from"./atropos.DZR9lnpr.js";import"./hoisted.Bx0Hd-1W.js";import"./hoisted.BB6uRyKX.js";const t=document.querySelectorAll(".atropos-github-card");[...t].forEach(o=>{r({el:o,shadowScale:.625})});
